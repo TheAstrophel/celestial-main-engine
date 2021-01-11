@@ -464,7 +464,7 @@ The type and base\npower of this move\nis determined by\nthe user's Berry.
 An attack which is\nnot affected by the\ntarget's stat\nchanges.
 
 #org @DESC_SMACKDOWN
-A projectile is\nthrown at the\nopponent. A flying\nPok\emon will fall\nto the ground.
+A projectile is\nthrown at the\nfoe. A flying\nPok\emon will fall.
 
 #org @DESC_HYPERSPACEHOLE
 The user attacks\nfrom a hyperspace\nhole, hitting even\nprotected targets.
@@ -485,10 +485,10 @@ The user calls out\nits underlings to\nshield its body,\nraising its Defense\nan
 The user calls out\nits underlings to\nheal it. The user\nregains up to half\nof its max HP.
 
 #org @DESC_CAPTIVATE
-If the foe is the\nopposite gender of\nthe user, the foe's\nSpecial Attack is\nharshly lowered.
+If the foe is of\nopposite gender,\nthe foe's Sp. ATK\nis harshly lowered.
 
 #org @DESC_DEFOG
-A strong wind blows\naway the target's\nobstacles. It also\nlowers the target's\nevasiveness.
+Strong wind blows\naway the foe's\nobstacles. Also\nlowers evasiveness.
 
 #org @DESC_ORIGINPULSE
 The user attacks\nopposing Pok\emon\nwith countless\nbeams of light that\nglow a deep blue.
@@ -533,7 +533,7 @@ The user sheds part\nof its body to make\nitself lighter and\nsharply raise its\
 The user whips up a\nstorm of diamonds\nto damage the foes.\nThis may also raise\nthe user's Defense. 
 
 #org @DESC_SLUDGEWAVE
-The area around the\nuser is swamped by\na giant sludge wave.\nIt may also poison\nthose hit.
+Area around user\nis swamped by a\nsludge wave. May\nalso PSN those hit.
 
 #org @DESC_HEAVYSLAM
 The user slams into\nthe target. The\ngreater the weight\ndifference, the\ngreater the damage.
@@ -554,7 +554,7 @@ The user dances\nwith an odd rhythm,\nmaking the target's\nAbility the same as\n
 The user releases a\npitch-black blast\nat its target. May\nalso lower target's\naccuracy.
 
 #org @DESC_ECHOEDVOICE
-The user attacks\nthe target with a\nharsh echo.\nIf used every turn,\npower increases.
+User attacks\nthe foe with an\necho. If used every\nturn, power boosts.
 
 #org @DESC_LANDSWRATH
 The user gathers\nenergy from the\nland and damages\nthe opposing Pok\emon\nwith its power.
@@ -650,10 +650,10 @@ The user's body\ngenerates an impulse.\nExposing the foe to\nit harshly lowers\n
 The user holds back\nwhen it attacks, and\nthe target is left\nwith at least 1 HP.
 
 #org @DESC_INFESTATION
-The foe is infested\nand attacked for four\nto five turns. The\ntarget can't flee\nduring this.
+Foe is infested\nand attacked for\n4-5 turns. The\ntarget can't flee.
 
 #org @DESC_POWERUPPUNCH
-Striking over and\nover hardens the\nuser's fists.\nHitting a target\nraises Attack.
+Striking many times\nhardens the user's\nfists. Hitting\ntargets raises Atk.
 
 #org @DESC_THOUSANDARROWS
 This move also hits\nopposing Pok\emon in\nthe air. They are\nknocked down to the\nground.
@@ -677,7 +677,7 @@ The user smashes into\nthe target at high\nspeed. This move\nalways goes first.
 The user entangles\nthe target with its\nanchor chain while\nattacking. The target\ncannot flee.
 
 #org @DESC_AURORAVEIL
-This move reduces\ndamage from physical\nand special moves for\nfive turns during a\nhailstorm.
+Reduces damage from\nphysical & special\nmoves for 5 turns\nduring a hailstorm.
 
 #org @DESC_BANEFULBUNKER
 Aside from protecting\nthe user from attacks,\nthis also poisons\nattackers who make\ncontact.
@@ -686,7 +686,7 @@ Aside from protecting\nthe user from attacks,\nthis also poisons\nattackers who 
 The user heats up its\nbeak, and attacks the\ntarget. Making contact\nwhile heating up\ncauses a burn.
 
 #org @DESC_BRUTALSWING
-The user swings its\nbody around violently\nto inflict damage on\neverything in its\nvicinity.
+User swings its\nbody around hardly\nto damage anything\nin its vicinity.
 
 #org @DESC_BURNUP
 The user burns\nitself out. After\nusing this move,\nthe user will no\nlonger be Fire type.
@@ -836,7 +836,7 @@ When used with its\ngrass equivalent,\nits power increases\nand a vast sea of\nf
 When combined with\nits fire equivalent,\nits power increases\nand a rainbow\nappears.
 
 #org @DESC_TRICKROOM
-The user creates a\nbizarre area in\nwhich slower Pok\emon\nget to move first\nfor five turns.
+User creates an\narea in which\nslower Pok\emon move\nfirst for 5 turns.
 
 #org @DESC_MAGICROOM
 The user creates a\nbizarre area in\nwhich Pok\emon's held\nitems lose effect\nfor five turns.
@@ -869,7 +869,7 @@ The user lets out a\ndamaging belch at\nthe target. The user\nmust eat a held\nB
 The user passes its\nheld item to the\ntarget when the\ntarget isn't\nholding an item.
 
 #org @DESC_FLING
-The user flings its\nheld item at the\ntarget to attack.\nIts power and effect\ndepend on the item.
+User flings its\nheld item at the\nfoe. Power and effect\ndepend on the item.
 
 #org @DESC_FLYINGPRESS
 The user dives down\nonto the target from\nthe sky. This move\nis both Fighting\nand Flying type.
@@ -965,7 +965,7 @@ The user centers\nits hex nut and\nstrikes twice with\nits arms. It may\ncause f
 It can only be\nused after the\nuser has exhausted\nall other moves it\nknows in battle.
 
 #org @DESC_SKYDROP
-It takes the enemy\ninto the sky,\nwhere it can't\nattack. It is\ndropped next turn.
+Takes the foe into\nthe sky, where it\ncan't attack. It is\ndropped next turn.
 
 #org @DESC_CELEBRATE
 The Pok\emon\ncongratulates you\non your special\nday!

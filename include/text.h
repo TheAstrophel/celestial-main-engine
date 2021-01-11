@@ -206,7 +206,11 @@ struct TextPrinter
 
     void (*callback)(struct TextPrinterTemplate *, u16); // 0x10
 
-    union __attribute__((packed)) {
+    union
+#if !MODERN
+    __attribute__((packed))
+#endif
+    {
         struct TextPrinterSubStruct sub;
         u8 fields[7];
     } subUnion;
@@ -293,11 +297,7 @@ void DeactivateAllTextPrinters(void);
 bool16 AddTextPrinter(struct TextSubPrinter *textSubPrinter, u8 speed, void (*callback)(struct TextSubPrinter *, u16));
 void RunTextPrinters(void);
 bool16 IsTextPrinterActive(u8 id);
-*/
-
-u32 __attribute__((long_call)) RenderFont(struct TextPrinter *textPrinter);
-
-/*
+u32 RenderFont(struct TextPrinter *textPrinter);
 void GenerateFontHalfRowLookupTable(u8 fgColor, u8 bgColor, u8 shadowColor);
 void SaveTextColors(u8 *fgColor, u8 *bgColor, u8 *shadowColor);
 void RestoreTextColors(u8 *fgColor, u8 *bgColor, u8 *shadowColor);
