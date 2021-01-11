@@ -49,7 +49,7 @@
 #define FLAG_REMOVE_EVO_ITEM 0x912  //Flag to toggle item removal after leveling up (set by the engine)
 #define FLAG_SHINY_CREATION 0x913 //Flag to cause next battle to be against a shiny Pokemon
 #define FLAG_AUTO_RUN 0x914 //Flag to enable auto-run (toggled by L-button). If this feature is used, L=A will not work. Comment out this line for it to work again.
-#define FLAG_RUNNING_ENABLED 0x82F //The player can only run if this flag is set. If commented, the player will start the game with running shoes.
+//#define FLAG_RUNNING_ENABLED 0x82F //The player can only run if this flag is set. If commented, the player will start the game with running shoes.
 #define FLAG_BIKE_TURBO_BOOST 0x91F //The bike moves extra fast if this flag is set or if the player holds B.
 #define FLAG_DISABLE_BAG 0x915 //The bag can't be used in-battle if this flag is set
 #define FLAG_MOVE_RELEARNER_IGNORE_LEVEL 0x916 //When set, the move relearner shows all level-up moves up to MAX_LEVEL
@@ -111,15 +111,15 @@ enum //These vars need to be one after the other (hence the enum)
 #define VAR_HEALING_YPOS 0x5039 //0x405C in JPAN's Engine
 
 /*===== TM/HM/Tutor Options (Vastly improved from other versions!) =====*/
-//#define EXPANDED_TMSHMS  //Comment this out if you want to keep 50 tms/8 hms
-//#define EXPANDED_MOVE_TUTORS //Comment this out if you want to keep 16 move tutors and the ultimate elemental moves being exclusive to Kantonian starters
-#define NUM_TMS 50	//keep this defined even if EXPANDED_TMSHMS is not!!
+#define EXPANDED_TMSHMS  //Comment this out if you want to keep 50 tms/8 hms
+#define EXPANDED_MOVE_TUTORS //Comment this out if you want to keep 16 move tutors and the ultimate elemental moves being exclusive to Kantonian starters
+#define NUM_TMS 120	//keep this defined even if EXPANDED_TMSHMS is not!!
 #define NUM_HMS 8	//keep this defined even if EXPANDED_TMSHMS is not!!
-#define NUM_MOVE_TUTORS 16 //keep this defined even if EXPANDED_MOVE_TUTORS is not!! If using DPE, set to 128.
-#define LAST_TOTAL_TUTOR_NUM 24 //Should be equal to (NUM_MOVE_TUTORS - 1) + 9. Must be set to an actual integer or the compilation will not work.
+#define NUM_MOVE_TUTORS 128 //keep this defined even if EXPANDED_MOVE_TUTORS is not!! If using DPE, set to 128.
+#define LAST_TOTAL_TUTOR_NUM 136 //Should be equal to (NUM_MOVE_TUTORS - 1) + 9. Must be set to an actual integer or the compilation will not work.
 //#define TMS_BEFORE_HMS  //Uncomment this if you want the HMs to appear after the TMs in your bag
-//#define DELETABLE_HMS //Uncomment this if you want HMs to be deletable without the Move Deleter
-//#define REUSABLE_TMS	//if defined, don't forget to give all TMs a Mystery byte of 1!
+#define DELETABLE_HMS //Uncomment this if you want HMs to be deletable without the Move Deleter
+#define REUSABLE_TMS	//if defined, don't forget to give all TMs a Mystery byte of 1!
 
 /*===== Time of Day Options =====*/
 #define TIME_MORNING_START 4		//4:00 AM / 4:00
@@ -128,12 +128,12 @@ enum //These vars need to be one after the other (hence the enum)
 #define TIME_NIGHT_START 20			//8:00 PM / 20:00
 
 /*===== General Number Options =====*/
-#define KANTO_DEX_COUNT 151
-#define NATIONAL_DEX_COUNT 386
+#define KANTO_DEX_COUNT 809
+#define NATIONAL_DEX_COUNT 809
 
 #define MAX_LEVEL 100 //Also change this in the file "asm_defines.asm" found in the root
 #define NUM_TRAINER_CLASSES 107 //Vanilla FR has 107
-#define EVOS_PER_MON 5 //The number of maximum evolutions per Pokemon. Vanilla FR has 5. DPE has 16!!!
+#define EVOS_PER_MON 16 //The number of maximum evolutions per Pokemon. Vanilla FR has 5. DPE has 16!!!
 #define EV_CAP 252 //Also change this in the file "asm_defines.s" found in the root
 #define POWER_ITEM_EV_YIELD 8 //Set to 4 for older mechanic
 
@@ -196,8 +196,8 @@ enum //These vars need to be one after the other (hence the enum)
 //#define EXISTING_OW_TABLE_ADDRESS 0x81a2000 //Uncomment if you don't want new overworld NPC tables to be generated. DON'T TOUCH IF YOU DON'T KNOW EXACTLY WHAT THIS IS FOR!
 
 /*===== Other General Options =====*/
-#define TIME_ENABLED //Comment this line to disable time based features. All time dependent features will default in Daytime.
-#define DNS_IN_BATTLE //Comment this line to disable the Day/Night system from working in battle
+//#define TIME_ENABLED //Comment this line to disable time based features. All time dependent features will default in Daytime.
+//#define DNS_IN_BATTLE //Comment this line to disable the Day/Night system from working in battle
 #define OVERWRITE_RIVAL //Comment this line to disable to loading of your rival's name into trainer classes 0x51, 0x59, and 0x5A
 #define TRAINER_CLASS_POKE_BALLS //Comment this line to disable creating Trainer's pokemon with Poke Balls specific to their trainer class
 //#define TRAINERS_WITH_EVS //Uncomment this line to enable the Trainers with EVs hack, (only avaible with custom moveset and held item)
@@ -221,7 +221,7 @@ enum //These vars need to be one after the other (hence the enum)
 //#define SET_HEALING_PLACE_HACK  //Uncomment this if you want custom map/bank whiteout respawn locations
 //#define FOSSIL_IMAGE_HACK   //Uncommenting includes JPANs fossil image hack (see EXISTING_FOSSIL_IMAGE_TABLE_ADDRESS)
 #define EVO_HOLD_ITEM_REMOVAL //Comment this out if you want leveling up/hold item evolution (eg. sneasel) to remove the item (like normal)
-#define EXPAND_MOVESETS //Comment this out if you're using the Dynamic Pokemon Expansion repo to expand the movesets
+//#define EXPAND_MOVESETS //Comment this out if you're using the Dynamic Pokemon Expansion repo to expand the movesets
 //#define FATHER_PASSES_TMS //Uncomment this out if you want TMs the father knows to be passed through breeding
 //#define INHERIT_MASTER_CHERISH_BALL  //Uncomment this if you want Master and Cherish balls to be inherited by daycare offspring
 //#define GIVEPOKEMON_CUSTOM_HACK //Alows custom Pokemon to be given by setting the second last byte of the givepokemon scripting command
@@ -237,7 +237,7 @@ enum //These vars need to be one after the other (hence the enum)
 //#define BIKE_ON_ANY_NON_INSIDE_MAP //Uncomment if you still want to be able to bike on any non-inside map
 //#define GEN_4_PLAYER_RUNNING_FIX //Uncomment to increase the lag between frames as the player OW runs, to simulate a more accurate Gen 4 running effect
 #define EXPAND_MOVE_REMINDER_DESCRIPTION //Keep this defined to have 5 lines for the move description as opposed to 4 in the move reminder menu
-//#define ITEM_PICTURE_ACQUIRE //If uncommented, item images will be shown when the player finds or obtains an item. Breaks FR Game Corner prize room
+#define ITEM_PICTURE_ACQUIRE //If uncommented, item images will be shown when the player finds or obtains an item. Breaks FR Game Corner prize room
 //#define ITEM_DESCRIPTION_ACQUIRE //If uncommented, item descriptions will be shown the first time an item is added to the Bag. ITEM_PICTURE_ACQUIRE must be defined to work
 #define EXPANDED_TEXT_BUFFERS //Expands the number of scripting string buffers available. Comment out to keep original buffer text
 #define FOOTSTEP_NOISES //Sounds will be played when any object moves through grass or across sand
@@ -245,7 +245,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define HOOPA_CHANGE_IN_PC //Hoopa-Unbound will revert to confined form when placed in or withdrawn from a box
 #define SHAYMIN_CHANGE_IN_PC //Shaymin-Sky will revert to sky from when placed in or withdrawn from a box
 #define HIGH_PITCH_MEGA_PRIMAL_CRY //Mega Pokemon cries will be higher pitched. This is useful if you're using the base form cries for Mega Evolutions
-//#define SCROLLING_MULTICHOICE //Enables scrolling multichoice menus by using special 0x158.
+#define SCROLLING_MULTICHOICE //Enables scrolling multichoice menus by using special 0x158.
 //#define REPLACE_SOME_VANILLA_SPECIALS //Replaces the sp07C, sp07D, sp09E, sp156, sp18B, & the Coins scripting commands with modified versions. Breaks vanilla FR compatability.
 #define REPLACE_ASH_WEATHER_WITH_WHITE_SANDSTORM //Replaces the falling ash weather effect with a white version of the sandstorm weather effect
 //#define ONLY_CHECK_ITEM_FOR_HM_USAGE //Allows HMs to be used if the HM is the Bag, and as long as there is a Pokemon in the party that can learn the HM
