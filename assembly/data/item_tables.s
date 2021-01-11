@@ -196,8 +196,6 @@ gNaturalGiftTable:
 .hword ITEM_ENIGMA_BERRY_OLD
 .byte TYPE_BUG, 100
 
-.byte TYPE_BUG, 100
-
 .hword ITEM_MICLE_BERRY
 .byte TYPE_ROCK, 100
 
