@@ -250,15 +250,25 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
-	//These Palette Town ones have been left in as examples. Feel free to remove.
 	{ //Palette Town - Player's Door
 		.tilesetPointer = 0x82D4AAC, //Tileset 1
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 11)},
-			{10, RGB(31, 31, 10)},
+			{8,  RGB(30, 28, 8)},
+			{9,  RGB(24, 22, 5)},
+			{10, RGB(20, 18, 4)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Pallet Town - House Windows
+		.tilesetPointer = 0x82D4AAC, //Tileset 1
+		.paletteNumToFade = 3,
+		.paletteIndicesToFade =
+		{
+			{10, RGB(30, 28, 8)},
+			{11, RGB(24, 22, 5)},
+			{12, RGB(20, 18, 4)},
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -267,9 +277,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
+			{8,  RGB(30, 28, 8)},
+			{9,  RGB(24, 22, 5)},
+			{10, RGB(20, 18, 4)},
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -278,9 +288,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 20)},
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
+			{8,  RGB(30, 28, 8)},
+			{9,  RGB(24, 22, 5)},
+			{10, RGB(20, 18, 4)},
 			TILESET_PAL_FADE_END
 		},
 	},
