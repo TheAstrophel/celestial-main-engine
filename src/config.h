@@ -39,7 +39,7 @@
 #define FLAG_TWO_OPPONENTS 0x909 //This flag is set by the engine when trainerbattle 0x11 is used to activate a dual opponent battle
 #define FLAG_ACTIVATE_TUTORIAL 0x90A //Setting this flag will allow you to activate Oak's tutorial in any kind of battle (including doubles). Comment this line to remove this feature
 #define FLAG_WILD_CUSTOM_MOVES 0x90B //Setting this flag lets you assign wild Pokemon custom moves
-#define FLAG_SMART_WILD 0x90C //Set this flag is you don't want wild Pokemon to act randomly (useful for one time smarter wild battles). This is cleared at the end of the battle.
+#define FLAG_SMART_WILD 0x90C //Set this flag if you don't want wild Pokemon to act randomly (useful for one time smarter wild battles). This is cleared at the end of the battle.
 #define FLAG_SCALE_WILD_POKEMON_LEVELS 0x90D //If this flag is set, all random wild Pokemon (other than scripted ones) will have their level scaled to the lowest level in the player's party
 #define FLAG_SCALE_TRAINER_LEVELS 0x90E //If this flag is set, all Trainer Pokemon levels will be set to the highest in your party
 #define FLAG_HIDDEN_ABILITY 0x90F //If this flag is set, generated wild Pokemon will have their hidden abilities
