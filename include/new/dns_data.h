@@ -250,7 +250,7 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
-	{ //Palette Town - Player's Door
+	{ //Pallet Town - House Doors
 		.tilesetPointer = 0x82D4AAC, //Tileset 1
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
@@ -272,7 +272,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			TILESET_PAL_FADE_END
 		},
 	},
-	{ //Palette Town - Oak's Lab Windows
+	{ //Pallet Town - Oak's Lab Windows
 		.tilesetPointer = 0x82D4AAC, //Tileset 1
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
