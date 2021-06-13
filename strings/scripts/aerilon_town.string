@@ -1,0 +1,11 @@
+#org @gText_AerilonTown_Mom1
+[BLACK]Mom: [RED][PLAYER]!
+
+#org @gText_AerilonTown_Mom2a
+[RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's Aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Aerilon Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Aerilon Hills[RED].\pHe knows me and your father quite\nwell! You were too little, hehe.\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake these as well!
+
+#org @gText_AerilonTown_Mom2b
+[BLACK][PLAYER] received the Running Shoes\nfrom Mom!
+
+#org @gText_AerilonTown_Mom2c
+[RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [GREEN]B Button [RED]to use\nthem.\pYou can also press the [GREEN]L Button\n[RED]and toggle Auto Run on and off!\pTake care, sweetie!
