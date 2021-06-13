@@ -30,7 +30,7 @@ Fire Punch
 Ice Punch
 
 #org @NAME_THUNDERPUNCH
-ThunderPunch
+Th. Punch
 
 #org @NAME_SCRATCH
 Scratch
@@ -234,7 +234,7 @@ Razor Leaf
 Solar Beam
 
 #org @NAME_POISONPOWDER
-PoisonPowder
+P. Powder
 
 #org @NAME_STUN_SPORE
 Stun Spore
@@ -255,7 +255,7 @@ Dragon Rage
 Fire Spin
 
 #org @NAME_THUNDERSHOCK
-ThunderShock
+Th. Shock
 
 #org @NAME_THUNDERBOLT
 Thunderbolt
@@ -672,13 +672,13 @@ Sacred Fire
 Magnitude
 
 #org @NAME_DYNAMICPUNCH
-DynamicPunch
+Dy. Punch
 
 #org @NAME_MEGAHORN
 Megahorn
 
 #org @NAME_DRAGONBREATH
-DragonBreath
+Drg. Breath
 
 #org @NAME_BATON_PASS
 Baton Pass
@@ -741,7 +741,7 @@ Psych Up
 Extremespeed
 
 #org @NAME_ANCIENTPOWER
-AncientPower
+A. Power
 
 #org @NAME_SHADOW_BALL
 Shadow Ball
@@ -798,7 +798,7 @@ Facade
 Focus Punch
 
 #org @NAME_SMELLINGSALT
-SmellingSalt
+S. Salts
 
 #org @NAME_FOLLOW_ME
 Follow Me
@@ -894,7 +894,7 @@ Luster Purge
 Mist Ball
 
 #org @NAME_FEATHERDANCE
-FeatherDance
+F. Dance
 
 #org @NAME_TEETER_DANCE
 Teeter Dance
@@ -963,7 +963,7 @@ Silver Wind
 Metal Sound
 
 #org @NAME_GRASSWHISTLE
-Grasswhistle
+Gr. Whistle
 
 #org @NAME_TICKLE
 Tickle
@@ -1398,7 +1398,7 @@ Play Rough
 Moonblast
 
 #org @NAME_DRAIN_KISS
-Drain Kiss
+D. Kiss
 
 #org @NAME_DAZZLE_GLEAM
 Dazzle Gleam
@@ -1470,7 +1470,7 @@ Dark Void
 Feint
 
 #org @NAME_PHANTOM_FORCE
-PhantomForce
+Ph. Force
 
 #org @NAME_PETAL_STORM
 Petal Storm
@@ -1593,7 +1593,7 @@ Psystrike
 Autotomize
 
 #org @NAME_DIAMOND_STORM
-DiamondStorm
+D. Storm
 
 #org @NAME_SLUDGE_WAVE
 Sludge Wave
@@ -1623,7 +1623,7 @@ Echoed Voice
 Land's Wrath
 
 #org @NAME_OBLIVIONWING
-OblivionWing
+Ob. Wing
 
 #org @NAME_HEART_SWAP
 Heart Swap
@@ -1698,7 +1698,7 @@ Chatter
 Confide
 
 #org @NAME_WATER_STAR
-Water Star
+W. Shuriken
 
 #org @NAME_MYSTIC_FIRE
 Mystic Fire
@@ -1707,7 +1707,7 @@ Mystic Fire
 Spiky Shield
 
 #org @NAME_EERIEIMPULSE
-EerieImpulse
+E. Impulse
 
 #org @NAME_HOLD_BACK
 Hold Back
@@ -1725,7 +1725,7 @@ Power-Up Hit
 1000 Waves
 
 #org @NAME_PARA_CHARGE
-Para Charge
+Para. Charge
 
 #org @NAME_SEARING_SHOT
 Searing Shot

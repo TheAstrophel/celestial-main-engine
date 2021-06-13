@@ -30,7 +30,7 @@ Fire Punch
 Ice Punch
 
 #org @NAME_LONG_THUNDERPUNCH
-ThunderPunch
+Thunder Punch
 
 #org @NAME_LONG_SCRATCH
 Scratch
@@ -234,7 +234,7 @@ Razor Leaf
 Solar Beam
 
 #org @NAME_LONG_POISONPOWDER
-PoisonPowder
+Poison Powder
 
 #org @NAME_LONG_STUN_SPORE
 Stun Spore
@@ -255,7 +255,7 @@ Dragon Rage
 Fire Spin
 
 #org @NAME_LONG_THUNDERSHOCK
-ThunderShock
+Thunder Shock
 
 #org @NAME_LONG_THUNDERBOLT
 Thunderbolt
@@ -672,13 +672,13 @@ Sacred Fire
 Magnitude
 
 #org @NAME_LONG_DYNAMICPUNCH
-DynamicPunch
+Dynamic Punch
 
 #org @NAME_LONG_MEGAHORN
 Megahorn
 
 #org @NAME_LONG_DRAGONBREATH
-DragonBreath
+Dragon Breath
 
 #org @NAME_LONG_BATON_PASS
 Baton Pass
@@ -741,7 +741,7 @@ Psych Up
 Extremespeed
 
 #org @NAME_LONG_ANCIENTPOWER
-AncientPower
+Ancient Power
 
 #org @NAME_LONG_SHADOW_BALL
 Shadow Ball
@@ -798,7 +798,7 @@ Facade
 Focus Punch
 
 #org @NAME_LONG_SMELLINGSALT
-SmellingSalt
+Smelling Salts
 
 #org @NAME_LONG_FOLLOW_ME
 Follow Me
@@ -894,7 +894,7 @@ Luster Purge
 Mist Ball
 
 #org @NAME_LONG_FEATHERDANCE
-FeatherDance
+Feather Dance
 
 #org @NAME_LONG_TEETER_DANCE
 Teeter Dance
@@ -963,7 +963,7 @@ Silver Wind
 Metal Sound
 
 #org @NAME_LONG_GRASSWHISTLE
-Grasswhistle
+Grass Whistle
 
 #org @NAME_LONG_TICKLE
 Tickle
@@ -1398,7 +1398,7 @@ Play Rough
 Moonblast
 
 #org @NAME_LONG_DRAIN_KISS
-Drain Kiss
+Draining Kiss
 
 #org @NAME_LONG_DAZZLE_GLEAM
 Dazzle Gleam
@@ -1470,7 +1470,7 @@ Dark Void
 Feint
 
 #org @NAME_LONG_PHANTOM_FORCE
-PhantomForce
+Phantom Force
 
 #org @NAME_LONG_PETAL_STORM
 Petal Storm
@@ -1593,7 +1593,7 @@ Psystrike
 Autotomize
 
 #org @NAME_LONG_DIAMOND_STORM
-DiamondStorm
+Diamond Storm
 
 #org @NAME_LONG_SLUDGE_WAVE
 Sludge Wave
@@ -1623,7 +1623,7 @@ Echoed Voice
 Land's Wrath
 
 #org @NAME_LONG_OBLIVIONWING
-OblivionWing
+Oblivion Wing
 
 #org @NAME_LONG_HEART_SWAP
 Heart Swap
@@ -1698,7 +1698,7 @@ Chatter
 Confide
 
 #org @NAME_LONG_WATER_STAR
-Water Star
+Water Shuriken
 
 #org @NAME_LONG_MYSTIC_FIRE
 Mystic Fire
@@ -1707,7 +1707,7 @@ Mystic Fire
 Spiky Shield
 
 #org @NAME_LONG_EERIEIMPULSE
-EerieImpulse
+Eerie Impulse
 
 #org @NAME_LONG_HOLD_BACK
 Hold Back
@@ -1725,7 +1725,7 @@ Power-Up Hit
 1000 Waves
 
 #org @NAME_LONG_PARA_CHARGE
-Para Charge
+Parabolic Charge
 
 #org @NAME_LONG_SEARING_SHOT
 Searing Shot
