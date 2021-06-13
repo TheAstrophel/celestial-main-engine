@@ -4782,6 +4782,11 @@ void atkE5_pickupitemcalculation(void) {
 			case ABILITY_HONEYGATHER:
 				chance = 5 + 5 * udivsi((level - 1), 10);
 				item = ITEM_HONEY;
+				break;
+            
+            default:
+                chance = 0;
+                item = ITEM_NONE;
 		}
 
 		if (Random() % 100 < chance)

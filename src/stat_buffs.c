@@ -50,12 +50,11 @@ bool8 DefiantActivation(void)
 			break;
 
 		case ABILITY_RATTLED:
-			if (gNewBS->intimidateActive)
-				gBattleScripting.statChanger = INCREASE_1 | STAT_STAGE_SPEED;
-			break;
-
-		default:
-			return FALSE;
+            if (gNewBS->intimidateActive)
+                gBattleScripting.statChanger = INCREASE_1 | STAT_STAGE_SPEED;
+            else
+                return FALSE;
+            break;
 	}
 
 	BattleScriptPushCursor();
