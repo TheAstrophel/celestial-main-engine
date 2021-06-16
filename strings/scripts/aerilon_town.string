@@ -1,6 +1,23 @@
+//NPC scripts:
+#org @gText_MainTown_GirlStopFromGoingOut1
+[RED]The wild is dangerous without a\nPok\emon!
+
+#org @gText_MainTown_GirlStopFromGoingOut2
+[RED]I just releazied that the other town\nentrance is completely open!\pThere isn't much use in stopping\nanyone now, haha[.]
+
 //Sign scripts:
 #org @gText_PlayerRoom_PlayerBootUpPC
 [PLAYER] booted up the PC.
+
+#org @gText_PlayerHouse_TV1
+A gameshow is on; a code of some\nsort is on the screen: "687 923".
+
+#org @gText_PlayerHouse_TV2
+The screen shows a Pok\emon. It\nappears to be happy.
+
+//Tile Scripts:
+#org @gText_MainTown_GirlStopping
+[RED]The wild is dangerous without a\nPok\emon!\pDon't even think of going beyond this\npoint without one!
 
 //Level scripts:
 #org @gText_PlayerHouse_Mom1
@@ -19,4 +36,4 @@
 [BLUE][PLAYER]!
 
 #org @gText_MainTown_Aide2
-[BLUE]Your name is [PLAYER], right?\nYour mother told me.\pI'm here on behalf of [GREEN]Professor\nAlmond[BLUE]. The Professor would like to\lmeet you.\pI'll be waiting at the [GREEN]entrance of\nAerilon Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
+[BLUE]Your name is [PLAYER], right?\nYour mother told me your name.\pI'm here on behalf of [GREEN]Professor\nAlmond[BLUE]. The Professor would like to\lmeet you.\pI'll be waiting at the [GREEN]entrance of\nAerilon Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!

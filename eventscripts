@@ -1,6 +1,11 @@
 ##
 //AERILON TOWN:
+npc 3 0 3 NPCScript_MainTown_StoppingFromGoingOutGirl
 sign 4 1 1 SignScript_PlayerRoom_PC
+sign 4 0 0 SignScript_PlayerHouse_TV
+tile 3 0 0 TileScript_GoingOutsideTown
+tile 3 0 1 TileScript_GoingOutsideTown
+tile 3 0 2 TileScript_GoingOutsideTown
 map 3 0 gMapScripts_MainTown
 map 4 0 gMapScripts_PlayerHouse
 
@@ -10,6 +15,15 @@ map 4 0 gMapScripts_PlayerHouse
 
 //MACROS:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
+npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
+npc 3 0 4 NPCTalkingScript_AerilonTown_FatGuy
+npc 3 0 5 NPCTalkingScript_AerilonTown_OldMan
+npc 4 2 0 NPCTalkingScript_AerilonTown_HouseLady
+npc 4 3 0 NPCTalkingScript_AerilonTown_HouseMan
+npc 4 3 1 NPCTalkingScript_AerilonTown_HouseGirl
 sign 4 1 0 SignpostScript_AerilonTown_PlayerRoomNES
 sign 4 1 2 SignpostScript_AerilonTown_PlayerRoomPrettyPic
 sign 4 1 3 SignpostScript_AerilonTown_PlayerRoomPrettyPic
+sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
+sign 3 0 1 SignpostScript_AerilonTown_MainTownSign
+sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence

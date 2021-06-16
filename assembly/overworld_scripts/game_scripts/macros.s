@@ -1,3 +1,5 @@
+# DUPLICATE SCRIPTS HERE
+
 .thumb
 .align 2
 
@@ -6,7 +8,7 @@
 .include "../asm_defines.s"
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Script for macro:
+# Script for macro:
 .macro macromsgbox1 title:req, post:req, type:req
     msgbox \title\post, \type
 .endm
@@ -18,12 +20,15 @@ SignpostScript_\scriptName:
     end
 .endm
 
-#Macro defines:
+# Macro defines:
 signpost AerilonTown_PlayerRoomPrettyPic
 signpost AerilonTown_PlayerRoomNES
+signpost AerilonTown_PlayerHouse
+signpost AerilonTown_MainTownSign
+signpost AerilonTown_AlmondResidence
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Script for macro:
+# Script for macro:
 .macro macromsgbox2 title:req, post:req, type:req
     msgbox \title\post, \type
 .endm
@@ -35,5 +40,11 @@ NPCTalkingScript_\scriptName:
     end
 .endm
 
-#Macro defines:
+# Macro defines:
 npctalking AerilonTown_RockyCliffsBoy
+npctalking AerilonTown_UselessResearchGirl
+npctalking AerilonTown_FatGuy
+npctalking AerilonTown_OldMan
+npctalking AerilonTown_HouseLady
+npctalking AerilonTown_HouseMan
+npctalking AerilonTown_HouseGirl

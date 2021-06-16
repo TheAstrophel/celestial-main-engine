@@ -1,4 +1,4 @@
-#ALL DUPLICATE SCRIPTS IN MACROS.S
+# ALL DUPLICATE SCRIPTS IN MACROS.S
 
 .thumb
 .align 2
@@ -8,22 +8,29 @@
 .include "../asm_defines.s"
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#NPC scripts:
+# NPC scripts:
 
-.global NPCScript_MainTown_RockyCliffsBoy
-NPCScript_MainTown_RockyCliffsBoy:
-	releaseall
+.global NPCScript_MainTown_StoppingFromGoingOutGirl
+NPCScript_MainTown_StoppingFromGoingOutGirl:
+	lock
+	compare 0x4011 0x4
+	if equal _goto OtherMessage
+	msgbox gText_MainTown_GirlStopFromGoingOut1 MSG_FACE
+	end
+	
+OtherMessage:
+	msgbox gText_MainTown_GirlStopFromGoingOut2 MSG_FACE
 	end
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Sign scripts:
+# Sign scripts:
 
 .global SignScript_PlayerRoom_PC
 SignScript_PlayerRoom_PC:
 	special 0x187
 	compare LASTRESULT 0x2
 	if equal _goto EndScript
-	lockall
+	lock
 	setvar 0x8004 0x20
 	special 0x17D
 	setvar 0x8004 0x1
@@ -33,18 +40,52 @@ SignScript_PlayerRoom_PC:
 	special 0xF9
 	waitstate
 	special 0x190
-	releaseall
+	release
 	end
 
 EndScript:
 	releaseall
 	end
+	
+@@@@@@@@@@@@@@@
+	
+.global SignScript_PlayerHouse_TV
+SignScript_PlayerHouse_TV:
+	compare 0x4011 0x2
+	if equal _goto CodeVanish
+	lock
+	msgbox gText_PlayerHouse_TV1 MSG_SIGN
+	end
+	
+CodeVanish:
+	msgbox gText_PlayerHouse_TV2 MSG_SIGN
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Tile scripts:
+# Tile scripts:
+
+.equ GIRL, 4
+
+.global TileScript_GoingOutsideTown
+TileScript_GoingOutsideTown:
+	lock
+	checksound
+	sound 0x15
+	applymovement GIRL m_LookDownExclaim
+	waitmovement 0x0
+	msgbox gText_MainTown_GirlStopping MSG_KEEPOPEN
+	waitmsg
+	closeonkeypress
+	applymovement PLAYER m_StepLeft
+	waitmovement 0x0
+	release
+	end
+
+m_LookDownExclaim: .byte look_down, exclaim, pause_long, pause_long, pause_long, end_m
+m_StepLeft: .byte walk_left_slow, end_m
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Level scripts:
+# Level scripts:
 
 .equ VAR_MAIN_STORY, 0x4011
 .equ MAIN_STORY_WOKE_UP_IN_HOUSE, 0x0
@@ -92,13 +133,13 @@ m_LookUpExclaim: .byte look_up, exclaim, end_m
 m_MomMoveToPlayer: .byte walk_right, walk_right, walk_up, end_m
 m_MomMoveBackToSpot: .byte walk_down, walk_left, walk_left, end_m
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@
 
 .equ VAR_MAIN_STORY, 0x4011
 .equ MAIN_STORY_LEAVE_HOUSE_TOWN, 0x1
 .equ MAIN_STORY_TALKED_TO_PROF_AIDE_TOWN, 0x2
 
-.equ PROF_AIDE, 4
+.equ PROF_AIDE, 2
 
 .global gMapScripts_MainTown
 gMapScripts_MainTown:
@@ -127,7 +168,7 @@ LevelScript_MainTown:
 	applymovement PROF_AIDE m_WalkRightFromPlayer
 	waitmovement 0x0
 	pause 0x1E
-	hidesprite 0x4
+	hidesprite 0x2
 	setflag 0x1FF
 	setvar VAR_MAIN_STORY, MAIN_STORY_TALKED_TO_PROF_AIDE_TOWN
 	releaseall
@@ -138,5 +179,5 @@ m_WalkLeftToPlayer: .byte walk_left, walk_left, walk_left, walk_left, walk_left,
 m_WalkRightFromPlayer: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
 
 MapEntryScript_MainTown:
-    setworldmapflag 0x890
+	setworldmapflag 0x890
 	end
