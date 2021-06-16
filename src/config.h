@@ -27,7 +27,7 @@
 #define VAR_PARTNER_BACKSPRITE 0x5012 //Set this to the var used to store the backsprite number of your partner in Multi Battles (can be any free var)
 
 /*===== General Flags =====*/
-#define FLAG_INVERSE 0x900 //Set this flag for all battles to become Inverse Battles
+//#define FLAG_INVERSE 0x900 //Set this flag for all battles to become Inverse Battles
 #define FLAG_SKY_BATTLE 0x901 //Set this flag to indicate the Sky Battle rules should be followed in the next battle.
 #define FLAG_NO_CATCHING 0x902 //The player cannot catch Pokemon in battles when this flag is set
 #define FLAG_NO_RUNNING 0x903 //The player cannot run in battles when this flag is set
