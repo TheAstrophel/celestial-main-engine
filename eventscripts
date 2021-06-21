@@ -1,5 +1,5 @@
 ##
-//AERILON TOWN:
+//Aerilon Town:
 npc 3 0 3 NPCScript_MainTown_StoppingFromGoingOutGirl
 sign 4 1 1 SignScript_PlayerRoom_PC
 sign 4 0 0 SignScript_PlayerHouse_TV
@@ -9,11 +9,12 @@ tile 3 0 2 TileScript_GoingOutsideTown
 map 3 0 gMapScripts_MainTown
 map 4 0 gMapScripts_PlayerHouse
 
-//AERILON HILLS:
+//Aerilon Hills:
+map 15 0 gMapScripts_AlmondLab
 
-//GOLDTREE VILLAGE:
+//Goldtree Village:
 
-//MACROS:
+//Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
 npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
 npc 3 0 4 NPCTalkingScript_AerilonTown_FatGuy

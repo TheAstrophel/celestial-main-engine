@@ -84,6 +84,18 @@ TileScript_GoingOutsideTown:
 m_LookDownExclaim: .byte look_down, exclaim, pause_long, pause_long, pause_long, end_m
 m_StepLeft: .byte walk_left_slow, end_m
 
+@@@@@@@@@@@@@@@
+
+.global TileScript_Test
+TileScript_Test:
+	lock
+	givepokemon 0x115 0x6 0x0 0x0 0x0 0x0
+	givepokemon 0x1C1 0x4 0x0 0x0 0x0 0x0
+	givepokemon 0x120 0x6 0x0 0x0 0x0 0x0
+	setflag 0x828
+	release
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Level scripts:
 
