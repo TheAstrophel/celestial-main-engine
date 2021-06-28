@@ -1,0 +1,43 @@
+.equ PROF_AIDE, 1
+.equ VAR_EXTRA, 51FF
+
+.global TileScript_GoingToObservatory
+TileScript_GoingToObservatory:
+	compare VAR_EXTRA 0x1
+	if equal _goto AlreadyDoneAndTalkingAgain
+	lock
+	sound 0x15
+	applymovement PROF_AIDE m_LookAtPlayerExclaim
+	waitmovement 0x0
+	applymovement PROF_AIDE m_WalkTowardsPlayer
+	waitmovement 0x0
+	spriteface PLAYER RIGHT
+	msgbox 0x8726784 MSG_KEEPOPEN '"[blue_fr]Ah, [player]! There you a..."
+	waitmsg
+	msgbox 0x8726921 MSG_YESNO '"[blue_fr]So, shall we get going?"
+	compare LASTRESULT 0x1
+	if 0x1 goto 0x8725162
+	compare LASTRESULT 0x0
+	if 0x1 goto 0x87251BA
+	release
+	end
+	
+AlreadyDone:
+	lock
+	sound 0x15
+	applymovement 0x7 @move1
+	waitmovement 0x0
+	applymovement 0x7 @move2
+	waitmovement 0x0
+	applymovement 0xFF @move3
+	waitmovement 0x0
+	msgbox @msgextra1 0x4
+	waitmsg
+	msgbox @msg2 0x5
+	compare 0x800D 0x1
+	if 0x1 goto @yes
+	compare 0x800D 0x0
+	if 0x1 goto @no
+	setvar VAR_EXTRA 0x1
+	release
+	end
