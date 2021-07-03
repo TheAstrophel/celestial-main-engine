@@ -1,43 +1,137 @@
+AerilonHillsAideTileScript (ALREADY DONE):
+
 .equ PROF_AIDE, 1
-.equ VAR_EXTRA, 51FF
+.equ VAR_EXTRA, 51FD
+.equ VAR_TEMP_1, 51FE
+.equ VAR_TEMP_2, 51FF
 
 .global TileScript_GoingToObservatory
 TileScript_GoingToObservatory:
-	compare VAR_EXTRA 0x1
-	if equal _goto AlreadyDoneAndTalkingAgain
+	_goto MainScript
+	
+MainScript:
 	lock
 	sound 0x15
 	applymovement PROF_AIDE m_LookAtPlayerExclaim
 	waitmovement 0x0
-	applymovement PROF_AIDE m_WalkTowardsPlayer
-	waitmovement 0x0
+	getplayerpos VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 0x1D #X-Pos equals 0x1D
+	if equal _call MoveForScriptOnLeft1
+	compare VAR_TEMP_1, 0x1F #X-Pos equals 0x1F
+	if equal _call MoveForScriptOnMiddle1
+	compare VAR_TEMP_2, 0x35 #Y-Pos equals 0x35
+	if equal _call MoveForScriptOnRight1
 	spriteface PLAYER RIGHT
-	msgbox 0x8726784 MSG_KEEPOPEN '"[blue_fr]Ah, [player]! There you a..."
+	compare VAR_EXTRA 0x1
+	if equal _goto AlreadyDoneAndTalkingAgain
+	msgbox gText_AerilonHills_ProfAideGreetingPlayer MSG_KEEPOPEN
 	waitmsg
-	msgbox 0x8726921 MSG_YESNO '"[blue_fr]So, shall we get going?"
+	msgbox gText_AerilonHills_ProfAideAskQuestion MSG_YESNO
 	compare LASTRESULT 0x1
-	if 0x1 goto 0x8725162
+	if equal _goto Yes
 	compare LASTRESULT 0x0
-	if 0x1 goto 0x87251BA
+	if equal _goto No
 	release
 	end
 	
-AlreadyDone:
-	lock
-	sound 0x15
-	applymovement 0x7 @move1
+m_LookAtPlayerExclaim: .byte look_left, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
+
+MoveForScriptOnLeft1:
+	applymovement PROF_AIDE m_WalkTowardsPlayerWhenPlayerLeft
 	waitmovement 0x0
-	applymovement 0x7 @move2
+	return
+
+m_WalkTowardsPlayerWhenPlayerLeft: .byte walk_left, walk_left, end_m
+
+MoveForScriptOnMiddle1:
+	applymovement PROF_AIDE m_WalkTowardsPlayerWhenPlayerMiddle
 	waitmovement 0x0
-	applymovement 0xFF @move3
+	return
+	
+m_WalkTowardsPlayerWhenPlayerMiddle: .byte walk_left, end_m
+	
+MoveForScriptOnRight1:
+	spriteface PROF_AIDE, LEFT
+	return
+	
+Yes:
+	lockall
+	playsong 0x12E 0x0
+	msgbox gText_AerilonHills_ProfAideTalked MSG_KEEPOPEN
+	closeonkeypress
+	compare VAR_TEMP_1, 0x1D #X-Pos equals 0x1D
+	if equal _call MoveForScriptOnLeft2
+	compare VAR_TEMP_1, 0x1F #X-Pos equals 0x1F
+	if equal _call MoveForScriptOnMiddle2
+	compare VAR_TEMP_2, 0x35 #Y-Pos equals 0x35
+	if equal _call MoveForScriptOnRight2
+	setdooropened 0x2F 0x2B
+	doorchange
+	applymovement PROF_AIDE m_ProfAideEnterLab
+	applymovement PLAYER m_PlayerEnterLab
 	waitmovement 0x0
-	msgbox @msgextra1 0x4
+	setdoorclosed 0x2F 0x2B
+	doorchange
+	hidesprite PROF_AIDE
+	setvar VAR_EXTRA, 0
+	setvar VAR_TEMP_1, 0
+	setvar VAR_TEMP_2, 0
+	setflag 0x200 #PROF_AIDE "Person ID" in A-Map
+	setflag 0x4001 #Set so song doesn't end
+	warp 0xF 0x0 0x1 0xE 0xD
+	waitstate
+	releaseall
+	end
+	
+MoveForScriptOnLeft2
+	applymovement PROF_AIDE m_AideWalkToLabWhenPlayerLeft
+	applymovement PLAYER m_FollowingAideWhenLeft
+	waitmovement 0x0
+	return
+	
+m_AideWalkToLabWhenPlayerLeft: .byte walk_up, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, walk_up, end_m
+
+m_FollowingAideWhenLeft: .byte walk_right, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, end_m
+	
+MoveForScriptOnMiddle2:
+	applymovement PROF_AIDE m_AideWalkToLabWhenPlayerMiddle
+	applymovement PLAYER m_FollowingAideWhenMiddle
+	waitmovement 0x0
+	return
+	
+m_AideWalkToLabWhenPlayerMiddle: .byte walk_up, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, walk_up, end_m
+
+m_FollowingAideWhenMiddle: .byte walk_right, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, end_m
+	
+MoveForScriptOnRight2:
+	applymovement PROF_AIDE m_AideWalkToLabWhenPlayerRight
+	applymovement PLAYER m_FollowingAideWhenRight
+	waitmovement 0x0
+	return
+
+m_AideWalkToLabWhenPlayerRight: .byte walk_left, walk_up, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, walk_up, end_m
+
+m_FollowingAideWhenRight: .byte walk_left_slow, look_right, walk_right, walk_up, walk_up, walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, 
+walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right,
+walk_up, walk_right, walk_right, walk_right, walk_up, walk_up, end_m
+
+AlreadyDoneAndTalkingAgain:
+	msgbox gText_AerilonHills_TalkingToProfAideAgain MSG_KEEPOPEN
 	waitmsg
-	msgbox @msg2 0x5
-	compare 0x800D 0x1
-	if 0x1 goto @yes
-	compare 0x800D 0x0
-	if 0x1 goto @no
-	setvar VAR_EXTRA 0x1
+	msgbox gText_AerilonHills_ProfAideAskQuestion MSG_YESNO
+	compare LASTRESULT 0x1
+	if equal _goto Yes
+	compare LASTRESULT 0x0
+	if equal _goto No
 	release
 	end

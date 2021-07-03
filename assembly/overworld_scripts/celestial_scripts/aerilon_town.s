@@ -13,7 +13,7 @@
 .global NPCScript_MainTown_StoppingFromGoingOutGirl
 NPCScript_MainTown_StoppingFromGoingOutGirl:
 	lock
-	compare 0x4011 0x4
+	compare 0x4011 0x3
 	if equal _goto OtherMessage
 	msgbox gText_MainTown_GirlStopFromGoingOut1 MSG_FACE
 	end

@@ -10,6 +10,9 @@ map 3 0 gMapScripts_MainTown
 map 4 0 gMapScripts_PlayerHouse
 
 //Aerilon Hills:
+tile 3 20 0 TileScript_GoingToObservatory
+tile 3 20 1 TileScript_GoingToObservatory
+tile 3 20 2 TileScript_GoingToObservatory
 map 15 0 gMapScripts_AlmondLab
 
 //Goldtree Village:
