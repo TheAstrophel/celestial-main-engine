@@ -135,3 +135,7 @@ AlreadyDoneAndTalkingAgain:
 	if equal _goto No
 	release
 	end
+
+==============================================
+
+BPRE0 ROM is a little ahead of official ROM.
