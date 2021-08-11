@@ -1,31 +1,28 @@
-//Tile scripts:
-#org @gText_AerilonHills_ProfAideGreetingPlayer
-[BLUE]Ah, [PLAYER]! There you are!\nI'm glad you didn't take long.\pNow, as said, I'll tell you why\nthe Professor has called for you.\pYou see, the Professor needs help,\nand he thought you'd happily do it.\pThe Professor wants you to [GREEN]deliver a\nparcel for him[BLUE].\pNow, he could've sent any aide of his\nfor this, but he has called you in\lfor another reason.\pThat, however, is something the\nProfessor will tell you himself.
+//Master map:
+#org @gText_AerilonHills_ProfAide_01
+[BLACK]Aide: [BLUE]Ah, [PLAYER]! There you are!\nI'm glad you didn't take long.\pNow, as said, I'll tell you why\nthe Professor has called for you.\pYou see, the Professor needs help,\nand he thought you'd happily do it.\pThe Professor wants you to [GREEN]deliver a\nparcel for him[BLUE].\pNow, he could've sent any aide of his\nfor this, but he has called you in\lfor another reason.\pThat, however, is something the\nProfessor will tell you himself.\pSo, shall we get going?
 
-#org @gText_AerilonHills_ProfAideAskQuestion
-[BLUE]So, shall we get going?
-
-#org @gText_AerilonHills_ProfAideTalkedWhenSayYes
+#org @gText_AerilonHills_ProfAide_02
 [BLUE]Great! Just follow me!
 
-#org @gText_AerilonHills_ProfAideTalkedWhenSayNo
+#org @gText_AerilonHills_ProfAide_03
 [BLUE]Oh, you need more time?\nI can understand that.\pCome back to me when you're ready\nto go, [PLAYER].
 
-#org @gText_AerilonHills_TalkingToProfAideAgain
-[BLUE]Hello again, [PLAYER]! Back so soon,\neh?
+#org @gText_AerilonHills_ProfAide_04
+[BLACK]Aide: [BLUE]Hello again, [PLAYER]! Back so soon,\neh?
 
-//Level scripts:
-#org @gText_AlmondLab_Aide1
+//Sub-maps:
+#org @gText_AerilonHills_AlmondObservatory_Aide_01
 [BLACK]Aide: [BLUE]Excuse me, Professor. I've\nbrought [PLAYER], as you insisted.
 
-#org @gText_AlmondLab_Prof1
+#org @gText_AerilonHills_AlmondObservatory_Prof_01
 [BLACK]Professor Almond: [BLUE]Ah, excellent!\nThank you, Simon. You may leave.
 
-#org @gText_AlmondLab_Aide2
+#org @gText_AerilonHills_AlmondObservatory_Aide_02
 [BLACK]Aide: [BLUE]No problem at all, Professor.
 
-#org @gText_AlmondLab_Aide3
-[BLUE]If you'll excuse me,\n[PLAYER][.]
+#org @gText_AerilonHills_AlmondObservatory_Aide_03
+[BLUE]If you'll excuse me, [PLAYER][.]
 
-#org @gText_AlmondLab_Prof2
+#org @gText_AerilonHills_AlmondObservatory_Prof_02
 [BLACK]Professor Almond: [BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in Aerilon Town!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random trainer, right?\pYou, my dear boy, are an exceptional\ncase.\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
