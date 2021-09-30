@@ -11,10 +11,12 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 #Goldtree Village:
 
 #Aerilon Hills:
+npc 15 0 2 NPCScript_AerilonHills_AlmondLab_SecondAide
 tile 3 20 0 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 tile 3 20 1 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 tile 3 20 2 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 map 15 0 gMapScripts_AerilonHills_AlmondObservatory
+map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
@@ -24,9 +26,13 @@ npc 3 0 5 NPCTalkingScript_AerilonTown_OldMan
 npc 4 2 0 NPCTalkingScript_AerilonTown_HouseLady
 npc 4 3 0 NPCTalkingScript_AerilonTown_HouseMan
 npc 4 3 1 NPCTalkingScript_AerilonTown_HouseGirl
-sign 4 1 0 SignpostScript_AerilonTown_PlayerRoomNES
-sign 4 1 2 SignpostScript_AerilonTown_PlayerRoomPrettyPic
-sign 4 1 3 SignpostScript_AerilonTown_PlayerRoomPrettyPic
+npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
+npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
+npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
+npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
+sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
+sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
+sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
-sign 3 0 1 SignpostScript_AerilonTown_MainTownSign
+sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence

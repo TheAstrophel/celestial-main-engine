@@ -1,14 +1,14 @@
 //Aerilon Town:
-#org @gText_AerilonTown_PlayerRoomPrettyPicSign
+#org @gText_AerilonTown_PlayerRoom_PrettyPictureSign
 It is a pretty picture of a happy\nPok\emon.
 
-#org @gText_AerilonTown_PlayerRoomNESSign
+#org @gText_AerilonTown_PlayerRoom_GameConsoleSign
 [PLAYER] played with the NES.\p[.]Okay!\nIt's time to go!
 
 #org @gText_AerilonTown_PlayerHouseSign
 [PLAYER]'s house
 
-#org @gText_AerilonTown_MainTownSignSign
+#org @gText_AerilonTown_MainTownSign
 Aerilon Town\n"The Mountainside Gold-Grey Haven".
 
 #org @gText_AerilonTown_AlmondResidenceSign
@@ -34,3 +34,16 @@ Almond Residence
 
 #org @gText_AerilonTown_HouseGirlNPC
 [RED]My daddy says you should treat\nevery Pok\emon with love.
+
+//Aerilon Hills:
+#org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
+[BLUE]Working in an Observatory is amazing!\nYou'll see things you didn't even\lknow existed!
+
+#org @gText_AerilonHills_AlmondObservatory_ThirdAideNPC
+[BLUE]Space is really fascinating. It's so\nbig that even a million Sun's can't\lfill up the whole solar system, let\lalone the entire cosmos!
+
+#org @gText_AerilonHills_AlmondObservatory_FourthAideNPC
+[BLUE]I love Pok\emon that are uncommon and\nmake other Trainers jealous.\pI can say we have quite a few of\nthem in the zoological garden.
+
+#org @gText_AerilonHills_AlmondObservatory_FifthAideNPC
+[BLUE]Wild Pikachu inhabit Aerilon Hills.\nI hear they're hard to capture.

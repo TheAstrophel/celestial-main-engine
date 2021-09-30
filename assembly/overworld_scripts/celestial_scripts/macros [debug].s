@@ -8,7 +8,7 @@
 .include "../asm_defines.s"
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# Script for macro:
+#Script for macro:
 .macro macromsgbox1 title:req, post:req, type:req
     msgbox \title\post, \type
 .endm
@@ -20,15 +20,15 @@ SignpostScript_\scriptName:
     end
 .endm
 
-# Macro defines:
-signpost AerilonTown_PlayerRoomPrettyPic
-signpost AerilonTown_PlayerRoomNES
+#Macro defines:
+signpost AerilonTown_PlayerRoom_PrettyPicture
+signpost AerilonTown_PlayerRoom_GameConsole
 signpost AerilonTown_PlayerHouse
-signpost AerilonTown_MainTownSign
+signpost AerilonTown_MainTown
 signpost AerilonTown_AlmondResidence
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# Script for macro:
+#Script for macro:
 .macro macromsgbox2 title:req, post:req, type:req
     msgbox \title\post, \type
 .endm
@@ -40,7 +40,7 @@ NPCTalkingScript_\scriptName:
     end
 .endm
 
-# Macro defines:
+#Macro defines:
 npctalking AerilonTown_RockyCliffsBoy
 npctalking AerilonTown_UselessResearchGirl
 npctalking AerilonTown_FatGuy
@@ -48,3 +48,7 @@ npctalking AerilonTown_OldMan
 npctalking AerilonTown_HouseLady
 npctalking AerilonTown_HouseMan
 npctalking AerilonTown_HouseGirl
+npctalking AerilonHills_AlmondObservatory_FirstAide
+npctalking AerilonHills_AlmondObservatory_ThirdAide
+npctalking AerilonHills_AlmondObservatory_FourthAide
+npctalking AerilonHills_AlmondObservatory_FifthAide

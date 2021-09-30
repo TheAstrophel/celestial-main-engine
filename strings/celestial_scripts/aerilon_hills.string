@@ -9,9 +9,12 @@
 [BLUE]Oh, you need more time?\nI can understand that.\pCome back to me when you're ready\nto go, [PLAYER].
 
 #org @gText_AerilonHills_ProfAide_04
-[BLACK]Aide: [BLUE]Hello again, [PLAYER]! Back so soon,\neh?
+[BLACK]Aide: [BLUE]Hello again, [PLAYER]! Back so\nsoon, eh? Ready to go?
 
 //Sub-maps:
+#org @gText_AerilonHills_AlmondObservatory_SecondAide
+[BLACK]He seems too focused on the\ncomputer screen to notice you[.]
+
 #org @gText_AerilonHills_AlmondObservatory_Aide_01
 [BLACK]Aide: [BLUE]Excuse me, Professor. I've\nbrought [PLAYER], as you insisted.
 
@@ -26,3 +29,21 @@
 
 #org @gText_AerilonHills_AlmondObservatory_Prof_02
 [BLACK]Professor Almond: [BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in Aerilon Town!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random trainer, right?\pYou, my dear boy, are an exceptional\ncase.\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_01
+[BLACK]Professor Almond: [BLUE]Sup.
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_01
+[BLACK]???: [BLUE]Sup.
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_02
+[BLACK]Professor Almond: [BLUE]Sup.
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_03
+[BLACK]Professor Almond: [BLUE]Sup.
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ConfirmRivalName
+[BLACK]Name him [GREEN][RIVAL][BLACK]?
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_02
+[BLACK][RIVAL]: [BLUE]Sup.
