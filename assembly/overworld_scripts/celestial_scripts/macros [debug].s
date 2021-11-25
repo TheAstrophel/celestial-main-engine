@@ -26,6 +26,9 @@ signpost AerilonTown_PlayerRoom_GameConsole
 signpost AerilonTown_PlayerHouse
 signpost AerilonTown_MainTown
 signpost AerilonTown_AlmondResidence
+signpost AerilonHills_MainRoute
+signpost AerilonHills_AlmondObservatory
+signpost AerilonPass_MainRoute
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #Script for macro:
@@ -52,3 +55,8 @@ npctalking AerilonHills_AlmondObservatory_FirstAide
 npctalking AerilonHills_AlmondObservatory_ThirdAide
 npctalking AerilonHills_AlmondObservatory_FourthAide
 npctalking AerilonHills_AlmondObservatory_FifthAide
+npctalking AerilonHills_AlmondObservatory_SixthAide
+npctalking AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmond
+npctalking AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival
+npctalking AerilonPass_OranBerryBoy
+npctalking AerilonPass_TallGrassGirl

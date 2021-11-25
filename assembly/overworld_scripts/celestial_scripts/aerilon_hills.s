@@ -67,8 +67,8 @@ PlayerSaysYes:
 	waitdooranim
 	hidesprite PROF_AIDE
 	setvar VAR_EXTRA, 0 @Will be used later in other scripts
-	setvar VAR_TEMP_1, 0
-	setvar VAR_TEMP_2, 0
+	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
+	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
 	setvar VAR_MAIN_STORY, MAIN_STORY_WARPED_TO_OBSERVATORY
 	setflag 0x200 @Person ID of Aide in A-Map
 	setflag 0x4001 @Set so song does not stop
@@ -151,27 +151,304 @@ m_Leaving: .byte walk_down_very_slow, end_m
 m_ProfAideGoingToOriginalPositionIfScriptNumberZero: .byte walk_right, walk_right, end_m
 m_ProfAideGoingToOriginalPositionIfScriptNumberOne: .byte walk_right, end_m
 
+@;////////////////////////////////////////////////
+
+.equ RIVAL, 2
+.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_TEMP_1, 0x51FE
+.equ VAR_TEMP_2, 0x51FF
+.equ MAIN_STORY_MET_RIVAL_OUTSIDE_OBSERVATORY, 0x5
+
+.global TileScript_AerilonHills_RivalOutsideObservatory
+TileScript_AerilonHills_RivalOutsideObservatory:
+	showsprite RIVAL
+	clearflag 0x1FF @Person ID of Rival in A-Map
+	getplayerpos VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_2, 0x2E @Y-Pos equals 0x2E
+	if equal _call SetRivalPosition01
+	compare VAR_TEMP_2, 0x2F @Y-Pos equals 0x2F
+	if equal _call SetRivalPosition02
+	compare VAR_TEMP_2, 0x30 @Y-Pos equals 0x30
+	if equal _call SetRivalPosition03
+	compare VAR_TEMP_2, 0x31 @Y-Pos equals 0x31
+	if equal _call SetRivalPosition04
+	goto RivalMeetsPlayer
+
+SetRivalPosition01:
+	movesprite RIVAL, 0x1F 0x2E
+	return
+
+SetRivalPosition02:
+	movesprite RIVAL, 0x1F 0x2F
+	return
+
+SetRivalPosition03:
+	movesprite RIVAL, 0x1F 0x30
+	return
+
+SetRivalPosition04:
+	movesprite RIVAL, 0x1F 0x31
+	return
+
+RivalMeetsPlayer:
+	lock
+	pause 0x5
+	playsong 0x13B 0x0
+	applymovement RIVAL, m_StepRightTowardsPlayer
+	waitmovement 0x0
+	msgbox gText_AerilonHills_Rival_01, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement RIVAL, m_RivalLeaves
+	waitmovement 0x0
+	pause 0x1E
+	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
+	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
+	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_OUTSIDE_OBSERVATORY
+	hidesprite RIVAL
+	setflag 0x1FF @Person ID of Rival in A-Map
+	fadedefault
+	release
+	end
+
+m_StepRightTowardsPlayer: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
+m_RivalLeaves: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
 .global NPCScript_AerilonHills_AlmondObservatory_SecondAide @Could not include in macros
-NPCScript_AerilonHills_AlmondLab_SecondAide:
+NPCScript_AerilonHills_AlmondObservatory_SecondAide:
 	lock
 	msgbox gText_AerilonHills_AlmondObservatory_SecondAide, MSG_SIGN
 	end
 
 @;////////////////////////////////////////////////
 
+.equ TREECKO, 1
+.equ TORCHIC, 2
+.equ MUDKIP, 3
 .equ PROF, 4
 .equ RIVAL, 5
+.equ FLAG_TREECKO, 0x28
+.equ FLAG_TORCHIC, 0x29
+.equ FLAG_MUDKIP, 0x2A
 .equ VAR_MAIN_STORY, 0x4011
+.equ VAR_STARTER_MON, 0x51F0
+.equ VAR_TEMP_1, 0x51FE
+.equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_RECEIVED_STARTER, 0x4
 
 .global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
+	lock
+	faceplayer
+	compare VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
+	if greaterorequal _goto LastStarter
+	getplayerpos VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 0x3 @X-Pos equals 0x3
+	if equal _call FirstStarter
+	compare VAR_TEMP_1, 0x4 @X-Pos equals 0x4
+	if equal _call FirstStarter
+	compare VAR_TEMP_1, 0x5 @X-Pos equals 0x5
+	if equal _call SecondStarter
+	compare VAR_TEMP_1, 0x6 @X-Pos equals 0x6
+	if equal _call ThirdStarter
+	compare VAR_TEMP_1, 0x7 @X-Pos equals 0x7
+	if equal _call ThirdStarter
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement PROF, m_ProfLeavesOffice
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite PROF
+	setmaptile 0x5 0x7 0x89 0x0
+	special 0x8E
+	pause 0x1E
 	setvar VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
-	setflag 0x1FF @Is the person ID of Aide in [3.0] and Professor in [15.0/15.1]; set so all stay invisible
-	setflag 0x200 @Is the person ID of Aide in [3.20] and Rival in [15.1]; set so both stay invisible
+	setflag 0x1FF @Person ID of Professor in A-Map
+	setflag 0x200 @Person ID of  Rival in A-Map
 	end
+
+m_ProfLeavesOffice: .byte walk_left, walk_left, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m
+
+FirstStarter:
+	setvar VAR_STARTER_MON, 0x1
+	spriteface PROF, LEFT
+	showpokepic 0x115 0xA 0x3
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TreeckoPrompt, MSG_YESNO
+	compare LASTRESULT 0x0
+	if equal _goto ReleaseEnd
+	hidepokepic
+	hidesprite LASTTALKED
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	setflag 0x828
+	givepokemon 0x115 0x5 0x0 0x0 0x0 0x0 @Treecko
+	bufferpokemon 0x0 0x115
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	compare LASTRESULT 0x1
+	if equal _call NicknameStarter
+	closeonkeypress
+	applymovement RIVAL, m_MoveTowardsTorchic
+	waitmovement 0x0
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN
+	closeonkeypress
+	hidesprite TORCHIC
+	bufferpokemon 0x0 0x118
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	spriteface RIVAL, LEFT
+	spriteface PLAYER, RIGHT
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement RIVAL, m_LeaveOfficeWithTorchic
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite RIVAL
+	pause 0x1E
+	setflag FLAG_TREECKO
+	setflag FLAG_TORCHIC
+	return
+
+m_MoveTowardsTorchic: .byte walk_left, walk_left, walk_up, walk_up, end_m
+m_LeaveOfficeWithTorchic: .byte walk_down, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m
+
+SecondStarter:
+	setvar VAR_STARTER_MON, 0x2
+	spriteface PROF, LEFT
+	showpokepic 0x118 0xA 0x3
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt, MSG_YESNO
+	compare LASTRESULT 0x0
+	if equal _goto ReleaseEnd
+	hidepokepic
+	hidesprite LASTTALKED
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	setflag 0x828
+	givepokemon 0x118 0x5 0x0 0x0 0x0 0x0 @Torchic
+	bufferpokemon 0x0 0x118
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	compare LASTRESULT 0x1
+	if equal _call NicknameStarter
+	closeonkeypress
+	applymovement RIVAL, m_MoveTowardsMudkip
+	waitmovement 0x0
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN
+	closeonkeypress
+	hidesprite MUDKIP
+	bufferpokemon 0x0 0x11B
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	spriteface RIVAL, LEFT
+	spriteface PLAYER, RIGHT
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement RIVAL, m_LeaveOfficeWithMudkip
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite RIVAL
+	pause 0x1E
+	setflag FLAG_TORCHIC
+	setflag FLAG_MUDKIP
+	return
+
+m_MoveTowardsMudkip: .byte walk_left, walk_up, walk_up, end_m
+m_LeaveOfficeWithMudkip: .byte walk_down, walk_down, walk_down, walk_left, walk_down, pause_long, walk_down_onspot, end_m
+
+ThirdStarter:
+	setvar VAR_STARTER_MON, 0x3
+	spriteface PROF, UP
+	showpokepic 0x11B 0xA 0x3
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_MudkipPrompt, MSG_YESNO
+	compare LASTRESULT 0x0
+	if equal _goto ReleaseEnd
+	hidepokepic
+	hidesprite LASTTALKED
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	setflag 0x828
+	givepokemon 0x11B 0x5 0x0 0x0 0x0 0x0 @Mudkip
+	bufferpokemon 0x0 0x11B
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	compare LASTRESULT 0x1
+	if equal _call NicknameStarter
+	closeonkeypress
+	applymovement RIVAL, m_MoveTowardsTreecko
+	waitmovement 0x0
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN
+	closeonkeypress
+	hidesprite TREECKO
+	bufferpokemon 0x0 0x115
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	waitmsg
+	fanfare 0x13E
+	waitfanfare
+	spriteface RIVAL, RIGHT
+	spriteface PLAYER, LEFT
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement RIVAL, m_LeaveOfficeWithTreecko
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite RIVAL
+	pause 0x1E
+	spriteface PLAYER, DOWN
+	spriteface PROF, UP
+	setflag FLAG_MUDKIP
+	setflag FLAG_TREECKO
+	return
+
+m_MoveTowardsTreecko: .byte walk_left, walk_left, walk_left, walk_up, walk_up, end_m
+m_LeaveOfficeWithTreecko: .byte walk_down, walk_down, walk_right, walk_down, walk_down, pause_long, walk_down_onspot, end_m
+
+ReleaseEnd:
+	hidepokepic
+	release
+	end
+
+NicknameStarter:
+	fadescreen 0x1
+	special 0x9E
+	waitstate
+	return
+
+LastStarter:
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_LastStarter, MSG_FACE
+	release
+	end
+
+#Tile scripts:
+.equ PROF, 4
+
+.global TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave @Before receiving starter
+TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave:
+	lock
+	spriteface PROF, DOWN
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeavePrompt, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement PLAYER, m_WalkUp
+	waitmovement 0x0
+	spriteface PROF, LEFT
+	release
+	end
+
+m_WalkUp: .byte walk_up_very_slow, pause_short, end_m
 
 #Level scripts:
 .equ PROF, 1
@@ -248,7 +525,7 @@ MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
 	spriteface PROF_AIDE, UP
 	movesprite2 PROF_AIDE, 0xA 0xD
 	playsong2 0x12E
-	clearflag 0x1FF @Is the person ID of Aide in [3.0]; cleared since Professor Almond in [15.0/15.1] uses it too
+	clearflag 0x1FF @Person ID Professor Almond in A-Map
 	return
 
 @;////////////////////////////////////////////////
@@ -261,8 +538,20 @@ MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
 
 .global gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor:
+	mapscript MAP_SCRIPT_ON_LOAD SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
 	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
+	mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE SecondaryLevelScripts_AlmondObservatory_OfficeOfProfessor
 	.byte MAP_SCRIPT_TERMIN
+
+.global SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
+SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
+	compare VAR_MAIN_STORY, MAIN_STORY_GOING_TO_GET_STARTER
+	if greaterorequal _call SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_DoorMat
+	end
+
+SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_DoorMat:
+	setmaptile 0x5 0x7 0x89 0x0
+	end
 
 LevelScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	levelscript VAR_MAIN_STORY, MAIN_STORY_RECEIVING_STARTER, LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
@@ -274,9 +563,20 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	waitmovement 0x0
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_01, MSG_KEEPOPEN
 	closeonkeypress
+	checksound
+	sound 0x15
+	applymovement PLAYER, m_Exclaim
+	waitmovement 0x0
+	pause 0x50
+	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_02
+	waitmsg
+	pause 0x3A
+	closeonkeypress
+	pause 0x5
+	playsong 0x13B 0x0
 	showsprite RIVAL
 	spriteface RIVAL, UP
-	clearflag 0x200 @Is the person ID of Aide in [3.20]; cleared since Rival in [15.1] uses it too
+	clearflag 0x200 @Person ID of Rival in A-Map
 	checksound
 	sound 0x9
 	pause 0x20
@@ -286,13 +586,16 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_01, MSG_KEEPOPEN
 	closeonkeypress
 	pause 0x20
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_02, MSG_KEEPOPEN
-	closeonkeypress
-	spriteface PROF, DOWN
-	pause 0x20
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_03, MSG_KEEPOPEN
 	closeonkeypress
+	fadedefault
+	spriteface PROF, DOWN
+	pause 0x20
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_04, MSG_KEEPOPEN
+	closeonkeypress
 	call NamingRival
+	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_05, MSG_KEEPOPEN
+	closeonkeypress
 	applymovement PROF, m_StepRightAndLookLeft
 	waitmovement 0x0
 	applymovement RIVAL, m_StepInfrontOfPlayer
@@ -307,6 +610,7 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	end
 
 m_MoveUpTowardsProfessor: .byte walk_up, walk_up, end_m
+m_Exclaim: .byte exclaim, end_m
 m_WalkTowardsPlayerAndProfessor: .byte walk_up, walk_left, walk_up, walk_up, look_right, end_m
 m_StepRightAndLookLeft: .byte walk_right, walk_right, look_left, end_m
 m_StepInfrontOfPlayer: .byte walk_right, look_down, end_m
@@ -321,3 +625,11 @@ NamingRival:
 	if equal _goto NamingRival
 	closeonkeypress
 	return
+
+SecondaryLevelScripts_AlmondObservatory_OfficeOfProfessor:
+	levelscript VAR_MAIN_STORY, MAIN_STORY_RECEIVING_STARTER, SecondaryLevelScript_AlmondObservatory_OfficeOfProfessor
+	.hword LEVEL_SCRIPT_TERMIN
+
+SecondaryLevelScript_AlmondObservatory_OfficeOfProfessor:
+	spriteface PLAYER, UP
+	end

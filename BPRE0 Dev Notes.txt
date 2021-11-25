@@ -1,0 +1,5 @@
+BPRE0 ROM is ahead of official
+ROM (Z-Max/Hack Central/Pokémon - Celestial Version/©Pokémon - Celestial Version/©Pokémon - Celestial Version.gba) by:
+
+- Changed trainer battles 149, 14A, 14B (rival battles).
+-- Add item obtain event in 3.19/change mom to heal after rival battle/figure out stair block bug/change wild pkmn in 3.19.

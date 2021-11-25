@@ -1,20 +1,39 @@
 ##
 #Aerilon Town:
 npc 3 0 3 NPCScript_AerilonTown_BossyGirl
+npc 4 4 0 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
+npc 4 0 0 NPCScript_AerilonTown_PlayerHouse_PlayerMom
+sign 3 0 3 SignScript_AerilonTown_SetDoorOfAlmondResidence
 sign 4 1 1 SignScript_AerilonTown_PlayerRoom_PersonalComputer
 tile 3 0 0 TileScript_AerilonTown_PlayerTriesToLeave
 tile 3 0 1 TileScript_AerilonTown_PlayerTriesToLeave
 tile 3 0 2 TileScript_AerilonTown_PlayerTriesToLeave
+tile 3 0 3 TileScript_AerilonTown_PlayerLeavingTown
+tile 3 0 4 TileScript_AerilonTown_PlayerLeavingTown
+tile 3 0 5 TileScript_AerilonTown_PlayerLeavingTown
 map 3 0 gMapScripts_AerilonTown
 map 4 0 gMapScripts_AerilonTown_PlayerHouse
 
 #Goldtree Village:
 
+#Aerilon Pass:
+npc 3 19 1 NPCScript_AerilonPass_Rival
+tile 3 19 0 TileScript_AerilonPass_Rival
+tile 3 19 1 TileScript_AerilonPass_Rival
+
 #Aerilon Hills:
-npc 15 0 2 NPCScript_AerilonHills_AlmondLab_SecondAide
+npc 15 0 2 NPCScript_AerilonHills_AlmondObservatory_SecondAide
+npc 15 1 0 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 1 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 2 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
 tile 3 20 0 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 tile 3 20 1 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 tile 3 20 2 TileScript_AerilonHills_AideAtTheBaseOfObservatory
+tile 3 20 3 TileScript_AerilonHills_RivalOutsideObservatory
+tile 3 20 4 TileScript_AerilonHills_RivalOutsideObservatory
+tile 3 20 5 TileScript_AerilonHills_RivalOutsideObservatory
+tile 3 20 6 TileScript_AerilonHills_RivalOutsideObservatory
+tile 15 1 0 TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave
 map 15 0 gMapScripts_AerilonHills_AlmondObservatory
 map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
@@ -30,9 +49,17 @@ npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
 npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
 npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
 npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
+npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
+npc 15 1 3 NPCTalkingScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmond
+npc 15 1 4 NPCTalkingScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival
+npc 3 19 2 NPCTalkingScript_AerilonPass_TallGrassGirl
+npc 3 19 0 NPCTalkingScript_AerilonPass_OranBerryBoy
 sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
 sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
 sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
+sign 3 20 0 SignpostScript_AerilonHills_MainRoute
+sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
+sign 3 19 0 SignpostScript_AerilonPass_MainRoute

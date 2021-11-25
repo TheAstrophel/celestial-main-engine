@@ -47,3 +47,28 @@ Almond Residence
 
 #org @gText_AerilonHills_AlmondObservatory_FifthAideNPC
 [BLUE]Wild Pikachu inhabit Aerilon Hills.\nI hear they're hard to capture.
+
+#org @gText_AerilonHills_AlmondObservatory_SixthAideNPC
+[BLUE]Terribly sorry, but only staff are\nallowed up here.
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmondNPC
+[BLACK]Professor Almond: [BLUE]Go on, [PLAYER],\nchoose a Pok\emon!
+
+#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalNPC
+[BLACK][RIVAL]: [BLUE]I wonder who will get the\nlast Pok\emon[.]?
+
+#org @gText_AerilonHills_MainRouteSign
+[BLACK]Aerilon Hills\n[ARROW_DOWN]Aerilon Town
+
+#org @gText_AerilonHills_AlmondObservatorySign
+[BLACK]Almond Observatory\n"Discovering the beyond".
+
+//Aerilon Pass:
+#org @gText_AerilonPass_OranBerryBoyNPC
+I think Oran Berries are fascinating.\nThey recover lost HP of Pok\emon.
+
+#org @gText_AerilonPass_MainRouteSign
+[BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
+
+#org @gText_AerilonPass_TallGrassGirlNPC
+Did you know that if you walk in tall\ngrass, Pok\emon don't appear as much?
