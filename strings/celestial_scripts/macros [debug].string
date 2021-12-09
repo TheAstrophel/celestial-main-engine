@@ -1,4 +1,25 @@
 //Aerilon Town:
+#org @gText_AerilonTown_RockyCliffsBoyNPC
+[BLUE]The cool air here is beyond\nrefreshing. I love living here!
+
+#org @gText_AerilonTown_UselessResearchGirlNPC
+[RED]I've heard that Professor Almond\nonce spent thirty-seven hours in his\lObservatory!\pHave you ever met a man this into\nsome useless research?
+
+#org @gText_AerilonTown_FatGuyNPC
+[BLUE]Technology is incredible! Now I can\nplay games like TechThug 2088!
+
+#org @gText_AerilonTown_OldManNPC
+[BLUE]The Professor devoted his life to\nspace study. He is an incredible man.
+
+#org @gText_AerilonTown_House_HouseLadyNPC
+[RED]My son spends hours watching the\nrocky cliffs!\pIs he really alright? Is something\nwrong with him? I hope not[.]
+
+#org @gText_AerilonTown_House_HouseManNPC
+[BLUE]It's good to have a kind and caring\nheart open for all Pok\emon.\pYou really bond with your partners\nif you love them.
+
+#org @gText_AerilonTown_House_HouseGirlNPC
+[RED]My daddy says you should treat\nevery Pok\emon with love.
+
 #org @gText_AerilonTown_PlayerRoom_PrettyPictureSign
 It is a pretty picture of a happy\nPok\emon.
 
@@ -13,27 +34,6 @@ Aerilon Town\n"The Mountainside Gold-Grey Haven".
 
 #org @gText_AerilonTown_AlmondResidenceSign
 Almond Residence
-
-#org @gText_AerilonTown_RockyCliffsBoyNPC
-[BLUE]The cool air here is beyond\nrefreshing. I love living here!
-
-#org @gText_AerilonTown_UselessResearchGirlNPC
-[RED]I've heard that Professor Almond\nonce spent thirty-seven hours in his\lObservatory!\pHave you ever met a man this into\nsome useless research?
-
-#org @gText_AerilonTown_FatGuyNPC
-[BLUE]Technology is incredible! Now I can\nplay games like TechThug 2088!
-
-#org @gText_AerilonTown_OldManNPC
-[BLUE]The Professor devoted his life to\nspace study. He is an incredible man.
-
-#org @gText_AerilonTown_HouseLadyNPC
-[RED]My son spends hours watching the\nrocky cliffs!\pIs he really alright? Is something\nwrong with him? I hope not[.]
-
-#org @gText_AerilonTown_HouseManNPC
-[BLUE]It's good to have a kind and caring\nheart open for all Pok\emon.\pYou really bond with your partners\nif you love them.
-
-#org @gText_AerilonTown_HouseGirlNPC
-[RED]My daddy says you should treat\nevery Pok\emon with love.
 
 //Aerilon Hills:
 #org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
@@ -67,8 +67,43 @@ Almond Residence
 #org @gText_AerilonPass_OranBerryBoyNPC
 I think Oran Berries are fascinating.\nThey recover lost HP of Pok\emon.
 
+#org @gText_AerilonPass_TallGrassGirlNPC
+Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know whether this is true or\nnot, though.
+
 #org @gText_AerilonPass_MainRouteSign
 [BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
 
-#org @gText_AerilonPass_TallGrassGirlNPC
-Did you know that if you walk in tall\ngrass, Pok\emon don't appear as much?
+//Goldtree Village:
+#org @gText_GoldtreeVillage_TreasureWoodsBugCatcherNPC
+[GREEN]Treasure Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\eBall's, too.
+
+#org @gText_GoldtreeVillage_NameMysteryBoyNPC
+[BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?\p[.]I'm just kidding, it's because these\ntree's are [GREEN]Cassia fistula[BLUE].
+
+#org @gText_GoldtreeVillage_PKMNCenterBoyNPC
+Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\eMart's!
+
+#org @gText_GoldtreeVillage_House_PickUpAbilityLadyNPC
+[RED]Pok\emon with the Pickup ability might\nfind items on the ground.\pDon't give them any held items, or\nyou could miss out!
+
+#org @gText_GoldtreeVillage_House_LastThirtyYearsManNPC
+[BLUE]This village was built only in the\nlast thirty years.\pUntil then, this was just a woody\nplain.
+
+#org @gText_GoldtreeVillage_House_KingsPathManNPC
+[GREEN]King's Path [BLUE]is a mysterious place!\nI don't see anything special in it.\pYet I still feel like there is\nsomething there[.] waiting to be found[.]
+
+#org @gText_GoldtreeVillage_House_SamuelsWifeNPC
+[RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme.
+
+#org @gText_GoldtreeVillage_MainTownSign
+[BLACK]Goldtree Village\n"The Jewel Of Triton".
+
+#org @gText_GoldtreeVillage_RivalHouseSign
+[BLACK][RIVAL]'s House
+
+//King's Path:
+#org @gText_KingsPath_JustADitchManNPC
+This ditch is not as interesting as I\nthought it would be.
+
+#org @gText_KingsPath_SmallOpeningSign
+There is an inward grove over here!\nMaybe it leads to an opening[.]

@@ -292,7 +292,9 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 	compare VAR_MAIN_STORY, 0x5
 	if equal _goto PlayerMetRival
 	compare VAR_MAIN_STORY, 0x6
-	if greaterorequal _goto PlayerAlreadyMetProfessor
+	if equal _goto PlayerAlreadyMetProfessor
+	compare VAR_MAIN_STORY, 0x7
+	if greaterorequal _goto PlayerAlreadyDefeatedRival
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_01, MSG_FACE
 	spriteface MOM, LEFT
 	release
@@ -300,21 +302,35 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 
 PlayerAlreadyMetAide:
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_02, MSG_FACE
-	spriteface MOM, LEFT
 	release
 	end
 
 PlayerMetRival:
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_03, MSG_FACE
-	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyMetProfessor:
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_FACE
-	spriteface MOM, LEFT
 	release
 	end
+
+PlayerAlreadyDefeatedRival:
+	faceplayer
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN, MSG_KEEPOPEN
+	closeonkeypress
+	call HealPlayerParty
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE
+	release
+	end
+
+HealPlayerParty:
+	fadescreen 0x1
+	fanfare 0x100
+	waitfanfare
+	special 0x0
+	fadescreen 0x0
+	return
 
 #Sign scripts:
 .global SignScript_AerilonTown_PlayerRoom_PersonalComputer

@@ -1,0 +1,3 @@
+• Map [5.3]:
+   FSF offset (and new Map Footer Offset): 0x244900
+   Map Footer of 5.3: 130000000B000000F85A7208005B7208B44B2D08E44B2D0802020000

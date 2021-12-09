@@ -49,6 +49,18 @@ RivalBattleWhenPlayerHasMudkip:
 
 m_RivalLeaves: .byte walk_right, walk_right, walk_right, walk_down, walk_down, walk_down, walk_down, walk_down, walk_down, walk_down, end_m
 
+@;////////////////////////////////////////////////
+
+.global NPCScript_AerilonPass_ItemObtainPotion
+NPCScript_AerilonPass_ItemObtainPotion:
+	giveitem 0xD 0x1, MSG_FIND
+	call SetItemFlag
+	end
+
+SetItemFlag:
+	setflag 0x154 @Person ID of Potion in A-Map
+	return
+
 #Tile scripts:
 .equ RIVAL, 2
 .equ VAR_MAIN_STORY, 0x4011

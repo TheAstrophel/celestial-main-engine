@@ -7,5 +7,5 @@ ADD:
 NOTE THAT:
 
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".
-> .equ defines only in map scirpts.
+> .equ defines in selected scripts.
 > Sequence in all STRING files is as same as the S files.

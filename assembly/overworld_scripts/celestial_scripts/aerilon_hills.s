@@ -266,7 +266,7 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
 	pause 0x1E
 	setvar VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
 	setflag 0x1FF @Person ID of Professor in A-Map
-	setflag 0x200 @Person ID of  Rival in A-Map
+	setflag 0x200 @Person ID of Rival in A-Map
 	end
 
 m_ProfLeavesOffice: .byte walk_left, walk_left, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m

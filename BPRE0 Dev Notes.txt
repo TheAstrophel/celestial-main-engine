@@ -1,5 +1,10 @@
 BPRE0 ROM is ahead of official
 ROM (Z-Max/Hack Central/Pokémon - Celestial Version/©Pokémon - Celestial Version/©Pokémon - Celestial Version.gba) by:
 
-- Changed trainer battles 149, 14A, 14B (rival battles).
--- Add item obtain event in 3.19/change mom to heal after rival battle/figure out stair block bug/change wild pkmn in 3.19.
+Events created and positioned.
+Goldtree Village and King's Path polished here and there.
+Door tile animation of Goldtree Villge made.
+Rival movement value changed in [3.1].
+Replaced map [5.3] by map [32.0]. For map [32.0], will add map [5.3] by editing map header of [32.0] from vanilla ROM.
+Delinked map [5.3] from all others (check Celestial Planner for more info)
+- add whole rival/oak/samuel script in pokecenter
