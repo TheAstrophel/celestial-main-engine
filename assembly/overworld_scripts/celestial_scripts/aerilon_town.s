@@ -111,51 +111,35 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	pause 0x20
 	goto AlreadyMetProfessorWhenLeavingAerilonTown
 
-m_StepInHouse: .byte walk_up, end_m
-m_StepOutOfHouse: .byte walk_down, end_m
-m_Exclaim: .byte exclaim, end_m
-
 ApproachPlayerWhenScriptNumberThree:
 	applymovement PROF, m_MoveTowardsPlayerWhenScriptNumberThree
 	waitmovement 0x0
 	return
-
-m_MoveTowardsPlayerWhenScriptNumberThree: .byte walk_right, walk_right, walk_right, walk_right, end_m
 
 ApproachPlayerWhenScriptNumberFour:
 	applymovement PROF, m_MoveTowardsPlayerWhenScriptNumberFour
 	waitmovement 0x0
 	return
 
-m_MoveTowardsPlayerWhenScriptNumberFour: .byte walk_right, walk_right, walk_down, walk_right, walk_right, end_m
-
 ApproachPlayerWhenScriptNumberFive:
 	applymovement PROF, m_MoveTowardsPlayerWhenScriptNumberFive
 	waitmovement 0x0
 	return
-
-m_MoveTowardsPlayerWhenScriptNumberFive: .byte walk_right, walk_right, walk_down, walk_down, walk_right, walk_right, end_m
 
 LeavePlayerWhenScriptNumberThree:
 	applymovement PROF, m_MoveAwayFromPlayerWhenScriptNumberThree
 	waitmovement 0x0
 	return
 
-m_MoveAwayFromPlayerWhenScriptNumberThree: .byte walk_left, walk_left, walk_left, walk_left, end_m
-
 LeavePlayerWhenScriptNumberFour:
 	applymovement PROF, m_MoveAwayFromPlayerWhenScriptNumberFour
 	waitmovement 0x0
 	return
 
-m_MoveAwayFromPlayerWhenScriptNumberFour: .byte walk_left, walk_left, walk_up, walk_left, walk_left, end_m
-
 LeavePlayerWhenScriptNumberFive:
 	applymovement PROF, m_MoveAwayFromPlayerWhenScriptNumberFive
 	waitmovement 0x0
 	return
-
-m_MoveAwayFromPlayerWhenScriptNumberFive: .byte walk_left, walk_left, walk_up, walk_up, walk_left, walk_left, end_m
 
 AlreadyMetProfessorWhenLeavingAerilonTown:
 	msgbox gText_AerilonTown_Mom_01, MSG_KEEPOPEN
@@ -184,9 +168,6 @@ AlreadyMetProfessorWhenLeavingAerilonTown:
 	release
 	end
 
-m_MomMovesToPlayer: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
-m_MomLeaves: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
-
 SetMomPosition01:
 	movesprite MOM, 0x19 0xE
 	return
@@ -194,6 +175,18 @@ SetMomPosition01:
 SetMomPosition02:
 	movesprite MOM, 0x19 0x10
 	return
+
+m_StepInHouse: .byte walk_up, end_m
+m_StepOutOfHouse: .byte walk_down, end_m
+m_Exclaim: .byte exclaim, end_m
+m_MoveTowardsPlayerWhenScriptNumberThree: .byte walk_right, walk_right, walk_right, walk_right, end_m
+m_MoveTowardsPlayerWhenScriptNumberFour: .byte walk_right, walk_right, walk_down, walk_right, walk_right, end_m
+m_MoveTowardsPlayerWhenScriptNumberFive: .byte walk_right, walk_right, walk_down, walk_down, walk_right, walk_right, end_m
+m_MoveAwayFromPlayerWhenScriptNumberThree: .byte walk_left, walk_left, walk_left, walk_left, end_m
+m_MoveAwayFromPlayerWhenScriptNumberFour: .byte walk_left, walk_left, walk_up, walk_left, walk_left, end_m
+m_MoveAwayFromPlayerWhenScriptNumberFive: .byte walk_left, walk_left, walk_up, walk_up, walk_left, walk_left, end_m
+m_MomMovesToPlayer: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
+m_MomLeaves: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
 
 #Level scripts:
 .equ PROF_AIDE, 2

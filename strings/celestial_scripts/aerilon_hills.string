@@ -22,7 +22,7 @@
 [BLACK]Aide: [BLUE]Excuse me, Professor. I've\nbrought [PLAYER], as you insisted.
 
 #org @gText_AerilonHills_AlmondObservatory_Prof_01
-[BLACK]Professor Almond: [BLUE]Ah, excellent!\nThank you, Simon. You may leave.
+[BLACK]Professor Almond: [BLUE]Ah, excellent!\nThank you very much. You may leave.
 
 #org @gText_AerilonHills_AlmondObservatory_Aide_02
 [BLACK]Aide: [BLUE]No problem at all, Professor.
@@ -52,7 +52,7 @@
 [BLACK]Name him [GREEN][RIVAL][BLACK]?
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_05
-[BLACK]Professor Almond: [BLUE][RIVAL] will\nactually choose a Pok\emon too.\pAfter you've choosen your Pok\emon,\nI'll give you a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father, Samuel.\pSamuel lives in Goldtree Village,\neast of Aerilon Town.\pYou'll need to deliever the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
+[BLACK]Professor Almond: [BLUE][RIVAL] will\nactually choose a Pok\emon too.\pAfter you've choosen your Pok\emon,\nI'll give you a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father.\p[RIVAL] lives in Goldtree Village,\neast of Aerilon Town.\pYou'll need to deliever the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_02
 [BLACK][RIVAL]: [BLUE]Yo, [PLAYER], right?\nYeah, it's great to meet you!\pHurry and choose, so I can take one\ntoo!
@@ -88,7 +88,7 @@ Would you like to give [BUFFER1] a\nnickname?
 [BLACK][RIVAL]: [BLUE]It feels great to have\na Pok\emon, doesn't it?\pI'm gonna wait outside. We'll head for\nGoldtree Village when you're ready.
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates
-[BLACK]Professor Almond: [BLUE][PLAYER]! Come to\nmy house in Aerilon Town.\pI have Samuel's parcel there. Don't\ntake long, now!
+[BLACK]Professor Almond: [BLUE][PLAYER]! Come to\nmy house in Aerilon Town.\pI have the parcel there. Don't\ntake long, now!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_LastStarter
 Better not take this Pok\emon without\nthe Professor's permission!

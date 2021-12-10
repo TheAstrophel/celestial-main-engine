@@ -24,10 +24,10 @@
 [BLACK]Professor Almond: [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
 
 #org @gText_AerilonTown_PlayerRecievesParcel
-[PLAYER] received the Samuel's Parcel\nfrom Professor Almond!
+[PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_ProfAlmond_02
-[BLACK]Professor Almond: [BLUE]Make sure the\nparcel reaches Samuel.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLACK]Professor Almond: [BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_Mom_01
 [BLACK]Mom: [RED][PLAYER]!
@@ -58,7 +58,7 @@
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_02
-[BLACK]Professor Almond: [BLUE]Samuel lives in\nGoldtree Village. He's a good chap.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLACK]Professor Almond: [BLUE][RIVAL]'s father lives in\nGoldtree Village. He's a good chap.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_03
 [BLACK]Professor Almond: [BLUE]You should tell\nyour mother you're leaving town.\pI really don't want to get in trouble,\neheh[.]

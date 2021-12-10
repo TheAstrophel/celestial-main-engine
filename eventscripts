@@ -16,6 +16,7 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
+map 5 3 gMapScripts_GoldtreeVillage_PKMNCenter
 
 #Aerilon Pass:
 npc 3 19 1 NPCScript_AerilonPass_Rival
