@@ -50,11 +50,12 @@ bool8 DefiantActivation(void)
 			break;
 
 		case ABILITY_RATTLED:
-            if (gNewBS->intimidateActive)
-                gBattleScripting.statChanger = INCREASE_1 | STAT_STAGE_SPEED;
-            else
-                return FALSE;
-            break;
+			if (gNewBS->intimidateActive)
+				gBattleScripting.statChanger = INCREASE_1 | STAT_STAGE_SPEED;
+			break;
+
+		default:
+			return FALSE;
 	}
 
 	BattleScriptPushCursor();
@@ -585,4 +586,3 @@ void PrepareStringForAIUsingXItem(void)
 	gBattleScripting.animArg1 = gBattleTextBuff1[2] + STAT_ANIM_PLUS2 - 1;
 	gBattleScripting.animArg2 = 0;
 }
-
