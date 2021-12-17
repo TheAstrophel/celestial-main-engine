@@ -57,6 +57,17 @@ m_PlayerStepsUpAndEnters: .byte walk_up, walk_up, set_invisible, end_m
 m_PlayerStepsLeftAndEnters: .byte walk_left, walk_up, set_invisible, end_m
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
+#NPC scripts:
+.global GoldtreeVillage_PKMNCenter_FatherOfRival
+GoldtreeVillage_PKMNCenter_FatherOfRival:
+	lock
+	faceplayer
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival, MSG_KEEPOPEN
+	closeonkeypress
+	spriteface 0x3, UP
+	release
+	end
+
 #Level scripts:
 .equ RIVAL, 2
 .equ FATHER_OF_RIVAL, 3
@@ -77,10 +88,125 @@ LevelScripts_GoldtreeVillage_PKMNCenter:
 
 LevelScript_GoldtreeVillage_PKMNCenter:
 	lock
-	
+	applymovement RIVAL, m_RivalWalkTowardsFatherOfRival
+	applymovement PLAYER, m_PlayerWalkTowardsFatherOfRival
+	waitmovement 0x0
+	msgbox gText_GoldtreeVillage_PKMNCenter_Rival_01, MSG_KEEPOPEN
+	closeonkeypress
+	checksound
+	sound 0x15
+	applymovement FATHER_OF_RIVAL, m_Exclaim
+	waitmovement 0x0
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_01, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement PLAYER, m_ApproachFatherOfRival
+	waitmovement 0x0
+	spriteface FATHER_OF_RIVAL, DOWN
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_02, MSG_KEEPOPEN
+	closeonkeypress
+	fanfare 0x105
+	preparemsg gText_GoldtreeVillage_PKMNCenter_PlayerDeliversParcel
+	waitmsg
+	waitfanfare
+	removeitem 0x15D 0x1
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_03, MSG_KEEPOPEN
+	closeonkeypress
+	pause 0x40
+	checksound
+	sound 0x15
+	applymovement FATHER_OF_RIVAL, m_QuestionMark
+	waitmovement 0x0
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_04, MSG_KEEPOPEN
+	closeonkeypress
+	showsprite PROF_ALMOND
+	spriteface PROF_ALMOND, UP
+	clearflag 0x200 @Person ID of Professor Almond in A-Map
+	checksound
+	sound 0x9
+	pause 0x3E
+	spriteface PROF_ALMOND, RIGHT
+	checksound
+	sound 0x15
+	applymovement PROF_ALMOND, m_NoticesPlayerAndExclaims
+	waitmovement 0x0
+	spriteface RIVAL, DOWN
+	spriteface FATHER_OF_RIVAL, LEFT
+	spriteface PLAYER, LEFT
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_01, MSG_KEEPOPEN
+	closeonkeypress
+	pause 0x1E
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_05, MSG_KEEPOPEN
+	closeonkeypress
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_02, MSG_KEEPOPEN
+	closeonkeypress
+	checksound
+	sound 0xA
+	applymovement RIVAL, m_Jump
+	waitmovement 0x0
+	pause 0x10
+	msgbox gText_GoldtreeVillage_PKMNCenter_Rival_02, MSG_KEEPOPEN
+	closeonkeypress
+	spriteface PROF_ALMOND, LEFT
+	checksound
+	sound 0x11
+	applymovement RIVAL, m_DashesOutOfPKMNCenter
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite RIVAL
+	pause 0x20
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_03, MSG_KEEPOPEN
+	closeonkeypress
+	spriteface PROF_ALMOND, RIGHT
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_06, MSG_KEEPOPEN
+	closeonkeypress
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_04, MSG_KEEPOPEN
+	closeonkeypress
+	fanfare 0x13E
+	preparemsg gText_GoldtreeVillage_PKMNCenter_PlayerReceivesDex
+	waitmsg
+	waitfanfare
+	setflag 0x829
+	special 0x181
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_05, MSG_KEEPOPEN
+	closeonkeypress
+	additem 0x4 0x5
+	loadpointer 0x0 gText_GoldtreeVillage_PKMNCenter_PlayerReceivesBalls
+	giveitemwithfanfare 0x4 0x5 0x101
+	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_06, MSG_KEEPOPEN
+	closeonkeypress
+	setvar 0x8004 0x0
+	setvar 0x8005 0x1
+	special 0x173
+	applymovement PROF_ALMOND, m_ExitsPKMNCenter
+	waitmovement 0x0
+	checksound
+	sound 0x9
+	hidesprite PROF_ALMOND
+	pause 0x20
+	spriteface FATHER_OF_RIVAL, DOWN
+	spriteface PLAYER, UP
+	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_07, MSG_KEEPOPEN
+	closeonkeypress
+	spriteface FATHER_OF_RIVAL, UP
+	setflag 0x1FF @Person ID of Rival in A-Map
+	setflag 0x200 @Person ID of Professor Almond in A-Map
+	setvar VAR_MAIN_STORY, MAIN_STORY_MEETING_COMPLETED_IN_GOLDTREE_PKMNCENTER
+	release
+	end
+
+m_RivalWalkTowardsFatherOfRival: .byte walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
+m_PlayerWalkTowardsFatherOfRival: .byte walk_up, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, end_m
+m_Exclaim: .byte exclaim, look_left, pause_long, pause_long, end_m
+m_ApproachFatherOfRival: .byte walk_down, walk_right, walk_right, look_up, end_m
+m_QuestionMark: .byte say_question, pause_short, pause_short, end_m
+m_NoticesPlayerAndExclaims: .byte exclaim, pause_long, pause_long, pause_long, pause_long, walk_right, walk_up, walk_up, walk_right, walk_right, walk_right, walk_right, end_m
+m_Jump: .byte jump_onspot_down, end_m
+m_DashesOutOfPKMNCenter: .byte run_left, run_left, run_left, run_left, run_left, run_down, run_down, run_down, pause_long, walk_down_onspot, end_m
+m_ExitsPKMNCenter: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_down, walk_down, pause_long, walk_down_onspot, end_m
 
 MapEntryScript_GoldtreeVillage_PKMNCenter:
-	sethealingplace 0x2
+	sethealingplace 0xE
 	compare VAR_MAIN_STORY, MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE
 	if equal _call MapEntryScript_GoldtreeVillage_PKMNCenter_FirstTimeEntering
 	end

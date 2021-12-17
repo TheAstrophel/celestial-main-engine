@@ -609,13 +609,6 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	releaseall
 	end
 
-m_MoveUpTowardsProfessor: .byte walk_up, walk_up, end_m
-m_Exclaim: .byte exclaim, end_m
-m_WalkTowardsPlayerAndProfessor: .byte walk_up, walk_left, walk_up, walk_up, look_right, end_m
-m_StepRightAndLookLeft: .byte walk_right, walk_right, look_left, end_m
-m_StepInfrontOfPlayer: .byte walk_right, look_down, end_m
-m_StepRightAndLookLeftAtPlayer: .byte walk_right, walk_down, walk_right, look_left, end_m
-
 NamingRival:
 	fadescreen 0x1
 	callasm 0x871BC01 @Rival naming routine
@@ -625,6 +618,13 @@ NamingRival:
 	if equal _goto NamingRival
 	closeonkeypress
 	return
+
+m_MoveUpTowardsProfessor: .byte walk_up, walk_up, end_m
+m_Exclaim: .byte exclaim, end_m
+m_WalkTowardsPlayerAndProfessor: .byte walk_up, walk_left, walk_up, walk_up, look_right, end_m
+m_StepRightAndLookLeft: .byte walk_right, walk_right, look_left, end_m
+m_StepInfrontOfPlayer: .byte walk_right, look_down, end_m
+m_StepRightAndLookLeftAtPlayer: .byte walk_right, walk_down, walk_right, look_left, end_m
 
 SecondaryLevelScripts_AlmondObservatory_OfficeOfProfessor:
 	levelscript VAR_MAIN_STORY, MAIN_STORY_RECEIVING_STARTER, SecondaryLevelScript_AlmondObservatory_OfficeOfProfessor

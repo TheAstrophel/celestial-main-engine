@@ -16,6 +16,7 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
+npc 5 3 2 GoldtreeVillage_PKMNCenter_FatherOfRival
 map 5 3 gMapScripts_GoldtreeVillage_PKMNCenter
 
 #Aerilon Pass:
@@ -76,4 +77,13 @@ sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
 sign 3 19 0 SignpostScript_AerilonPass_MainRoute
 sign 3 1 0 SignpostScript_GoldtreeVillage_MainTown
 sign 3 1 1 SignpostScript_GoldtreeVillage_RivalHouse
+sign 5 3 0 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 1 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 2 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 3 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 4 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 5 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 6 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 7 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 5 3 8 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening

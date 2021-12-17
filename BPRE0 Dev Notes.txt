@@ -1,13 +1,4 @@
 BPRE0 ROM is ahead of official
 ROM (Z-Max/Hack Central/Pokémon - Celestial Version/©Pokémon - Celestial Version/©Pokémon - Celestial Version.gba) by:
 
-Events created and positioned.
-Goldtree Village and King's Path polished here and there.
-Door tile animation of Goldtree Villge made.
-Rival movement value changed in [3.1].
-Replaced map [5.3] by map [32.0]. For map [32.0], will add map [5.3] by editing map header of [32.0] from vanilla ROM.
-Delinked map [5.3] from all others (check Celestial Planner for more info).
-Since PokéCeneter's kinda crapped up, I changed Map Footer Offset of [5.3] to Map Footer Offset of [32.0].
-Deleted Level Script in Player's House [4.0].
-Fixed PokéCenter [map 5.3] because it got destroyed along with rest of PokéCenter's.
-- add whole rival/oak/samuel script in pokecenter; fix stair tile in kings path, since it shows green instead of dirt; fix pokecenters
+- look at config.h for custom set healing place; fix pokecenters/nurse joy's;

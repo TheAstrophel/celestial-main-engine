@@ -52,7 +52,7 @@ Almond Residence
 [BLUE]Terribly sorry, but only staff are\nallowed up here.
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmondNPC
-[BLACK]Professor Almond: [BLUE]Go on, [PLAYER],\nchoose a Pok\emon!
+[BLACK]Prof. Almond [BLUE]Go on, [PLAYER],\nchoose a Pok\emon!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalNPC
 [BLACK][RIVAL]: [BLUE]I wonder who will get the\nlast Pok\emon[.]?
@@ -100,6 +100,9 @@ Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal yo
 
 #org @gText_GoldtreeVillage_RivalHouseSign
 [BLACK][RIVAL]'s House
+
+#org @gText_GoldtreeVillage_PKMNCenter_MachineSign
+Better not mess around with this\nmachine!
 
 //King's Path:
 #org @gText_KingsPath_JustADitchManNPC

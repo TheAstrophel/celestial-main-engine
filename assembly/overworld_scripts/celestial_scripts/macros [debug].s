@@ -73,4 +73,5 @@ signpost AerilonHills_AlmondObservatory
 signpost AerilonPass_MainRoute
 signpost GoldtreeVillage_MainTown
 signpost GoldtreeVillage_RivalHouse
+signpost GoldtreeVillage_PKMNCenter_Machine
 signpost KingsPath_SmallOpening
