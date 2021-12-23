@@ -21,13 +21,13 @@
 [BLACK]The door is open.
 
 #org @gText_AerilonTown_ProfessorAlmond_01
-[BLACK]Prof. Almond [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
+[BLACK]Prof. Almond: [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
 
 #org @gText_AerilonTown_PlayerRecievesParcel
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_ProfAlmond_02
-[BLACK]Prof. Almond [BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLACK]Prof. Almond: [BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_Mom_01
 [BLACK]Mom: [RED][PLAYER]!
@@ -52,16 +52,19 @@
 [RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-run on and off!\pTake care, sweetie!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_01
-[BLACK]Prof. Almond [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
+[BLACK]Prof. Almond: [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
 
 #org @gText_AerilonTown_HouseOfProfessor_PlayerRecievesParcel
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_02
-[BLACK]Prof. Almond [BLUE][RIVAL]'s father lives in\nGoldtree Village. He's a good chap.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLACK]Prof. Almond: [BLUE][RIVAL]'s father lives\nin Goldtree Village.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_03
-[BLACK]Prof. Almond [BLUE]You should tell\nyour mother you're leaving town.\pI really don't want to get in trouble,\neheh[.]
+[BLACK]Prof. Almond: [BLUE]You should tell\nyour mother you're leaving town.\pI really don't want to get in trouble,\neheh[.]
+
+#org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_04
+[BLACK]Prof. Almond: [BLUE]I've contacted the\nauthorities. You needn't worry!\pBut why not try catching that theif\non your own? For some experience?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_01
 [BLACK]Mom: [RED]You should go and meet the\nProfessor's Aide.
@@ -73,6 +76,9 @@
 [BLACK]Mom: [RED]Did you go and meet the\nProfessor yet?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_04
+[BLACK]Mom: [RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+
+#org @gText_AerilonTown_PlayerHouse_PlayerMom_05
 [BLACK]Mom: [RED]You come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN
@@ -80,3 +86,12 @@
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack
 [BLACK]Mom: [RED]Now, you come back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+
+#org @gText_AerilonTown_PlayerHouse_PlayerMom_06
+[BLACK]Mom: [RED]Oh, [PLAYER][.]\nI can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!
+
+#org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01
+[BLACK]Mom: [RED][PLAYER]! If you're here, why\nnot take a quick rest?
+
+#org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02
+[BLACK]Mom: [RED]There, that's better!\nStay safe out there! Make me proud!

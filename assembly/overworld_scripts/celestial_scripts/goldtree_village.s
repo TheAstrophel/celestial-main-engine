@@ -134,7 +134,7 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	spriteface PLAYER, LEFT
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_01, MSG_KEEPOPEN
 	closeonkeypress
-	pause 0x1E
+	pause 0x2C
 	msgbox gText_GoldtreeVillage_PKMNCenter_FatherOfRival_05, MSG_KEEPOPEN
 	closeonkeypress
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_02, MSG_KEEPOPEN
@@ -168,6 +168,7 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	waitfanfare
 	setflag 0x829
 	special 0x181
+	special 0x16F @Enables National Dex
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_05, MSG_KEEPOPEN
 	closeonkeypress
 	additem 0x4 0x5

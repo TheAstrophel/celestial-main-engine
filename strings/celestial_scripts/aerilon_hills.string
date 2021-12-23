@@ -22,7 +22,7 @@
 [BLACK]Aide: [BLUE]Excuse me, Professor. I've\nbrought [PLAYER], as you insisted.
 
 #org @gText_AerilonHills_AlmondObservatory_Prof_01
-[BLACK]Prof. Almond [BLUE]Ah, excellent!\nThank you very much. You may leave.
+[BLACK]Prof. Almond: [BLUE]Ah, excellent!\nThank you very much. You may leave.
 
 #org @gText_AerilonHills_AlmondObservatory_Aide_02
 [BLACK]Aide: [BLUE]No problem at all, Professor.
@@ -31,10 +31,10 @@
 [BLUE]If you'll excuse me, [PLAYER][.]
 
 #org @gText_AerilonHills_AlmondObservatory_Prof_02
-[BLACK]Prof. Almond [BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in Aerilon Town!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random Trainer, right?\pYou, my dear boy, are an exceptional\ncase!\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
+[BLACK]Prof. Almond: [BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in Aerilon Town!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random Trainer, right?\pYou, my dear boy, are an exceptional\ncase!\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_01
-[BLACK]Prof. Almond [BLUE]This is better, a\nlittle more private.\pI didn't want my aide's listening,\nas to not cause you any uncomfort.\pSo [PLAYER], why am I giving you a\nPok\emon? A rare one, at that?\p[.]It was your father's dying wish.
+[BLACK]Prof. Almond: [BLUE]This is better, a\nlittle more private.\pI didn't want my aide's listening,\nas to not cause you any uncomfort.\pSo [PLAYER], why am I giving you a\nPok\emon? A rare one, at that?\p[.]It was your father's dying wish.
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_02
 [BLUE]Yes, [PLAYER]. Your father had once\nselected these Pok\emon himself.\pHe always had the wish of you being\nthe finest Trainer in the world.\pI am here to fulfill his last request,\nas I should.\pSo, [PLAYER]-
@@ -43,31 +43,31 @@
 [BLACK]???: [BLUE]Hey, old man! Long time no see!\nPops sent me here.\pSaid somethin' about a Pok\emon and\nshowin' someone the way to [GREEN]Goldtree\lVillage[BLUE].
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_03
-[BLACK]Prof. Almond [BLUE]Oh, hello. Yes, I\nsent your father an e-mail. 
+[BLACK]Prof. Almond: [BLUE]Oh, hello. Yes, I\nsent your father an e-mail. 
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_04
-[BLACK]Prof. Almond [BLUE][PLAYER]! I'm sure\nyou've not met each other, right?\pThis is the son of a good friend of\nmine. His name is[.]
+[BLACK]Prof. Almond: [BLUE][PLAYER]! I'm sure\nyou've not met each other, right?\pThis is the son of a good friend of\nmine. His name is[.]
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ConfirmRivalName
 [BLACK]Name him [GREEN][RIVAL][BLACK]?
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_05
-[BLACK]Prof. Almond [BLUE][RIVAL] will\nactually choose a Pok\emon too.\pAfter you've choosen your Pok\emon,\nI'll give you a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father.\p[RIVAL] lives in Goldtree Village,\neast of Aerilon Town.\pYou'll need to deliever the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
+[BLACK]Prof. Almond: [BLUE][RIVAL] will\nactually choose a Pok\emon too.\pAfter you've choosen your Pok\emon,\nI'll give you a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father.\p[RIVAL] lives in Goldtree Village,\neast of Aerilon Town.\pYou'll need to deliever the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_02
 [BLACK][RIVAL]: [BLUE]Yo, [PLAYER], right?\nYeah, it's great to meet you!\pHurry and choose, so I can take one\ntoo!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeavePrompt
-[BLACK]Prof. Almond [BLUE]Hey!\nDon't go away yet!
+[BLACK]Prof. Almond: [BLUE]Hey!\nDon't go away yet!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TreeckoPrompt
-[BLACK]Prof. Almond [BLUE]Ah, you will\nchoose the [GREEN]Grass Pok\emon Treecko[BLUE]?
+[BLACK]Prof. Almond: [BLUE]Ah, you will\nchoose the [LIGHT_GREEN]Grass Pok\emon Treecko[BLUE]?
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt
-[BLACK]Prof. Almond [BLUE]So, you will\ntake the [ORANGE]Flame Pok\emon Torchic[BLUE]?
+[BLACK]Prof. Almond: [BLUE]So, you will\ntake the [ORANGE]Flame Pok\emon Torchic[BLUE]?
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_MudkipPrompt
-[BLACK]Prof. Almond [BLUE]Oh, so you\nwant the [LIGHT_BLUE]Water Pok\emon Mudkip[BLUE]?
+[BLACK]Prof. Almond: [BLUE]Oh, so you\nwant the [LIGHT_BLUE]Water Pok\emon Mudkip[BLUE]?
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon
 This Pok\emon really is quite\nenergetic!
@@ -88,7 +88,7 @@ Would you like to give [BUFFER1] a\nnickname?
 [BLACK][RIVAL]: [BLUE]It feels great to have\na Pok\emon, doesn't it?\pI'm gonna wait outside. We'll head for\nGoldtree Village when you're ready.
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates
-[BLACK]Prof. Almond [BLUE][PLAYER]! Come to\nmy house in Aerilon Town.\pI have the parcel there. Don't\ntake long, now!
+[BLACK]Prof. Almond: [BLUE][PLAYER]! Come to\nmy house in Aerilon Town.\pI have the parcel there. Don't\ntake long, now!
 
 #org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_LastStarter
 Better not take this Pok\emon without\nthe Professor's permission!

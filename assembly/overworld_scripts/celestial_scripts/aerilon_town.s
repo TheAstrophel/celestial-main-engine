@@ -61,7 +61,7 @@ m_StepLeft: .byte walk_left_slow, end_m
 .global TileScript_AerilonTown_PlayerLeavingTown
 TileScript_AerilonTown_PlayerLeavingTown:
 	lock
-	checkflag 0x201
+	checkflag 0x201 @Flag is set if [player] has already taken parcel from Prof. Almond in his house to avoid loop
 	if equal _goto AlreadyMetProfessorWhenLeavingAerilonTown
 	pause 0xE
 	sound 0x8
@@ -160,7 +160,8 @@ AlreadyMetProfessorWhenLeavingAerilonTown:
 	waitmovement 0x0
 	pause 0x1E
 	hidesprite MOM
-	clearflag 0x201
+	clearflag 0x201 @Prof. Almond flag; cleared since var is set below
+	clearflag 0x22F @Mom flag; cleared since var is set below
 	setflag 0x1FF @Person ID of Professor and Mom in A-Map
 	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
 	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
@@ -247,10 +248,12 @@ MapEntryScript_AerilonTown:
 #NPC scripts:
 .global NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
-	checkflag 0x201 @0x201 is set in this script as to avoid loop; it is cleared when Mom meets at edge of Aerilon Town (Mom sees of [player])
-	if equal _goto AlreadyMetProfessor
+	compare 0x4011, 0x8
+	if greaterorequal _goto PlayerHasDelieverdParcelToFatherOfRival
 	compare 0x4011, 0x6 @0x4011 is set to 0x6 when Mom sees of [player]; since flag is cleared in that script, added compare var as to avoid loop
 	if greaterorequal _goto AlreadyMetProfessor
+	checkflag 0x201 @0x201 is set in this script as to avoid loop; it is cleared when Mom meets at edge of Aerilon Town (Mom sees of [player])
+	if equal _goto AlreadyMetProfessor
 	lock
 	faceplayer
 	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN
@@ -261,6 +264,7 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN
 	closeonkeypress
 	setflag 0x201 @To avoid loop
+	setflag 0x22F @For if [player] goes and meets Mom instead of leaving town
 	spriteface 0x1, RIGHT
 	release
 	end
@@ -268,6 +272,12 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 AlreadyMetProfessor:
 	lock
 	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_03, MSG_FACE
+	spriteface 0x1, RIGHT
+	release
+	end
+
+PlayerHasDelieverdParcelToFatherOfRival:
+	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_04, MSG_FACE
 	spriteface 0x1, RIGHT
 	release
 	end
@@ -280,6 +290,8 @@ AlreadyMetProfessor:
 .global NPCScript_AerilonTown_PlayerHouse_PlayerMom
 NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 	lock
+	compare VAR_MAIN_STORY, 0x1
+	if equal _goto PlayerAlreadyTalkedWithMom
 	compare VAR_MAIN_STORY, 0x2
 	if equal _goto PlayerAlreadyMetAide
 	compare VAR_MAIN_STORY, 0x5
@@ -287,7 +299,24 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 	compare VAR_MAIN_STORY, 0x6
 	if equal _goto PlayerAlreadyMetProfessor
 	compare VAR_MAIN_STORY, 0x7
-	if greaterorequal _goto PlayerAlreadyDefeatedRival
+	if equal _goto PlayerAlreadyDefeatedRival
+	checkflag 0x22F
+	if equal _goto MomUniversal @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
+	compare VAR_MAIN_STORY, 0x8
+	if greaterorequal _goto PlayerAlreadyVisitedGoldtree
+	release
+	end
+
+MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN
+	closeonkeypress
+	call HealPlayerParty
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02, MSG_FACE
+	spriteface MOM, LEFT
+	release
+	end
+
+PlayerAlreadyTalkedWithMom:
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_01, MSG_FACE
 	spriteface MOM, LEFT
 	release
@@ -299,12 +328,27 @@ PlayerAlreadyMetAide:
 	end
 
 PlayerMetRival:
+	checkflag 0x22F @This flag checks whether [player] talked to Mom after receiving starter
+	if equal _goto PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_03, MSG_FACE
+	spriteface MOM, LEFT
+	release
+	end
+
+PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown:
+	faceplayer
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_KEEPOPEN
+	closeonkeypress
+	clearflag 0x201 @This flag is later used in scripts, so it has been been cleared
+	clearflag 0x22F @Since var is set below, no use for this flag to be set
+	setvar VAR_MAIN_STORY, 0x6 @This var is also set to 0x6 in a script when [player] is leaving Aerilon Town without meeting Mom
+	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyMetProfessor:
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_FACE
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_05, MSG_FACE
+	spriteface MOM, LEFT
 	release
 	end
 
@@ -314,6 +358,16 @@ PlayerAlreadyDefeatedRival:
 	closeonkeypress
 	call HealPlayerParty
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE
+	spriteface MOM, LEFT
+	release
+	end
+
+PlayerAlreadyVisitedGoldtree: 
+	faceplayer
+	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_06, MSG_KEEPOPEN
+	closeonkeypress
+	setflag 0x22F @Set again so mom says something different and heals party
+	spriteface MOM, LEFT
 	release
 	end
 

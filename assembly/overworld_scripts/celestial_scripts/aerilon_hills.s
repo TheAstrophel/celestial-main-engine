@@ -243,6 +243,8 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
 	faceplayer
 	compare VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
 	if greaterorequal _goto LastStarter
+	spriteface PROF, LEFT
+	spriteface RIVAL, LEFT
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_1, 0x3 @X-Pos equals 0x3
 	if equal _call FirstStarter
@@ -369,7 +371,6 @@ m_LeaveOfficeWithMudkip: .byte walk_down, walk_down, walk_down, walk_left, walk_
 
 ThirdStarter:
 	setvar VAR_STARTER_MON, 0x3
-	spriteface PROF, UP
 	showpokepic 0x11B 0xA 0x3
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_MudkipPrompt, MSG_YESNO
 	compare LASTRESULT 0x0
