@@ -47,6 +47,8 @@ npctalking GoldtreeVillage_House_PickUpAbilityLady
 npctalking GoldtreeVillage_House_LastThirtyYearsMan
 npctalking GoldtreeVillage_House_KingsPathMan
 npctalking GoldtreeVillage_House_SamuelsWife
+npctalking GoldtreeVillage_PKMNCeter_StrangerBoy
+npctalking GoldtreeVillage_PKMNCeter_GymGirl
 npctalking KingsPath_JustADitchMan
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -74,4 +76,8 @@ signpost AerilonPass_MainRoute
 signpost GoldtreeVillage_MainTown
 signpost GoldtreeVillage_RivalHouse
 signpost GoldtreeVillage_PKMNCenter_Machine
+signpost GoldtreeMeadows_MainRoute_01
+signpost GoldtreeMeadows_TreasureWoods
+signpost GoldtreeMeadows_MainRoute_02
 signpost KingsPath_SmallOpening
+signpost KingsPath_MainRoute

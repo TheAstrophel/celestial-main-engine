@@ -75,7 +75,7 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 
 //Goldtree Village:
 #org @gText_GoldtreeVillage_TreasureWoodsBugCatcherNPC
-[GREEN]Treasure Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\eBall's, too.
+[GREEN]Treasure Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
 
 #org @gText_GoldtreeVillage_NameMysteryBoyNPC
 [BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?\p[.]I'm just kidding, it's because these\ntree's are [GREEN]Cassia fistula[BLUE].
@@ -95,6 +95,12 @@ Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal yo
 #org @gText_GoldtreeVillage_House_SamuelsWifeNPC
 [RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme.
 
+#org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
+[BLUE]Oh, you're a stranger here!\nHi! Where did you come from?\p[.]Aerilon Town?\nThat's West of us, right? Neat!
+
+#org @gText_GoldtreeVillage_PKMNCeter_GymGirlNPC
+[RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a [GREEN]Steel-type Gym[RED]!
+
 #org @gText_GoldtreeVillage_MainTownSign
 [BLACK]Goldtree Village\n"The Jewel Of Triton".
 
@@ -104,9 +110,22 @@ Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal yo
 #org @gText_GoldtreeVillage_PKMNCenter_MachineSign
 Better not mess around with this\nmachine!
 
+//Goldtree Meadows:
+#org @gText_GoldtreeMeadows_MainRoute_01Sign
+Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
+
+#org @gText_GoldtreeMeadows_TreasureWoodsSign
+Treasure Woods\n"Hiding the treasure you seek".
+
+#org @gText_GoldtreeMeadows_MainRoute_02Sign
+Goldtree Meadows\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
+
 //King's Path:
 #org @gText_KingsPath_JustADitchManNPC
 This ditch is not as interesting as I\nthought it would be.
 
 #org @gText_KingsPath_SmallOpeningSign
 There is an inward grove over here!\nMaybe it leads to an opening[.]
+
+#org @gText_KingsPath_MainRouteSign
+King's Path\n[ARROW_LEFT]Goldtree Village

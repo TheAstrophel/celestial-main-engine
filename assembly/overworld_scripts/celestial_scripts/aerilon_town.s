@@ -308,6 +308,7 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 	end
 
 MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
+	faceplayer
 	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN
 	closeonkeypress
 	call HealPlayerParty

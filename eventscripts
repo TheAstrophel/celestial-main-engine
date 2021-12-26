@@ -65,6 +65,8 @@ npc 5 0 0 NPCTalkingScript_GoldtreeVillage_House_PickUpAbilityLady
 npc 5 0 1 NPCTalkingScript_GoldtreeVillage_House_LastThirtyYearsMan
 npc 5 1 0 NPCTalkingScript_GoldtreeVillage_House_KingsPathMan
 npc 5 2 0 NPCTalkingScript_GoldtreeVillage_House_SamuelsWife
+npc 5 3 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
+npc 5 3 4 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
 npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
 sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
 sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
@@ -86,4 +88,9 @@ sign 5 3 5 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 6 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 7 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 8 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 3 21 0 SignpostScript_GoldtreeMeadows_MainRoute_01
+sign 3 21 1 SignpostScript_GoldtreeMeadows_TreasureWoods
+sign 3 21 2 SignpostScript_GoldtreeMeadows_TreasureWoods
+sign 3 21 3 SignpostScript_GoldtreeMeadows_MainRoute_02
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
+sign 3 22 1 SignpostScript_KingsPath_MainRoute

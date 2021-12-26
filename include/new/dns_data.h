@@ -246,7 +246,7 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 #define TILESET_PAL_FADE_END {0xFF, 0x0}
 
-#ifndef UNBOUND //Celestial light-up windows (For Beta 0.1)
+#ifndef UNBOUND //Celestial light-up windows (For Beta 0.0)
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
@@ -255,23 +255,23 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
         .paletteNumToFade = 10,
         .paletteIndicesToFade =
         {
-//			{8,  RGB(30, 28, 8)},
-//			{3,  RGB(24, 22, 5)},
-//			{11, RGB(20, 18, 4)},
+			{8,  RGB(30, 28, 8)},
+			{3,  RGB(24, 22, 5)},
+			{11, RGB(20, 18, 4)},
             TILESET_PAL_FADE_END
         },
     },
-//	{ //Aerilon Town - House Windows
-//		.tilesetPointer = 0x82D4AAC, //Tileset 01
-//		.paletteNumToFade = 8,
-//		.paletteIndicesToFade =
-//		{
-//			{10, RGB(30, 28, 8)},
-//			{8, RGB(24, 22, 5)},
-//			{9, RGB(20, 18, 4)},
-//			TILESET_PAL_FADE_END
-//		},
-//	},
+	{ //Aerilon Town - House Windows
+		.tilesetPointer = 0x82D4AAC, //Tileset 01
+		.paletteNumToFade = 8,
+		.paletteIndicesToFade =
+		{
+			{10, RGB(30, 28, 8)},
+			{8, RGB(24, 22, 5)},
+			{9, RGB(20, 18, 4)},
+			TILESET_PAL_FADE_END
+		},
+	},
 };
 
 #else //For Pokemon Unbound (just for reference)

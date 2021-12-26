@@ -43,7 +43,7 @@
 [RIVAL]'s Father: [BLUE]Yes, we can hardly\ncontrol him. He's a handful.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_04
-[BLACK]Prof. Almond: [BLUE][PLAYER]!\nWhy don't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pDon't worry, I've already told your\nmother you might start a journey!\pShe was sceptical, but she did know\nyou would leave one day.\pIt would be nice of you to go and\nmeet her, though.\pI've already notified the authorities,\ntoo. They'll handle it soon enough.\pBut you should try catching the\ntheif, too! For some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] too help.\pAnyhow, I should head back. Oh, wait!\nI completely forgot! Take this.
+[BLACK]Prof. Almond: [BLUE][PLAYER]!\nWhy don't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pDon't worry, I've already told your\nmother you might start a journey!\pShe was sceptical, but she did know\nyou would leave one day.\pIt would be nice of you to go and\nmeet her, though.\pI've already notified the authorities,\ntoo. They'll handle it soon enough.\pBut you should try catching the\ntheif! For some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] too help.\pAnyhow, I should head back. Oh!\nI completely forgot! Take this.
 
 #org @gText_GoldtreeVillage_PKMNCenter_PlayerReceivesDex
 [BLACK][PLAYER] received the Pok\eDex\nfrom Prof. Almond.
@@ -52,10 +52,10 @@
 [BLACK]Prof. Almond: [BLUE]What I've given you is\na Pok\eDex!\pIt's a really handy tool to analyze\nPok\emon data on the go!\pYou can't get data\non Pok\emon by just seeing them.\pYou must catch them to obtain\ncomplete data.\pSo, here are some tools for\ncatching wild Pok\emon.
 
 #org @gText_GoldtreeVillage_PKMNCenter_PlayerReceivesBalls
-[BLACK][PLAYER] received five Pok\eBalls.
+[BLACK][PLAYER] received five Pok\e Balls.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_06
-[BLACK]Prof. Almond: [BLUE]When a wild Pok\emon\nappears, it's fair game.\pJust throw a Pok\eBall at it and\ntry to catch it!\pThis won't always work, however.\pA healthy Pok\emon can escape.\nYou have to be lucky!\pI've already given [RIVAL] a Pok\eDex.\nHe's already catched some Pok\emon!\pNow, get going, [PLAYER]! And please\ncatch that theif! Good luck!
+[BLACK]Prof. Almond: [BLUE]When a wild Pok\emon\nappears, it's fair game.\pJust throw a Pok\e Ball at it and\ntry to catch it!\pThis won't always work, however.\pA healthy Pok\emon can escape.\nYou have to be lucky!\pI've already given [RIVAL] a Pok\eDex.\nHe's already catched some Pok\emon!\pNow, get going, [PLAYER]! And please\ncatch that theif! Good luck!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_07
 [RIVAL]'s Father: [BLUE]Well, it was\na pleasure to meet you, [PLAYER].\pAnd this may be the starting point\nof your one of a kind adventure!\pI believe you're heading to Erstonia\nCity? Just head north, then!\pGood luck, have fun, and please,\nlook after one another, you and\l[RIVAL].\pFarewell!
