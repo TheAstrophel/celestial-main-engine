@@ -171,9 +171,9 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	special 0x16F @Enables National Dex
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_05, MSG_KEEPOPEN
 	closeonkeypress
-	additem 0x4 0x5
-	loadpointer 0x0 gText_GoldtreeVillage_PKMNCenter_PlayerReceivesBalls
-	giveitemwithfanfare 0x4 0x5 0x101
+	fanfare 0x101
+	obtainitem 0x4 0x5
+	waitfanfare
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_06, MSG_KEEPOPEN
 	closeonkeypress
 	setvar 0x8004 0x0

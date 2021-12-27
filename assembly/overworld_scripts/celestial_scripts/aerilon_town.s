@@ -88,9 +88,9 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	spriteface PLAYER, LEFT
 	msgbox gText_AerilonTown_ProfessorAlmond_01, MSG_KEEPOPEN
 	closeonkeypress
-	additem 0x15D 0x1
-	loadpointer 0x0 gText_AerilonTown_PlayerRecievesParcel
-	giveitemwithfanfare 0x15D 0x1 0x13E
+	fanfare 0x13E
+	obtainitem 0x15D 0x1
+	waitfanfare
 	msgbox gText_AerilonTown_ProfAlmond_02, MSG_KEEPOPEN
 	closeonkeypress
 	compare VAR_TEMP_2, 0xE @Y-Pos equals 0xE
@@ -258,9 +258,9 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 	faceplayer
 	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN
 	closeonkeypress
-	additem 0x15D 0x1
-	loadpointer 0x0 gText_AerilonTown_HouseOfProfessor_PlayerRecievesParcel
-	giveitemwithfanfare 0x15D 0x1 0x13E
+	fanfare 0x13E
+	obtainitem 0x15D 0x1
+	waitfanfare
 	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN
 	closeonkeypress
 	setflag 0x201 @To avoid loop

@@ -23,9 +23,6 @@
 #org @gText_AerilonTown_ProfessorAlmond_01
 [BLACK]Prof. Almond: [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
 
-#org @gText_AerilonTown_PlayerRecievesParcel
-[PLAYER] received the Parcel\nfrom Professor Almond!
-
 #org @gText_AerilonTown_ProfAlmond_02
 [BLACK]Prof. Almond: [BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 

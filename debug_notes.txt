@@ -4,10 +4,10 @@ Offset 2: 096B4E00 = 16B4E00 = 16B4DFF
 
 ADD:
 > Add NPC script of Aide in Aerilon Hills
-> Make mom talk different when player receives parcel from Prof. Almond
-> Polish starter level script - for beta 0.1
+> Polish starter level script - for beta 0.0
 
 NOTE THAT:
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".
-> .equ defines in selected scripts.
+> .equ defines of VARS and PERSON EVENTS in selected scripts.
 > Sequence in all STRING files is as same as the S files.
+> This is a basic project? Maybe reboot on D&D? I HAVE NO IDEA.

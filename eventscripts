@@ -41,6 +41,12 @@ tile 15 1 0 TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingTo
 map 15 0 gMapScripts_AerilonHills_AlmondObservatory
 map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
+#Goldtree Meadows:
+tile 3 21 0 TileScript_GoldtreeMeadows_BattleToStopPlayer
+tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
+tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
+tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
+
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
 npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
