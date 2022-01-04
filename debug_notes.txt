@@ -5,6 +5,7 @@ Offset 2: 096B4E00 = 16B4E00 = 16B4DFF
 ADD:
 > Add NPC script of Aide in Aerilon Hills
 > Polish starter level script - for beta 0.0
+> Remap Aerilon Town, Aerilon Hills, Aerilon Pass, Goldtree Meadows - for Beta 1.0.
 
 NOTE THAT:
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".
