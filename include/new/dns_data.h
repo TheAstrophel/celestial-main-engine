@@ -272,6 +272,17 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			TILESET_PAL_FADE_END
 		},
 	},
+    { //Goldtree Village - House Windows
+        .tilesetPointer = 0x82D4AC4, //Tileset 02
+        .paletteNumToFade = 9,
+        .paletteIndicesToFade =
+        {
+			{7,  RGB(30, 28, 8)},
+			{9,  RGB(24, 22, 5)},
+			{11, RGB(20, 18, 4)},
+            TILESET_PAL_FADE_END
+        },
+    },
 };
 
 #else //For Pokemon Unbound (just for reference)

@@ -1,7 +1,8 @@
 BPRE0 ROM is ahead of official
 ROM (Z-Max/Hack Central/Pokémon - Celestial Version/©Pokémon - Celestial Version/©Pokémon - Celestial Version.gba) by:
 
+Made draft map for Treasure Woods [1.0].
+Inserted Treasure Woods tiles and made some blocks.
 
-
-- look at config.h for custom set healing place & fix pokecenters/nurse joy's
+- maybe scrape treasure woods idea?; look at config.h for custom set healing place & fix pokecenters/nurse joy's
 --Add trainer battle macros/add cut tree and rock smash macros
