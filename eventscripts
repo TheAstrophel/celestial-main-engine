@@ -3,7 +3,6 @@
 npc 3 0 3 NPCScript_AerilonTown_BossyGirl
 npc 4 4 0 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
 npc 4 0 0 NPCScript_AerilonTown_PlayerHouse_PlayerMom
-sign 3 0 3 SignScript_AerilonTown_SetDoorOfAlmondResidence
 sign 4 1 1 SignScript_AerilonTown_PlayerRoom_PersonalComputer
 tile 3 0 0 TileScript_AerilonTown_PlayerTriesToLeave
 tile 3 0 1 TileScript_AerilonTown_PlayerTriesToLeave
@@ -17,7 +16,15 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
 npc 5 3 2 GoldtreeVillage_PKMNCenter_FatherOfRival
+map 3 1 gMapScripts_GoldtreeVillage
 map 5 3 gMapScripts_GoldtreeVillage_PKMNCenter
+
+#Erstonia City:
+npc 3 2 7 NPCScript_ErstoniaCity_GymCaretaker
+npc 3 2 11 NPCScript_ErstoniaCity_ItemObtainRareCandy
+npc 3 2 10 NPCScript_ErstoniaCity_ItemObtainTM27
+tile 6 0 0 TileScript_ErstoniaCity_HouseOfMayor_PlayerTriesToEnterRoomOfLandre
+map 3 2 gMapScripts_ErstoniaCity
 
 #Aerilon Pass:
 npc 3 19 1 NPCScript_AerilonPass_Rival
@@ -47,6 +54,10 @@ tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
 
+#Erstonia Gorge:
+npc 3 23 14 NPCScript_ErstoniaGorge_ItemObtainApicotBerry
+npc 3 23 7 NPCScript_ErstoniaGorge_ItemObtainElectricGem
+
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
 npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
@@ -74,12 +85,21 @@ npc 5 2 0 NPCTalkingScript_GoldtreeVillage_House_SamuelsWife
 npc 5 3 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
 npc 5 3 4 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
 npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
+npc 3 2 0 NPCTalkingScript_ErstoniaCity_WelcomeToErstoniaCityGirl
+npc 3 2 1 NPCTalkingScript_ErstoniaCity_GottaKnowYourStuffMan
+npc 3 2 2 NPCTalkingScript_ErstoniaCity_Fatman
+npc 3 2 3 NPCTalkingScript_ErstoniaCity_GymTipGirl
+npc 3 2 12 NPCTalkingScript_ErstoniaCity_NoBeautyHereGirl
+npc 3 2 4 NPCTalkingScript_ErstoniaCity_ErstoniaGorgeBoy
+npc 3 2 8 NPCTalkingScript_ErstoniaCity_GrandpaGirl
+npc 3 2 9 NPCTalkingScript_ErstoniaCity_WestrayVillageGuy
+npc 3 2 6 NPCTalkingScript_ErstoniaCity_TrainerTipsInformantMan
+sign 3 0 1 SignpostScript_AerilonTown_MainTown
+sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
+sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
 sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
 sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
-sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
-sign 3 0 1 SignpostScript_AerilonTown_MainTown
-sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
 sign 3 20 0 SignpostScript_AerilonHills_MainRoute
 sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
 sign 3 19 0 SignpostScript_AerilonPass_MainRoute
@@ -100,3 +120,11 @@ sign 3 21 2 SignpostScript_GoldtreeMeadows_TreasureWoods
 sign 3 21 3 SignpostScript_GoldtreeMeadows_MainRoute_02
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
 sign 3 22 1 SignpostScript_KingsPath_MainRoute
+sign 3 2 0 SignpostScript_ErstoniaCity_MainTown
+sign 3 2 1 SignpostScript_ErstoniaCity_Gym
+sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
+sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
+sign 3 2 4 SignpostScript_ErstoinaCity_MayorHouse
+sign 3 23 0 SignpostScript_ErstoniaGorge_MainRoute
+sign 3 23 1 SignpostScript_ErstoniaGorge_TrainerTips
+sign 3 23 2 SignpostScript_ErstoniaGorge_PerilPassage

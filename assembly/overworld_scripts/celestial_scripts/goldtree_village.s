@@ -56,6 +56,16 @@ m_PlayerStepsRightAndEnters: .byte walk_right, walk_up, set_invisible, end_m
 m_PlayerStepsUpAndEnters: .byte walk_up, walk_up, set_invisible, end_m
 m_PlayerStepsLeftAndEnters: .byte walk_left, walk_up, set_invisible, end_m
 
+#Level scripts:
+.global gMapScripts_GoldtreeVillage
+gMapScripts_GoldtreeVillage:
+	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_GoldtreeVillage
+	.byte MAP_SCRIPT_TERMIN
+
+MapEntryScript_GoldtreeVillage:
+	setworldmapflag 0x891
+	end
+
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
 .global GoldtreeVillage_PKMNCenter_FatherOfRival
@@ -207,7 +217,7 @@ m_DashesOutOfPKMNCenter: .byte run_left, run_left, run_left, run_left, run_left,
 m_ExitsPKMNCenter: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_down, walk_down, pause_long, walk_down_onspot, end_m
 
 MapEntryScript_GoldtreeVillage_PKMNCenter:
-	sethealingplace 0xE
+	sethealingplace 0x2
 	compare VAR_MAIN_STORY, MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE
 	if equal _call MapEntryScript_GoldtreeVillage_PKMNCenter_FirstTimeEntering
 	end

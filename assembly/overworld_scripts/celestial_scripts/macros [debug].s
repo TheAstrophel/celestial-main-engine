@@ -7,9 +7,8 @@
 .include "../xse_defines.s"
 .include "../asm_defines.s"
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@s
-#Script for macro:
-.macro macromsgbox2 title:req, post:req, type:req
+@;////////////////////////////////////////////////
+.macro macromsgbox title:req, post:req, type:req
     msgbox \title\post, \type
 .endm
 
@@ -18,14 +17,20 @@
 NPCTalkingScript_\scriptName:
     lock
 	faceplayer 
-    macromsgbox2 gText_\scriptName, NPC MSG_NORMAL
+    macromsgbox gText_\scriptName, NPC MSG_NORMAL
 	closeonkeypress
     end
 .endm
+.macro signpost scriptName:req
+.global SignpostScript_\scriptName
+SignpostScript_\scriptName:
+    macromsgbox gText_\scriptName, Sign MSG_SIGN
+    end
+.endm
 
-#Macro defines:
+#Define's for NPC/Sign macro's
 npctalking AerilonTown_RockyCliffsBoy
-npctalking AerilonTown_UselessResearchGirl
+npctalking AerilonTown_UselessResearchGirl 
 npctalking AerilonTown_FatGuy
 npctalking AerilonTown_OldMan
 npctalking AerilonTown_House_HouseLady
@@ -50,21 +55,15 @@ npctalking GoldtreeVillage_House_SamuelsWife
 npctalking GoldtreeVillage_PKMNCeter_StrangerBoy
 npctalking GoldtreeVillage_PKMNCeter_GymGirl
 npctalking KingsPath_JustADitchMan
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#Script for macro:
-.macro macromsgbox1 title:req, post:req, type:req
-    msgbox \title\post, \type
-.endm
-
-.macro signpost scriptName:req
-.global SignpostScript_\scriptName
-SignpostScript_\scriptName:
-    macromsgbox1 gText_\scriptName, Sign MSG_SIGN
-    end
-.endm
-
-#Macro defines:
+npctalking ErstoniaCity_WelcomeToErstoniaCityGirl
+npctalking ErstoniaCity_GottaKnowYourStuffMan
+npctalking ErstoniaCity_Fatman
+npctalking ErstoniaCity_GymTipGirl
+npctalking ErstoniaCity_NoBeautyHereGirl
+npctalking ErstoniaCity_ErstoniaGorgeBoy
+npctalking ErstoniaCity_GrandpaGirl
+npctalking ErstoniaCity_WestrayVillageGuy
+npctalking ErstoniaCity_TrainerTipsInformantMan
 signpost AerilonTown_PlayerRoom_PrettyPicture
 signpost AerilonTown_PlayerRoom_GameConsole
 signpost AerilonTown_PlayerHouse
@@ -81,3 +80,11 @@ signpost GoldtreeMeadows_TreasureWoods
 signpost GoldtreeMeadows_MainRoute_02
 signpost KingsPath_SmallOpening
 signpost KingsPath_MainRoute
+signpost ErstoniaCity_MainTown
+signpost ErstoniaCity_Gym
+signpost ErstoniaCity_TrainerTips
+signpost ErstoniaCity_ErstoniaApartments
+signpost ErstoinaCity_MayorHouse
+signpost ErstoniaGorge_MainRoute
+signpost ErstoniaGorge_TrainerTips
+signpost ErstoniaGorge_PerilPassage

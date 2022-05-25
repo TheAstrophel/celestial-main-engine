@@ -11,23 +11,11 @@
 NPCScript_AerilonTown_BossyGirl:
 	compare 0x4011, 0x5 @0x4011 is set to 0x5 when [player] meets Rival outside Observatory
 	if greaterorequal _goto OtherMessageFromBossyGirl
-	msgbox gText_AerilonTown_BossyGirl_01, MSG_FACE
+	msgboxname gText_AerilonTown_BossyGirl_01, MSG_FACE, gText_BossyGirlName
 	end
 	
 OtherMessageFromBossyGirl:
-	msgbox gText_AerilonTown_BossyGirl_02, MSG_FACE
-	end
-
-#Sign scripts:
-.global SignScript_AerilonTown_SetDoorOfAlmondResidence
-SignScript_AerilonTown_SetDoorOfAlmondResidence:
-	compare 0x4011, 0x5 @0x4011 (var main story) is set to 0x5 when [player] meets Rival outside Observatory
-	if lessthan _goto SignScript_AerilonTown_SetDoorOfAlmondResidence_ClosedDoor
-	msgbox gText_AerilonTown_AlmondResidenceOpenedDoor, MSG_SIGN
-	end
-
-SignScript_AerilonTown_SetDoorOfAlmondResidence_ClosedDoor:
-	msgbox gText_AerilonTown_AlmondResidenceClosedDoor, MSG_SIGN
+	msgboxname gText_AerilonTown_BossyGirl_02, MSG_FACE, gText_BossyGirlName
 	end
 
 #Tile scripts:
@@ -38,7 +26,7 @@ TileScript_AerilonTown_PlayerTriesToLeave:
 	sound 0x15
 	applymovement 0x4, m_LookDownExclaim @0x4 is the girl standing at right edge of town
 	waitmovement 0x0
-	msgbox gText_AerilonTown_BossyGirl_03, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_BossyGirl_03, MSG_KEEPOPEN, gText_BossyGirlName
 	waitmsg
 	closeonkeypress
 	applymovement PLAYER, m_StepLeft
@@ -86,12 +74,12 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	compare VAR_TEMP_2, 0x10 @Y-Pos equals 0x10
 	if equal _call ApproachPlayerWhenScriptNumberFive
 	spriteface PLAYER, LEFT
-	msgbox gText_AerilonTown_ProfessorAlmond_01, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	fanfare 0x13E
 	obtainitem 0x15D 0x1
 	waitfanfare
-	msgbox gText_AerilonTown_ProfAlmond_02, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	compare VAR_TEMP_2, 0xE @Y-Pos equals 0xE
 	if equal _call LeavePlayerWhenScriptNumberThree
@@ -142,7 +130,7 @@ LeavePlayerWhenScriptNumberFive:
 	return
 
 AlreadyMetProfessorWhenLeavingAerilonTown:
-	msgbox gText_AerilonTown_Mom_01, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_Mom_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	spriteface PLAYER, LEFT
 	showsprite MOM
@@ -154,7 +142,7 @@ AlreadyMetProfessorWhenLeavingAerilonTown:
 	if equal _call SetMomPosition02
 	applymovement MOM, m_MomMovesToPlayer
 	waitmovement 0x0
-	msgbox gText_AerilonTown_Mom_02, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_Mom_02, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomLeaves
 	waitmovement 0x0
@@ -217,7 +205,7 @@ LevelScripts_AerilonTown:
 
 LevelScript_AerilonTown:
 	lockall
-	msgbox gText_AerilonTown_Aide_01, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_Aide_01, MSG_KEEPOPEN, gText_UnknownName
 	closeonkeypress
 	checksound
 	sound 0x15
@@ -225,7 +213,7 @@ LevelScript_AerilonTown:
 	waitmovement 0x0
 	applymovement PROF_AIDE, m_WalkLeftTowardsPlayer
 	waitmovement 0x0
-	msgbox gText_AerilonTown_Aide_02, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_Aide_02, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	applymovement PROF_AIDE, m_WalkRightAwayFromPlayer
 	waitmovement 0x0
@@ -256,12 +244,12 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 	if equal _goto AlreadyMetProfessor
 	lock
 	faceplayer
-	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	fanfare 0x13E
 	obtainitem 0x15D 0x1
 	waitfanfare
-	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	setflag 0x201 @To avoid loop
 	setflag 0x22F @For if [player] goes and meets Mom instead of leaving town
@@ -271,13 +259,13 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 
 AlreadyMetProfessor:
 	lock
-	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_03, MSG_FACE
+	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_03, MSG_FACE, gText_ProfAlmondName
 	spriteface 0x1, RIGHT
 	release
 	end
 
 PlayerHasDelieverdParcelToFatherOfRival:
-	msgbox gText_AerilonTown_HouseOfProfessor_ProfAlmond_04, MSG_FACE
+	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_04, MSG_FACE, gText_ProfAlmondName
 	spriteface 0x1, RIGHT
 	release
 	end
@@ -309,36 +297,36 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 
 MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
 	faceplayer
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	call HealPlayerParty
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyTalkedWithMom:
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_01, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_01, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyMetAide:
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_02, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_02, MSG_FACE, gText_MomName
 	release
 	end
 
 PlayerMetRival:
 	checkflag 0x22F @This flag checks whether [player] talked to Mom after receiving starter
 	if equal _goto PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_03, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_03, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown:
 	faceplayer
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	clearflag 0x201 @This flag is later used in scripts, so it has been been cleared
 	clearflag 0x22F @Since var is set below, no use for this flag to be set
@@ -348,24 +336,24 @@ PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown:
 	end
 
 PlayerAlreadyMetProfessor:
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_05, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_05, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyDefeatedRival:
 	faceplayer
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	call HealPlayerParty
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyVisitedGoldtree: 
 	faceplayer
-	msgbox gText_AerilonTown_PlayerHouse_PlayerMom_06, MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_06, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	setflag 0x22F @Set again so mom says something different and heals party
 	spriteface MOM, LEFT
@@ -425,18 +413,16 @@ LevelScript_AerilonTown_PlayerHouse:
 	applymovement MOM, m_LookUpExclaim
 	waitmovement 0x0
 	pause 0x1E
-	preparemsg gText_AerilonTown_PlayerHouse_Mom_01
-	waitmsg
-	pause 0x3A
+	msgboxname gText_AerilonTown_PlayerHouse_Mom_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomMoveToPlayer
 	waitmovement 0x0
 	spriteface PLAYER, DOWN
-	msgbox gText_AerilonTown_PlayerHouse_Mom_02a MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_Mom_02a MSG_KEEPOPEN, gText_MomName
 	fanfare 0x10D
 	msgbox gText_AerilonTown_PlayerHouse_Mom_02b MSG_KEEPOPEN
 	waitfanfare
-	msgbox gText_AerilonTown_PlayerHouse_Mom_02c MSG_KEEPOPEN
+	msgboxname gText_AerilonTown_PlayerHouse_Mom_02c MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomMoveBackToSpot
 	waitmovement 0x0
@@ -445,6 +431,6 @@ LevelScript_AerilonTown_PlayerHouse:
 	releaseall
 	end
 
-m_LookUpExclaim: .byte look_up, exclaim, end_m
+m_LookUpExclaim: .byte look_up, exclaim, pause_long, pause_long, end_m
 m_MomMoveToPlayer: .byte walk_right, walk_right, walk_up, end_m
 m_MomMoveBackToSpot: .byte walk_down, walk_left, walk_left, end_m

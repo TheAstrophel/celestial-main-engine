@@ -24,6 +24,8 @@
 #include "../include/map_scripts.h"
 #include "../include/metatile_behavior.h"
 #include "../include/overworld.h"
+#include "../include/menu.h" //for NPC name identifier box
+#include "../include/string_util.h" //for NPC name identifier box
 #include "../include/party_menu.h"
 #include "../include/quest_log.h"
 #include "../include/random.h"
@@ -2721,3 +2723,27 @@ const union AnimCmd gEventObjectImageAnim_RunEast[] =
 	ANIMCMD_JUMP(0),
 };
 #endif
+
+//NPC Name Identifier Box
+#define sCoinsWindowId (*((u8*) 0x2039A28))
+//Input: gLoadPointer - Text string of name
+//Hidecoins
+void AddPersonNameWindow(void)
+{
+    u32 width;
+    struct WindowTemplate template;
+    u8 textBuffer[30];
+    
+    StringExpandPlaceholders(textBuffer, gLoadPointer); //Text string of name in gLoadPointer
+
+    width = GetStringWidth(1, textBuffer, 0);
+    width = width / 8 + 1;
+
+    template = SetWindowTemplateFields(0, 1, 11, width, 2, 0xF, 0x20);
+    sCoinsWindowId = AddWindow(&template);
+    FillWindowPixelBuffer(sCoinsWindowId, PIXEL_FILL(1));
+    PutWindowTilemap(sCoinsWindowId);
+    TextWindow_SetStdFrame0_WithPal(sCoinsWindowId, 0x21D, 0xD0);
+    DrawStdFrameWithCustomTileAndPalette(sCoinsWindowId, FALSE, 0x21D, 0xD);
+    AddTextPrinterParameterized(sCoinsWindowId, 1, textBuffer, 0, 0, 0, NULL);
+}

@@ -1,0 +1,10 @@
+BPRE0 ROM is ahead of official
+ROM (Z-Max/Hack Central/Pokémon - Celestial Version/©Pokémon - Celestial Version/©Pokémon - Celestial Version.gba) by:
+
+Changed some Event's behaviour in Erstonia Gorge.
+Deleted extra Warp Events in Erstonia Gorge.
+Started Peril Passage mapping.
+Fixed a block error in Erstonia Gorge.
+
+- Fix Footer ID's of Erstonia submaps and complete them; Complete Goldtree Meadows and Grandtree Woods; Add Wild Mons in Routes; 
+  Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's.

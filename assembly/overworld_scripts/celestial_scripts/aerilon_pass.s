@@ -54,10 +54,10 @@ m_RivalLeaves: .byte walk_right, walk_right, walk_right, walk_down, walk_down, w
 .global NPCScript_AerilonPass_ItemObtainPotion
 NPCScript_AerilonPass_ItemObtainPotion:
 	giveitem 0xD 0x1, MSG_FIND
-	call SetItemFlag
+	call SetItemFlag_ItemObtainPotion
 	end
 
-SetItemFlag:
+SetItemFlag_ItemObtainPotion:
 	setflag 0x154 @Person ID of Potion in A-Map
 	return
 

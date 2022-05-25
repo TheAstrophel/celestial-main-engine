@@ -1869,6 +1869,21 @@ map \map
 	callstd \type
 .endm
 
+.macro addpersonname speaker_name:req
+    loadpointer 0x0 \speaker_name
+    callasm AddPersonNameWindow
+.endm
+
+.macro hidepersonname
+    hidecoins 1, 11
+.endm
+
+.macro msgboxname pointer:req msg_type:req speaker_name:req
+    addpersonname \speaker_name
+    msgbox \pointer \msg_type
+    hidepersonname
+.endm
+
 .macro switch var:req
 	copyvar 0x8000, \var
 .endm

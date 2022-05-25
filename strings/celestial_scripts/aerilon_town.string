@@ -9,35 +9,29 @@
 [RED]The wild is dangerous without a\nPok\emon!\pDon't even think of going beyond this\npoint without one!
 
 #org @gText_AerilonTown_Aide_01
-[BLACK]???: [BLUE][PLAYER]!
+[BLUE][PLAYER]!
 
 #org @gText_AerilonTown_Aide_02
-[BLACK]Aide: [BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the [GREEN]entrance of\nAerilon Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
+[BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the [GREEN]entrance of\nAerilon Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
 
-#org @gText_AerilonTown_AlmondResidenceClosedDoor
-[BLACK]The door is locked[.]
-
-#org @gText_AerilonTown_AlmondResidenceOpenedDoor
-[BLACK]The door is open.
-
-#org @gText_AerilonTown_ProfessorAlmond_01
-[BLACK]Prof. Almond: [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
+#org @gText_AerilonTown_ProfAlmond_01
+[BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
 
 #org @gText_AerilonTown_ProfAlmond_02
-[BLACK]Prof. Almond: [BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLUE]Make sure the\nparcel reaches [RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_Mom_01
-[BLACK]Mom: [RED][PLAYER]!
+[RED][PLAYER]!
 
 #org @gText_AerilonTown_Mom_02
-[BLACK]Mom: [RED]You're leaving town? But what\nfor? Oh? An errand?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you! Take care, [PLAYER]!
+[RED]You're leaving town? But what\nfor? Oh? An errand?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you! Take care, [PLAYER]!
 
 //Sub-maps:
 #org @gText_AerilonTown_PlayerRoom_PersonalComputerBootUp
 [PLAYER] booted up the PC.
 
 #org @gText_AerilonTown_PlayerHouse_Mom_01
-[BLACK]Mom: [RED][PLAYER]!
+[RED][PLAYER]!
 
 #org @gText_AerilonTown_PlayerHouse_Mom_02a
 [RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's Aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Aerilon Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Aerilon Hills[RED].\pHe knows me and your father quite\nwell! You were too little, hehe.\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake these as well!
@@ -49,46 +43,46 @@
 [RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-run on and off!\pTake care, sweetie!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_01
-[BLACK]Prof. Almond: [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
+[BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
 
 #org @gText_AerilonTown_HouseOfProfessor_PlayerRecievesParcel
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_02
-[BLACK]Prof. Almond: [BLUE][RIVAL]'s father lives\nin Goldtree Village.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLUE][RIVAL]'s father lives\nin Goldtree Village.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_03
-[BLACK]Prof. Almond: [BLUE]You should tell\nyour mother you're leaving town.\pI really don't want to get in trouble,\neheh[.]
+[BLUE]You should tell\nyour mother you're leaving town.\pI really don't want to get in trouble,\neheh[.]
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_04
-[BLACK]Prof. Almond: [BLUE]I've contacted the\nauthorities. You needn't worry!\pBut why not try catching that theif\non your own? For some experience?
+[BLUE]I've contacted the\nauthorities. You needn't worry!\pBut why not try catching that theif\non your own? For some experience?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_01
-[BLACK]Mom: [RED]You should go and meet the\nProfessor's Aide.
+[RED]You should go and meet the\nProfessor's Aide.
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_02
-[BLACK]Mom: [RED]What? The Professor wants you\nto meet him in person?\pI wonder what he wants?
+[RED]What? The Professor wants you\nto meet him in person?\pI wonder what he wants?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_03
-[BLACK]Mom: [RED]Did you go and meet the\nProfessor yet?
+[RED]Did you go and meet the\nProfessor yet?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_04
-[BLACK]Mom: [RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_05
-[BLACK]Mom: [RED]You come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]You come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN
-[BLACK]Mom: [RED][PLAYER]! Why don't you take\na quick rest?
+[RED][PLAYER]! Why don't you take\na quick rest?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack
-[BLACK]Mom: [RED]Now, you come back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]Now, you come back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_06
-[BLACK]Mom: [RED]Oh, [PLAYER][.]\nI can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!
+[RED]Oh, [PLAYER][.]\nI can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01
-[BLACK]Mom: [RED][PLAYER]! If you're here, why\nnot take a quick rest?
+[RED][PLAYER]! If you're here, why\nnot take a quick rest?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02
-[BLACK]Mom: [RED]There, that's better!\nStay safe out there! Make me proud!
+[RED]There, that's better!\nStay safe out there! Make me proud!
