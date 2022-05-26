@@ -92,6 +92,9 @@
 .equ BG_DYNAMAX_CANNON, 0x4A
 .equ BG_AURA_SPHERE, 0x4B
 
+#For Battle Backgrounds
+##.equ BG_GRASS_DAY, 0x4C
+
 @pals for pal fading tasks
 .equ PAL_BG, 0x1
 .equ PAL_ATK, 0x2

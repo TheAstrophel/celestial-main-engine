@@ -1,5 +1,5 @@
 /*
-definitions for battle backgrounds
+definitions for backgrounds used in attacks or terrain
 */
 
 .equ BG_PSYCHIC_PAL, PsychicPal

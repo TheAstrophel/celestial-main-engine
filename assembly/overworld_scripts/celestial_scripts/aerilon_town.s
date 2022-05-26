@@ -79,7 +79,7 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	fanfare 0x13E
 	obtainitem 0x15D 0x1
 	waitfanfare
-	msgboxname gText_AerilonTown_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_AerilonTown_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	compare VAR_TEMP_2, 0xE @Y-Pos equals 0xE
 	if equal _call LeavePlayerWhenScriptNumberThree
