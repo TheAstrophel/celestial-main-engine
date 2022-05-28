@@ -1389,7 +1389,7 @@ Brine
 Fairy Wind
 
 #org @NAME_DOLL_EYES
-Doll Eyes
+B-D. Eyes
 
 #org @NAME_PLAY_ROUGH
 Play Rough
@@ -1404,7 +1404,7 @@ D. Kiss
 Dazzle Gleam
 
 #org @NAME_DISARM_CRY
-Disarm Cry
+D. Voice
 
 #org @NAME_STEALTH_ROCK
 Stealth Rock
@@ -1530,13 +1530,13 @@ Chip Away
 Smack Down
 
 #org @NAME_SPACE_HOLE
-Space Hole
+Hypers. Hole
 
 #org @NAME_GYRO_BALL
 Gyro Ball
 
 #org @NAME_SPACE_FURY
-Space Fury
+Hypers. Fury
 
 #org @NAME_ATTACK_ORDER
 Attack Order
@@ -1557,13 +1557,13 @@ Defog
 Origin Pulse
 
 #org @NAME_CLIFF_BLADES
-Cliff Blades
+Pre. Blades
 
 #org @NAME_GUARD_SWAP
 Guard Swap
 
 #org @NAME_STEAM_PUMP
-Steam Pump
+St. Eruption
 
 #org @NAME_METAL_BURST
 Metal Burst
@@ -1689,7 +1689,7 @@ Parting Shot
 Topsy-Turvy
 
 #org @NAME_CORE_ENFORCE
-Core Enforce
+C. Enforcer
 
 #org @NAME_CHATTER
 Chatter
@@ -1701,7 +1701,7 @@ Confide
 W. Shuriken
 
 #org @NAME_MYSTIC_FIRE
-Mystic Fire
+M. Fire
 
 #org @NAME_SPIKY_SHIELD
 Spiky Shield
@@ -1743,7 +1743,7 @@ Anchor Shot
 Aurora Veil
 
 #org @NAME_BANEFUL_BUNK
-Baneful Bunk
+B. Bunker
 
 #org @NAME_BEAK_BLAST
 Beak Blast
@@ -1755,10 +1755,10 @@ Brutal Swing
 Burn Up
 
 #org @NAME_CLANG_SCALES
-Clang Scales
+C. Scales
 
 #org @NAME_DARK_LARIAT
-Dark Lariat
+D. Lariat
 
 #org @NAME_DRACO_HAMMER
 Draco Hammer
@@ -1767,7 +1767,7 @@ Draco Hammer
 Fire Lash
 
 #org @NAME_FIRST_PRESS
-First Press
+F. Imp.
 
 #org @NAME_FLEUR_CANNON
 Fleur Cannon
@@ -1779,7 +1779,7 @@ Floral Heal
 Gear Up
 
 #org @NAME_HORSEPOWER
-Horsepower
+H. Horsep.
 
 #org @NAME_ICE_HAMMER
 Ice Hammer
@@ -1797,13 +1797,13 @@ Liquidation
 Lunge
 
 #org @NAME_GEIST_BEAM
-Geist Beam
+Mge. Beam
 
 #org @NAME_MULTI_ATTACK
 Multi-Attack
 
 #org @NAME_NATURE'S_MAD
-Nature's Mad
+N. Madness
 
 #org @NAME_POLLEN_PUFF
 Pollen Puff
@@ -1812,7 +1812,7 @@ Pollen Puff
 Power Trip
 
 #org @NAME_PRISM_LASER
-Prism Laser
+Pris. Laser
 
 #org @NAME_PSYCHIC_FANG
 Psychic Fang
@@ -1821,7 +1821,7 @@ Psychic Fang
 Purify
 
 #org @NAME_REVEL_DANCE
-Revel Dance
+R. Dance
 
 #org @NAME_SHADOW_BONE
 Shadow Bone
@@ -1839,10 +1839,10 @@ Smart Strike
 Solar Blade
 
 #org @NAME_SPARKLE_ARIA
-Sparkle Aria
+Spar. Aria
 
 #org @NAME_SPECT_THIEF
-Spect Thief
+Spect. Thief
 
 #org @NAME_SPEED_SWAP
 Speed Swap
@@ -1854,16 +1854,16 @@ Spirit Lock
 Spotlight
 
 #org @NAME_BAD_TANTRUM
-Bad Tantrum
+Stm. Tantrum
 
 #org @NAME_STRENGTH_SAP
 Strength Sap
 
 #org @NAME_SUNSTEEL_RAM
-Sunsteel Ram
+Suns. Strike
 
 #org @NAME_TEARY_LOOK
-Teary Look
+Tearf. Look
 
 #org @NAME_THROAT_CHOP
 Throat Chop
@@ -1878,16 +1878,16 @@ Trop Kick
 Zing Zap
 
 #org @NAME_ELEC_TERRAIN
-Elec Terrain
+E. Terrain
 
 #org @NAME_GRAS_TERRAIN
-Gras Terrain
+G. Terrain
 
 #org @NAME_MIST_TERRAIN
-Mist Terrain
+M. Terrain
 
 #org @NAME_PSYC_TERRAIN
-Psyc Terrain
+P. Terrain
 
 #org @NAME_GRASS_PLEDGE
 Grass Pledge
@@ -1977,19 +1977,19 @@ Soak
 Telekinesis
 
 #org @NAME_TRICKOTREAT
-TrickoTreat
+Tr.-or-Treat
 
 #org @NAME_VENOM_DRENCH
 Venom Drench
 
 #org @NAME_WOODS_CURSE
-Woods Curse
+Fores. Curse
 
 #org @NAME_MIND_BLOWN
 Mind Blown
 
 #org @NAME_PHOTONGEYSER
-PhotonGeyser
+Ph. Geyser
 
 #org @NAME_PLASMA_FISTS
 Plasma Fists
@@ -2004,7 +2004,7 @@ Embargo
 Fairy Lock
 
 #org @NAME_LIGHT_O_RUIN
-Light o Ruin
+Lig. of Ruin
 
 #org @NAME_TRUMP_CARD
 Trump Card
@@ -2022,7 +2022,7 @@ Quash
 Happy Hour
 
 #org @NAME_DOUBLE_IRON
-Double Iron
+D. Iron Bash
 
 #org @NAME_LAST_RESORT
 Last Resort
@@ -2037,7 +2037,7 @@ Celebrate
 Hold Hands
 
 #org @NAME_DYNAMAX_CANNON
-DMax Cannon
+Daim. Cannon
 
 #org @NAME_SNIPE_SHOT
 Snipe Shot
@@ -2070,13 +2070,13 @@ Octolock
 Bolt Beak
 
 #org @NAME_FISHIOUS_REND
-Fishy Rend
+Fishio. Rend
 
 #org @NAME_COURT_CHANGE
 Court Change
 
 #org @NAME_CLANGOROUS_SOUL
-Clang Soul
+Clang. Soul
 
 #org @NAME_BODY_PRESS
 Body Press
@@ -2094,16 +2094,16 @@ Snap Trap
 Pyro Ball
 
 #org @NAME_BEHEMOTH_BLADE
-Giant Blade
+Behem. Blade
 
 #org @NAME_BEHEMOTH_BASH
-Giant Bash
+Behem. Bash
 
 #org @NAME_AURA_WHEEL
 Aura Wheel
 
 #org @NAME_BREAKING_SWIPE
-Break Swipe
+B. Swipe
 
 #org @NAME_BRANCH_POKE
 Branch Poke
@@ -2121,7 +2121,7 @@ Grav Apple
 Spirit Break
 
 #org @NAME_STRANGE_STEAM
-Weird Steam
+Str. Steam
 
 #org @NAME_LIFE_DEW
 Life Dew
@@ -2130,10 +2130,10 @@ Life Dew
 Obstruct
 
 #org @NAME_FALSE_SURRENDER
-False Yield
+F. Surrender
 
 #org @NAME_METEOR_ASSAULT
-Meteor Rush
+M. Assault
 
 #org @NAME_ETERNABEAM
 Eternabeam
@@ -2142,7 +2142,7 @@ Eternabeam
 Steel Beam
 
 #org @NAME_EXPANDING_FORCE
-Expand Force
+Exp. Force
 
 #org @NAME_STEEL_ROLLER
 Steel Roller
@@ -2154,25 +2154,25 @@ Scale Shot
 Meteor Beam
 
 #org @NAME_SHELL_SIDE_ARM
-ShellSideArm
+S.S. Arm
 
 #org @NAME_MISTY_EXPLOSION
-MistyExplode
+M. Explosion
 
 #org @NAME_GRASSY_GLIDE
 Grassy Glide
 
 #org @NAME_RISING_VOLTAGE
-Rising Volt
+Ri. Voltage
 
 #org @NAME_TERRAIN_PULSE
-TerrainPulse
+Ter. Pulse
 
 #org @NAME_SKITTER_SMACK
-SkitterSmack
+Skit. Smack
 
 #org @NAME_BURNING_JEALOUSY
-Jealous Burn
+B. Jealousy
 
 #org @NAME_LASH_OUT
 Lash Out
@@ -2181,7 +2181,7 @@ Lash Out
 Poltergeist
 
 #org @NAME_CORROSIVE_GAS
-Corrode Gas
+Cor. Gas
 
 #org @NAME_COACHING
 Coaching
@@ -2193,25 +2193,25 @@ Flip Turn
 Triple Axel
 
 #org @NAME_DUAL_WINGBEAT
-DualWingbeat
+D. Wingbeat
 
 #org @NAME_SCORCHING_SANDS
-Scorch Sands
+Sc. Sands
 
 #org @NAME_JUNGLE_HEALING
-Jungle Heal
+Jun. Healing
 
 #org @NAME_WICKED_BLOW
 Wicked Blow
 
 #org @NAME_SURGING_STRIKES
-SurgeStrikes
+S. Strikes
 
 #org @NAME_FREEZING_GLARE
-Freeze Glare
+Fr. Glare
 
 #org @NAME_THUNDEROUS_KICK
-Thunder Kick
+Thun. Kick
 
 #org @NAME_FIERY_WRATH
 Fiery Wrath
@@ -2220,7 +2220,7 @@ Fiery Wrath
 Thunder Cage
 
 #org @NAME_DRAGON_ENERGY
-DragonEnergy
+Drg. Energy
 
 #org @Z_Move_1
 Z-Move 1

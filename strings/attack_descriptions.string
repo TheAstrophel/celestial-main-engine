@@ -425,7 +425,7 @@ An attack that\ntears the space\naround it. Critical\nhits land more\neasily.
 A maelstrom of fire\nrages that traps\nthe target for four\nto five turns.
 
 #org @DESC_FINALGAMBIT
-The user risks all,\ndealing damage\nequal to its HP\nand then fainting\nfrom exhaustion.
+The user risks all,\ndealing damage\nequal to its HP\nand then fainting.
 
 #org @DESC_SHADOWFORCE
 The user vanishes,\nthen strikes on the\nnext turn, hitting\neven protected foes.
@@ -440,10 +440,10 @@ If an ally fainted\nin the previous\nturn, this attack's\ndamage increases.
 A physical attack\nin which the user\ncharges, full body,\ninto the foe.
 
 #org @DESC_JUDGMENT
-An attack which\nchanges type,\ndepending on which\nkind of Plate the\nuser is holding.
+An attack which\nchanges type,\ndepending on the\nPlate held.
 
 #org @DESC_FREEZEDRY
-An attack which may\nleave the target\nfrozen. It is also\nsuper effective on\nWater types.
+An attack which may\nleave the target\nfrozen. Effective on\nWater types.
 
 #org @DESC_PSYSHOCK
 An odd psychic wave\nattacks the target.\nThis attack does\nphysical damage.
@@ -452,10 +452,10 @@ An odd psychic wave\nattacks the target.\nThis attack does\nphysical damage.
 The user attacks\nwith a song. Others\ncan join in, doing\nmore damage.
 
 #org @DESC_TAILSLAP
-The use attacks by\nhitting the target\nwith its hard tail.\nIt hits two to five\ntimes in a row.
+The use attacks by\nhitting the target\nwith its hard tail.\n2-5 hit chance.
 
 #org @DESC_GEARGRIND
-The user attacks by\nthrowing two steel\ngears at it target.\nThis attack hits\ntwice in a row.
+The user attacks by\nthrowing two steel\ngears at its target.\nHits twice.
 
 #org @DESC_NATURALGIFT
 The type and base\npower of this move\nis determined by\nthe user's Berry.
@@ -464,7 +464,7 @@ The type and base\npower of this move\nis determined by\nthe user's Berry.
 An attack which is\nnot affected by the\ntarget's stat\nchanges.
 
 #org @DESC_SMACKDOWN
-A projectile is\nthrown at the\nopponent. A flying\nPok\emon will fall\nto the ground.
+A projectile is\nthrown at the\nopponent. Flying\nPok\emon will fall.
 
 #org @DESC_HYPERSPACEHOLE
 The user attacks\nfrom a hyperspace\nhole, hitting even\nprotected targets.
@@ -473,7 +473,7 @@ The user attacks\nfrom a hyperspace\nhole, hitting even\nprotected targets.
 A high-speed spin.\nThe slower the user\nis than the foe, the\ngreater the damage.
 
 #org @DESC_HYPERSPACEFURY
-The target is hit\nwith many arms.\nThis hits protected\nfoes, and lowers\nthe user's Defense.
+The target is hit\nwith many arms.\nHits protected\nfoes, and lowers\nthe user's Defense.
 
 #org @DESC_ATTACKORDER
 The user calls out\nits underlings to\npummel the foe.\nIt has a high\ncritical-hit ratio.
