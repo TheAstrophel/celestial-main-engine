@@ -283,6 +283,26 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
             TILESET_PAL_FADE_END
         },
     },
+	{ //Erstonia City - Building Windows
+		.tilesetPointer = 0x82D4ADC, //Tileset 03
+		.paletteNumToFade = 8,
+		.paletteIndicesToFade =
+		{
+			{2, RGB(30, 28, 8)},
+			{12, RGB(24, 22, 5)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Erstonia City - Lamps
+		.tilesetPointer = 0x82D4ADC, //Tileset 03
+		.paletteNumToFade = 10,
+		.paletteIndicesToFade =
+		{
+			{5, RGB(30, 28, 8)},
+			{6, RGB(24, 22, 5)},
+			TILESET_PAL_FADE_END
+		},
+	},
 };
 
 #else //For Pokemon Unbound (just for reference)
