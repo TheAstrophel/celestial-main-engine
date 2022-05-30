@@ -20,6 +20,9 @@
     0x2 bit is responsible for the id of sent out pokemon. 0 means it's the first sent out pokemon, 1 it's the second one. (Triple battle didn't exist at the time yet.)
 */
 
+// LAST_USED_BALL
+#define B_ACTION_THROW_BALL             21 // R to throw last used ball
+//
 #define BATTLE_BANKS_COUNT  4
 
 #define IDENTITY_PLAYER_MON1        0
@@ -695,6 +698,9 @@ struct BattleStruct
 	u8 field_187;
 	struct BattleEnigmaBerry battleEnigmaBerry;
 	u8 field_1A4[0x5C]; // currently unknown
+	// LAST_USED_BALL
+    u8 ballSpriteIds[2];    // item gfx, window gfx
+	//
 }; //size == 0x200 bytes
 
 extern struct BattleStruct* gBattleStruct;
@@ -1449,6 +1455,7 @@ extern u16 gLastUsedItem;
 extern u8 gLastUsedAbility;
 extern u8 gBankAttacker;
 extern u8 gBankTarget;
+extern u8 gBattlerAttacker; // LAST_USED_BALL
 extern u8 gBankFainted;
 extern u8 gEffectBank;
 extern u8 gStringBank;

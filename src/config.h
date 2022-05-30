@@ -8,6 +8,7 @@
 /*===== Pokémon Celestial Version =====*/
 //#define BATTLE_BACKGROUNDS
 //#define NICKNAME_FROM_PARTY_SCREEN // For Beta 0.1
+//#define LAST_USED_BALL // For Beta 0.1
 
 /*===== Debugging Options =====*/
 //#define DEBUG_MEGA //Mega Evolution can always be used

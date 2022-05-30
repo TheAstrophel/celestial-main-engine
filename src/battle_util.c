@@ -1808,3 +1808,16 @@ u16 TryFixDynamaxTransformSpecies(u8 bank, u16 species)
 
 	return species;
 }
+
+#ifdef LAST_USED_BALL
+void HandleAction_ThrowBall(void)
+{
+    gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
+    gBattle_BG0_X = 0;
+    gBattle_BG0_Y = 0;
+    gLastUsedItem = gSaveBlock2->lastUsedBall;
+    RemoveBagItem(gLastUsedItem, 1);
+    gBattlescriptCurrInstr = BattleScript_BallThrow;
+    gCurrentActionFuncId = B_ACTION_EXEC_SCRIPT;
+}
+#endif

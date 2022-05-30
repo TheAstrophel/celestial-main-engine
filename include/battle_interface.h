@@ -79,3 +79,9 @@ u8 __attribute__((long_call)) GetScaledHPFraction(s16 hp, s16 maxhp, u8 scale);
 u8 __attribute__((long_call)) GetHPBarLevel(s16 hp, s16 maxhp);
 void __attribute__((long_call)) UpdateNickInHealthbox(u8 spriteId, struct Pokemon *mon);
 void __attribute__((long_call)) TryAddPokeballIconToHealthbox(u8 spriteId, u8);
+// LAST_USED_BALL
+bool32 CanThrowLastUsedBall(void);
+void TryHideLastUsedBall(void);
+void TryRestoreLastUsedBall(void);
+void TryAddLastUsedBallItemSprites(void);
+//

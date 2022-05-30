@@ -55,6 +55,9 @@
 void __attribute__((long_call)) PressurePPLose(u8 bankDef, u8 bankAtk, u16 move);
 void __attribute__((long_call)) PressurePPLoseOnUsingPerishSong(u8 bankAtk);
 void __attribute__((long_call)) PressurePPLoseOnUsingImprision(u8 bankAtk);
+// LAST_USED_BALL
+void HandleAction_ThrowBall(void);
+//
 
 /*
 void __attribute__((long_call)) MarkAllBufferBanksForExecution(void); // unused
