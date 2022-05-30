@@ -147,16 +147,10 @@ You paid [B7][BUFFER][00] as the prize\nmoney[.]\p[.] [.] [.] [.]\pYou were over
 You were overwhelmed by your\ndefeat![FC][09]
 
 #org @gText_BattleMenu
-[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Bag\nPok\emon[ALIGN][38]Run
+[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Bag\nParty[ALIGN][38]Flee
 
 #org @gText_BattleMenu2
-[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Bag\nPok\emon[ALIGN][38]Back
-
-#org @gText_UnboundBattleMenu
-[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Cube\nPok\emon[ALIGN][38]Run
-
-#org @gText_UnboundBattleMenu2
-[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Cube\nPok\emon[ALIGN][38]Back
+[FC][05][05][FC][04][0D][0E][0F]Fight[ALIGN][38]Bag\nParty[ALIGN][38]Back
 
 #org @gText_BattleMenuRaidEnd
 [FC][05][05][FC][04][0D][0E][0F]Catch[ALIGN][38]End

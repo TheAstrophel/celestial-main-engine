@@ -1,5 +1,3 @@
-# DUPLICATE SCRIPTS HERE
-
 .thumb
 .align 2
 

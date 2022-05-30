@@ -4,6 +4,19 @@
 #include "include/constants/tutors.h"
 #include "include/new/catching.h"
 
+##Enable National Dex From Start##
+0806E25C 01 20 70 47
+
+##Remove Eye Catches##
+080F8121 00 00 00 00
+080F8168 00 00 00 00
+08056C96 00 00 00 00
+080F82BE 00 00 00 00
+
+##Fix Shedinja Evolution (Broken Due To 16 Character Move Names)##
+080CE762 00 01
+080CE766 00 00
+
 ##Optional Byte Changes##
 ##Don't Count Eggs Healing PKMN Centre
 08083B8E 08 F0 D5 FA

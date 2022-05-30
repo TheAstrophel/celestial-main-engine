@@ -8,7 +8,7 @@
 #@@@@@@@@;Master Map;@@@@@@@@
 #Tile scripts:
 .equ PROF_AIDE, 1
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_EXTRA, 0x51FD
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
@@ -154,7 +154,7 @@ m_ProfAideGoingToOriginalPositionIfScriptNumberOne: .byte walk_right, end_m
 @;////////////////////////////////////////////////
 
 .equ RIVAL, 2
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_MET_RIVAL_OUTSIDE_OBSERVATORY, 0x5
@@ -231,7 +231,7 @@ NPCScript_AerilonHills_AlmondObservatory_SecondAide:
 .equ FLAG_TREECKO, 0x28
 .equ FLAG_TORCHIC, 0x29
 .equ FLAG_MUDKIP, 0x2A
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_STARTER_MON, 0x51F0
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
@@ -454,7 +454,7 @@ m_WalkUp: .byte walk_up_very_slow, pause_short, end_m
 #Level scripts:
 .equ PROF, 1
 .equ PROF_AIDE, 2
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_GOING_TO_PROFESSOR, 0x2
 .equ MAIN_STORY_TALKED_TO_PROFESSOR, 0x2
 
@@ -533,7 +533,7 @@ MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
 
 .equ PROF, 4
 .equ RIVAL, 5
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_RECEIVING_STARTER, 0x2
 .equ MAIN_STORY_GOING_TO_GET_STARTER, 0x3
 

@@ -8,7 +8,7 @@
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
 .equ RIVAL, 2
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_STARTER_MON, 0x51F0
 .equ MAIN_STORY_MET_RIVAL_IN_AERILON_PASS, 0x7
 
@@ -63,7 +63,7 @@ SetItemFlag_ItemObtainPotion:
 
 #Tile scripts:
 .equ RIVAL, 2
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 .equ VAR_STARTER_MON, 0x51F0

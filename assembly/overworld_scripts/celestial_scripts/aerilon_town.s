@@ -9,7 +9,7 @@
 #NPC scripts:
 .global NPCScript_AerilonTown_BossyGirl
 NPCScript_AerilonTown_BossyGirl:
-	compare 0x4011, 0x5 @0x4011 is set to 0x5 when [player] meets Rival outside Observatory
+	compare 0x4029, 0x5 @0x4029 is set to 0x5 when [player] meets Rival outside Observatory
 	if greaterorequal _goto OtherMessageFromBossyGirl
 	msgboxname gText_AerilonTown_BossyGirl_01, MSG_FACE, gText_BossyGirlName
 	end
@@ -41,7 +41,7 @@ m_StepLeft: .byte walk_left_slow, end_m
 
 .equ PROF, 7
 .equ MOM, 8
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_LEAVING_TOWN, 0x6
@@ -179,7 +179,7 @@ m_MomLeaves: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_l
 
 #Level scripts:
 .equ PROF_AIDE, 2
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_LEAVE_HOUSE, 0x1
 .equ MAIN_STORY_TALKED_TO_PROF_AIDE, 0x2
 
@@ -191,7 +191,7 @@ gMapScripts_AerilonTown:
 	.byte MAP_SCRIPT_TERMIN
 
 SetMapTileScript_AerilonTown:
-	compare 0x4011, 0x5 @0x4011 (var main story) is set to 0x5 when [player] meets Rival outside Observatory
+	compare 0x4029, 0x5 @0x4029 (var main story) is set to 0x5 when [player] meets Rival outside Observatory
 	if lessthan _call SetMapTileScript_AerilonTown_SetClosedDoor
 	end
 
@@ -236,9 +236,9 @@ MapEntryScript_AerilonTown:
 #NPC scripts:
 .global NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
-	compare 0x4011, 0x8
+	compare 0x4029, 0x8
 	if greaterorequal _goto PlayerHasDelieverdParcelToFatherOfRival
-	compare 0x4011, 0x6 @0x4011 is set to 0x6 when Mom sees of [player]; since flag is cleared in that script, added compare var as to avoid loop
+	compare 0x4029, 0x6 @0x4029 is set to 0x6 when Mom sees of [player]; since flag is cleared in that script, added compare var as to avoid loop
 	if greaterorequal _goto AlreadyMetProfessor
 	checkflag 0x201 @0x201 is set in this script as to avoid loop; it is cleared when Mom meets at edge of Aerilon Town (Mom sees of [player])
 	if equal _goto AlreadyMetProfessor
@@ -273,7 +273,7 @@ PlayerHasDelieverdParcelToFatherOfRival:
 @;////////////////////////////////////////////////
 
 .equ MOM, 1
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 
 .global NPCScript_AerilonTown_PlayerHouse_PlayerMom
 NPCScript_AerilonTown_PlayerHouse_PlayerMom:
@@ -393,7 +393,7 @@ EndScript:
 
 #Level scripts:
 .equ MOM, 1
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_WOKE_UP_IN_HOUSE, 0x0
 .equ MAIN_STORY_TALKED_TO_MOM, 0x1
 

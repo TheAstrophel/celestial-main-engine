@@ -8,7 +8,7 @@
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
 .equ RIVAL, 1
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE, 0x7
 
 .global NPCScript_GoldtreeVillage_Rival
@@ -82,7 +82,7 @@ GoldtreeVillage_PKMNCenter_FatherOfRival:
 .equ RIVAL, 2
 .equ FATHER_OF_RIVAL, 3
 .equ PROF_ALMOND, 7
-.equ VAR_MAIN_STORY, 0x4011
+.equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE, 0x7
 .equ MAIN_STORY_MEETING_COMPLETED_IN_GOLDTREE_PKMNCENTER, 0x8
 
@@ -178,7 +178,6 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	waitfanfare
 	setflag 0x829
 	special 0x181
-	special 0x16F @Enables National Dex
 	msgbox gText_GoldtreeVillage_PKMNCenter_ProfAlmond_05, MSG_KEEPOPEN
 	closeonkeypress
 	fanfare 0x101
