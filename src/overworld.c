@@ -1651,15 +1651,6 @@ const u8* LoadProperWhiteoutString(const u8* string)
 	return string;
 }
 
-bool8 IsAutoRunEnabled(void)
-{
-	#ifdef FLAG_AUTO_RUN
-		return FlagGet(FLAG_AUTO_RUN);
-	#else
-		return FALSE;
-	#endif
-}
-
 static bool8 IsRunningDisabledByFlag(void)
 {
 	#ifdef FLAG_RUNNING_ENABLED
@@ -2533,6 +2524,18 @@ void WarpFadeOutScreen(void)
             break;
         }
     }
+}
+
+bool8 IsAutoRunEnabled(void)
+{
+	#ifdef FLAG_AUTO_RUN
+//	if (gMain.newKeys & B_BUTTON)
+//		return FALSE;
+//	else
+		return FlagGet(FLAG_AUTO_RUN);
+	#else
+		return FALSE;
+	#endif
 }
 
 //Stuff to do with pressing buttons in the field//
