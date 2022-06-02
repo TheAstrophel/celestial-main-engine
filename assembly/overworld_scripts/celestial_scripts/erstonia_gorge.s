@@ -7,13 +7,13 @@
 
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
-.global NPCScript_ErstoniaGorge_ItemObtainApicotBerry
-NPCScript_ErstoniaGorge_ItemObtainApicotBerry:
-	giveitem 0xAC 0x1, MSG_FIND
-	call SetItemFlag_ItemObtainApicotBerry
+.global NPCScript_ErstoniaGorge_ItemObtainGreatBall
+NPCScript_ErstoniaGorge_ItemObtainGreatBall:
+	giveitem 0x3 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainGreatBall
 	end
 
-SetItemFlag_ItemObtainApicotBerry:
+SetItemFlag_ItemObtainGreatBall:
 	setflag 0x15A @Person ID of Apicot Berry in A-Map
 	return
 

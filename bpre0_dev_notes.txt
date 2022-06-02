@@ -1,9 +1,6 @@
-Changed some Event's behaviour in Erstonia Gorge.
-Deleted extra Warp Events in Erstonia Gorge.
-Started Peril Passage mapping.
-Fixed a block error in Erstonia Gorge.
-Updated Main Story Var from "4011" to "4029".
-Deleted King's Path RIGHT CONNECTION.
+Correct Event's placements in Ruinway Passage.
+Correct Event's settings in Ruinway Passage.
+Changed "picture" of Person Event 10 in Erstonia City (item: TM 27).
 
 - Fix Footer ID's of Erstonia submaps and complete them; Complete Goldtree Meadows and Grandtree Woods; Add Wild Mons in Routes; 
   Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's.

@@ -10,4 +10,4 @@ NOTE THAT:
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".
 > ".equ" defines of VARS and PERSON EVENTS in selected scripts.
 > Sequence in all STRING files is as same as the S files.
-> Red signs - Main signs, Blue signs - Sub signs, Wood signs - Trainer Tips/Tunnel or Forest Entrances/Misc
+> Red signs - Main signs, Blue signs - Sub signs, Wood signs - Trainer Tips/Misc

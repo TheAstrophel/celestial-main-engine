@@ -74,7 +74,7 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 [BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
 
 //Goldtree Village:
-#org @gText_GoldtreeVillage_TreasureWoodsBugCatcherNPC
+#org @gText_GoldtreeVillage_GrandtreeWoodsBugCatcherNPC
 [GREEN]Grandtree Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
 
 #org @gText_GoldtreeVillage_NameMysteryBoyNPC
@@ -114,7 +114,7 @@ Better not mess around with this\nmachine!
 #org @gText_GoldtreeMeadows_MainRoute_01Sign
 Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
 
-#org @gText_GoldtreeMeadows_TreasureWoodsSign
+#org @gText_GoldtreeMeadows_GrandtreeWoodsSign
 Grandtree Woods\n"Housing the Tree Of Wisdom".
 
 #org @gText_GoldtreeMeadows_MainRoute_02Sign
@@ -147,7 +147,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 [RED]This rock bottom city has no beauty\nat all, I say!\pTsk! Even my elegant aura feels\ndiluted! 
 
 #org @gText_ErstoniaCity_ErstoniaGorgeBoyNPC
-[BLUE]This path leads to [GREEN]Erstonia Gorge[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Peril Passage [BLUE]there!\pBut[.] I'm too scared to even step\nfoot in that terrifying place!
+[BLUE]This path leads to [GREEN]Erstonia Gorge[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Ruinway Passage [BLUE]there!\p[GREEN]Ruinway Passage [BLUE]is the ruins of a\n1000 year old city built inside rock!
 
 #org @gText_ErstoniaCity_GrandpaGirlNPC
 [RED]My Grandpa is the caretaker of the\n[GREEN]Erstonia City Pok\emon Gym[RED]!\pHe says it's an important job, and I\neven help sometimes!
@@ -180,5 +180,5 @@ Erstonia Gorge\n[ARROW_LEFT]Erstonia City
 #org @gText_ErstoniaGorge_TrainerTipsSign
 [BLACK]Trainer Tips!\pPress the [START_BUTTON] Button to change how\nitems are categorized in the Bag.
 
-#org @gText_ErstoniaGorge_PerilPassageSign
-Peril Passage\nLeads to Igneous City & Oakheart\lTown.\p"Underequipped Trainers, beware!"
+#org @gText_ErstoniaGorge_RuinwayPassageSign
+Ruinway Passage\nLeads to Igneous City & Oakheart\lTown.\p"Underequipped Trainers, beware!"
