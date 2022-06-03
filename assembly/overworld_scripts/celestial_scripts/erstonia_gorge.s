@@ -28,3 +28,113 @@ NPCScript_ErstoniaGorge_ItemObtainElectricGem:
 SetItemFlag_ItemObtainElectricGem:
 	setflag 0x15B @Person ID of Electric Gem in A-Map
 	return
+
+#@@@@@@@@;Sub-maps;@@@@@@@@
+#Tile scripts:
+.equ LANDRE, 17
+.equ VAR_MAIN_STORY, 0x4029
+.equ VAR_TEMP_1, 0x51FE
+.equ VAR_TEMP_2, 0x51FF
+.equ MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE, 0x10
+
+.global TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
+TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre:
+	lock
+	getplayerpos VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
+	if equal _call CameraMovesTowardsLandreWhenScriptNumberOne
+	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
+	if equal _call CameraMovesTowardsLandreWhenScriptNumberTwo
+	pause 0xE
+	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_01, MSG_KEEPOPEN, gText_UnknownName
+	closeonkeypress
+	pause 0x1E
+	spriteface LANDRE, LEFT
+	pause 0x1C
+	checksound
+	sound 0x15
+	applymovement LANDRE, m_Exclaim
+	waitmovement 0x0
+	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
+	if equal _call ApproachPlayerWhenScriptNumberOne
+	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
+	if equal _call ApproachPlayerWhenScriptNumberTwo
+	pause 0xE
+	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_02, MSG_KEEPOPEN, gText_UnknownName
+	closeonkeypress
+	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_03, MSG_KEEPOPEN, gText_LandreName
+	closeonkeypress
+	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
+	if equal _call LeavePlayerWhenScriptNumberOne
+	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
+	if equal _call LeavePlayerWhenScriptNumberTwo
+	pause 0xE
+	hidesprite 0x2B
+	hidesprite LANDRE
+	setflag 0x2B @Hide Caretaker that blocks Erstonia Gym
+	setflag 0x2C @Hide Landre
+	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
+	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
+	setvar VAR_MAIN_STORY, MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE
+	release
+	end
+
+CameraMovesTowardsLandreWhenScriptNumberOne:
+	special CAMERA_START
+	applymovement CAMERA, m_MoveCameraTowardsLandreWhenScriptNumberOne
+	waitmovement 0x0
+	special CAMERA_END
+	return
+
+CameraMovesTowardsLandreWhenScriptNumberTwo:
+	special CAMERA_START
+	applymovement CAMERA, m_MoveCameraTowardsLandreWhenScriptNumberTwo
+	waitmovement 0x0
+	special CAMERA_END
+	return
+
+ApproachPlayerWhenScriptNumberOne:
+	special CAMERA_START
+	applymovement LANDRE, m_LandreMoveTowardsPlayerWhenScriptNumberOne
+	applymovement CAMERA, m_MoveCameraWithLandreWhenScriptNumberOne
+	waitmovement 0x0
+	special CAMERA_END
+	return
+
+ApproachPlayerWhenScriptNumberTwo:
+	special CAMERA_START
+	applymovement LANDRE, m_LandreMoveTowardsPlayerWhenScriptNumberTwo
+	applymovement CAMERA, m_MoveCameraWithLandreWhenScriptNumberTwo
+	waitmovement 0x0
+	special CAMERA_END
+	return
+
+LeavePlayerWhenScriptNumberOne:
+	applymovement LANDRE, m_LandreLeavesWhenScriptNumberOne
+	waitmovement 0x0
+	return
+
+LeavePlayerWhenScriptNumberTwo:
+	applymovement LANDRE, m_LandreLeavesWhenScriptNumberTwo
+	waitmovement 0x0
+	return
+
+m_Exclaim: .byte exclaim, pause_long, pause_long, pause_long, pause_long, end_m
+m_MoveCameraTowardsLandreWhenScriptNumberOne: .byte walk_right, walk_right, walk_right, walk_right, walk_right, end_m
+m_MoveCameraTowardsLandreWhenScriptNumberTwo: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_up, end_m
+m_MoveCameraWithLandreWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+m_LandreMoveTowardsPlayerWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, end_m
+m_MoveCameraWithLandreWhenScriptNumberTwo: .byte walk_left, walk_left, walk_left, walk_left, walk_down, walk_left, end_m
+m_LandreMoveTowardsPlayerWhenScriptNumberTwo: .byte walk_left, walk_left, walk_left, walk_left, walk_down, look_left, end_m
+m_LandreLeavesWhenScriptNumberOne: .byte walk_down, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+m_LandreLeavesWhenScriptNumberTwo: .byte walk_up, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+
+#Level scripts:
+.global gMapScripts_ErstoniaGorge_RuinwayPassage
+gMapScripts_ErstoniaGorge_RuinwayPassage:
+	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_ErstoniaGorge_RuinwayPassage
+	.byte MAP_SCRIPT_TERMIN
+
+MapEntryScript_ErstoniaGorge_RuinwayPassage:
+	setworldmapflag 0x8A5
+	end

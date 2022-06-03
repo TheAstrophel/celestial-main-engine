@@ -57,6 +57,9 @@ tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
 #Erstonia Gorge:
 npc 3 23 14 NPCScript_ErstoniaGorge_ItemObtainGreatBall
 npc 3 23 7 NPCScript_ErstoniaGorge_ItemObtainElectricGem
+tile 1 1 0 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
+tile 1 1 1 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
+map 1 1 gMapScripts_ErstoniaGorge_RuinwayPassage
 
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
@@ -128,3 +131,22 @@ sign 3 2 4 SignpostScript_ErstoinaCity_MayorHouse
 sign 3 23 0 SignpostScript_ErstoniaGorge_MainRoute
 sign 3 23 1 SignpostScript_ErstoniaGorge_TrainerTips
 sign 3 23 2 SignpostScript_ErstoniaGorge_RuinwayPassage
+sign 1 1 0 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 1 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 2 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 3 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving
+sign 1 1 4 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving
+sign 1 1 5 SignpostScript_ErstoniaGorge_RuinwayPassage_SeviperCarving
+sign 1 1 6 SignpostScript_ErstoniaGorge_RuinwayPassage_SeviperCarving
+sign 1 1 7 SignpostScript_ErstoniaGorge_RuinwayPassage_SeviperCarving
+sign 1 1 8 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 9 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 10 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 11 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 12 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 13 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 14 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 15 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 1 16 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
+sign 1 2 1 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving
+sign 1 2 2 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving 

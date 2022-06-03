@@ -178,7 +178,16 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 Erstonia Gorge\n[ARROW_LEFT]Erstonia City
 
 #org @gText_ErstoniaGorge_TrainerTipsSign
-[BLACK]Trainer Tips!\pPress the [START_BUTTON] Button to change how\nitems are categorized in the Bag.
+[BLACK]Trainer Tips!\pPress the [START_BUTTON] Button to change how\nitems are sorted in the Bag.
 
 #org @gText_ErstoniaGorge_RuinwayPassageSign
-Ruinway Passage\nLeads to Igneous City & Oakheart\lTown.\p"Underequipped Trainers, beware!"
+Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Oakheart\nTown.
+
+#org @gText_ErstoniaGorge_RuinwayPassage_UnownCarvingsSign
+[BLACK]These carvings appear to be old[.]\nThey depict different [GREEN]Unown [BLACK]shapes[.]
+
+#org @gText_ErstoniaGorge_RuinwayPassage_RelicanthCarvingSign
+[BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Relicanth[BLACK].
+
+#org @gText_ErstoniaGorge_RuinwayPassage_SeviperCarvingSign
+[BLACK]These carvings appears to be very old[.]\nIt depicts the Pokémon [GREEN]Seviper[BLACK].
