@@ -733,7 +733,7 @@ map \map
 map \map
 .endm
 
-@ If the script was called by an Object, then that Object will turn to face toward the metatile that the player is standing on.
+@ If the script was called by an Object, then that Object will turn to faceface toward the metatile that the player is standing on.
 .macro faceplayer
 .byte 0x5a
 .endm
@@ -743,6 +743,9 @@ map \map
 .byte 0x5b
 .2byte \localId
 .byte \direction
+.endm
+
+.macro walkingnpcface
 .endm
 
 .macro turnobject localId:req, direction:req

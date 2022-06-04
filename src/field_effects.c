@@ -13,6 +13,8 @@
 #include "../include/new/dexnav.h"
 #include "../include/new/overworld.h"
 #include "../include/new/util.h"
+#include "../include/new/item.h"
+#include "../include/constants/items.h"
 
 #define gFieldEffectObjectPaletteInfo1 (void*) 0x83A5348
 #define gFieldEffectObjectTemplatePointers ((const struct SpriteTemplate* const *) 0x83A0010)
@@ -646,3 +648,43 @@ const struct FieldEffectScript FieldEffectScript_MiningScanRing =
 	FLDEFF_CALLASM, FldEff_MiningScanRing,
 	FLDEFF_END,
 };
+
+//Thanks to Greenphx
+bool8 CanAnyPKMNInPartyLearnHM(void) {
+    switch (Var8009) {
+    case 0:
+
+        for (int i = 0; i < gPlayerPartyCount; i++) {
+            struct Pokemon* mon = &gPlayerParty[i];
+            if (CanMonLearnTMHM(mon, TMIdFromItemId(ITEM_HM01_CUT))) {
+                Var8008 = i;
+                gSpecialVar_LastResult = TRUE;
+                return TRUE;
+            }
+        }
+        break;
+    case 1:
+        for (int i = 0; i < gPlayerPartyCount; i++) {
+            struct Pokemon* mon = &gPlayerParty[i];
+            if (CanMonLearnTMHM(mon, TMIdFromItemId(ITEM_HM06_ROCK_SMASH))) {
+                gSpecialVar_LastResult = TRUE;
+                Var8008 = i;
+                return TRUE;
+            }
+        }
+        break;
+    case 2:
+        for (int i = 0; i < gPlayerPartyCount; i++) {
+            struct Pokemon* mon = &gPlayerParty[i];
+            if (CanMonLearnTMHM(mon, TMIdFromItemId(ITEM_HM04_STRENGTH))) {
+                Var8008 = i;
+                Var800A = mon->species;
+                gSpecialVar_LastResult = TRUE;
+                return TRUE;
+            }
+        }
+        break;
+    }
+    gSpecialVar_LastResult = FALSE;
+    return FALSE;
+}

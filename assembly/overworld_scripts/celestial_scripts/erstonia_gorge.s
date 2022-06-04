@@ -14,7 +14,7 @@ NPCScript_ErstoniaGorge_ItemObtainGreatBall:
 	end
 
 SetItemFlag_ItemObtainGreatBall:
-	setflag 0x15A @Person ID of Apicot Berry in A-Map
+	setflag 0x15A @Person ID of Great Ball in A-Map
 	return
 
 @;////////////////////////////////////////////////
