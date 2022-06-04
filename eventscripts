@@ -57,6 +57,11 @@ tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
 #Erstonia Gorge:
 npc 3 23 14 NPCScript_ErstoniaGorge_ItemObtainGreatBall
 npc 3 23 7 NPCScript_ErstoniaGorge_ItemObtainElectricGem
+npc 1 1 9 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainRareCandy
+npc 1 1 8 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainEscapeRope
+npc 1 1 7 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainParalyzeHeal
+npc 1 1 10 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainNugget
+npc 1 1 11 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainFireStone
 tile 1 1 0 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 tile 1 1 1 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 map 1 1 gMapScripts_ErstoniaGorge_RuinwayPassage

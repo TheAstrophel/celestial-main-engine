@@ -1,5 +1,6 @@
 Fixed weird Dunesbury Desert name glitch where it changed to " unesbury Desert".
+Added findable items in Ruinway Passage (removed the script offsets and set correct flag ID's).
 
 - Fix Footer ID's of Erstonia submaps and complete them; Complete Goldtree Meadows and Grandtree Woods; Add Wild Mons in Routes; 
   Add trainer battle macros and Cut/Rock Smash/Strength scripts; Look at config.h for custom set healing place & fix pokecenters
-  & nurse joy's.
+  & nurse joy's; hidden items in all maps.

@@ -30,6 +30,65 @@ SetItemFlag_ItemObtainElectricGem:
 	return
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
+#NPC Scripts:
+.global NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainRareCandy
+NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainRareCandy:
+	giveitem 0x44 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainRareCandy
+	end
+
+SetItemFlag_ItemObtainRareCandy:
+	setflag 0x15C @Person ID of Rare Candy in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainEscapeRope
+NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainEscapeRope:
+	giveitem 0x55 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainEscapeRope
+	end
+
+SetItemFlag_ItemObtainEscapeRope:
+	setflag 0x15D @Person ID of Escape Rope in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainParalyzeHeal
+NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainParalyzeHeal:
+	giveitem 0x12 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainParalyzeHeal
+	end
+
+SetItemFlag_ItemObtainParalyzeHeal:
+	setflag 0x15E @Person ID of Paralyze Heal in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainNugget
+NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainNugget:
+	giveitem 0x6E 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainNugget
+	end
+
+SetItemFlag_ItemObtainNugget:
+	setflag 0x15F @Person ID of Nugget in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainFireStone
+NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainFireStone:
+	giveitem 0x5F 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainFireStone
+	end
+
+SetItemFlag_ItemObtainFireStone:
+	setflag 0x160 @Person ID of Fire Stone in A-Map
+	return
+
 #Tile scripts:
 .equ LANDRE, 17
 .equ VAR_MAIN_STORY, 0x4029

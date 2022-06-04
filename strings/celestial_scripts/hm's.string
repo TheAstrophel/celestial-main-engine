@@ -3,3 +3,21 @@ This tree looks like it can be [GREEN]Cut\n[BLACK]down!
 
 #org @gText_Cut_CutTreeQuestion
 This tree looks like it can be [GREEN]Cut\n[BLACK]down!\pWould you like to [GREEN]Cut[BLACK] it?
+
+#org @gText_RockSmash_PlayerDoesNotHaveRockSmash
+It's a rugged rock, but a Pok\emon\nmay be able to [GREEN]smash[BLACK] it.
+
+#org @gText_RockSmash_RockSmashQuestion
+This rock appears to be [GREEN]breakable[BLACK].\nWould you like to use [GREEN]Rock Smash[BLACK]?
+
+#org @gText_Strength_PlayerDoesNotHaveStrength
+It's a big boulder, but a Pok\emon\nmay be able to [GREEN]push[BLACK] it aside.
+
+#org @gText_Strength_PlayerHasUsedStrength
+[GREEN]Strength[BLACK] made it possible to move\nboulders around.
+
+#org @gText_Strength_StrengthQuestion
+It's a big boulder, but a Pokémon\nmay be able to [GREEN]push[BLACK] it aside.\pWould you like to use [GREEN]Strength[BLACK]?
+
+#org @gText_Strength_PKMNUsedStrength
+[GREEN][BUFFER1][BLACK] used [GREEN]Strength[BLACK]!\p[GREEN][BUFFER1]'s Strength[BLACK] made it\npossible to move boulders around!
