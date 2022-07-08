@@ -1,6 +1,11 @@
-Fixed weird Dunesbury Desert name glitch where it changed to " unesbury Desert".
-Added findable items in Ruinway Passage (removed the script offsets and set correct flag ID's).
+Renewed Goldtree Meadows a little.
+Remapped Goldtree Meadows.
+Refined Erstonia Gorge.
+Updated tileset inserted in Goldtree Meadows and made chopped tree blocks.
+Changed Var Number of Almond Observatory's Professors Office to 4029.
+Changed Background Byte of Block 346 in Almond Observatory.
+Completely remapped Goldtree Meadows.
+Made connection b/w Goldtree Meadows and Erstonia City (involved a little refining and extending map height).
 
-- Fix Footer ID's of Erstonia submaps and complete them; Complete Goldtree Meadows and Grandtree Woods; Add Wild Mons in Routes; 
-  Add trainer battle macros and Cut/Rock Smash/Strength scripts; Look at config.h for custom set healing place & fix pokecenters
-  & nurse joy's; hidden items in all maps.
+- Fix Footer ID's of Erstonia submaps and complete them; Complete Goldtree Meadows and Nosepass Woods; Add Wild Mons in Routes; 
+  Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's; hidden items in all maps.

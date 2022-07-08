@@ -94,7 +94,7 @@ SetItemFlag_ItemObtainFireStone:
 .equ VAR_MAIN_STORY, 0x4029
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
-.equ MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE, 0x10
+.equ MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE, 0xA
 
 .global TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre:

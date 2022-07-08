@@ -40,7 +40,7 @@
 [BLACK][PLAYER] received the Running Shoes\nfrom Mom!
 
 #org @gText_AerilonTown_PlayerHouse_Mom_02c
-[RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-run on and off!\pTake care, sweetie!
+[RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-Run on and off!\pTake care, sweetie!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_01
 [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
@@ -49,7 +49,7 @@
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_02
-[BLUE][RIVAL]'s father lives in Goldtree\nVillage.\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
+[BLUE][RIVAL]'s father lives in [GREEN]Goldtree\nVillage[BLUE].\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
 #org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_03
 [BLUE]You should tell your mother\nyou're leaving town.\pI really don't want to get in trouble,\neheh[.]

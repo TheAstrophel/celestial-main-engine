@@ -6,6 +6,15 @@
 .include "../asm_defines.s"
 
 #@@@@@@@@;Master Map;@@@@@@@@
+#NPC scripts:
+.global NPCScript_GoldtreeMeadows_TreeCutter
+NPCScript_GoldtreeMeadows_TreeCutter:
+	msgbox gText_GoldtreeMeadows_TreeCutter_CurrentlyCuttingWoods, MSG_FACE
+	applymovement LASTTALKED, m_FaceDefault
+	end
+
+m_FaceDefault: .byte face_default, end_m
+
 #Tile scripts:
 
 .global TileScript_GoldtreeMeadows_BattleToStopPlayer

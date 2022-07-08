@@ -12,7 +12,7 @@
 [BLACK]Aide: [BLUE]Hello again, [PLAYER]! Back so\nsoon, eh? Ready to go?
 
 #org @gText_AerilonHills_Rival_01
-[BLACK][RIVAL]: [BLUE]Hey, I got tired of waiting!\nWe need to get going.\pI'm pretty sure you know that South\nleads to Aerilon Town, right?\pWell, to it's right is [GREEN]Aerilon Pass[BLUE].\nI'll wait for you there!\pOh, yeah, don't forget to grab the\nparcel from Professor Almond.\pSee ya!
+[BLACK][RIVAL]: [BLUE]Hey, I got tired of waiting!\nWe need to get going.\pI'm pretty sure you know that south\nleads to Aerilon Town, right?\pWell, to it's right is [GREEN]Aerilon Pass[BLUE].\nI'll wait for you there!\pOh, yeah, don't forget to grab the\nparcel from Professor Almond.\pSee ya!
 
 //Sub-maps:
 #org @gText_AerilonHills_AlmondObservatory_SecondAide

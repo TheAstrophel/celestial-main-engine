@@ -20,6 +20,7 @@ map 3 1 gMapScripts_GoldtreeVillage
 map 5 3 gMapScripts_GoldtreeVillage_PKMNCenter
 
 #Erstonia City:
+npc 3 2 5 EventScript_Cut
 npc 3 2 7 NPCScript_ErstoniaCity_GymCaretaker
 npc 3 2 11 NPCScript_ErstoniaCity_ItemObtainRareCandy
 npc 3 2 10 NPCScript_ErstoniaCity_ItemObtainTM27
@@ -33,6 +34,8 @@ tile 3 19 0 TileScript_AerilonPass_Rival
 tile 3 19 1 TileScript_AerilonPass_Rival
 
 #Aerilon Hills:
+npc 3 20 2 EventScript_RockSmash
+npc 3 20 3 EventScript_RockSmash
 npc 15 0 2 NPCScript_AerilonHills_AlmondObservatory_SecondAide
 npc 15 1 0 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
 npc 15 1 1 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
@@ -49,12 +52,15 @@ map 15 0 gMapScripts_AerilonHills_AlmondObservatory
 map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
 #Goldtree Meadows:
+npc 3 21 7 NPCScript_GoldtreeMeadows_TreeCutter
+npc 3 21 8 NPCScript_GoldtreeMeadows_TreeCutter
 tile 3 21 0 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
 
 #Erstonia Gorge:
+npc 3 23 6 EventScript_Cut
 npc 3 23 14 NPCScript_ErstoniaGorge_ItemObtainGreatBall
 npc 3 23 7 NPCScript_ErstoniaGorge_ItemObtainElectricGem
 npc 1 1 9 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainRareCandy
@@ -62,6 +68,7 @@ npc 1 1 8 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainEscapeRope
 npc 1 1 7 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainParalyzeHeal
 npc 1 1 10 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainNugget
 npc 1 1 11 NPCScript_ErstoniaGorge_RuinwayPassage_ItemObtainFireStone
+npc 1 1 17 EventScript_RockSmash
 tile 1 1 0 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 tile 1 1 1 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 map 1 1 gMapScripts_ErstoniaGorge_RuinwayPassage
