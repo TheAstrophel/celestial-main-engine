@@ -1,58 +1,58 @@
 //Master Map:
 #org @gText_GoldtreeVillage_Rival_01
-[BLACK][RIVAL]: [BLUE]Hey, [PLAYER]!\nYou made it, nice!\pBetter not keep my Dad waiting, come\non, let's go!
+[BLUE]Nothing like home, huh?\nWelcome to my humble abode.\pCome on, let's head inside.
 
 //Sub-maps:
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival
-[BLACK][RIVAL]'s Father: [BLUE]Ah, [PLAYER].\nHow are you doing? Busy?\pWell, have a good one!
+[BLUE]Ah, [PLAYER].\nHow are you doing? Busy?\pWell, have a good one!
 
 #org @gText_GoldtreeVillage_PKMNCenter_Rival_01
-[BLACK][RIVAL]: [BLUE]Hey, Dad! I'm back from\nmeeting Professor Almond!
+[BLUE]Hey, Dad. I'm back. Got my very\nown Pok\emon.
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_01
-[RIVAL]'s Father: [BLUE]Ah, [RIVAL]!\nDid you get your very own Pok\emon?\pOh? Who's that behind you? Come\nout here!
+[BLUE]Ah, [RIVAL]!\nIs my Eevee safe and sound?\pOh? Who's that behind you? Come\nout here!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_02
-[RIVAL]'s Father: [BLUE]And who might you\nbe?\p[.] [.] [.] [.] [.] [.] [.] [.] [.]\n[.] [.] [.] [.] [.] [.] [.] [.] [.]\pAh, I see now. So, Almond knew your\nfather. Hmm, what's that?\pYou've got a parcel for me?
+[BLUE]And who might you be?\p[.] [.] [.] [.] [.] [.] [.] [.] [.]\n[.] [.] [.] [.] [.] [.] [.] [.] [.]\pAh, I see now. So, Almond knew your\nfather. Hmm, what's that?\pYou've got a parcel for me?
 
 #org @gText_GoldtreeVillage_PKMNCenter_PlayerDeliversParcel
 [PLAYER] delieverd the Parcel to\n[RIVAL]'s father!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_03
-[RIVAL]'s Father: [BLUE]Ah, yes. Almond\nwanted a meteorite sample tested.\pHis own machines have been causing\nsome trouble lately, you see?
+[BLUE]Ah, yes. Almond had wanted a\nmeteorite sample tested.\pHis own machines have been causing\nsome trouble lately, you see?
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_04
-[RIVAL]'s Father: [BLUE]Huh? What's this?\pThis does not look like a sample!
+[BLUE]Huh? Umm[.] What is this?\nThis doesn't look like a sample!
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_01
-[BLACK]Prof. Almond: [BLUE]This is a disaster,\na complete disaster!\pSomeone [GREEN]stole the actual parcel[BLUE]!\nThis is no good, not at all!\pI checked with one of my Aide's just\nnow, and they said that the parcel\lnever left the Observatory!\pSomeone planted the fake parcel in\nmy house! This is bad!
+[BLUE]Ugh, this is a disaster, a complete\nand utter disaster!\pSomeone [GREEN]stole the actual parcel[BLUE]!\nThis is no good, not at all!\pI checked with one of my Aide's just\nnow, and do you know what he said?\pHe said that the actual parcel\nnever left the Observatory!\pSomeone planted a fake parcel in my\nhouse and gave false confirmation!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_05
-[RIVAL]'s Father: [BLUE]This is mighty\nterrible news! No good!\pAny idea who the theif might be?
+[BLUE]This is terrible news! No good!\nFirst your machines, now this?\pAny idea who the theif might have\nbeen?
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_02
-[BLACK]Prof. Almond: [BLUE]Well, yes, one of\nour [GREEN]own Aide's is missing[BLUE].\pThe same Aide that escorted [PLAYER]\nto the Observatory, in fact!\pI do wonder why he wants the parcel.\nIt's just a space rock!\pI also heard from another Aide that\nthe theif mentioned [GREEN]Erstonia City[BLUE].\pThe culprit may be heading there now!\nWe have to stop him!
+[BLUE]Well, maybe, yes. One of our [GREEN]own\nAide's is missing[BLUE].\pThe same Aide that escorted [PLAYER]\nto the Observatory, in fact!\pA concidence that he disappears\nright when the parcel vanishes?\pI think not!\pI do wonder why the theif wants the\nparcel. It's just a space rock!\pI also heard from another Aide that\nthe theif mentioned [GREEN]Erstonia City[BLUE].\pThe culprit might be heading there!\nWe have to stop him!
 
 #org @gText_GoldtreeVillage_PKMNCenter_Rival_02
-[BLACK][RIVAL]: [BLUE]Well, what's the hold up?\nLet's catch that theif!
+[BLUE]Ah, jeez. Might as well, huh?\nLet the authorities know, Professor.\pI'll head out. But rule me out if\nthings get messy.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_03
-[BLACK]Prof. Almond: [BLUE]There he goes[.]
+[BLUE]There he goes. Is this okay?\nWhat if it's dangerous?
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_06
-[RIVAL]'s Father: [BLUE]Yes, we can hardly\ncontrol him. He's a handful.
+[BLUE]Ah, I doubt. Let him have his fun.\nHe's smart enough to know danger.\pIf things get serious, he'll leave\nthe matter to the authorities.\pEven the authorities encourage self\njustice for minor offenses.\pOf course, if and only if you are a\nlicensed Trainer.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_04
-[BLACK]Prof. Almond: [BLUE][PLAYER]!\nWhy don't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pDon't worry, I've already told your\nmother you might start a journey!\pShe was sceptical, but she did know\nyou would leave one day.\pIt would be nice of you to go and\nmeet her, though.\pI've already notified the authorities,\ntoo. They'll handle it soon enough.\pBut you should try catching the\ntheif! For some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] too help.\pAnyhow, I should head back. Oh!\nI completely forgot! Take this.
+[BLUE]That's alright, then. [PLAYER]! Why\ndon't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pDon't worry, I've already told your\nmother you might start a journey!\pShe was sceptical, but she did know\nyou would leave one day.\pIt would be nice of you to go and\nmeet her, though.\pI'll notify the authorities, too.\nThey'll handle it soon enough.\pBut you should try catching the\ntheif! For some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] too help.\pBut skedaddle out of there if things\nlook bad, okay?\pAnyhow, I should head back. Oh!\nI completely forgot! Take this.
 
 #org @gText_GoldtreeVillage_PKMNCenter_PlayerReceivesDex
 [BLACK][PLAYER] received the Pok\eDex\nfrom Prof. Almond.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_05
-[BLACK]Prof. Almond: [BLUE]What I've given you is\na Pok\eDex!\pIt's a really handy tool to analyze\nPok\emon data on the go!\pYou can't get data\non Pok\emon by just seeing them.\pYou must catch them to obtain\ncomplete data.\pSo, here are some tools for\ncatching wild Pok\emon.
+[BLUE]What I've given you is a Pok\eDex!\pIt's a really handy tool to analyze\nPok\emon data on the go!\pYou can't get data on Pok\emon by\njust seeing them.\pYou must catch them to obtain\ncomplete data.\pSo, here are some tools for catching\nwild Pok\emon.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_06
-[BLACK]Prof. Almond: [BLUE]When a wild Pok\emon\nappears, it's fair game.\pJust throw a Pok\e Ball at it and\ntry to catch it!\pThis won't always work, however.\pA healthy Pok\emon can escape.\nYou have to be lucky!\pI've also given [RIVAL] a Pok\eDex,\ntoo. He was ecstatic!\pNow, get going, [PLAYER]! And please\ncatch that theif! Good luck!
+[BLUE]When a wild Pok\emon appears, it's fair\ngame.\pJust throw a Pok\e Ball at it and try\nto catch it!\pThis won't always work, however.\pA healthy Pok\emon can escape.\nYou have to be lucky!\pI've given [RIVAL] a Pok\eDex,\ntoo.\pNow, get going, [PLAYER]! And please\ncatch that theif! Good luck!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_07
-[RIVAL]'s Father: [BLUE]Well, it was\na pleasure to meet you, [PLAYER].\pAnd this may be the starting point\nof your one of a kind adventure!\pI believe you're heading to Erstonia\nCity? Just head North, then!\pGood luck, have fun, and please,\nlook after one another, you and\l[RIVAL].\pFarewell!
+[BLUE]Well, it was a pleasure to meet you,\n[PLAYER].\pAnd this may very well be the\nstarting point of your adventure!\pGood luck, have fun, and please,\nlook after [RIVAL].\pFarewell!

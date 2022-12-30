@@ -1,6 +1,8 @@
 -Gym leader of erstoina city is son of mayor.
 -Room of gym leader landre unlocks after defeating him.
--Hiker standing next too Rock in Erstonia Gorge says something interesting happens here at night.
+-Hiker standing next to Rock in Erstonia Gorge says something interesting happens here at night.
+-Nosepass Springs (post game)
+-Underworld Grove
 
 QUESTS:
 Mayor's Spectacles - Find the glasses of the Mayor of Erstoina (SIGNPOST EVENT IN HIS HOUSE).

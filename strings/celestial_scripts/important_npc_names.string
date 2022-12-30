@@ -4,11 +4,20 @@
 #org @gText_ProfAlmondName
 [BLACK]Prof. Almond
 
+#org @gText_ProfAlmondSmallName
+[BLACK]Prof. A
+
 #org @gText_MomName
 [BLACK]Mom
 
 #org @gText_AideName
 [BLACK]Aide
+
+#org @gText_RivalName
+[BLACK][RIVAL]
+
+#org @gText_RivalFatherName
+[BLACK][RIVAL]'s Father
 
 #org @gText_Caretaker
 [BLACK]Caretaker

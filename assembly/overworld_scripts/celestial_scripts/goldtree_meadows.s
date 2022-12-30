@@ -16,7 +16,6 @@ NPCScript_GoldtreeMeadows_TreeCutter:
 m_FaceDefault: .byte face_default, end_m
 
 #Tile scripts:
-
 .global TileScript_GoldtreeMeadows_BattleToStopPlayer
 TileScript_GoldtreeMeadows_BattleToStopPlayer:
 	lock

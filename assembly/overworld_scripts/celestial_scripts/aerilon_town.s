@@ -238,9 +238,9 @@ MapEntryScript_AerilonTown:
 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 	compare 0x4029, 0x8
 	if greaterorequal _goto PlayerHasDelieverdParcelToFatherOfRival
-	compare 0x4029, 0x6 @0x4029 is set to 0x6 when Mom sees of [player]; since flag is cleared in that script, added compare var as to avoid loop
+	compare 0x4029, 0x6 @0x4029 is set to 0x6 when Mom sees off [player]; since flag is cleared in that script, added compare var as to avoid loop
 	if greaterorequal _goto AlreadyMetProfessor
-	checkflag 0x201 @0x201 is set in this script as to avoid loop; it is cleared when Mom meets at edge of Aerilon Town (Mom sees of [player])
+	checkflag 0x201 @0x201 is set in this script as to avoid loop; it is cleared when Mom meets at edge of Aerilon Town (Mom sees off [player])
 	if equal _goto AlreadyMetProfessor
 	lock
 	faceplayer
@@ -289,13 +289,13 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 	compare VAR_MAIN_STORY, 0x7
 	if equal _goto PlayerAlreadyDefeatedRival
 	checkflag 0x22F
-	if equal _goto MomUniversal @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
+	if equal _goto MomUniversal @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMom
 	compare VAR_MAIN_STORY, 0x8
 	if greaterorequal _goto PlayerAlreadyVisitedGoldtree
 	release
 	end
 
-MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMomAnd
+MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMom
 	faceplayer
 	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress

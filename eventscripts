@@ -31,23 +31,21 @@ map 3 2 gMapScripts_ErstoniaCity
 npc 3 19 1 NPCScript_AerilonPass_Rival
 npc 3 19 3 NPCScript_AerilonPass_ItemObtainPotion
 tile 3 19 0 TileScript_AerilonPass_Rival
-tile 3 19 1 TileScript_AerilonPass_Rival
 
 #Aerilon Hills:
+npc 3 20 0 NPCScript_AerilonHills_AideAtTheBaseOfObservatory
 npc 3 20 2 EventScript_RockSmash
 npc 3 20 3 EventScript_RockSmash
 npc 15 0 2 NPCScript_AerilonHills_AlmondObservatory_SecondAide
 npc 15 1 0 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
 npc 15 1 1 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
 npc 15 1 2 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 3 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
+npc 15 1 4 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
 tile 3 20 0 TileScript_AerilonHills_AideAtTheBaseOfObservatory
 tile 3 20 1 TileScript_AerilonHills_AideAtTheBaseOfObservatory
-tile 3 20 2 TileScript_AerilonHills_AideAtTheBaseOfObservatory
-tile 3 20 3 TileScript_AerilonHills_RivalOutsideObservatory
-tile 3 20 4 TileScript_AerilonHills_RivalOutsideObservatory
-tile 3 20 5 TileScript_AerilonHills_RivalOutsideObservatory
-tile 3 20 6 TileScript_AerilonHills_RivalOutsideObservatory
 tile 15 1 0 TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave
+map 3 20 gMapScripts_AerilonHills
 map 15 0 gMapScripts_AerilonHills_AlmondObservatory
 map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
@@ -86,11 +84,9 @@ npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
 npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
 npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
 npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
-npc 15 1 3 NPCTalkingScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmond
-npc 15 1 4 NPCTalkingScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival
 npc 3 19 2 NPCTalkingScript_AerilonPass_TallGrassGirl
 npc 3 19 0 NPCTalkingScript_AerilonPass_OranBerryBoy
-npc 3 1 2 NPCTalkingScript_GoldtreeVillage_GrandtreeWoodsBugCatcher
+npc 3 1 2 NPCTalkingScript_GoldtreeVillage_FaeryWoodsBugCatcher
 npc 3 1 3 NPCTalkingScript_GoldtreeVillage_NameMysteryBoy
 npc 3 1 1 NPCTalkingScript_GoldtreeVillage_PKMNCenterBoy
 npc 5 0 0 NPCTalkingScript_GoldtreeVillage_House_PickUpAbilityLady
@@ -130,8 +126,8 @@ sign 5 3 6 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 7 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 8 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 3 21 0 SignpostScript_GoldtreeMeadows_MainRoute_01
-sign 3 21 1 SignpostScript_GoldtreeMeadows_GrandtreeWoods
-sign 3 21 2 SignpostScript_GoldtreeMeadows_GrandtreeWoods
+sign 3 21 1 SignpostScript_GoldtreeMeadows_FaeryWoods
+sign 3 21 2 SignpostScript_GoldtreeMeadows_FaeryWoods
 sign 3 21 3 SignpostScript_GoldtreeMeadows_MainRoute_02
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
 sign 3 22 1 SignpostScript_KingsPath_MainRoute

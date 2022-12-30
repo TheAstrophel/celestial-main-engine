@@ -4,7 +4,7 @@ Offset 2: 096B4E00 = 16B4E00 = 16B4DFF
 
 ADD:
 > Add NPC script of Aide in Aerilon Hills
-> Remap Aerilon Town, Aerilon Hills, Aerilon Pass, Goldtree Meadows, Grandtree Woods (change tiles) for Beta 1.0.
+> Revamp whole game from Aerilon to Aerilon Path in Beta 1.0.
 
 NOTE THAT:
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".

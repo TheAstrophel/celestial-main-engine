@@ -51,12 +51,6 @@ Almond Residence
 #org @gText_AerilonHills_AlmondObservatory_SixthAideNPC
 [BLUE]Terribly sorry, but only staff are\nallowed up here.
 
-#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfessorAlmondNPC
-[BLACK]Prof. Almond: [BLUE]Go on, [PLAYER],\nchoose a Pok\emon!
-
-#org @gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalNPC
-[BLACK][RIVAL]: [BLUE]I wonder who will get the\nlast Pok\emon[.]?
-
 #org @gText_AerilonHills_MainRouteSign
 [BLACK]Aerilon Hills\n[ARROW_DOWN]Aerilon Town
 
@@ -74,8 +68,8 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 [BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
 
 //Goldtree Village:
-#org @gText_GoldtreeVillage_GrandtreeWoodsBugCatcherNPC
-[GREEN]Grandtree Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
+#org @gText_GoldtreeVillage_FaeryWoodsBugCatcherNPC
+[GREEN]Faery Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
 
 #org @gText_GoldtreeVillage_NameMysteryBoyNPC
 [BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?\p[.]I'm just kidding, it's because these\ntree's are [GREEN]Cassia fistula[BLUE].
@@ -114,8 +108,8 @@ Better not mess around with this\nmachine!
 #org @gText_GoldtreeMeadows_MainRoute_01Sign
 Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
 
-#org @gText_GoldtreeMeadows_GrandtreeWoodsSign
-Grandtree Woods\n"Housing the Tree Of Wisdom".
+#org @gText_GoldtreeMeadows_FaeryWoodsSign
+Faery Woods\n"Let the fairy-light guide you".
 
 #org @gText_GoldtreeMeadows_MainRoute_02Sign
 Goldtree Meadows\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
@@ -138,7 +132,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 [BLUE]You have to know your stuff to win\na Pok\emon battle!\p[.]Or a fist fight[.] Either way, don't\nshow the opponent any mercy!
 
 #org @gText_ErstoniaCity_FatmanNPC
-[BLUE]There are suspicious spots and\npassages all over Triton!\pI remember seeing something in the\n[GREEN]top right corner of Grandtree Woods[BLUE][.]
+[BLUE]There are suspicious spots and\npassages all over Triton!\pI remember seeing something in the\n[GREEN]top right corner of Faery Woods[BLUE][.]
 
 #org @gText_ErstoniaCity_GymTipGirlNPC
 [RED]I've already lost to the Gym Leader\nlike four times already!\pNo biggie, right?\n[.]It is a biggie[.] I feel sad[.]
