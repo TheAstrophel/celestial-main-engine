@@ -1,6 +1,4 @@
-Refining early routes a little.
-Refined Aerilon Hills a little.
-Refined Aerilon Pass a little.
+A lot of Westray Trail mapping.
 
-- Do refines in Faery Woods; Fix Footer ID's of Erstonia submaps and complete them; Add Wild Mons in Routes; Add trainer battle macros; 
-  Look at config.h for custom set healing place & fix pokecenters & nurse joy's; hidden items in all maps.
+- Do refines (check tile errors, hidden items etc.) in Goldtree Meadows/Faery Woods/Erstonia Gorge; Fix Footer ID's of all maps; Make Erstonia Sub-maps; 
+  Add Wild Mons in Routes; Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's;

@@ -220,7 +220,7 @@ LevelScript_AerilonTown:
 	pause 0x1E
 	hidesprite 0x2
 	setflag 0x1FF @Person ID of Aide in A-Map
-	setvar VAR_MAIN_STORY, MAIN_STORY_TALKED_TO_PROF_AIDE
+	setvar VAR_MAIN_STORY, MAIN_STORY_TALKED_TO_PROF_AIDE	
 	releaseall
 	end
 	

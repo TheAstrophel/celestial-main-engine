@@ -641,6 +641,7 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	applymovement RIVAL, m_StepRightAndLookLeftAtPlayer
 	waitmovement 0x0
 	pause 0x20
+	additem 0xD 0x63 @debug rn
 	setvar VAR_MAIN_STORY, MAIN_STORY_GOING_TO_GET_STARTER
 	releaseall
 	end

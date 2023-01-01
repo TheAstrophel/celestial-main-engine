@@ -3,6 +3,10 @@
 -Hiker standing next to Rock in Erstonia Gorge says something interesting happens here at night.
 -Nosepass Springs (post game)
 -Underworld Grove
+-Wandering Trader - sets up shop in unusual areas
+-Add cable car which goes westray > frostford > igneous (using ekat tiles)
+-Dude in Ruinway says that everything isn't caving in blah blah
+-All Security Outposts connected; player goes at end of game tadah evil evil
 
 QUESTS:
 Mayor's Spectacles - Find the glasses of the Mayor of Erstoina (SIGNPOST EVENT IN HIS HOUSE).

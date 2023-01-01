@@ -47,8 +47,6 @@ RivalBattleWhenPlayerHasMudkip:
 	trainerbattle3 0x3 0x14B 0x0 RivalLoses
 	return
 
-m_RivalLeaves: .byte walk_right, walk_right, walk_right, walk_down, walk_down, walk_down, walk_down, walk_down, end_m
-
 @;////////////////////////////////////////////////
 
 .global NPCScript_AerilonPass_ItemObtainPotion
@@ -108,3 +106,4 @@ TileScriptRivalBattleWhenPlayerHasMudkip:
 	return
 
 m_LookUpExclaim: .byte look_up, exclaim, end_m
+m_RivalLeaves: .byte walk_right, walk_right, walk_right, walk_right, walk_down, walk_down, walk_down, walk_down, walk_down, walk_down, end_m

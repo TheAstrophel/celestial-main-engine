@@ -13,7 +13,7 @@ NPCScript_ErstoniaCity_GymCaretaker:
 	faceplayer
 	msgboxname gText_ErstoniaCity_GymCaretaker_01 MSG_KEEPOPEN gText_Caretaker
 	closeonkeypress
-	spriteface 0x8,DOWN @0x8 is Gym Caretaker
+	spriteface 0x8, DOWN @0x8 is Gym Caretaker
 	release
 	end
 

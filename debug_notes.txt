@@ -3,8 +3,8 @@ Offset 1: 096B286C = 16B286C = 6C 28 6B 09
 Offset 2: 096B4E00 = 16B4E00 = 16B4DFF
 
 ADD:
-> Add NPC script of Aide in Aerilon Hills
 > Revamp whole game from Aerilon to Aerilon Path in Beta 1.0.
+> Extend Erstonia Gorge a little.
 
 NOTE THAT:
 > Names in *eventscripts* are organized as the Map Banks in Advance Map. The defines are organized as "npc, sign, tile, map".

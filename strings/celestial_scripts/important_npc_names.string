@@ -25,5 +25,8 @@
 #org @gText_LandreName
 [BLACK]Landre
 
+#org @gText_GruntName
+[BLACK]Grunt
+
 #org @gText_UnknownName
 [BLACK]???

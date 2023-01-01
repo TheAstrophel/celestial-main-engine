@@ -56,6 +56,10 @@ tile 3 21 0 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
+tile 3 21 4 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
+tile 3 21 5 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
+tile 3 21 6 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
+tile 3 21 7 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
 
 #Erstonia Gorge:
 npc 3 23 6 EventScript_Cut

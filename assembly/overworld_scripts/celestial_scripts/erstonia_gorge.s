@@ -101,9 +101,9 @@ TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre:
 	lock
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
-	if equal _call CameraMovesTowardsLandreWhenScriptNumberOne
+	if equal _call CameraMovesTowardsLandreWhenScriptNumberZero
 	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
-	if equal _call CameraMovesTowardsLandreWhenScriptNumberTwo
+	if equal _call CameraMovesTowardsLandreWhenScriptNumberOne
 	pause 0xE
 	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_01, MSG_KEEPOPEN, gText_UnknownName
 	closeonkeypress
@@ -115,18 +115,18 @@ TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre:
 	applymovement LANDRE, m_Exclaim
 	waitmovement 0x0
 	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
-	if equal _call ApproachPlayerWhenScriptNumberOne
+	if equal _call ApproachPlayerWhenScriptNumberZero
 	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
-	if equal _call ApproachPlayerWhenScriptNumberTwo
+	if equal _call ApproachPlayerWhenScriptNumberOne
 	pause 0xE
 	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_02, MSG_KEEPOPEN, gText_UnknownName
 	closeonkeypress
 	msgboxname gText_ErstoniaGorge_RuinwayPassage_Landre_03, MSG_KEEPOPEN, gText_LandreName
 	closeonkeypress
 	compare VAR_TEMP_2, 0x2C @Y-Pos equals 0x2C
-	if equal _call LeavePlayerWhenScriptNumberOne
+	if equal _call LeavePlayerWhenScriptNumberZero
 	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
-	if equal _call LeavePlayerWhenScriptNumberTwo
+	if equal _call LeavePlayerWhenScriptNumberOne
 	pause 0xE
 	hidesprite 0x2B
 	hidesprite LANDRE
@@ -138,6 +138,13 @@ TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre:
 	release
 	end
 
+CameraMovesTowardsLandreWhenScriptNumberZero:
+	special CAMERA_START
+	applymovement CAMERA, m_MoveCameraTowardsLandreWhenScriptNumberZero
+	waitmovement 0x0
+	special CAMERA_END
+	return
+
 CameraMovesTowardsLandreWhenScriptNumberOne:
 	special CAMERA_START
 	applymovement CAMERA, m_MoveCameraTowardsLandreWhenScriptNumberOne
@@ -145,9 +152,10 @@ CameraMovesTowardsLandreWhenScriptNumberOne:
 	special CAMERA_END
 	return
 
-CameraMovesTowardsLandreWhenScriptNumberTwo:
+ApproachPlayerWhenScriptNumberZero:
 	special CAMERA_START
-	applymovement CAMERA, m_MoveCameraTowardsLandreWhenScriptNumberTwo
+	applymovement LANDRE, m_LandreMoveTowardsPlayerWhenScriptNumberZero
+	applymovement CAMERA, m_MoveCameraWithLandreWhenScriptNumberZero
 	waitmovement 0x0
 	special CAMERA_END
 	return
@@ -160,12 +168,9 @@ ApproachPlayerWhenScriptNumberOne:
 	special CAMERA_END
 	return
 
-ApproachPlayerWhenScriptNumberTwo:
-	special CAMERA_START
-	applymovement LANDRE, m_LandreMoveTowardsPlayerWhenScriptNumberTwo
-	applymovement CAMERA, m_MoveCameraWithLandreWhenScriptNumberTwo
+LeavePlayerWhenScriptNumberZero:
+	applymovement LANDRE, m_LandreLeavesWhenScriptNumberZero
 	waitmovement 0x0
-	special CAMERA_END
 	return
 
 LeavePlayerWhenScriptNumberOne:
@@ -173,20 +178,15 @@ LeavePlayerWhenScriptNumberOne:
 	waitmovement 0x0
 	return
 
-LeavePlayerWhenScriptNumberTwo:
-	applymovement LANDRE, m_LandreLeavesWhenScriptNumberTwo
-	waitmovement 0x0
-	return
-
 m_Exclaim: .byte exclaim, pause_long, pause_long, pause_long, pause_long, end_m
-m_MoveCameraTowardsLandreWhenScriptNumberOne: .byte walk_right, walk_right, walk_right, walk_right, walk_right, end_m
-m_MoveCameraTowardsLandreWhenScriptNumberTwo: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_up, end_m
-m_MoveCameraWithLandreWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, walk_left, end_m
-m_LandreMoveTowardsPlayerWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, end_m
-m_MoveCameraWithLandreWhenScriptNumberTwo: .byte walk_left, walk_left, walk_left, walk_left, walk_down, walk_left, end_m
-m_LandreMoveTowardsPlayerWhenScriptNumberTwo: .byte walk_left, walk_left, walk_left, walk_left, walk_down, look_left, end_m
-m_LandreLeavesWhenScriptNumberOne: .byte walk_down, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
-m_LandreLeavesWhenScriptNumberTwo: .byte walk_up, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+m_MoveCameraTowardsLandreWhenScriptNumberZero: .byte walk_right, walk_right, walk_right, walk_right, walk_right, end_m
+m_MoveCameraTowardsLandreWhenScriptNumberOne: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_up, end_m
+m_MoveCameraWithLandreWhenScriptNumberZero: .byte walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+m_LandreMoveTowardsPlayerWhenScriptNumberZero: .byte walk_left, walk_left, walk_left, walk_left, end_m
+m_MoveCameraWithLandreWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, walk_down, walk_left, end_m
+m_LandreMoveTowardsPlayerWhenScriptNumberOne: .byte walk_left, walk_left, walk_left, walk_left, walk_down, look_left, end_m
+m_LandreLeavesWhenScriptNumberZero: .byte walk_down, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
+m_LandreLeavesWhenScriptNumberOne: .byte walk_up, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
 
 #Level scripts:
 .global gMapScripts_ErstoniaGorge_RuinwayPassage
