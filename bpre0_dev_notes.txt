@@ -1,4 +1,4 @@
-QA lot of Westray Trail mapping.
+A lot of Westray Trail mapping.
 
 - Do refines (check tile errors, hidden items etc.) in Goldtree Meadows/Faery Woods/Erstonia Gorge; Fix Footer ID's of all maps; Make Erstonia Sub-maps; 
   Add Wild Mons in Routes; Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's;
