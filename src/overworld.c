@@ -9,6 +9,7 @@
 #include "../include/field_effect.h"
 #include "../include/field_effect_helpers.h"
 #include "../include/field_fadetransition.h"
+#include "../include/field_message_box.h"
 #include "../include/field_player_avatar.h"
 #include "../include/field_poison.h"
 #include "../include/field_screen_effect.h"
@@ -32,7 +33,9 @@
 #include "../include/rtc.h"
 #include "../include/safari_zone.h"
 #include "../include/script.h"
+#include "../include/script_menu.h"
 #include "../include/sound.h"
+#include "../include/string_util.h"
 
 #include "../include/constants/flags.h"
 #include "../include/constants/items.h"
@@ -44,6 +47,7 @@
 #include "../include/constants/trainer_classes.h"
 
 #include "../include/new/dexnav.h"
+#include "../include/new/dynamic_ow_pals.h"
 #include "../include/new/item.h"
 #include "../include/new/follow_me.h"
 #include "../include/new/frontier.h"
@@ -73,6 +77,9 @@ tables:
 
 extern const u16 gClassBasedTrainerEncounterBGM[NUM_TRAINER_CLASSES];
 
+//External functions
+extern void sp09A_StopSounds(void);
+
 //This file's functions:
 static bool8 CheckTrainerSpotting(u8 eventObjId);
 static bool8 GetTrainerFlagFromScriptPointer(const u8* data);
@@ -85,12 +92,16 @@ static u8 GetPlayerMapObjId(void);
 static u8 GetNPCDirectionFaceToPlayer(u8 eventObj);
 static bool8 GetProperDirection(u16 currentX, u16 currentY, u16 toX, u16 toY);
 static void UpdateJPANStepCounters(void);
+#ifdef DEXNAV_DETECTOR_MODE
+static void Task_StartDexNavHUDAfterScript(u8 taskId);
+#endif
 static const u8* GetCustomWalkingScript(void);
 static bool8 SafariZoneTakeStep(void);
 static bool8 IsRunningDisabledByFlag(void);
+static bool8 IsPlayerFacingSea(void);
 static bool8 UseRegisteredKeyItemOnField(void);
 
-#ifdef VAR_DEFAULT_WALKING_SCRIPT
+#if (defined VAR_DEFAULT_WALKING_SCRIPT && !defined UNBOUND)
 //Table full of pointers to custom walking scripts
 static const u8* const sDefaultWalkingScripts[] =
 {
@@ -131,7 +142,11 @@ static const u8* const sMetatileInteractionScripts[] =
 	[MB_BURGLARY] = (void*) 0x81A7645,
 	[MB_TRAINER_TOWER_RECORD] = (void*) 0x81C549C,
 
+#if (defined UNBOUND && defined SWARM_CHANGE_HOURLY)
+	[MB_TELEVISION] = EventScript_TVSwarm, //Relates info on the daily swarm
+#else
 	[MB_TELEVISION] = (void*) 0x81A764E,
+#endif
 	[MB_BERRY_CRUSH_RECORDS] = (void*) 0x81BBFD8,
 	[MB_BATTLE_RECORDS] = (void*) 0x81BB8A7,
 
@@ -201,6 +216,7 @@ const struct CutGrass sCutGrassTiles[] =
 	#define Tileset_DeharaCity (struct Tileset*) 0x82D4B3C
 	#define Tileset_GurunTown (struct Tileset*) 0x82D4B24
 	#define Tileset_Route17 (struct Tileset*) 0x82D4B9C
+	#define Tileset_MagnoliaTown (struct Tileset*) 0x82D4D04
 	#define Tileset_FlowerParadise (struct Tileset*) 0x8B56314
 	#define Tileset_Forest (struct Tileset*) 0x82D5004
 	#define Tileset_Snow (struct Tileset*) 0x8725AB4
@@ -212,12 +228,14 @@ const struct CutGrass sCutGrassTiles[] =
 	#define METATILE_General_TreeSideLeft 0x18
 	#define METATILE_General_TreeSideRight 0x19
 	#define METATILE_General_BothTreeSides 0x20
-	#define METATILE_General_ThinTreeTop 0x12
+	#define METATILE_General_ThinTreeTop 0x1B
 	#define METATILE_General_LandEdgeLeft 0x132
 	#define METATILE_General_LandEdgeMiddle 0x133
 	#define METATILE_General_LandEdgeRight 0x134
 	#define METATILE_General_TreeTopLeftOverTreeSideRight 0x27C
 	#define METATILE_General_TreeTopRightOverTreeSideLeft 0x27D
+
+	#define METATILE_Route2_HighLandEdgeMiddle 0x2DD
 
 	#define METATILE_Route17_LandEdgeBottomRight 0x28C
 	#define METATILE_Route17_LandEdgeBottomLeft 0x28B
@@ -239,7 +257,7 @@ const struct CutGrass sCutGrassTiles[] =
 	#define METATILE_Autumn_TreeTopRight 0x283
 	#define METATILE_Autumn_TreeTopMiddleLeftJoined 0x28C
 	#define METATILE_Autumn_TreeTopLeftCorner 0x298
-	#define METATILE_Autumn_TreeTopRightCorner 0x299
+	#define METATILE_Autumn_TreeTopRightCorner 0x282
 	#define METATILE_Autumn_TreeSideLeftTop 0x288
 	#define METATILE_Autumn_TreeSideLeftBottom 0x290
 	#define METATILE_Autumn_TreeSideRightTop 0x28B
@@ -288,12 +306,16 @@ const struct CutGrass sCutGrassTiles[] =
 	{0xB, METATILE_General_TreeTopLeft, Tileset_General},
 	{0xC, METATILE_General_TreeTopRight, Tileset_General},
 	{0xD, METATILE_General_PlainGrass, Tileset_General},
-	{0x12, METATILE_General_PlainGrass, Tileset_General},
+	{0x12, METATILE_General_ThinTreeTop, Tileset_General},
+	{0x16, METATILE_General_TreeSideRight, Tileset_General},
+	{0x17, METATILE_General_TreeSideLeft, Tileset_General},
+	{0x24, METATILE_General_TreeSideRight, Tileset_General},
+	{0x25, METATILE_General_TreeSideLeft, Tileset_General},
 	{0x137, METATILE_General_PlainGrass, Tileset_General},
 	{0x1EE, METATILE_General_PlainGrass, Tileset_General},
 	{0x1EF, METATILE_General_PlainGrass, Tileset_General},
-	{0x1F3, METATILE_General_PlainGrass, Tileset_General},
-	{0x1F4, METATILE_General_PlainGrass, Tileset_General},
+	{0x1F3, METATILE_General_TreeSideRight, Tileset_General},
+	{0x1F4, METATILE_General_TreeSideLeft, Tileset_General},
 	{0x1F5, METATILE_General_TreeTopLeft, Tileset_General},
 	{0x1F6, METATILE_General_TreeTopRight, Tileset_General},
 	{0x1F7, METATILE_General_PlainGrass, Tileset_General},
@@ -315,43 +337,28 @@ const struct CutGrass sCutGrassTiles[] =
 	{0x229, METATILE_General_LandEdgeMiddle, Tileset_General},
 	{0x22A, METATILE_General_PlainGrass, Tileset_General},
 	{0x22B, METATILE_General_LandEdgeMiddle, Tileset_General},
-	{0x321, METATILE_General_TreeSideLeft, Tileset_DrescoTown},
-	{0x329, METATILE_General_TreeSideRight, Tileset_DrescoTown},
-	{0x32B, METATILE_General_TreeSideRight, Tileset_DrescoTown},
-	{0x32C, METATILE_General_TreeTopLeft, Tileset_DrescoTown},
-	{0x32D, METATILE_General_LandEdgeLeft, Tileset_DrescoTown},
-	{0x32E, METATILE_General_LandEdgeMiddle, Tileset_DrescoTown},
-	{0x333, METATILE_General_TreeSideLeft, Tileset_DrescoTown},
-	{0x335, METATILE_General_LandEdgeMiddle, Tileset_DrescoTown},
+	{0x350, METATILE_General_LandEdgeLeft, Tileset_DrescoTown},
+	{0x351, METATILE_General_LandEdgeRight, Tileset_DrescoTown},
+	{0x358, METATILE_General_TreeSideRight, Tileset_DrescoTown},
+	{0x359, METATILE_General_TreeSideLeft, Tileset_DrescoTown},
+	{0x370, METATILE_Route2_HighLandEdgeMiddle, Tileset_DrescoTown},
+	{0x371, METATILE_Route2_HighLandEdgeMiddle, Tileset_DrescoTown},
 	{0x2BE, METATILE_General_TreeTopLeft, Tileset_FlowerParadise},
 	{0x2BF, METATILE_General_TreeTopRight, Tileset_FlowerParadise},
 	{0x2C7, METATILE_General_TreeTopRight, Tileset_FlowerParadise},
 	{0x2CF, METATILE_General_TreeSideRight, Tileset_FlowerParadise},
 	{0x2D5, METATILE_General_TreeSideLeft, Tileset_FlowerParadise},
 	{0x2F7, METATILE_General_TreeSideRight, Tileset_FlowerParadise},
-	{0x2AF, METATILE_General_TreeSideLeft, Tileset_CraterTown},
+	{0x2AF, METATILE_General_LandEdgeLeft, Tileset_CraterTown},
 	{0x2B7, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x2BF, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x2C7, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x2CF, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x319, METATILE_General_TreeTopRightOverTreeSideLeft, Tileset_CraterTown},
-	{0x321, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x329, METATILE_General_TreeSideLeft, Tileset_CraterTown},
-	{0x32A, METATILE_General_TreeSideRight, Tileset_CraterTown},
-	{0x32C, METATILE_General_TreeSideRight, Tileset_CraterTown},
+	{0x319, METATILE_General_TreeTopLeft, Tileset_CraterTown},
+	{0x31A, METATILE_General_TreeTopRight, Tileset_CraterTown},
+	{0x329, METATILE_General_TreeSideRight, Tileset_CraterTown},
+	{0x32A, METATILE_General_TreeSideLeft, Tileset_CraterTown},
 	{0x331, METATILE_General_TreeTopLeft, Tileset_CraterTown},
 	{0x332, METATILE_General_TreeTopRight, Tileset_CraterTown},
-	{0x340, METATILE_General_TreeTopRight, Tileset_CraterTown},
-	{0x341, METATILE_General_TreeSideRight, Tileset_CraterTown},
-	{0x365, METATILE_General_TreeTopLeftOverTreeSideRight, Tileset_CraterTown},
-	{0x36D, METATILE_General_TreeTopRightOverTreeSideLeft, Tileset_CraterTown},
-	{0x370, METATILE_General_TreeTopLeft, Tileset_CraterTown},
-	{0x371, METATILE_General_TreeTopRight, Tileset_CraterTown},
-	{0x372, METATILE_General_TreeTopLeft, Tileset_CraterTown},
-	{0x396, METATILE_General_LandEdgeLeft, Tileset_CraterTown},
-	{0x397, METATILE_General_LandEdgeRight, Tileset_CraterTown},
-	{0x3AE, METATILE_General_TreeTopLeftOverTreeSideRight, Tileset_CraterTown},
-	{0x3B5, METATILE_General_TreeSideRight, Tileset_CraterTown},
+	{0x348, METATILE_General_TreeTopLeftOverTreeSideRight, Tileset_CraterTown},
+	{0x34A, METATILE_General_TreeTopRightOverTreeSideLeft, Tileset_CraterTown},
 
 	{0x2C0, METATILE_Autumn_Ground, Tileset_Autumn},
 	{0x2C1, METATILE_Autumn_Ground, Tileset_Autumn},
@@ -400,8 +407,8 @@ const struct CutGrass sCutGrassTiles[] =
 
 	{0x366, METATILE_General_TreeTopRight, Tileset_FallshoreCity},
 	{0x367, METATILE_General_TreeTopRight, Tileset_FallshoreCity},
-	{0x376, METATILE_General_TreeSideLeft, Tileset_FallshoreCity},
-	{0x377, METATILE_General_TreeSideRight, Tileset_FallshoreCity},
+	{0x376, METATILE_General_TreeSideRight, Tileset_FallshoreCity},
+	{0x377, METATILE_General_TreeSideLeft, Tileset_FallshoreCity},
 	{0x3B4, METATILE_General_TreeTopLeft, Tileset_DeharaCity},
 	{0x3B5, METATILE_General_TreeTopRight, Tileset_DeharaCity},
 	{0x3CE, METATILE_General_TreeTopLeft, Tileset_DeharaCity},
@@ -425,6 +432,8 @@ const struct CutGrass sCutGrassTiles[] =
 	{0x2FD, METATILE_Route17_LandEdgeBottomLeft, Tileset_Route17},
 	{0x2FE, METATILE_Route17_LandEdgeBottomRight, Tileset_Route17},
 	{0x2FF, METATILE_Route17_LandEdgeBottomRight, Tileset_Route17},
+	{0x345, METATILE_Route17_LandEdgeBottomRight, Tileset_Route17},
+	{0x30D, METATILE_General_TreeTopRight, Tileset_MagnoliaTown},
 
 	{0x1, 0x0, Tileset_Snow},
 	{0x4, 0x2, Tileset_Snow},
@@ -697,7 +706,7 @@ static bool8 CheckTrainerSpotting(u8 eventObjId) //Or just CheckTrainer
 	u8 battleType = scriptPtr[1];
 
 	if (battleType == TRAINER_BATTLE_TWO_OPPONENTS
-	&& (FlagGet(FLAG_TRAINER_FLAG_START + T1_READ_16(scriptPtr + 2)) || FlagGet(FLAG_TRAINER_FLAG_START + T1_READ_16(scriptPtr + 4))))
+	&& (FlagGet(FLAG_TRAINER_FLAG_START + T1_READ_16(scriptPtr + 2)) /*|| FlagGet(FLAG_TRAINER_FLAG_START + T1_READ_16(scriptPtr + 4))*/))
 		return FALSE; //If either trainer flag is set
 
 	if (GetTrainerFlagFromScriptPointer(scriptPtr)) //Trainer has already been beaten
@@ -910,6 +919,7 @@ const u8* BattleSetup_ConfigureTrainerBattle(const u8* data)
 			TrainerBattleLoadArgs(sMultiBattleParams, data);
 			gTrainerBattleOpponent_A = VarGet(gTrainerBattleOpponent_A); //Allow dynamic loading
 			gTrainerBattleOpponent_B = VarGet(gTrainerBattleOpponent_B); //Allow dynamic loading
+			gTrainerBattlePartner = VarGet(gTrainerBattlePartner); //Allow dynamic loading
 			VarSet(VAR_SECOND_OPPONENT, gTrainerBattleOpponent_B);
 			VarSet(VAR_PARTNER, gTrainerBattlePartner);
 			VarSet(VAR_PARTNER_BACKSPRITE, sPartnerBackSpriteId);
@@ -940,6 +950,7 @@ const u8* BattleSetup_ConfigureTrainerBattle(const u8* data)
 		case TRAINER_BATTLE_TAG:
 			TrainerBattleLoadArgs(sTagBattleParams, data);
 			gTrainerBattleOpponent_A = VarGet(gTrainerBattleOpponent_A); //Allow dynamic loading
+			gTrainerBattlePartner = VarGet(gTrainerBattlePartner); //Allow dynamic loading
 			VarSet(VAR_PARTNER, gTrainerBattlePartner);
 			VarSet(VAR_PARTNER_BACKSPRITE, sPartnerBackSpriteId);
 			FlagSet(FLAG_TAG_BATTLE);
@@ -1006,7 +1017,6 @@ void BattleSetup_StartTrainerBattle(void)
 	if (FlagGet(FLAG_BATTLE_FACILITY))
 	{
 		gBattleTypeFlags = BATTLE_TYPE_TRAINER;
-
 		switch (BATTLE_FACILITY_NUM) {
 			case IN_BATTLE_SANDS:
 				gBattleTypeFlags |= (BATTLE_TYPE_BATTLE_SANDS | BATTLE_TYPE_MOCK_BATTLE);
@@ -1017,6 +1027,9 @@ void BattleSetup_StartTrainerBattle(void)
 			case IN_BATTLE_CIRCUS:
 				gBattleTypeFlags |= BATTLE_TYPE_BATTLE_CIRCUS;
 				break;
+			case IN_RING_CHALLENGE:
+				gBattleTypeFlags |= BATTLE_TYPE_RING_CHALLENGE;
+				//Fallthrough
 			default:
 				gBattleTypeFlags |= BATTLE_TYPE_BATTLE_TOWER;
 				break;
@@ -1088,6 +1101,16 @@ void BattleSetup_StartTrainerBattle(void)
 		#ifdef FLAG_BENJAMIN_BUTTERFREE_BATTLE
 		if (FlagGet(FLAG_BENJAMIN_BUTTERFREE_BATTLE))
 			gBattleTypeFlags |= BATTLE_TYPE_BENJAMIN_BUTTERFREE;
+		#endif
+
+		#ifdef FLAG_RING_CHALLENGE_BATTLE
+		if (FlagGet(FLAG_RING_CHALLENGE_BATTLE))
+			gBattleTypeFlags |= BATTLE_TYPE_RING_CHALLENGE;
+		#endif
+
+		#ifdef FLAG_AI_CONTROL_BATTLE
+		if (FlagGet(FLAG_AI_CONTROL_BATTLE))
+			gBattleTypeFlags |= BATTLE_TYPE_MOCK_BATTLE;
 		#endif
 	}
 
@@ -1192,21 +1215,12 @@ void SetUpTrainerEncounterMusic(void)
 //special 0x18F
 void SetTrainerFlags(void)
 {
-	if (gTrainerBattleOpponent_B)
-		FlagSet(FLAG_TRAINER_FLAG_START + gTrainerBattleOpponent_B);
+	if (IsTwoOpponentBattle()) //Prevent bugs from happening when the second Trainer wasn't actually fought
+		FlagSet(FLAG_TRAINER_FLAG_START + SECOND_OPPONENT);
 	FlagSet(FLAG_TRAINER_FLAG_START + gTrainerBattleOpponent_A);
 }
 
 //Script Callasms
-enum
-{
-	GoDown,
-	GoUp,
-	GoLeft,
-	GoRight
-};
-
-
 void AllowTrainerIncrementation(void)
 {
 	ExtensionState.multiTaskStateHelper = TRUE;
@@ -1214,49 +1228,60 @@ void AllowTrainerIncrementation(void)
 
 void MoveSecondNPCForTwoOpponentSighting(void)
 {
-	u8 localId, obj;
+	u8 localId, firstTrainerEventObj, secondTrainerEventObj;
 	if (gEventObjects[ExtensionState.spotted.trainers[0].id].localId == ExtensionState.spotted.firstTrainerNPCId)
+	{
+		firstTrainerEventObj = GetEventObjectIdByLocalId(ExtensionState.spotted.firstTrainerNPCId);
 		localId = ExtensionState.spotted.secondTrainerNPCId;
+	}
 	else
+	{
+		firstTrainerEventObj = GetEventObjectIdByLocalId(ExtensionState.spotted.secondTrainerNPCId);
 		localId = ExtensionState.spotted.firstTrainerNPCId;
+	}
 
-	obj = GetEventObjectIdByLocalId(localId);
+	secondTrainerEventObj = GetEventObjectIdByLocalId(localId);
 	Var8005 = localId;
 
-	u16 playerX = gEventObjects[0].currentCoords.x;
-	u16 playerY = gEventObjects[0].currentCoords.y;
-	u16 npcX = gEventObjects[obj].currentCoords.x;
-	u16 npcY = gEventObjects[obj].currentCoords.y;
+	u16 dir;
+	s16 playerX = gEventObjects[GetPlayerMapObjId()].currentCoords.x;
+	s16 playerY = gEventObjects[GetPlayerMapObjId()].currentCoords.y;
+	s16 npcX = gEventObjects[secondTrainerEventObj].currentCoords.x;
+	s16 npcY = gEventObjects[secondTrainerEventObj].currentCoords.y;
 
-	gSpecialVar_LastResult = 0xFFFF;
-	switch(gEventObjects[obj].facingDirection) {
+	dir = 0xFFFF;
+	switch(gEventObjects[firstTrainerEventObj].facingDirection) //The first Trainer is the one who spotted the player, so move in the direction they're facing
+	{
 		case 0:
 		case 1:
-			if (npcY != playerY - 1)
-				gSpecialVar_LastResult = GoDown;
+		default:
+			if (npcY != playerY - 1) //Above player
+				dir = DIR_SOUTH;
 			break;
 		case 2:
-			if (npcY != playerY + 1)
-				gSpecialVar_LastResult = GoUp;
+			if (npcY != playerY + 1) //Below Player
+				dir = DIR_NORTH;
 			break;
 		case 3:
-			if (npcX != playerX + 1)
-				gSpecialVar_LastResult = GoLeft;
+			if (npcX != playerX + 1) //Right of Player
+				dir = DIR_WEST;
 			break;
 		case 4:
-			if (npcX != playerX - 1)
-				gSpecialVar_LastResult = GoRight;
-			break;
-		default:
-			if (npcY != playerY - 1)
-				gSpecialVar_LastResult = GoDown;
+			if (npcX != playerX - 1) //Left of Player
+				dir = DIR_EAST;
 			break;
 	}
+
+	if (GetCollisionInDirection(&gEventObjects[secondTrainerEventObj], dir))
+		dir = 0xFFFF; //Must stop moving
+
+	gSpecialVar_LastResult = dir;
 }
 
 void LoadProperIntroSpeechForTwoOpponentSighting(void)
 {
-	switch (Var8000) {
+	switch (Var8000)
+	{
 		case 0:
 			if (gEventObjects[ExtensionState.spotted.trainers[0].id].localId != ExtensionState.spotted.firstTrainerNPCId)
 			{
@@ -1306,10 +1331,10 @@ void MoveCameraToTrainerB(void)
 	else
 		newObj = GetEventObjectIdByLocalId(ExtensionState.spotted.firstTrainerNPCId);
 
-	u16 currentX = gEventObjects[gSelectedEventObject].currentCoords.x;
-	u16 currentY = gEventObjects[gSelectedEventObject].currentCoords.y;
-	u16 toX = gEventObjects[newObj].currentCoords.x;
-	u16 toY = gEventObjects[newObj].currentCoords.y;
+	s16 currentX = gEventObjects[gSelectedEventObject].currentCoords.x;
+	s16 currentY = gEventObjects[gSelectedEventObject].currentCoords.y;
+	s16 toX = gEventObjects[newObj].currentCoords.x;
+	s16 toY = gEventObjects[newObj].currentCoords.y;
 
 	GetProperDirection(currentX, currentY, toX, toY);
 	Var8005 = 0x7F; //Camera
@@ -1320,14 +1345,6 @@ static u8 GetPlayerMapObjId(void)
 	return gPlayerAvatar->eventObjectId;
 }
 
-static const u8 sMovementToDirection[] =
-{
-	[GoDown] = DIR_SOUTH,
-	[GoUp] = DIR_NORTH,
-	[GoLeft] = DIR_WEST,
-	[GoRight] = DIR_EAST,
-};
-
 static u8 GetNPCDirectionFaceToPlayer(u8 eventObj)
 {
 	u8 playerObjId = GetPlayerMapObjId();
@@ -1337,7 +1354,7 @@ static u8 GetNPCDirectionFaceToPlayer(u8 eventObj)
 	u16 npcY = gEventObjects[eventObj].currentCoords.y;
 
 	if (GetProperDirection(playerX, playerY, npcX, npcY))
-		return GetOppositeDirection(sMovementToDirection[gSpecialVar_LastResult]);
+		return GetOppositeDirection(gSpecialVar_LastResult);
 
 	return DIR_SOUTH; //Error handling...sort of
 }
@@ -1361,21 +1378,22 @@ static bool8 GetProperDirection(u16 currentX, u16 currentY, u16 toX, u16 toY)
 	if (currentX == toX)
 	{
 		if (currentY < toY)
-			gSpecialVar_LastResult = GoDown;
+			gSpecialVar_LastResult = DIR_SOUTH;
 		else
-			gSpecialVar_LastResult = GoUp;
+			gSpecialVar_LastResult = DIR_NORTH;
 
 		ret = TRUE;
 	}
 	else if (currentY == toY)
 	{
 		if (currentX < toX)
-			gSpecialVar_LastResult = GoRight;
+			gSpecialVar_LastResult = DIR_EAST;
 		else
-			gSpecialVar_LastResult = GoLeft;
+			gSpecialVar_LastResult = DIR_WEST;
 
 		ret = TRUE;
 	}
+
 	return ret;
 }
 
@@ -1400,7 +1418,7 @@ void FollowerPositionFix(u8 offset)
 			if (playerY != npcY + offset) //Player and follower are not 1 tile apart
 			{
 				if (Var8000 == 0)
-					gSpecialVar_LastResult = GoDown;
+					gSpecialVar_LastResult = DIR_SOUTH;
 				else
 					gEventObjects[followerObjid].currentCoords.y = playerY - offset;
 			}
@@ -1410,7 +1428,7 @@ void FollowerPositionFix(u8 offset)
 			if (playerY != npcY - offset) //Player and follower are not 1 tile apart
 			{
 				if (Var8000 == 0)
-					gSpecialVar_LastResult = GoUp;
+					gSpecialVar_LastResult = DIR_NORTH;
 				else
 					gEventObjects[followerObjid].currentCoords.y = playerY + offset;
 			}
@@ -1423,7 +1441,7 @@ void FollowerPositionFix(u8 offset)
 			if (playerX != npcX + offset) //Player and follower are not 1 tile apart
 			{
 				if (Var8000 == 0)
-					gSpecialVar_LastResult = GoRight;
+					gSpecialVar_LastResult = DIR_EAST;
 				else
 					gEventObjects[followerObjid].currentCoords.x = playerX - offset;
 			}
@@ -1433,7 +1451,7 @@ void FollowerPositionFix(u8 offset)
 			if (playerX != npcX - offset) //Player and follower are not 1 tile apart
 			{
 				if (Var8000 == 0)
-					gSpecialVar_LastResult = GoLeft;
+					gSpecialVar_LastResult = DIR_WEST;
 				else
 					gEventObjects[followerObjid].currentCoords.x = playerX + offset;
 			}
@@ -1464,6 +1482,10 @@ bool8 TryStartStepCountScript(u16 metatileBehavior)
 	gDexNavCooldown = FALSE; //Pokemon can be found with the DexNav again
 	UpdateHappinessStepCounter();
 	UpdateJPANStepCounters();
+	#ifdef UNBOUND
+	extern void TryPlayShoreNoise(void);
+	TryPlayShoreNoise();
+	#endif
 	if (!(gPlayerAvatar->flags & PLAYER_AVATAR_FLAG_FISHING) && !MetatileBehavior_IsForcedMovementTile(metatileBehavior))
 	{
 		if (CheckVSSeeker() == TRUE)
@@ -1471,22 +1493,58 @@ bool8 TryStartStepCountScript(u16 metatileBehavior)
 			ScriptContext1_SetupScript(EventScript_VSSeeker);
 			return TRUE;
 		}
+
 		if (UpdatePoisonStepCounter() == TRUE)
 		{
-			ScriptContext1_SetupScript(EventScript_Poison);
+			#ifndef POISON_1_HP_SURVIVAL
+			ScriptContext1_SetupScript(EventScript_Poison); //Tries to faint Pokemon
+			#endif
 			return TRUE;
 		}
+
 		if (ShouldEggHatch())
 		{
+			sp09A_StopSounds();
+			PlaySE(SE_EXCLAIM);
 			IncrementGameStat(GAME_STAT_HATCHED_EGGS);
 			ScriptContext1_SetupScript(EventScript_EggHatch);
 			return TRUE;
 		}
 
+		#ifdef DEXNAV_DETECTOR_MODE
+		extern bool8 GetGen8SpeciesForDexNavDetectorMode(u8 blockProperties);
+		if (FlagGet(FLAG_SYS_DEXNAV)
+		&& FlagGet(FLAG_GEN_8_PLACED_IN_GAME)
+		&& VarGet(VAR_R_BUTTON_MODE) == OPTIONS_R_BUTTON_MODE_DEXNAV //Only when player is trying to use the DexNav to find Pokemon
+		&& (Random() % 10) == 0 //Adjust rate so it doesn't happen as often
+		&& Overworld_GetFlashLevel() == 0 //DexNav can't be used here in general
+		&& (VarGet(VAR_REPEL_STEP_COUNT) == 0 || VarGet(VAR_REPEL_STEP_COUNT) >= 50) //Only when the repel isn't on or repel will take time to wear off
+		&& !IsDexNavHudActive())
+		{
+			s16 x, y;
+			PlayerGetDestCoords(&x, &y);
+			u32 currMetatileField = MapGridGetMetatileField(x, y, 0xFF);
+			u8 blockProperties = GetMetatileAttributeFromRawMetatileBehavior(currMetatileField, METATILE_ATTRIBUTE_ENCOUNTER_TYPE);
+
+			if (((blockProperties == TILE_FLAG_ENCOUNTER_TILE && LoadProperMonsData(LAND_MONS_HEADER) != NULL)
+			|| (blockProperties == TILE_FLAG_SURFABLE && LoadProperMonsData(WATER_MONS_HEADER) != NULL)) //Only when standing in grass/on water and wild Pokemon can be found there
+			&& GetGen8SpeciesForDexNavDetectorMode(blockProperties))
+			{
+				u8 taskId = CreateTask(Task_StartDexNavHUDAfterScript, 0xFF);
+				if (taskId != 0xFF)
+				{
+					gTasks[taskId].data[0] = Var8000;
+					gTasks[taskId].data[1] = Var8001;
+					ScriptContext1_SetupScript(SystemScript_DexNavDetector);
+					return TRUE;
+				}
+			}
+		}
+		#endif
+
 		const u8* customWalkingScript = GetCustomWalkingScript();
 		if (customWalkingScript != NULL)
 		{
-			break_func(customWalkingScript);
 			ScriptContext1_SetupScript(customWalkingScript);
 			return TRUE;
 		}
@@ -1515,9 +1573,21 @@ static void UpdateJPANStepCounters(void)
 		++gPedometers->smallTwo;
 }
 
+#ifdef DEXNAV_DETECTOR_MODE
+static void Task_StartDexNavHUDAfterScript(u8 taskId)
+{
+	if (!ScriptContext2_IsEnabled())
+	{
+		gLastDexNavSpecies = SPECIES_NONE; //Because it's special
+		InitDexNavHUD(gTasks[taskId].data[0], gTasks[taskId].data[1], TRUE);
+		DestroyTask(taskId);
+	}
+}
+#endif
+
 static const u8* GetCustomWalkingScript(void)
 {
-	#ifdef VAR_DEFAULT_WALKING_SCRIPT
+	#if (defined VAR_DEFAULT_WALKING_SCRIPT && !defined UNBOUND)
 	if (gWalkingScript >= (u8*) 0x8000000) //A real script
 		return gWalkingScript;
 
@@ -1582,7 +1652,7 @@ bool8 TryRunOnFrameMapScript(void)
 {
 	TryUpdateSwarm();
 
-	if (gQuestLogMode != 3)
+	//if (gQuestLogMode != 3)
 	{
 		const u8* ptr;
 
@@ -1611,6 +1681,7 @@ void FieldCB_RushInjuredPokemonToCenter(void)
 
     ScriptContext2_Enable();
     palette_bg_faded_fill_black();
+	gPaletteFade->active = TRUE; //So the DNS doesn't get messed up at night
 	DismissMapNamePopup();
     taskId = CreateTask(Task_RushInjuredPokemonToCenter, 10);
     gTasks[taskId].data[0] = 0;
@@ -1649,6 +1720,32 @@ const u8* LoadProperWhiteoutString(const u8* string)
 	#endif
 
 	return string;
+}
+
+bool8 ShouldPlayerRun(u16 heldKeys)
+{
+	if (IsRunningDisallowed(gEventObjects[gPlayerAvatar->eventObjectId].currentMetatileBehavior))
+		return FALSE;
+
+	if (IsDexNavHudActive())
+		return FALSE; //Prevent running while DexNav is open. People are just too stupid to realize they can't run
+
+	#ifdef FLAG_AUTO_RUN
+	if (FlagGet(FLAG_AUTO_RUN))
+	{
+		if (heldKeys & B_BUTTON)
+			return FALSE; //Walk when holding B while auto-run is on
+		else
+			return TRUE;
+	}
+	else
+	#endif
+	{
+		if (heldKeys & B_BUTTON)
+			return TRUE;
+		else
+			return FALSE;
+	}
 }
 
 static bool8 IsRunningDisabledByFlag(void)
@@ -1720,6 +1817,24 @@ static bool8 PlayerIsMovingOnSidewaysStairs(u8 direction)
 	return FALSE;
 }
 
+static bool8 MovingFastOnWater(void)
+{
+	if (gFollowerState.inProgress) //Probably would cause a whole host of issues otherwise
+		return FALSE;
+
+	#ifdef FLAG_SURF_TURBO_BOOST
+	if (FlagGet(FLAG_SURF_TURBO_BOOST))
+	{
+		if (JOY_HELD(B_BUTTON))
+			return FALSE; //Hold B to move normal speed
+		
+		return TRUE;
+	}
+	#endif
+
+	return JOY_HELD(B_BUTTON);
+}
+
 s16 GetPlayerSpeed(void)
 {
 	s16 exp[] = { 1, 2, 4 };
@@ -1733,7 +1848,14 @@ s16 GetPlayerSpeed(void)
 		return exp[gPlayerAvatar->bikeFrameCounter];
 	else if (gPlayerAvatar->flags & PLAYER_AVATAR_FLAG_ACRO_BIKE)
 		return 3;
-	else if (gPlayerAvatar->flags & (PLAYER_AVATAR_FLAG_SURFING | PLAYER_AVATAR_FLAG_DASH))
+	else if (gPlayerAvatar->flags & PLAYER_AVATAR_FLAG_SURFING)
+	{
+		if (MovingFastOnWater() && JOY_HELD(DPAD_UP | DPAD_RIGHT | DPAD_LEFT | DPAD_RIGHT)) //Has to actually be moving
+			return 4;
+		else
+			return 2;
+	}
+	else if (gPlayerAvatar->flags & PLAYER_AVATAR_FLAG_DASH)
 		return 2;
 	else
 		return 1;
@@ -1749,7 +1871,8 @@ void MoveOnBike(u8 direction)
 		PlayerRideWaterCurrent(direction);
 	#ifdef FLAG_BIKE_TURBO_BOOST
 	else if (!gFollowerState.inProgress //Probably would cause a whole host of issues otherwise
-			&& (FlagGet(FLAG_BIKE_TURBO_BOOST) || JOY_HELD(B_BUTTON)))
+			&& ((!FlagGet(FLAG_BIKE_TURBO_BOOST) && JOY_HELD(B_BUTTON))
+			  || (FlagGet(FLAG_BIKE_TURBO_BOOST) && !JOY_HELD(B_BUTTON))))
 	{
 		PlayerGoSpeed4(direction);
 		gPlayerAvatar->bikeSpeed = 4;
@@ -1757,6 +1880,14 @@ void MoveOnBike(u8 direction)
 	#endif
 	else
 		PlayerRideWaterCurrent(direction);
+}
+
+void MovePlayerWhileSurfing(u8 direction)
+{
+	if (MovingFastOnWater())
+		PlayerGoSpeed4(direction);
+	else
+		PlayerGoSpeed2(direction);
 }
 
 void PlayerOnBikeCollide(u8 direction)
@@ -1827,6 +1958,12 @@ s32 DoPoisonFieldEffect(void)
 				{
 					mon->hp = hp;
 					mon->condition = STATUS1_NONE;
+
+					if (mon->friendship >= 200)
+						mon->friendship -= 10;
+					else if (mon->friendship >= 5)
+						mon->friendship -= 5;
+
 					++numSurvived;
 					ScriptContext1_SetupScript(SystemScript_PoisonSurvial);
 					GetMonData(&gPlayerParty[i], MON_DATA_NICKNAME, gStringVar1);
@@ -1843,9 +1980,10 @@ s32 DoPoisonFieldEffect(void)
 			numPoisoned++;
 		}
 	}
+
 	if (numSurvived != 0)
 	{
-		return FLDPSN_NONE;
+		return FLDPSN_FNT; //Triggers the script
 	}
 	if (numFainted != 0 || numPoisoned != 0)
 	{
@@ -1885,7 +2023,11 @@ bool8 UpdateRepelCounter(void)
 
 	if (steps != 0)
 	{
-		steps--;
+		--steps;
+		
+		if (steps == 0 && IsDexNavHudActive())
+			steps = 1; //Keep steps at 1 while DexNav is active so the pop-up doesn't interrupt the search
+
 		VarSet(VAR_REPEL_STEP_COUNT, steps);
 		if (steps == 0)
 		{
@@ -1900,6 +2042,7 @@ bool8 UpdateRepelCounter(void)
 			#endif
 		}
 	}
+
 	return FALSE;
 }
 
@@ -1921,6 +2064,7 @@ bool8 IsCurrentAreaAutumn(void)
 		u8 mapSec = GetCurrentRegionMapSectionId();
 		return mapSec == MAPSEC_TEHL_TOWN
 			|| mapSec == MAPSEC_ROUTE_9
+			|| mapSec == MAPSEC_AUTL_WOODS
 			|| mapSec == MAPSEC_ROUTE_10
 			|| mapSec == MAPSEC_AUBURN_WATERWAY
 			|| (mapSec == MAPSEC_HIDDEN_GROTTO
@@ -1937,9 +2081,11 @@ bool8 IsCurrentAreaWinter(void)
 		return mapSec == MAPSEC_FROZEN_HEIGHTS
 			|| mapSec == MAPSEC_ROUTE_1
 			|| mapSec == MAPSEC_BELLIN_TOWN
+			|| mapSec == MAPSEC_ICICLE_CAVE
 			|| mapSec == MAPSEC_ROUTE_8
 			|| mapSec == MAPSEC_BLIZZARD_CITY
 			|| mapSec == MAPSEC_FROZEN_FOREST
+			|| mapSec == MAPSEC_POKEMON_LEAGUE
 			|| (mapSec == MAPSEC_VICTORY_ROAD
 			 && MAP_IS(VICTORY_ROAD_MOUNTAINSIDE))
 			|| (mapSec == MAPSEC_HIDDEN_GROTTO
@@ -1971,9 +2117,14 @@ bool8 IsCurrentAreaSwamp(void)
 	#endif
 }
 
-void IsCurrentAreaSwampToVar(void)
+static bool8 IsPlayerFacingMurkyBrownWater(void)
 {
-	gSpecialVar_LastResult = IsCurrentAreaSwamp();
+	return IsCurrentAreaSwamp() && !IsPlayerFacingSea();
+}
+
+void IsPlayerFacingMurkyBrownWaterToVar(void)
+{
+	gSpecialVar_LastResult = IsPlayerFacingMurkyBrownWater();
 }
 
 bool8 IsCurrentAreaDarkerCave(void)
@@ -2016,16 +2167,19 @@ bool8 InTanobyRuins(void)
 	return FALSE;
 }
 
+bool8 MetatileBehavior_IsStairs(u8 behaviour)
+{
+	return behaviour == MB_ROCK_STAIRS
+		|| behaviour == MB_SIDEWAYS_STAIRS_LEFT_UP_1
+		|| behaviour == MB_SIDEWAYS_STAIRS_LEFT_UP_2
+		|| behaviour == MB_SIDEWAYS_STAIRS_RIGHT_UP_1
+		|| behaviour == MB_SIDEWAYS_STAIRS_RIGHT_UP_2;
+}
+
 void PlayGrassFootstepNoise(void)
 {
 	if (IsFanfareTaskInactive()) //Sound interrupts fanfare
 		PlaySE(SE_GRASS_FOOTSTEP);
-}
-
-void PlaySandFootstepNoise(void)
-{
-	if (IsFanfareTaskInactive()) //Sound interrupts fanfare
-		PlaySE(SE_SAND_FOOTSTEP);
 }
 
 extern bool8 (*const GetLedgeJumpFuncs[])(u8);
@@ -2055,6 +2209,18 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
 	return 0;
 }
 
+void PlayerJumpLedge(u8 direction)
+{
+	u8 movementAction = GetJump2MovementAction(direction);
+ 
+	if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE | PLAYER_AVATAR_FLAG_SURFING) //Player is not biking/surfing
+	&& ShouldPlayerRun(gMain.heldKeys)) //Player is running
+		movementAction += 0x70; //Change sprite to running hop
+
+	PlayerSetAnimId(movementAction, 8); //Set appropriate jumping sprite
+	PlaySE(SE_HOP);
+}
+
 const u8* GetInteractedMetatileScript(unusedArg struct MapPosition* position, u8 metatileBehavior, u8 direction)
 {
 	gSpecialVar_PlayerFacing = direction;
@@ -2074,6 +2240,22 @@ const u8* GetInteractedMetatileScript(unusedArg struct MapPosition* position, u8
 				return sMetatileInteractionScripts[metatileBehavior];
 			}
 			break;
+		#ifdef MB_CLIMBABLE_LADDER
+		case MB_CLIMBABLE_LADDER:
+			//Only use ladder if player is at bottom of it, or the player is on higher elevation
+			if (direction != DIR_SOUTH || gEventObjects[GetPlayerMapObjId()].currentElevation != 3)
+				return sMetatileInteractionScripts[metatileBehavior];
+			break;
+		#endif
+		#ifdef MB_HEADBUTT_TREE
+		case MB_HEADBUTT_TREE: ;
+			#ifdef UNBOUND
+			u8 mapSec = GetCurrentRegionMapSectionId();
+			if (mapSec != MAPSEC_GRIM_WOODS && mapSec != MAPSEC_VIVILL_WOODS) //Can't headbutt in these places
+				return sMetatileInteractionScripts[metatileBehavior];
+			#endif
+			break;
+		#endif
 		#ifdef MB_UNDERGROUND_MINING
 		case MB_UNDERGROUND_MINING:
 			if (IsValidMiningSpot(position->x, position->y))
@@ -2129,6 +2311,7 @@ void FollowHiddenGrottoWarp(void)
 
 void PrepMiningWarp(void)
 {
+	#ifdef MB_UNDERGROUND_MINING 
 	s8 warpEventId;
 	struct MapPosition position;
 
@@ -2136,12 +2319,22 @@ void PrepMiningWarp(void)
 	gSpecialVar_LastResult = FALSE;
 	warpEventId = GetWarpEventAtMapPosition(&gMapHeader, &position);
 
-	if (warpEventId != -1)
+	if (GetPlayerFacing() == DIR_NORTH && warpEventId != -1) //Collapsed doorways are always to north - prevents issues with standing on other warps
 	{
 		StoreInitialPlayerAvatarState();
 		SetupWarp(&gMapHeader, warpEventId, &position);
-		gSpecialVar_LastResult = TRUE;
+
+		if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+		{
+			if (MAP_IS(UNDERWATER_VIVILL_TOWN))
+				gSpecialVar_LastResult = 0xFE;
+			else
+				gSpecialVar_LastResult = 0xFF;
+		}
+		else
+			gSpecialVar_LastResult = TRUE;
 	}
+	#endif
 }
 
 static bool8 MetatileBehavior_IsClimbableLadder(unusedArg u8 behaviour)
@@ -2172,11 +2365,6 @@ void IsUnboundToVar(void)
 	#endif
 }
 
-static bool8 MetatileBehavior_IsRockClimbableWall(u8 behaviour)
-{
-	return behaviour == MB_ROCK_CLIMB_WALL;
-}
-
 bool8 IsPlayerFacingRockClimbableWall(void)
 {
 	struct EventObject *playerEventObj = &gEventObjects[gPlayerAvatar->eventObjectId];
@@ -2187,39 +2375,9 @@ bool8 IsPlayerFacingRockClimbableWall(void)
 	return MetatileBehavior_IsRockClimbableWall(MapGridGetMetatileBehaviorAt(x, y));
 }
 
-void ShouldRockClimbContinue(void)
+bool8 MetatileBehavior_IsRockClimbableWall(u8 behaviour)
 {
-	gSpecialVar_LastResult = IsPlayerFacingRockClimbableWall();
-}
-
-void ShouldRockClimbContinueDiagonally(void)
-{
-	#ifdef UNBOUND
-	struct EventObject *playerEventObj = &gEventObjects[gPlayerAvatar->eventObjectId];
-	s16 x = playerEventObj->currentCoords.x;
-	s16 y = playerEventObj->currentCoords.y;
-
-	MoveCoords(playerEventObj->facingDirection, &x, &y);
-
-	if (MetatileBehavior_IsRockClimbableWall(MapGridGetMetatileBehaviorAt(x, y + 1)))
-		gSpecialVar_LastResult = 2; //Move diagonal up
-	else if (y != 0 && MetatileBehavior_IsRockClimbableWall(MapGridGetMetatileBehaviorAt(x, y - 1)))
-		gSpecialVar_LastResult = 1; //Move diagonal down
-	else
-	#endif
-		gSpecialVar_LastResult = 0;
-}
-
-void StopPlayerMotion(void)
-{
-	gEventObjects[gPlayerAvatar->eventObjectId].disableAnim = TRUE;
-	gEventObjects[gPlayerAvatar->eventObjectId].inanimate = TRUE;
-}
-
-void StartPlayerMotion(void)
-{
-	gEventObjects[gPlayerAvatar->eventObjectId].disableAnim = FALSE;
-	gEventObjects[gPlayerAvatar->eventObjectId].inanimate = FALSE;
+	return behaviour == MB_ROCK_CLIMB_WALL;
 }
 
 u8 PartyHasMonWithFieldMovePotential(u16 move, unusedArg u16 item, u8 surfingType)
@@ -2241,11 +2399,12 @@ u8 PartyHasMonWithFieldMovePotential(u16 move, unusedArg u16 item, u8 surfingTyp
 			if (GetMonData(mon, MON_DATA_SPECIES, NULL) != SPECIES_NONE
 			&& !GetMonData(mon, MON_DATA_IS_EGG, NULL))
 			{
-				if (MonKnowsMove(mon, move))
-					return i;
-
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				if (hasHM && CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE)
+				if (hasHM //Must have HM to prevent softlocks
+				&& (MonKnowsMove(mon, move) || CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE))
+					return i;
+				#else
+				if (MonKnowsMove(mon, move))
 					return i;
 				#endif
 			}
@@ -2288,6 +2447,16 @@ static bool8 IsPlayerFacingSurfableLava(void)
 }
 #endif
 
+static bool8 IsPlayerFacingSea(void)
+{
+	struct EventObject *playerEventObj = &gEventObjects[gPlayerAvatar->eventObjectId];
+	s16 x = playerEventObj->currentCoords.x;
+	s16 y = playerEventObj->currentCoords.y;
+
+	MoveCoords(playerEventObj->facingDirection, &x, &y);
+	return MapGridGetMetatileBehaviorAt(x, y) == MB_SPLASHING_WATER;
+}
+
 extern const u8 EventScript_UseLavaSurf_Debug[];
 const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, unusedArg u8 direction)
 {
@@ -2296,7 +2465,14 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 	#ifndef UNBOUND
 	if (MetatileBehavior_IsFastCurrent(metatileBehavior))
 	{
-		if (PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE)
+		if (
+		#ifdef FLAG_BOUGHT_ADM
+		FlagGet(FLAG_BOUGHT_ADM) ||
+		#endif
+		#ifdef FLAG_SANDBOX_MODE
+		FlagGet(FLAG_SANDBOX_MODE) ||
+		#endif
+		PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE)
 			return EventScript_CurrentTooFast;
 	}
 	else 
@@ -2330,6 +2506,19 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 			#endif
 
 			u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING);
+
+			#ifdef FLAG_BOUGHT_ADM
+			if (FlagGet(FLAG_BOUGHT_ADM)
+			&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
+				return EventScript_UseADMSurf;
+			#endif
+
+			#ifdef FLAG_SANDBOX_MODE
+			if (FlagGet(FLAG_SANDBOX_MODE)
+			&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
+				return EventScript_UseSandboxSurf;
+			#endif
+
 			if (partyId < PARTY_SIZE
 			&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_SURF))
 			{
@@ -2337,7 +2526,7 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 				return EventScript_UseSurf;
 			}
 
-			if (IsCurrentAreaSwamp())
+			if (IsPlayerFacingMurkyBrownWater())
 				return EventScript_WaterMurkyBrown;
 			else
 				return EventScript_WaterDyedBlue;
@@ -2353,6 +2542,18 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 				item = ITEM_HM07_WATERFALL;
 				#endif
 
+				#ifdef FLAG_BOUGHT_ADM
+				if (FlagGet(FLAG_BOUGHT_ADM)
+				&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_WATERFALL))
+					return EventScript_UseADMWaterfall;
+				#endif
+
+				#ifdef FLAG_SANDBOX_MODE
+				if (FlagGet(FLAG_SANDBOX_MODE)
+				&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_WATERFALL))
+					return EventScript_UseSandboxWaterfall;
+				#endif
+
 				u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_WATERFALL, item, SHOULD_BE_SURFING);
 				if (partyId < PARTY_SIZE
 				&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_WATERFALL))
@@ -2366,6 +2567,8 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 			else
 				return EventScript_CannotUseWaterfall;
 		}
+		else
+			return EventScript_WallOfWater;
 	}
 	else if (IsPlayerFacingRockClimbableWall())
 	{
@@ -2374,6 +2577,16 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 		{
 			#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
 			item = ITEM_HM08_ROCK_CLIMB;
+			#endif
+
+			#ifdef FLAG_BOUGHT_ADM
+			if (FlagGet(FLAG_BOUGHT_ADM))
+				return EventScript_UseADMRockClimb;
+			#endif
+
+			#ifdef FLAG_SANDBOX_MODE
+			if (FlagGet(FLAG_SANDBOX_MODE))
+				return EventScript_UseSandboxRockClimb;
 			#endif
 
 			u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_ROCKCLIMB, item, 0);
@@ -2389,6 +2602,71 @@ const u8* GetInteractedWaterScript(unusedArg u32 unused1, u8 metatileBehavior, u
 	return NULL;
 }
 
+void GetGroudonPartyIndexIn8004(void)
+{
+	Var8004 = PARTY_SIZE;
+
+	#ifdef SPECIES_GROUDON
+	u32 i;
+
+	for (i = 0; i < PARTY_SIZE; ++i)
+	{
+		if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2, NULL) == SPECIES_GROUDON)
+		{
+			Var8004 = i;
+			break;
+		}
+	}
+	#endif
+}
+
+void GetFirstNonEggIn8004(void)
+{
+	u32 i;
+	Var8004 = 0;
+
+	for (i = 0; i < PARTY_SIZE; ++i)
+	{
+		u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL);
+		if (species != SPECIES_NONE && species != SPECIES_EGG)
+		{
+			Var8004 = i;
+			return;
+		}
+	}
+}
+
+extern void Task_UseWaterfall(u8 taskId);
+static void Task_PrepareUseWaterfall(u8 taskId)
+{
+	struct EventObject* playerObj = &gEventObjects[GetPlayerMapObjId()];
+
+	ScriptContext2_Enable();
+	if (!EventObjectIsMovementOverridden(playerObj))
+	{
+		EventObjectClearHeldMovementIfFinished(playerObj);
+		gTasks[taskId].data[0] = 2;
+		gTasks[taskId].func = Task_UseWaterfall;
+	}
+}
+
+void DoWaterfallWithNoShowMon(void)
+{
+	u8 taskId = CreateTask(Task_PrepareUseWaterfall, 0xFF);
+	if (taskId != 0xFF)
+	{
+		ScriptContext2_Enable();
+		gPlayerAvatar->preventStep = TRUE;
+	}
+}
+
+void DoDiveWarpSkipShowMon(void)
+{
+	struct MapPosition mapPosition;
+	PlayerGetDestCoords(&mapPosition.x, &mapPosition.y);
+	dive_warp(&mapPosition, gEventObjects[gPlayerAvatar->eventObjectId].currentMetatileBehavior);
+}
+
 bool8 Waterfall3_MovePlayer(struct Task* task, struct EventObject* playerObj)
 {
 	EventObjectSetHeldMovement(playerObj, GetWalkNormalMovementAction(GetPlayerMovementDirection()));
@@ -2396,19 +2674,26 @@ bool8 Waterfall3_MovePlayer(struct Task* task, struct EventObject* playerObj)
 	return FALSE;
 }
 
-extern const u8 EventScript_UseDive[];
-extern const u8 EventScript_CantDive[];
-extern const u8 EventScript_UseDiveUnderwater[];
-extern const u8 EventScript_CantSurface[];
 bool8 TrySetupDiveDownScript(void)
 {
 	if (HasBadgeToUseDive()
 	&& (!gFollowerState.inProgress || gFollowerState.flags & FOLLOWER_FLAG_CAN_DIVE)
+	#if (defined FLAG_BOUGHT_ADM && !defined DEBUG_HMS)
+	&& FlagGet(FLAG_BOUGHT_ADM)
+	#endif
 	&& TrySetDiveWarp() == 2)
 	{
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
 		item = ITEM_HM05_DIVE;
+		#endif
+
+		#ifdef FLAG_BOUGHT_ADM
+		if (FlagGet(FLAG_BOUGHT_ADM))
+		{
+			ScriptContext1_SetupScript(EventScript_UseADMDive);
+			return TRUE;
+		}
 		#endif
 
 		u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_DIVE, item, SHOULD_BE_SURFING);
@@ -2436,6 +2721,14 @@ bool8 TrySetupDiveEmergeScript(void)
 		u16 item = ITEM_NONE;
 		#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
 		item = ITEM_HM05_DIVE;
+		#endif
+
+		#ifdef FLAG_BOUGHT_ADM
+		if (FlagGet(FLAG_BOUGHT_ADM))
+		{
+			ScriptContext1_SetupScript(EventScript_UseADMDiveUnderwater);
+			return TRUE;
+		}
 		#endif
 
 		u8 partyId = PartyHasMonWithFieldMovePotential(MOVE_DIVE, item, 0);
@@ -2467,7 +2760,7 @@ bool8 MetatileBehavior_IsUnableToEmerge(u8 metatileBehavior)
 
 void PlayerAvatarTransition_Underwater(void)
 {
-	sub_8150498(4);
+	QuestLogCallUpdatePlayerSprite(4);
 }
 
 void PlayerAvatarTransition_HandleUnderwater(void)
@@ -2477,6 +2770,14 @@ void PlayerAvatarTransition_HandleUnderwater(void)
 	EventObjectSetGraphicsId(player, GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_UNDERWATER));
 	EventObjectTurn(player, player->movementDirection);
 	SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_UNDERWATER);
+	
+	#ifdef EVENT_OBJ_PAL_TAG_DIVE
+	FindOrLoadNPCPalette(EVENT_OBJ_PAL_TAG_DIVE);
+	
+	u8 palSlot = FindPalRef(PalTypeNPC, EVENT_OBJ_PAL_TAG_DIVE);
+	if (palSlot != 0xFF)
+		gSprites[player->spriteId].oam.paletteNum = palSlot;
+	#endif
 
 	player->fieldEffectSpriteId = DoBobbingFieldEffect(player->spriteId);
 }
@@ -2539,6 +2840,16 @@ bool8 IsAutoRunEnabled(void)
 }
 
 //Stuff to do with pressing buttons in the field//
+static const u8* sRegisteredItemStringVars[][2] =
+{
+	{gStringVar7, gText_RegisteredItemSelectButton},
+	{gStringVar8, gText_RegisteredItemLButton},
+	{gStringVar9, gText_RegisteredItemRButton},
+	{gStringVarA, gText_RegisteredItemStartButton},
+	{gStringVarB, gText_RegisteredItemLeftButton},
+	{gStringVarC, gText_RegisteredItemRightButton},
+};
+
 void FieldCheckIfPlayerPressedLButton(struct FieldInput* input, u16 newKeys)
 {
 	if (newKeys & L_BUTTON)
@@ -2547,6 +2858,9 @@ void FieldCheckIfPlayerPressedLButton(struct FieldInput* input, u16 newKeys)
 
 bool8 ProcessNewFieldPlayerInput(struct FieldInput* input)
 {
+	if (IsDexNavHudActive())
+		return FALSE; //Can't force close this
+
 	if (input->pressedSelectButton && UseRegisteredKeyItemOnField())
     {
         gInputToStoreInQuestLogMaybe.pressedSelectButton = TRUE;
@@ -2559,7 +2873,8 @@ bool8 ProcessNewFieldPlayerInput(struct FieldInput* input)
 		return TRUE;
 	}
 
-	if (input->pressedRButton && StartRButtonFunc())
+	if (input->pressedRButton && JOY_NEW(R_BUTTON) //Not when held!
+	&& StartRButtonFunc())
 	{
 		gInputToStoreInQuestLogMaybe.pressedRButton = TRUE;
 		return TRUE;
@@ -2571,6 +2886,12 @@ bool8 ProcessNewFieldPlayerInput(struct FieldInput* input)
 void UseRegisteredItem(u16 registeredItem)
 {
 	u8 taskId;
+
+	if (IsMapNamePopupTaskActive())
+	{
+		ChangeBgY(0, 0, 0);
+		DismissMapNamePopup();
+	}
 
 	ScriptContext2_Enable();
 	FreezeEventObjects();
@@ -2606,7 +2927,11 @@ static bool8 UseRegisteredKeyItemOnField(void)
 				gSaveBlock1->registeredItems[i] = ITEM_NONE; //Don't have item so remove it from list
 			else
 			{
-				gMultiChoice[numRegisteredItems].name = ItemId_GetName(gSaveBlock1->registeredItems[i]);
+				u8* stringVar = (u8*) sRegisteredItemStringVars[numRegisteredItems][0];
+				StringCopy(stringVar, sRegisteredItemStringVars[numRegisteredItems][1]);
+				StringAppend(stringVar, ItemId_GetName(gSaveBlock1->registeredItems[i]));
+
+				gMultiChoice[numRegisteredItems].name = stringVar;
 				gMultiChoice[numRegisteredItems].id = numRegisteredItems;
 				numRegisteredItems++;
 			}
@@ -2643,8 +2968,44 @@ void Task_UseChosenRegisteredItem(u8 taskId)
 {
 	if (!ScriptContext2_IsEnabled())
 	{
-		UseRegisteredItem(gSaveBlock1->registeredItems[gSpecialVar_LastResult]);
+		if (gSpecialVar_LastResult < Var8004) //Didn't cancel
+			UseRegisteredItem(gSaveBlock1->registeredItems[gSpecialVar_LastResult]);
+
 		DestroyTask(taskId);
+	}
+	else
+	{
+		//Check button combos for quick access
+		u16 usedItem = ITEM_NONE;
+	
+		if (JOY_NEW(A_BUTTON | B_BUTTON))
+			usedItem = ITEM_NONE; //Prevent bug with pressing A/B at the same time as choosing an item
+		else if (JOY_NEW(SELECT_BUTTON))
+			usedItem = gSaveBlock1->registeredItems[0];
+		else if (JOY_NEW(L_BUTTON))
+			usedItem = gSaveBlock1->registeredItems[1];
+		else if (JOY_NEW(R_BUTTON))
+			usedItem = gSaveBlock1->registeredItems[2];
+		else if (JOY_NEW(START_BUTTON))
+			usedItem = gSaveBlock1->registeredItems[3];
+		else if (JOY_NEW(DPAD_LEFT))
+			usedItem = gSaveBlock1->registeredItems[4];
+		else if (JOY_NEW(DPAD_RIGHT))
+			usedItem = gSaveBlock1->registeredItems[5];
+
+		if (usedItem != ITEM_NONE)
+		{
+			u8 multichoiceTaskId = FindTaskIdByFunc(Task_MultichoiceMenu_HandleInput);
+			if (multichoiceTaskId != 0xFF)
+			{
+				DestroyScriptMenuWindow(gTasks[multichoiceTaskId].data[6]);
+				DestroyTask(multichoiceTaskId);
+			}
+
+			HideFieldMessageBox();
+			UseRegisteredItem(usedItem);
+			DestroyTask(taskId);
+		}
 	}
 }
 
@@ -2656,9 +3017,9 @@ void UseChosenRegisteredItem(void)
 #ifdef GEN_4_PLAYER_RUNNING_FIX
 const union AnimCmd gEventObjectImageAnim_RunSouth[] =
 {
-	ANIMCMD_FRAME(9, 3),
+	ANIMCMD_FRAME( 9, 3),
 	ANIMCMD_FRAME(10, 5),
-	ANIMCMD_FRAME(9, 3),
+	ANIMCMD_FRAME( 9, 3),
 	ANIMCMD_FRAME(11, 5),
 	ANIMCMD_JUMP(0),
 };

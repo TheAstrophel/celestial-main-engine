@@ -90,7 +90,7 @@
 
 #define OW_DNS_BG_PAL_FADE (OBG_SHI(0) | OBG_SHI(1) | OBG_SHI(2) | OBG_SHI(3) | OBG_SHI(4) | OBG_SHI(5) 	\
 						 | OBG_SHI(6) | OBG_SHI(7) | OBG_SHI(8) | OBG_SHI(9) | OBG_SHI(10) | OBG_SHI(11) 	\
-						 | OBG_SHI(12) | OBG_SHI(13) | OBG_SHI(14) | OBG_SHI(15))
+						 | OBG_SHI(12))
 
 #define OW_DNS_SPRITE_PAL_FADE (OSP_SHI(0) | OSP_SHI(1) | OSP_SHI(2) | OSP_SHI(3) | OSP_SHI(4) | OSP_SHI(5) \
 						 | OSP_SHI(6) | OSP_SHI(7) | OSP_SHI(8) | OSP_SHI(9) | OSP_SHI(10) | OSP_SHI(11) 	\
@@ -103,6 +103,7 @@
 						 | BSP_SHI(6) | BSP_SHI(7) | BSP_SHI(8) | BSP_SHI(9) | BSP_SHI(10) | BSP_SHI(11)	\
 						 | BSP_SHI(12) | BSP_SHI(13) | BSP_SHI(14) | BSP_SHI(15))
 
+//The max value for the coefficients (right number) is 16. DO NOT SET ABOVE THIS NUMBER!
 const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 {
 	[0]  = {
@@ -314,9 +315,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 6,
 		.paletteIndicesToFade =
 		{
-			{2, RGB(31, 31, 20)},
-			{3, RGB(31, 31, 11)},
-			{6, RGB(31, 30, 1)},
+			{2, RGB(31, 27, 10)}, //old RGB(31, 31, 20)
+			{3, RGB(29, 24, 5)}, //old RGB(31, 31, 11)
+			{6, RGB(29, 24, 0)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -326,9 +327,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteIndicesToFade =
 		{
 			
-			{13, RGB(31, 30, 25)},
-			{14, RGB(31, 30, 17)},
-			{15, RGB(31, 30, 12)},
+			{13, RGB(31, 27, 10)}, //old RGB(31, 30, 25)
+			{14, RGB(29, 24, 5)},  //old RGB(31, 30, 17)
+			{15, RGB(29, 24, 0)},  //old RGB(31, 30, 12)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -337,10 +338,10 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{5,  RGB(31, 30, 25)},
-			{6,  RGB(31, 30, 17)},
-			{7,  RGB(31, 30, 12)},
-			{8,  RGB(31, 30, 0)},
+			{5,  RGB(31, 27, 10)}, //old RGB(31, 30, 25)
+			{6,  RGB(29, 24, 5)},  //old RGB(31, 30, 17)
+			{7,  RGB(29, 24, 0)},  //old RGB(31, 30, 12)
+			{8,  RGB(29, 22, 4)},  //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -349,9 +350,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{4,  RGB(31, 30, 25)},
-			{5,  RGB(31, 30, 12)},
-			{6,  RGB(31, 30, 0)},
+			{4,  RGB(31, 27, 10)}, //old RGB(31, 30, 25)
+			{5,  RGB(29, 24, 0)},  //old RGB(31, 30, 12)
+			{6,  RGB(29, 22, 4)},  //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -360,8 +361,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 3,
 		.paletteIndicesToFade =
 		{
-			{5,  RGB(27, 27, 0)},
-			{13, RGB(31, 31, 0)},
+			{5,  RGB(25, 19, 4)},	//old RGB(27, 27, 0) 
+			{13, RGB(29, 23, 4)},	//old RGB(31, 31, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -370,9 +371,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 6,
 		.paletteIndicesToFade =
 		{
-			{10,  RGB(31, 31, 20)},
-			{12,  RGB(31, 31, 14)},
-			{13,  RGB(31, 30, 1)},
+			{10,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -381,9 +382,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{3,  RGB(31, 30, 1)},
-			{10, RGB(30, 28, 0)},
-			{13, RGB(31, 31, 16)},
+			{3,  RGB(29, 22, 5)},	//old RGB(31, 30, 1)
+			{10, RGB(28, 20, 4)},	//old RGB(30, 28, 0)
+			{13, RGB(29, 24, 5)},	//old RGB(31, 31, 14)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -392,8 +393,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{4,  RGB(31, 30, 0)},
-			{8,  RGB(30, 28, 0)},
+			{4,  RGB(29, 22, 4)}, 	//old RGB(31, 30, 0)
+			{8,  RGB(28, 20, 4)},	//old RGB(30, 28, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -402,8 +403,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 2,
 		.paletteIndicesToFade =
 		{
-			{7,  RGB(31, 31, 14)},
-			{15, RGB(31, 30, 0)},
+			{7,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{15, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -413,12 +414,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -443,8 +444,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 11,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 14)},
-			{4,  RGB(31, 30, 1)},
+			{1,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{4,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -453,13 +454,13 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{11, RGB(31, 31, 17)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20) 
+			{11, RGB(29, 24, 2)}, //old RGB(31, 31, 17)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -468,8 +469,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 11,
 		.paletteIndicesToFade =
 		{
-			{5,  RGB(31, 31, 14)},
-			{7,  RGB(31, 30, 0)},
+			{5,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{7,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -478,8 +479,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{4,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
+			{4,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -488,8 +489,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{15, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{15, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -498,12 +499,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -512,7 +513,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 30, 0)},
+			{8,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			{10, RGB(24, 0, 0)},
 			{11, RGB(21, 0, 0)},
 			{12, RGB(16, 0, 0)},
@@ -537,7 +538,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{2, RGB(31, 30, 1)},
+			{2, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -557,10 +558,10 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{1, RGB(31, 30, 20)},
-			{2, RGB(31, 30, 17)},
-			{3, RGB(31, 30, 14)},
-			{4, RGB(31, 30, 0)},
+			{1, RGB(29, 26, 5)},	//old RGB(31, 30, 20)
+			{2, RGB(29, 24, 5)},	//old RGB(31, 30, 17) 
+			{3, RGB(29, 24, 2)},	//old RGB(31, 30, 14)
+			{4, RGB(29, 22, 4)}, 	//old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -569,9 +570,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{7,  RGB(31, 31, 20)},
-			{11, RGB(31, 30, 0)},
-			{12, RGB(31, 31, 14)},
+			{7,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{11, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -580,12 +581,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -594,11 +595,11 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 24)},
-			{2,  RGB(31, 31, 20)},
-			{3,  RGB(31, 31, 14)},
-			{4,  RGB(31, 30, 11)},
-			{5,  RGB(31, 30, 1)},
+			{1,  RGB(31, 27, 5)}, //old RGB(31, 31, 24)
+			{2,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{3,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{4,  RGB(29, 24, 2)}, //old RGB(31, 30, 11)
+			{5,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -607,13 +608,15 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
+			{3,  RGB(31, 31, 14)},
+			{4,  RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
 			{11, RGB(31, 30, 1)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -632,14 +635,14 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 14)},
-			{2,  RGB(31, 30, 1)},
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{1,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{2,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -648,7 +651,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{15, RGB(31, 31, 14)},
+			{15, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -657,7 +660,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{15, RGB(31, 31, 14)},
+			{15, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -666,8 +669,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{9,  RGB(31, 31, 14)},
-			{10, RGB(31, 30, 0)},
+			{9,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{10, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -676,12 +679,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -690,9 +693,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{5,  RGB(14, 23, 26)},
-			{6,  RGB(9, 18, 23)},
-			{7,  RGB(0, 14, 18)},
+			{5,  RGB(31, 27, 5)},	//old RGB(14, 23, 26)
+			{6,  RGB(29, 24, 5)},	//old RGB(9, 18, 23)}
+			{7,  RGB(29, 22, 5)},	//old RGB(0, 14, 18)
 			{8,  RGB(28, 28, 29)},
 			{14, RGB(29, 30, 6)},
 			{15, RGB(24, 25, 1)},
@@ -704,9 +707,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{1, RGB(31, 31, 20)},
-			{2, RGB(31, 31, 14)},
-			{3, RGB(31, 30, 1)},
+			{1, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{2, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{3, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -715,10 +718,10 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 11,
 		.paletteIndicesToFade =
 		{
-			{12, RGB(31, 31, 20)},
-			{13, RGB(31, 31, 14)},
-			{14, RGB(31, 30, 1)},
-			{15, RGB(31, 30, 0)},
+			{12, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{13, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{14, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{15, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -727,12 +730,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -741,7 +744,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{14, RGB(31, 31, 14)},
+			{14, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -761,12 +764,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -775,9 +778,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{13, RGB(31, 31, 20)},
-			{14, RGB(31, 31, 14)},
-			{15, RGB(31, 30, 0)},
+			{13, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{14, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{15, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -786,8 +789,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{14,  RGB(31, 31, 14)},
-			{15,  RGB(31, 30, 0)},
+			{14,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{15,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -796,7 +799,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =
 		{
-			{5,  RGB(31, 31, 16)},
+			{5,  RGB(31, 31, 14)},
 			{6,  RGB(31, 30, 1)},
 			{7,  RGB(30, 28, 0)},
 			TILESET_PAL_FADE_END
@@ -807,12 +810,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -821,8 +824,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{14, RGB(31, 31, 14)},
-			{15, RGB(31, 30, 1)},
+			{14, RGB(29, 24, 5)},	//old RGB(31, 31, 14)
+			{15, RGB(29, 22, 5)},	//old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -834,12 +837,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			{1,  RGB(31, 31, 14)},
 			{2,  RGB(31, 30, 1)},
 
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)},	//old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)},	//old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)},   //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)},	//old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)},	//old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)},	//old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -852,17 +855,17 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			TILESET_PAL_FADE_END
 		},
 	},
-	{ //Battle Tower
+	{ //Battle Tower - the new basis for all the palettes
 		.tilesetPointer = 0x82D4E3C, //Tileset 39
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 27, 5)},
+			{1,  RGB(31, 27, 5)}, //gradient from bright
 			{2,  RGB(29, 24, 5)},
 			{3,  RGB(29, 22, 5)},
 			{4,  RGB(26, 20, 3)},
 			{5,  RGB(23, 18, 2)},
-			{6,  RGB(15, 11, 2)},
+			{6,  RGB(15, 11, 2)}, //gradient to dark
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -871,8 +874,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 14)},
-			{2,  RGB(31, 30, 0)},
+			{1,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{2,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -883,7 +886,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		{
 			{7,  RGB(29, 25, 0)},
 			{8,  RGB(23, 20, 0)},
-			{10,  RGB(24, 15, 5)},
+			{9,  RGB(24, 15, 5)},
 			{10,  RGB(19, 11, 2)},
 			TILESET_PAL_FADE_END
 		},
@@ -905,9 +908,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 7,
 		.paletteIndicesToFade =
 		{
-			{12,  RGB(31, 31, 20)},
-			{13,  RGB(31, 31, 14)},
-			{14,  RGB(31, 30, 1)},
+			{12,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{13,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{14,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -916,16 +919,16 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 20)},
-			{2,  RGB(31, 31, 14)},
-			{3,  RGB(31, 30, 1)},
+			{1,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{2,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{3,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
 
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10,  RGB(31, 31, 20)},
-			{12,  RGB(31, 31, 14)},
-			{13,  RGB(31, 30, 1)},
-			{14,  RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)},  //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)},  //old RGB(31, 30, 0)
+			{10,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -944,19 +947,63 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 20)},
-			{2,  RGB(31, 31, 14)},
-			{3,  RGB(31, 30, 1)},
+			{1,  RGB(31, 27, 5)},  //old RGB(31, 31, 20)
+			{2,  RGB(29, 24, 5)},  //old RGB(31, 31, 14)
+			{3,  RGB(29, 22, 5)},  //old RGB(31, 30, 1)
 
-			{6,  RGB(31, 30, 1)},
-			{11,  RGB(31, 31, 14)},
+			{11,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
 
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10,  RGB(31, 31, 20)},
-			{12,  RGB(31, 31, 14)},
-			{13,  RGB(31, 30, 1)},
-			{14,  RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)},  //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)},  //old RGB(31, 30, 0)
+			{10,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13,  RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Crystal Peak - Blue Crystals
+		.tilesetPointer = 0x82D4E0C, //Tileset 37
+		.paletteNumToFade = 8,
+		.paletteIndicesToFade =
+		{
+			{1,  RGB(24, 27, 30)},
+			{2,  RGB(19, 23, 30)},
+			{3,  RGB(15, 20, 29)},
+			{4,  RGB(11, 18, 27)},
+			{5,  RGB(8, 15, 26)},
+			{6,  RGB(5, 13, 24)},
+			{7,  RGB(3, 11, 21)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Crystal Peak - Red Crystals
+		.tilesetPointer = 0x82D4E0C, //Tileset 37
+		.paletteNumToFade = 9,
+		.paletteIndicesToFade =
+		{
+			{1,  RGB(30, 25, 24)},
+			{2,  RGB(30, 21, 19)},
+			{3,  RGB(29, 17, 15)},
+			{4,  RGB(27, 14, 11)},
+			{5,  RGB(26, 12, 8)},
+			{6,  RGB(24, 9, 5)},
+			{7,  RGB(21, 6, 3)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Crystal Peak - Yellow Crystals
+		.tilesetPointer = 0x82D4E0C, //Tileset 37
+		.paletteNumToFade = 10,
+		.paletteIndicesToFade =
+		{
+			{1,  RGB(30, 30, 18)},
+			{2,  RGB(28, 27, 14)},
+			{3,  RGB(26, 24, 10)},
+			{4,  RGB(23, 22, 7)},
+			{5,  RGB(21, 19, 4)},
+			{6,  RGB(19, 16, 2)},
+			{7,  RGB(17, 13, 0)},
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -965,8 +1012,8 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 8,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 14)},
-			{2,  RGB(31, 30, 0)},
+			{1,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{2,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -975,12 +1022,12 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -989,9 +1036,9 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =
 		{
-			{1,  RGB(31, 31, 20)},
-			{2,  RGB(31, 31, 14)},
-			{3,  RGB(31, 30, 0)},
+			{1,  RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{2,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{3,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
 			TILESET_PAL_FADE_END
 		},
 	},
@@ -1000,12 +1047,85 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		.paletteNumToFade = 12,
 		.paletteIndicesToFade =
 		{
-			{8,  RGB(31, 31, 14)},
-			{9,  RGB(31, 30, 0)},
-			{10, RGB(31, 31, 20)},
-			{12, RGB(31, 31, 14)},
-			{13, RGB(31, 30, 1)},
-			{14, RGB(31, 30, 0)},
+			{8,  RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{9,  RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			{10, RGB(31, 27, 5)}, //old RGB(31, 31, 20)
+			{12, RGB(29, 24, 5)}, //old RGB(31, 31, 14)
+			{13, RGB(29, 22, 5)}, //old RGB(31, 30, 1)
+			{14, RGB(29, 22, 4)}, //old RGB(31, 30, 0)
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Pokemon League Fire
+		.tilesetPointer = 0x82D4B84, //Tileset 10
+		.paletteNumToFade = 9,
+		.paletteIndicesToFade =
+		{
+			{12, RGB(30, 30, 25)},
+			{13, RGB(30, 29, 21)},
+			{14, RGB(28, 25, 11)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Cube Corp Building
+		.tilesetPointer = 0x82D4D4C, //Tileset 29
+		.paletteNumToFade = 7,
+		.paletteIndicesToFade =
+		{
+			{1, RGB(13, 29, 17)},
+			{2, RGB(5, 25, 17)},
+			{3, RGB(5, 17, 12)},
+			{4, RGB(4, 17, 12)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Cube Corp Lamp
+		.tilesetPointer = 0x82D4D4C, //Tileset 29
+		.paletteNumToFade = 8,
+		.paletteIndicesToFade =
+		{
+			{6, RGB(29, 13, 20)},
+			{7, RGB(27, 5, 14)},
+			{14, RGB(16, 26, 30)},	//old RGB(31, 30, 1)
+			{15, RGB(20, 29, 31)},	//old RGB(31, 31, 14)
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Cube Corp Service Stand
+		.tilesetPointer = 0x82D4D4C, //Tileset 29
+		.paletteNumToFade = 9,
+		.paletteIndicesToFade =
+		{
+			{12, RGB(4, 17, 12)},
+			{13, RGB(6, 25, 17)},
+			{14, RGB(13, 29, 17)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Cube Corp Water
+		.tilesetPointer = 0x82D4D4C, //Tileset 29
+		.paletteNumToFade = 10,
+		.paletteIndicesToFade =
+		{
+			{1, RGB(17, 23, 28)},
+			{2, RGB(19, 24, 28)},
+			{3, RGB(18, 25, 30)},
+			{4, RGB(20, 25, 30)},
+			{5, RGB(23, 26, 29)},
+			{6, RGB(25, 27, 28)},
+			{7, RGB(27, 29, 29)},
+			TILESET_PAL_FADE_END
+		},
+	},
+	{ //Cube Corp Doors
+		.tilesetPointer = 0x82D4D4C, //Tileset 29
+		.paletteNumToFade = 12,
+		.paletteIndicesToFade =
+		{
+			{10,  RGB(31, 27, 5)},
+			{12,  RGB(29, 24, 5)},
+			{13,  RGB(29, 22, 5)},
+			{14,  RGB(26, 20, 3)},
 			TILESET_PAL_FADE_END
 		},
 	},
