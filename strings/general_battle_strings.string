@@ -177,19 +177,6 @@ You were overwhelmed by your\ndefeat![FC][09]
 #org @String_TeamExpGain
 The rest of your team gained Exp.\nPoints thanks to the Exp. Share!
 
-//Other
-#org @gText_Power
-Power: 
-
-#org @gText_OHKO
-OHKO
-
-#org @gText_Acc
-Acc: 
-
-#org @gText_NoMiss
-No Miss
-
 #org @gText_Physical
 Physical
 
@@ -199,38 +186,23 @@ Special
 #org @gText_Status
 Status
 
-#org @gText_ResetStats
-Reset Lowered Stats
-
-#org @gText_StatsPlus
-+ All Stats
-
-#org @gText_CritHitsPlus
-+ Critical Hit Chance
-
-#org @gText_FollowMe
-Follow Me
-
-#org @gText_RecoverHP
-Recover HP
-
 //#org @gText_BattleMenu
 //[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38]Bag\nPok\emon[ALIGN][38]Run
 //
-//#org @gText_BattleMenuNoItems
-//[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38][COLOR_HIGHLIGHT_SHADOW][0F][0E][0B]Bag\n[COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Pok\emon[ALIGN][38]Run
-//
+#org @gText_BattleMenuNoItems
+[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38][COLOR_HIGHLIGHT_SHADOW][0F][0E][0B]Bag\n[COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Pok\emon[ALIGN][38]Run
+
 //#org @gText_BattleMenu2
 //[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38]Bag\nPok\emon[ALIGN][38]Back
+
+#org @gText_BattleMenu2NoItems
+[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38][COLOR_HIGHLIGHT_SHADOW][0F][0E][0B]Bag\n[COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Pok\emon[ALIGN][38]Back
+
+//#org @gText_BattleMenuRaidEnd
+//[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Catch[ALIGN][38]End
 //
-//#org @gText_BattleMenu2NoItems
-//[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Fight[ALIGN][38][COLOR_HIGHLIGHT_SHADOW][0F][0E][0B]Bag\n[COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Pok\emon[ALIGN][38]Back
-
-#org @gText_BattleMenuRaidEnd
-[PALETTE][05][COLOR_HIGHLIGHT_SHADOW][0D][0E][0F]Catch[ALIGN][38]End
-
-#org @gText_CaptureRaidMon
-[FD][06] is weak!\nThrow a Ball now!
+//#org @gText_CaptureRaidMon
+//[FD][06] is weak!\nThrow a Ball now!
 
 #org @gText_TeamPreviewSingleDoubleText
 [FD][1C] [FD][1D]'s Team
@@ -243,11 +215,6 @@ Recover HP
 
 #org @gText_TeamPreviewMultiLinkText
 [FD][20]'s Team\n[FD][21]'s Team 
-
-//Exp String
-
-#org @String_TeamExpGain
-The rest of your team gained Exp.\nPoints thanks to the Exp. Share!
 
 //Other
 #org @gStatusConditionString_Frostbite

@@ -1,76 +1,18 @@
-Auto-merging xse_commands.s
-Auto-merging strings/trainer_sliding_strings.string
 CONFLICT (content): Merge conflict in strings/trainer_sliding_strings.string
-Auto-merging strings/overworld_strings.string
 CONFLICT (content): Merge conflict in strings/overworld_strings.string
-Auto-merging strings/general_battle_strings.string
 CONFLICT (content): Merge conflict in strings/general_battle_strings.string
-Auto-merging strings/attack_name_table.string
 CONFLICT (content): Merge conflict in strings/attack_name_table.string
-Auto-merging strings/attack_descriptions.string
 CONFLICT (content): Merge conflict in strings/attack_descriptions.string
-Auto-merging src/util.c
-Auto-merging src/stat_buffs.c
-Auto-merging src/party_menu.c
-Auto-merging src/overworld.c
 CONFLICT (content): Merge conflict in src/overworld.c
-Auto-merging src/general_bs_commands.c
 CONFLICT (content): Merge conflict in src/general_bs_commands.c
-Auto-merging src/field_effects.c
 CONFLICT (content): Merge conflict in src/field_effects.c
-Auto-merging src/dynamax.c
-Auto-merging src/config.h
 CONFLICT (content): Merge conflict in src/config.h
-Auto-merging src/character_customization.c
-Auto-merging src/battle_util.c
-Auto-merging src/battle_strings.c
 CONFLICT (content): Merge conflict in src/battle_strings.c
-Auto-merging src/Tables/level_up_learnsets.c
-Auto-merging src/Tables/item_tables.c
 CONFLICT (content): Merge conflict in src/Tables/item_tables.c
-Auto-merging scripts/string.py
-Auto-merging scripts/insert.py
 CONFLICT (content): Merge conflict in scripts/insert.py
-Auto-merging routinepointers
 CONFLICT (content): Merge conflict in routinepointers
-Auto-merging repoints
-Auto-merging include/new/dns_data.h
-Auto-merging include/item_use.h
-Auto-merging include/global.h
-Auto-merging include/constants/songs.h
-Auto-merging include/constants/items.h
 CONFLICT (content): Merge conflict in include/constants/items.h
-Auto-merging include/constants/battle.h
-Auto-merging include/battle_util.h
-Auto-merging include/battle.h
-Auto-merging graphics/Other/Type_Icons/Type_Icons.bmp
 CONFLICT (content): Merge conflict in graphics/Other/Type_Icons/Type_Icons.bmp
-Removing graphics/DexNav/gInterfaceGfx_dexnavGui.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiWinter.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiVolcano.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiSwamp.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiIndoor.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiFlowerParadiseC.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiFlowerParadiseB.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiFlowerParadiseA.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiDesert.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiDarkerCave.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiCave.png
-Removing graphics/DexNav/Palette_Only/gInterfaceGfx_DexNavGuiAutumn.png
-Removing graphics/DexNav/Compressed_With_Palette/DexNavCursor.png
-Auto-merging graphics/DexNav/Compressed/DexNavHUDChainCanvas.png
-Removing graphics/Battle_UI/gritflags.txt
-Removing graphics/Battle_UI/Switch_Summary.png
 CONFLICT (modify/delete): graphics/Battle_UI/PSS_Icons/PSSIcons.bmp deleted in f61fed27d7a8410425106f3be92cc6b0048560e7 and modified in HEAD. Version HEAD of graphics/Battle_UI/PSS_Icons/PSSIcons.bmp left in tree.
-Removing graphics/Battle_UI/Move_Summary.png
-Removing graphics/Battle_UI/Mega/Image Only/Ultra_Trigger.png
-Removing graphics/Battle_UI/Mega/Image Only/Dynamax_Trigger_Working.png
-Auto-merging bytereplacement
-Removing assembly/data/move_tables.s
-Auto-merging assembly/data/anim_backgrounds_graphics_defines.s
-Removing assembly/data/ability_tables.s
-Auto-merging assembly/battle_scripts/general_attack_battle_scripts.s
 CONFLICT (content): Merge conflict in assembly/battle_scripts/general_attack_battle_scripts.s
-Auto-merging asm_defines.s
-Auto-merging anim_defines.s
 Automatic merge failed; fix conflicts and then commit the result.
