@@ -494,7 +494,7 @@ An attack which\nchanges type,\ndepending on the\nPlate held.
 
 #org @DESC_FREEZEDRY
 #ifdef FROSTBITE
-An attack which may\nleave the foe with\nfrostbite. It is also\nsuper effective on\nWater-types.
+Attack which may\nleave foe with\nfrostbite. Ssuper effective\non Water-types.
 #else
 An attack which may\nleave the target\nfrozen. It is also\nsuper effective on\nWater types.
 #endif

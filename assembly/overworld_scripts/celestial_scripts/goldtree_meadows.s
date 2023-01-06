@@ -144,6 +144,8 @@ TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt:
 	pause 0x3B
 	checksound
 	sound 0x11
+	applymovement GRUNT, m_GruntRunsAway
+	waitmovement 0x0
 	hidesprite GRUNT
 	pause 0x5A
 	fadescreenspeed 0x2 0xD
@@ -241,8 +243,9 @@ PlayerMovesTowardRivalWhenScriptNumberSeven:
 	return
 
 m_Exclaim: .byte look_down, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
-m_RivalLeaves: .byte walk_up, walk_up, walk_up, walk_up, walk_up, end_m
 m_RivalLooksHereAndThere: .byte look_up, pause_long, pause_long, look_left, pause_long, pause_long, look_right, pause_long, pause_long, look_up, pause_long, pause_long, look_down, pause_long, pause_long, end_m
+m_RivalLeaves: .byte walk_up, walk_up, walk_up, walk_up, walk_up, end_m
+m_GruntRunsAway: .byte run_up, run_up, run_up, run_up, run_up, end_m
 m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFour: .byte walk_right, walk_up, walk_up, walk_up, end_m
 m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFive: .byte walk_up, walk_up, walk_up, end_m
 m_MoveCameraTowardsRivalAndGruntWhenScriptNumberSix: .byte walk_left, walk_up, walk_up, walk_up, end_m

@@ -27,6 +27,12 @@ npc 3 2 10 NPCScript_ErstoniaCity_ItemObtainTM27
 tile 6 0 0 TileScript_ErstoniaCity_HouseOfMayor_PlayerTriesToEnterRoomOfLandre
 map 3 2 gMapScripts_ErstoniaCity
 
+#Westray Village:
+npc 3 3 6 NPCScript_WestrayVillage_BoyThatGivesHint
+sign 3 3 5 SignScript_WestrayVillage_AppleStand
+sign 3 3 1 SignScript_WestrayVillage_HiddenEntrance
+map 3 3 gMapScripts_WestrayVillage
+
 #Aerilon Pass:
 npc 3 19 1 NPCScript_AerilonPass_Rival
 npc 3 19 3 NPCScript_AerilonPass_ItemObtainPotion
@@ -75,6 +81,13 @@ tile 1 1 0 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 tile 1 1 1 TileScript_ErstoniaGorge_RuinwayPassage_PlayerFindsLandre
 map 1 1 gMapScripts_ErstoniaGorge_RuinwayPassage
 
+#Westray Trail
+npc 3 24 0 NPCScript_WestrayTrail_GuardThatBlocksAccess
+npc 3 24 14 NPCScript_WestrayTrail_GuardThatBlocksAccess
+tile 3 24 0 TileScript_WestrayTrail_GuardThatBlocksAccess
+tile 3 24 1 TileScript_WestrayTrail_GuardThatBlocksAccess
+tile 3 24 2 TileScript_WestrayTrail_GuardThatBlocksAccess
+
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
 npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
@@ -107,8 +120,19 @@ npc 3 2 3 NPCTalkingScript_ErstoniaCity_GymTipGirl
 npc 3 2 12 NPCTalkingScript_ErstoniaCity_NoBeautyHereGirl
 npc 3 2 4 NPCTalkingScript_ErstoniaCity_ErstoniaGorgeBoy
 npc 3 2 8 NPCTalkingScript_ErstoniaCity_GrandpaGirl
-npc 3 2 9 NPCTalkingScript_ErstoniaCity_WestrayVillageGuy
+npc 3 2 9 NPCTalkingScript_ErstoniaCity_SecurityOutpostGuy
 npc 3 2 6 NPCTalkingScript_ErstoniaCity_TrainerTipsInformantMan
+npc 3 3 0 NPCTalkingScript_WestrayVillage_NoSecretsGirl
+npc 3 3 1 NPCTalkingScript_WestrayVillage_AppleFarmOfJoeOldMan
+npc 3 3 3 NPCTalkingScript_WestrayVillage_JoeIsAwesomeMan
+npc 3 3 2 NPCTalkingScript_WestrayVillage_JustBecauseYouAreTrashBoy
+npc 3 3 11 NPCTalkingScript_WestrayVillage_AppleFarmSucksMan
+npc 3 3 4 NPCTalkingScript_WestrayVillage_AreNotDoingItWrongGirl
+npc 3 3 5 NPCTalkingScript_WestrayVillage_WhatASightGirl
+npc 3 3 9 NPCTalkingScript_WestrayVillage_AppleStandMan
+npc 3 3 7 NPCTalkingScript_WestrayVillage_WeirdPeopleMan
+npc 3 3 8 NPCTalkingScript_WestrayVillage_AppleLadyOldWoman
+npc 3 3 10 NPCTalkingScript_WestrayVillage_WestrayHighlandsGirl
 sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
@@ -140,6 +164,8 @@ sign 3 2 1 SignpostScript_ErstoniaCity_Gym
 sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
 sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
 sign 3 2 4 SignpostScript_ErstoinaCity_MayorHouse
+sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
+sign 3 3 2 SignpostScript_WestrayVillage_MainTown
 sign 3 23 0 SignpostScript_ErstoniaGorge_MainRoute
 sign 3 23 1 SignpostScript_ErstoniaGorge_TrainerTips
 sign 3 23 2 SignpostScript_ErstoniaGorge_RuinwayPassage
@@ -161,4 +187,10 @@ sign 1 1 14 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
 sign 1 1 15 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
 sign 1 1 16 SignpostScript_ErstoniaGorge_RuinwayPassage_UnownCarvings
 sign 1 2 1 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving
-sign 1 2 2 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving 
+sign 1 2 2 SignpostScript_ErstoniaGorge_RuinwayPassage_RelicanthCarving
+sign 3 24 0 SignpostScript_WestrayTrail_SecurityOutpost
+sign 3 24 1 SignpostScript_WestrayTrail_MainRoute
+sign 3 24 2 SignpostScript_WestrayTrail_TrainerTips
+sign 3 24 3 SignpostScript_WestrayTrail_TrainerTips_02
+sign 3 24 4 SignpostScript_WestrayTrail_SecurityOutpost
+sign 3 24 5 SignpostScript_WestrayTrail_MainRoute_02

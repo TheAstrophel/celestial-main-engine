@@ -146,8 +146,8 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_ErstoniaCity_GrandpaGirlNPC
 [RED]My Grandpa is the caretaker of the\n[GREEN]Erstonia City Pok\emon Gym[RED]!\pHe says it's an important job, and I\neven help sometimes!
 
-#org @gText_ErstoniaCity_WestrayVillageGuyNPC
-[BLUE]Boy, [GREEN]Westray Village[BLUE] sure is far from\nhere! Like, real far!\pThere aren't any Pok\eCenter's along\nthe way, so stock up on Potions!
+#org @gText_ErstoniaCity_SecurityOutpostGuyNPC
+[BLUE]There are various [GREEN]Security Outposts[BLUE]\nall over Triton.\pThey stop novice and weak Trainers\nlike you from hurting themselves.\pBe grateful to the authorities!
 
 #org @gText_ErstoniaCity_TrainerTipsInformantManNPC
 [BLUE]Read any sign you come across!\pThey contain highly useful tips for\nTrainers like you!
@@ -167,15 +167,55 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_ErstoinaCity_MayorHouseSign
 [BLACK]Mayor's house
 
+//Westray Village:
+#org @gText_WestrayVillage_NoSecretsGirlNPC
+[GREEN]Westray Village[RED] is a town of wonder!\nVisitors welcome! No secrets here!
+
+#org @gText_WestrayVillage_AppleFarmOfJoeOldManNPC
+[BLUE]Joe is the one that we should be\ngrateful too.\pHis apples are best in the world!\n[.]Mhm[.] I love apples.
+
+#org @gText_WestrayVillage_JoeIsAwesomeManNPC
+[BLUE]Joe is such an awesome dude!\nI asked him why he grows apples.\pYou know what he said?\n"They're delicious!" Haha!\pWhat a funny guy! No one can beat\nJoe at being Joe.
+
+#org @gText_WestrayVillage_JustBecauseYouAreTrashBoyNPC
+[BLUE]Just because you are trash does not\nmean you can do great things.\pIt's called garbage can, not garbage\ncannot.
+
+#org @gText_WestrayVillage_AppleFarmSucksManNPC
+[BLUE]Boy, working in an apple farm sure\nis lame! This is the worst.\pI want to live my life! Explore!\nBut look at me[.] picking apples[.]
+
+#org @gText_WestrayVillage_AreNotDoingItWrongGirlNPC
+[RED]You aren't doing it wrong[.] if no one\nknows what you're doing.\pYeah, that does mean I have no idea\nwhat to do with these apples.
+
+#org @gText_WestrayVillage_WhatASightGirlNPC
+[RED]What a sight, huh? I sure hope our\nsecrets aren't exposed to strangers[.]\pUm! I mean, wow, apples! So plump\nand red! Yummy! Haha[.]
+
+#org @gText_WestrayVillage_AppleStandManNPC
+[BLUE]Spending some qualitree time on the\nfarm! Haha, get it? No?\pI think these puns are applepriate\nfor the occasion! Hm[.]?\p[.]I should stop making apple puns\nnow… orchard I? Yeah[.]? No?\pYou're boring, kid. If you wanna buy\napples, ask from the front.
+
+#org @gText_WestrayVillage_WeirdPeopleManNPC
+[BLUE]Some weird people here don't tend to\noutsiders well. Don't mind them.\pYou're welcome in our humble town.
+
+#org @gText_WestrayVillage_AppleLadyOldWomanNPC
+[RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh, youngling?
+
+#org @gText_WestrayVillage_WestrayHighlandsGirlNPC
+[RED]The higher you go on [GREEN]Westray\nHighlands[RED], the colder it gets!\pYou even need [GREEN]Winter Gear[RED] to enter\nthem, or they'll send you back!
+
+#org @gText_WestrayVillage_FarmOfJoeSign
+[BLACK]Joe's Apple Farm\n"Red and plump, like rosy cheeks".
+
+#org @gText_WestrayVillage_MainTownSign
+[BLACK]Westray Village\n"The Autumn Wind Is A Pirate".
+
 //Erstonia Gorge:
 #org @gText_ErstoniaGorge_MainRouteSign
-Erstonia Gorge\n[ARROW_LEFT]Erstonia City
+[BLACK]Erstonia Gorge\n[ARROW_LEFT]Erstonia City
 
 #org @gText_ErstoniaGorge_TrainerTipsSign
 [BLACK]Trainer Tips!\pPress the [START_BUTTON] Button to change how\nitems are sorted in the Bag.
 
 #org @gText_ErstoniaGorge_RuinwayPassageSign
-Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Oakheart\nTown.
+[BLACK]Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Oakheart\nTown.
 
 #org @gText_ErstoniaGorge_RuinwayPassage_UnownCarvingsSign
 [BLACK]These carvings appear to be old[.]\nThey depict different [GREEN]Unown [BLACK]shapes[.]
@@ -185,3 +225,18 @@ Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Oakheart\nTown
 
 #org @gText_ErstoniaGorge_RuinwayPassage_SeviperCarvingSign
 [BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Seviper[BLACK].
+
+#org @gText_WestrayTrail_SecurityOutpostSign
+[GREEN]Security Outpost[BLACK] (Westray Trail)\n"Peace & Tranquility".
+
+#org @gText_WestrayTrail_MainRouteSign
+[BLACK]Westray Trail\n[ARROW_DOWN]Erstonia City - [ARROW_UP]Westray Village
+
+#org @gText_WestrayTrail_TrainerTipsSign
+[BLACK]Trainer Tips!\pIn battle, you can check the details\nof the moves of your Pok\emon.\pJust press [L_BUTTON] before selecting a\nmove!
+
+#org @gText_WestrayTrail_TrainerTips_02Sign
+[BLACK]Trainer Tips!\pKeep an eye out for shady areas\nbetween [GREEN]trees[BLACK].\pAlso keep an eye out for concealed\n[GREEN]cave openings.\pThese indicate [GREEN]Hidden Grotto's[BLACK] and\n[GREEN]Secret Temples[BLACK]!
+
+#org @gText_WestrayTrail_MainRoute_02Sign
+[BLACK]Westray Trail\n[ARROW_RIGHT]Westray Village - [ARROW_DOWN]Erstonia City

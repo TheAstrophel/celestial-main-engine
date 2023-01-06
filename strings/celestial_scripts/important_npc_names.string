@@ -28,5 +28,8 @@
 #org @gText_GruntName
 [BLACK]Grunt
 
+#org @gText_OfficerName
+[BLACK]Officer
+
 #org @gText_UnknownName
 [BLACK]???

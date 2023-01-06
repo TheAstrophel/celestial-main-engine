@@ -1,0 +1,32 @@
+#org @gText_WestrayVillage_BoyGivesHint
+[BLUE]Yeah, I got Joe's call.\pThe [GREEN]grass sure is patchy in the\ncorners[BLUE], huh?\pI didn't say nothin'!
+
+#org @gText_WestrayVillage_BoyTalksAboutSomethingStupid
+[BLUE]I sometimes see suspicious people\nin town. They hang out here a lot.\pWonder what they're upto?
+
+#org @gText_WestrayVillage_AppleStandMan_01
+[BLUE]Hey, kiddo! Want a delicious, plump,\nred and juicy apple? Only 20g!
+
+#org @gText_WestrayVillage_AppleStandMan_02
+[BLUE]You're loss! You sure are\nunbelievapple.
+
+#org @gText_WestrayVillage_AppleStandMan_03
+[BLUE]Too bad! You don't even have $20!\nI apple-laud your efforts, though!
+
+#org @gText_WestrayVillage_AppleStandMan_04
+[BLUE]Have an apple-solutely wonderful\nday!
+
+#org @gText_WestrayVillage_PlayerGetsAppleYay
+[BLACK][PLAYER] received and ate a delicious\nred apple!
+
+#org @gText_WestrayVillage_SuspiciousGrassPatch
+[BLACK]This seems to be a suspicious patch\nof grass[.]
+
+#org @gText_WestrayVillage_LaddersLeadToCatacombs
+[BLACK]These ladders lead to [GREEN]Westray\nCatacombs[BLACK].
+
+#org @gText_WestrayVillage_PlayerFindingCatacombs
+[BLACK]This seems to be a suspicious patch\nof grass[.] that leads to an opening!
+
+#org @gText_WestrayVillage_PlayerFoundCatacombs
+[BLACK][PLAYER] found [GREEN]ladders[BLACK] under the\ntampered dirt!

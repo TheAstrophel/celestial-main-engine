@@ -1,4 +1,11 @@
-A lot of Westray Trail mapping.
+Refines in Westray Village, 1.
+Event's placed correctly in Westray Village.
+Refines in Westray Village, 2.
+Made Hidden Grotto tiles/Ladder Tiles in Westray Village.
+Refines in Westray Village, 3.
+Removed Westray Village level script in A-Map.
+Westray Village music set.
+Westray Village extended to accomodate gate house.
 
 - Do refines (check tile errors, hidden items etc.) in Goldtree Meadows/Faery Woods/Erstonia Gorge; Fix Footer ID's of all maps; Make Erstonia Sub-maps; 
   Add Wild Mons in Routes; Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's;
