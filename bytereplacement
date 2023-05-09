@@ -7,7 +7,7 @@
 ##Enable National Dex From Start##
 0806E25C 01 20 70 47
 
-##Remove Eye Catches##
+##Remove First Person Map Previews##
 080F8121 00 00 00 00
 080F8168 00 00 00 00
 08056C96 00 00 00 00

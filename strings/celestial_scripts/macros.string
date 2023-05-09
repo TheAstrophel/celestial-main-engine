@@ -35,38 +35,6 @@ Aerilon Town\n"The Mountainside Gold-Grey Haven".
 #org @gText_AerilonTown_AlmondResidenceSign
 Almond Residence
 
-//Aerilon Hills:
-#org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
-[BLUE]Working in an Observatory is amazing!\nYou'll see things you didn't even\lknow existed!
-
-#org @gText_AerilonHills_AlmondObservatory_ThirdAideNPC
-[BLUE]Space is really fascinating. It's so\nbig that even a million Sun's can't\lfill up the whole solar system, let\lalone the entire cosmos!
-
-#org @gText_AerilonHills_AlmondObservatory_FourthAideNPC
-[BLUE]I love Pok\emon that are uncommon and\nmake other Trainers jealous.\pI can say we have quite a few of\nthem in the zoological garden.
-
-#org @gText_AerilonHills_AlmondObservatory_FifthAideNPC
-[BLUE]Wild Pikachu inhabit Aerilon Hills.\nI hear they're hard to capture.
-
-#org @gText_AerilonHills_AlmondObservatory_SixthAideNPC
-[BLUE]Terribly sorry, but only staff are\nallowed up here.
-
-#org @gText_AerilonHills_MainRouteSign
-[BLACK]Aerilon Hills\n[ARROW_DOWN]Aerilon Town
-
-#org @gText_AerilonHills_AlmondObservatorySign
-[BLACK]Almond Observatory\n"Discovering the beyond".
-
-//Aerilon Pass:
-#org @gText_AerilonPass_OranBerryBoyNPC
-I think Oran Berries are fascinating.\nThey recover lost HP of Pok\emon.
-
-#org @gText_AerilonPass_TallGrassGirlNPC
-Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know whether this is true or\nnot, though.
-
-#org @gText_AerilonPass_MainRouteSign
-[BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
-
 //Goldtree Village:
 #org @gText_GoldtreeVillage_FaeryWoodsBugCatcherNPC
 [GREEN]Faery Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
@@ -104,26 +72,6 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 #org @gText_GoldtreeVillage_PKMNCenter_MachineSign
 Better not mess around with this\nmachine!
 
-//Goldtree Meadows:
-#org @gText_GoldtreeMeadows_MainRoute_01Sign
-Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
-
-#org @gText_GoldtreeMeadows_FaeryWoodsSign
-Faery Woods\n"Let the fairy-light guide you".
-
-#org @gText_GoldtreeMeadows_MainRoute_02Sign
-Goldtree Meadows\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
-
-//King's Path:
-#org @gText_KingsPath_JustADitchManNPC
-This ditch is not as interesting as I\nthought it would be.
-
-#org @gText_KingsPath_SmallOpeningSign
-There is an inward grove over here!\nMaybe it leads to an opening[.]
-
-#org @gText_KingsPath_MainRouteSign
-King's Path\n[ARROW_LEFT]Goldtree Village
-
 //Erstonia City:
 #org @gText_ErstoniaCity_WelcomeToErstoniaCityGirlNPC
 [RED]Welcome to [GREEN]Erstonia City[RED]! Not at all\na dangerous, violent city!\pEveryone loves each other!\nNo street gangs here, nope, never!
@@ -152,6 +100,66 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_ErstoniaCity_TrainerTipsInformantManNPC
 [BLUE]Read any sign you come across!\pThey contain highly useful tips for\nTrainers like you!
 
+#org @gText_ErstoniaCity_House_LittleGirlNPC
+[RED]Do you know what an outsider Pok\emon\nis?\pIt's a Pok\emon that you get in a\ntrade!\pIt grows fast, but it may ignore an\nunskilled Trainer in battle.
+
+#org @gText_ErstoniaCity_House_AbilityAndEggsManNPC
+[BLUE]Did you know?\pIf a Pok\emon in your party has the\n[GREEN]Flame Body[BLUE] or [GREEN]Magma Armor[BLUE] ability,\lit causes Eggs to hatch more quickly.
+
+#org @gText_ErstoniaCity_House_DragoniteFavoritePKMNBoyNPC
+[BLUE]My favourite Pok\emon is [GREEN]Dragonite[BLUE]!\nI'd love to have my own someday.
+
+#org @gText_ErstoniaCity_House_LoveToTravelGirlNPC
+[RED]I love to travel! Have you ever\nvisited [GREEN]Stonepeak City[RED]?\pThe view is to die for, but it's so\ncold there!
+
+#org @gText_ErstoniaCity_House_AsTheyGrowOldManNPC
+[BLUE]Pok\emon learn new techniques as they\ngrow.\pBut some moves must be taught to\nthem by people.
+
+#org @gText_ErstoniaCity_House_EasierToCatchBoyNPC
+A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, Poison, Burn, or Paralysis[BLUE][.]\nThose are all effective.\pBut catching Pok\emon is never a\nsure thing!
+
+#org @gText_ErstoniaCity_House_AllBugCatchersGirlNPC
+[RED]There aren't many serious Pok\emon\nTrainers here.\pThey're all like Bug Catchers, you\nknow, just hobbyists.\pBut [GREEN]Erstonia Gym's Landre[RED] isn't like\nthat, not one bit.
+
+#org @gText_ErstoniaCity_House_MovedHereLadyNPC
+[RED]We moved to [GREEN]Erstonia[RED] just recently.\nIt's a good city!\pOne reason I was on board to come\nhere was because of [GREEN]Landre[RED].\pA powerful [GREEN]Gym Leader[RED] can surely\ndefend this city from thugs!
+
+#org @gText_ErstoniaCity_House_CheckOutLandreManNPC
+[BLUE]You're a Trainer, right? [GREEN]Landre's[BLUE]\nlooking for new challengers.\pYou should try taking him on!
+
+#org @gText_ErstoniaCity_HouseOfMayor_MayorWifeNPC
+[RED]It's so tough to have a such a\npowerful Trainer as your son[.]\pOh ho, was I bragging? My bad. It's\njust, [GREEN]Landre[RED] is my pride and joy!
+
+#org @gText_ErstoniaCity_HouseOfMayor_MayorNPC
+[BLUE]Ah, yes, I am 'za Mayor. Oh ho,\nnot only 'zat, [GREEN]Landre[BLUE] is my son!\pWho would've 'zought he would 'zrow\nup to be such a fine young man?
+
+#org @gText_ErstoniaCity_HouseOfMayor_LandreBrotherNPC
+[BLUE]Yo, homeboy, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
+
+#org @gText_ErstoniaCity_ErstoniaApartments_ReceptionOldManNPC
+[BLUE]Bah! What'd ya want?\pYeah, dis' the reception, but go\naway, the rooms are full!\pBah!
+
+#org @gText_ErstoniaCity_ErstoniaApartments_WaitingInLobbyManNPC
+[BLUE]Women take forever to get ready,\nit's just the worst!\pHaha, I'm just joking. I'm single.\nBut aren't we all in the end?
+
+#org @gText_ErstoniaCity_ErstoniaApartments_InterestingBookshelfManNPC
+[BLUE]These books are very fascinating!\nYou should try them some time!\pI read a thrilling novel of a Trainer\nand his Lopunny recently[.] oh yes[.]
+
+#org @gText_ErstoniaCity_ErstoniaApartments_ErstoniaGetsMuchAttractionoBoyNPC
+[BLUE]Erstonia City gets much activity. It's\nsaid it's because of the Gym.\pBut I know better! It's because\n[GREEN]Faery Woods[BLUE] are nearby!\pYeah! Everyone comes to catch\nBug-type Pok\emon! Go Bug-type!
+
+#org @gText_ErstoniaCity_ErstoniaApartments_AtPeaceOldManNPC
+[BLUE]I sometimes like to stare at blank\nwalls to contemplate life.\pYes, I am at peace[.]
+
+#org @gText_ErstoniaCity_ErstoniaApartments_NothingBeatsCityLifeBoyNPC
+[BLUE]City life is the best, am I right?\nOur city is peaceful too.\pNo organized crime here!
+
+#org @gText_ErstoniaCity_ErstoniaApartments_AtMyAgeOldLadyNPC
+[BLUE]I need to go down to the reception,\nbut come on!\pAt my age, I shouldn't even be\nwalking!
+
+#org @gText_ErstoniaCity_ErstoniaApartments_TryingToEavesdropGirlNPC
+[RED]Shh! I'm trying to eavesdrop!
+
 #org @gText_ErstoniaCity_MainTownSign
 [BLACK]Erstonia City\n"The City Of Rock And Steel".
 
@@ -164,8 +172,11 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_ErstoniaCity_ErstoniaApartmentsSign
 [BLACK]Erstonia Apartments
 
-#org @gText_ErstoinaCity_MayorHouseSign
+#org @gText_ErstoniaCity_MayorHouseSign
 [BLACK]Mayor's house
+
+#org @gText_ErstoniaCity_ErstoniaApartments_ReceptionSign
+[BLACK]Reception
 
 //Westray Village:
 #org @gText_WestrayVillage_NoSecretsGirlNPC
@@ -207,7 +218,89 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_WestrayVillage_MainTownSign
 [BLACK]Westray Village\n"The Autumn Wind Is A Pirate".
 
+//Aerilon Pass:
+#org @gText_AerilonPass_OranBerryBoyNPC
+I think Oran Berries are fascinating.\nThey recover lost HP of Pok\emon.
+
+#org @gText_AerilonPass_TallGrassGirlNPC
+Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know whether this is true or\nnot, though.
+
+#org @gText_AerilonPass_MainRouteSign
+[BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
+
+//Aerilon Hills:
+#org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
+[BLUE]Working in an Observatory is amazing!\nYou'll see things you didn't even\lknow existed!
+
+#org @gText_AerilonHills_AlmondObservatory_ThirdAideNPC
+[BLUE]Space is really fascinating. It's so\nbig that even a million Sun's can't\lfill up the whole solar system, let\lalone the entire cosmos!
+
+#org @gText_AerilonHills_AlmondObservatory_FourthAideNPC
+[BLUE]I love Pok\emon that are uncommon and\nmake other Trainers jealous.\pI can say we have quite a few of\nthem in the zoological garden.
+
+#org @gText_AerilonHills_AlmondObservatory_FifthAideNPC
+[BLUE]Wild Pikachu inhabit Aerilon Hills.\nI hear they're hard to capture.
+
+#org @gText_AerilonHills_AlmondObservatory_SixthAideNPC
+[BLUE]Terribly sorry, but only staff are\nallowed up here.
+
+#org @gText_AerilonHills_MainRouteSign
+[BLACK]Aerilon Hills\n[ARROW_DOWN]Aerilon Town
+
+#org @gText_AerilonHills_AlmondObservatorySign
+[BLACK]Almond Observatory\n"Discovering the beyond".
+
+//Goldtree Meadows:
+#org @gText_GoldtreeMeadows_YellowBallsBoyNPC
+[BLUE]See the [GREEN]yellow Pok\eball's[BLUE] lying here?\nThat's a [GREEN]Technical Machine[BLUE], or TM!\pBe sure to pick them up if you need\nTM's. You might just get lucky!
+
+#org @gText_GoldtreeMeadows_FaeryWoodsAreStrangeManNPC
+[BLUE]This path leads to [GREEN]Faery Woods[BLUE]. It's\nriddled with Fairy-type Pok\emon!\pOh, and also Bug-type. You'll find\nmany Bug-type frantics in there.
+
+#org @gText_GoldtreeMeadows_RosettaLineGirlNPC
+[RED]This here is the [GREEN]Rosetta Line[RED].\nIt seems to be just flowers.\pBut my Dad said it might mark\nsomething. What could it be?
+
+#org @gText_GoldtreeMeadows_GrownManIntoFlowersNPC
+[BLUE]Normalize liking flowers at this age!\nAll I want is to skip through grass[.]
+
+#org @gText_GoldtreeMeadows_EnjoyTheBreezeGirlNPC
+[RED]The breeze here sure is silent. A\nmountain side garden would be best!\pThe perfect amount of breeze, and\njust the right weather.
+
+#org @gText_GoldtreeMeadows_FaeryWoods_RegionalPKMNBoyNPC
+[BLUE]Triton has a ton of [GREEN]Regional Pok\emon[BLUE].\nYou can find some in here, too!
+
+#org @gText_GoldtreeMeadows_FaeryWoods_HiddenItemsBoyNPC
+[BLUE]You can find hidden items on the\nground scattered here and there!\pI've got like five Potions already!
+
+#org @gText_GoldtreeMeadows_MainRoute_01Sign
+Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
+
+#org @gText_GoldtreeMeadows_FaeryWoodsSign
+Faery Woods\n"Let the fairy-light guide you".
+
+#org @gText_GoldtreeMeadows_MainRoute_02Sign
+Goldtree Meadows\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
+
+//King's Path:
+#org @gText_KingsPath_JustADitchManNPC
+This ditch is not as interesting as I\nthought it would be.
+
+#org @gText_KingsPath_SmallOpeningSign
+There is an inward grove over here!\nMaybe it leads to an opening[.]
+
+#org @gText_KingsPath_MainRouteSign
+King's Path\n[ARROW_LEFT]Goldtree Village
+
 //Erstonia Gorge:
+#org @gText_ErstoniaGorge_SomethingHappensAtNightGirlNPC
+[RED]Depending on what time you come,\ndifferent Pok\emon will appear!\pAt daytime, you can find IO.\nAt nighttime, you can find IO.\pPretty cool, huh?
+
+#org @gText_ErstoniaGorge_RuinwayPassageGirlNPC
+[RED]This is the entrance to [GREEN]Ruinway\nPassage[RED]. Hopefully it doesn't cave-in!
+
+#org @gText_ErstoniaGorge_IfHadRockClimbManNPC
+[BLUE]It's a long trek from here till\n[GREEN]Ruinway Passage[BLUE].\pIf only I had [GREEN]Rock Climb[BLUE][.] I'd scale\nthis wall and be on top!
+
 #org @gText_ErstoniaGorge_MainRouteSign
 [BLACK]Erstonia Gorge\n[ARROW_LEFT]Erstonia City
 
@@ -225,6 +318,10 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 
 #org @gText_ErstoniaGorge_RuinwayPassage_SeviperCarvingSign
 [BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Seviper[BLACK].
+
+//Westray Trail:
+#org @gText_WestrayTrail_WestrayCatacombsAreDangerousGirlNPC
+[RED]Beware, Trainer! Do not step foot in\n[GREEN]Westray Catacombs[RED]!\pYou have been warned!
 
 #org @gText_WestrayTrail_SecurityOutpostSign
 [GREEN]Security Outpost[BLACK] (Westray Trail)\n"Peace & Tranquility".

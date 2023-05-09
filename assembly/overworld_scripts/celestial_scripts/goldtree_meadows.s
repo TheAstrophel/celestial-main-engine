@@ -15,6 +15,30 @@ NPCScript_GoldtreeMeadows_TreeCutter:
 
 m_FaceDefault: .byte face_default, end_m
 
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeMeadows_ItemObtainXAttack
+NPCScript_GoldtreeMeadows_ItemObtainXAttack:
+	giveitem 0x4B 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainXAttack
+	end
+
+SetItemFlag_ItemObtainXAttack:
+	setflag 0x167 @Person ID of X-Attack in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeMeadows_ItemObtainTM59
+NPCScript_GoldtreeMeadows_ItemObtainTM59:
+	giveitem 0x180 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainTM59
+	end
+
+SetItemFlag_ItemObtainTM59:
+	setflag 0x168 @Person ID of TM59 (Dragon Pulse) in A-Map
+	return
+
 #Tile scripts:
 .global TileScript_GoldtreeMeadows_BattleToStopPlayer
 TileScript_GoldtreeMeadows_BattleToStopPlayer:
@@ -258,3 +282,39 @@ m_PlayerMovingTowardRivalWhenScriptNumberFour: .byte run_right, run_up, run_up, 
 m_PlayerMovingTowardRivalWhenScriptNumberFive: .byte run_up, run_up, end_m
 m_PlayerMovingTowardRivalWhenScriptNumberSix: .byte run_left, run_up, run_up, end_m
 m_PlayerMovingTowardRivalWhenScriptNumberSeven: .byte run_left, run_left, run_up, run_up, end_m
+
+#@@@@@@@@;Sub-maps;@@@@@@@@
+#NPC scripts:
+.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney
+NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney:
+	giveitem 0x74 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainHoney
+	end
+
+SetItemFlag_ItemObtainHoney:
+	setflag 0x161 @Person ID of Honey in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall
+NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall:
+	giveitem 0x4 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainPBall
+	end
+
+SetItemFlag_ItemObtainPBall:
+	setflag 0x162 @Person ID of PBall in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion
+NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion:
+	giveitem 0xD 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainPotion
+	end
+
+SetItemFlag_ItemObtainPotion:
+	setflag 0x163 @Person ID of Paralyze Heal in A-Map
+	return

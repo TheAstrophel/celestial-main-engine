@@ -26,6 +26,18 @@ PlayerHasNotMetJoe:
 	release
 	end
 
+@;////////////////////////////////////////////////
+
+.global NPCScript_WestrayVillage_ItemObtainEther
+NPCScript_WestrayVillage_ItemObtainEther:
+	giveitem 0x22 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainEther
+	end
+
+SetItemFlag_ItemObtainEther:
+	setflag 0x166 @Person ID of Ether in A-Map
+	return
+
 #Sign scripts:
 .global SignScript_WestrayVillage_AppleStand
 SignScript_WestrayVillage_AppleStand:

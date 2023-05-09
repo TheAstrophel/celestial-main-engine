@@ -18,7 +18,7 @@ NPCScript_GoldtreeVillage_Rival:
 	msgboxname gText_GoldtreeVillage_Rival_01, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	spriteface RIVAL, UP
-	opendoor 0x9 0x9
+	opendoor 0x9 0x5
 	waitdooranim
 	applymovement RIVAL, m_RivalEntersPKMNCenter
 	waitmovement 0x0

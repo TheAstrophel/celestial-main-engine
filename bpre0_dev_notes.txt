@@ -1,11 +1,11 @@
-Refines in Westray Village, 1.
-Event's placed correctly in Westray Village.
-Refines in Westray Village, 2.
-Made Hidden Grotto tiles/Ladder Tiles in Westray Village.
-Refines in Westray Village, 3.
-Removed Westray Village level script in A-Map.
-Westray Village music set.
-Westray Village extended to accomodate gate house.
 
-- Do refines (check tile errors, hidden items etc.) in Goldtree Meadows/Faery Woods/Erstonia Gorge; Fix Footer ID's of all maps; Make Erstonia Sub-maps; 
-  Add Wild Mons in Routes; Add trainer battle macros; Look at config.h for custom set healing place & fix pokecenters & nurse joy's;
+
+- Complete Erstonia City (all submaps); Complete Westray Village (all submaps); Hiiden Grottos and Secret Temples;
+  Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to); Add trainer battle macros; Add Wild 
+  PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Final refine of the game.
+  Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
+                game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
+
+--Beta 1.0 & Beyond: Make the red paths in Westray Trail ingraved red grass instead & add a border between green grass and orange grass
+                     in Westray Village as Player climbs stairs (switch Tileset of WT to WV); Add bench and other decorative tiles in 
+                     Goldtree Meadows; Switch palette of Fairy Houses in Faery Woods so they are more diverse;

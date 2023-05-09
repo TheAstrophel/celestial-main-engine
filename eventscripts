@@ -29,6 +29,7 @@ map 3 2 gMapScripts_ErstoniaCity
 
 #Westray Village:
 npc 3 3 6 NPCScript_WestrayVillage_BoyThatGivesHint
+npc 3 3 12 NPCScript_WestrayVillage_ItemObtainEther
 sign 3 3 5 SignScript_WestrayVillage_AppleStand
 sign 3 3 1 SignScript_WestrayVillage_HiddenEntrance
 map 3 3 gMapScripts_WestrayVillage
@@ -58,6 +59,11 @@ map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 #Goldtree Meadows:
 npc 3 21 7 NPCScript_GoldtreeMeadows_TreeCutter
 npc 3 21 8 NPCScript_GoldtreeMeadows_TreeCutter
+npc 3 21 19 NPCScript_GoldtreeMeadows_ItemObtainXAttack
+npc 3 21 20 NPCScript_GoldtreeMeadows_ItemObtainTM59
+npc 1 0 12 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney
+npc 1 0 10 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall
+npc 1 0 11 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion
 tile 3 21 0 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
 tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
@@ -83,6 +89,8 @@ map 1 1 gMapScripts_ErstoniaGorge_RuinwayPassage
 
 #Westray Trail
 npc 3 24 0 NPCScript_WestrayTrail_GuardThatBlocksAccess
+npc 3 24 11 NPCScript_WestrayTrail_ItemObtainHealBall
+npc 3 24 12 NPCScript_WestrayTrail_ItemObtainTM28
 npc 3 24 14 NPCScript_WestrayTrail_GuardThatBlocksAccess
 tile 3 24 0 TileScript_WestrayTrail_GuardThatBlocksAccess
 tile 3 24 1 TileScript_WestrayTrail_GuardThatBlocksAccess
@@ -96,13 +104,6 @@ npc 3 0 5 NPCTalkingScript_AerilonTown_OldMan
 npc 4 2 0 NPCTalkingScript_AerilonTown_House_HouseLady
 npc 4 3 0 NPCTalkingScript_AerilonTown_House_HouseMan
 npc 4 3 1 NPCTalkingScript_AerilonTown_House_HouseGirl
-npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
-npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
-npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
-npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
-npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
-npc 3 19 2 NPCTalkingScript_AerilonPass_TallGrassGirl
-npc 3 19 0 NPCTalkingScript_AerilonPass_OranBerryBoy
 npc 3 1 2 NPCTalkingScript_GoldtreeVillage_FaeryWoodsBugCatcher
 npc 3 1 3 NPCTalkingScript_GoldtreeVillage_NameMysteryBoy
 npc 3 1 1 NPCTalkingScript_GoldtreeVillage_PKMNCenterBoy
@@ -112,7 +113,6 @@ npc 5 1 0 NPCTalkingScript_GoldtreeVillage_House_KingsPathMan
 npc 5 2 0 NPCTalkingScript_GoldtreeVillage_House_SamuelsWife
 npc 5 3 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
 npc 5 3 4 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
-npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
 npc 3 2 0 NPCTalkingScript_ErstoniaCity_WelcomeToErstoniaCityGirl
 npc 3 2 1 NPCTalkingScript_ErstoniaCity_GottaKnowYourStuffMan
 npc 3 2 2 NPCTalkingScript_ErstoniaCity_Fatman
@@ -122,6 +122,26 @@ npc 3 2 4 NPCTalkingScript_ErstoniaCity_ErstoniaGorgeBoy
 npc 3 2 8 NPCTalkingScript_ErstoniaCity_GrandpaGirl
 npc 3 2 9 NPCTalkingScript_ErstoniaCity_SecurityOutpostGuy
 npc 3 2 6 NPCTalkingScript_ErstoniaCity_TrainerTipsInformantMan
+npc 6 4 0 NPCTalkingScript_ErstoniaCity_House_AbilityAndEggsMan
+npc 6 4 1 NPCTalkingScript_ErstoniaCity_House_DragoniteFavoritePKMNBoy
+npc 6 4 2 NPCTalkingScript_ErstoniaCity_House_LoveToTravelGirl
+npc 6 7 0 NPCTalkingScript_ErstoniaCity_House_AsTheyGrowOldMan
+npc 6 7 1 NPCTalkingScript_ErstoniaCity_House_EasierToCatchBoy
+npc 6 11 2 NPCTalkingScript_ErstoniaCity_House_LittleGirl
+npc 6 11 0 NPCTalkingScript_ErstoniaCity_House_AllBugCatchersGirl
+npc 6 11 3 NPCTalkingScript_ErstoniaCity_House_MovedHereLady
+npc 6 11 1 NPCTalkingScript_ErstoniaCity_House_CheckOutLandreMan
+npc 6 0 2 NPCTalkingScript_ErstoniaCity_HouseOfMayor_MayorWife
+npc 6 0 0 NPCTalkingScript_ErstoniaCity_HouseOfMayor_Mayor
+npc 6 0 1 NPCTalkingScript_ErstoniaCity_HouseOfMayor_LandreBrother
+npc 6 8 0 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_ReceptionOldMan
+npc 6 8 1 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_WaitingInLobbyMan
+npc 6 8 3 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_InterestingBookshelfMan
+npc 6 8 2 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_ErstoniaGetsMuchAttractionoBoy
+npc 6 9 0 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_AtPeaceOldMan
+npc 6 9 1 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_NothingBeatsCityLifeBoy
+npc 6 10 0 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_AtMyAgeOldLady 
+npc 6 10 1 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_TryingToEavesdropGirl 
 npc 3 3 0 NPCTalkingScript_WestrayVillage_NoSecretsGirl
 npc 3 3 1 NPCTalkingScript_WestrayVillage_AppleFarmOfJoeOldMan
 npc 3 3 3 NPCTalkingScript_WestrayVillage_JoeIsAwesomeMan
@@ -133,15 +153,31 @@ npc 3 3 9 NPCTalkingScript_WestrayVillage_AppleStandMan
 npc 3 3 7 NPCTalkingScript_WestrayVillage_WeirdPeopleMan
 npc 3 3 8 NPCTalkingScript_WestrayVillage_AppleLadyOldWoman
 npc 3 3 10 NPCTalkingScript_WestrayVillage_WestrayHighlandsGirl
+npc 3 19 2 NPCTalkingScript_AerilonPass_TallGrassGirl
+npc 3 19 0 NPCTalkingScript_AerilonPass_OranBerryBoy
+npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
+npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
+npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
+npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
+npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
+npc 3 21 0 NPCTalkingScript_GoldtreeMeadows_YellowBallsBoy
+npc 3 21 9 NPCTalkingScript_GoldtreeMeadows_EnjoyTheBreezeGirl
+npc 3 21 11 NPCTalkingScript_GoldtreeMeadows_FaeryWoodsAreStrangeMan
+npc 3 21 13 NPCTalkingScript_GoldtreeMeadows_GrownManIntoFlowers
+npc 3 21 18 NPCTalkingScript_GoldtreeMeadows_RosettaLineGirl
+npc 1 0 0 NPCTalkingScript_GoldtreeMeadows_FaeryWoods_RegionalPKMNBoy
+npc 1 0 4 NPCTalkingScript_GoldtreeMeadows_FaeryWoods_HiddenItemsBoy
+npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
+npc 3 23 3 NPCTalkingScript_ErstoniaGorge_SomethingHappensAtNightGirl
+npc 3 23 8 NPCTalkingScript_ErstoniaGorge_RuinwayPassageGirl
+npc 3 23 9 NPCTalkingScript_ErstoniaGorge_IfHadRockClimbMan
+npc 3 24 17 NPCTalkingScript_WestrayTrail_WestrayCatacombsAreDangerousGirl
 sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
 sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
 sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
-sign 3 20 0 SignpostScript_AerilonHills_MainRoute
-sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
-sign 3 19 0 SignpostScript_AerilonPass_MainRoute
 sign 3 1 0 SignpostScript_GoldtreeVillage_MainTown
 sign 3 1 1 SignpostScript_GoldtreeVillage_RivalHouse
 sign 5 3 0 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
@@ -153,19 +189,24 @@ sign 5 3 5 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 6 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 7 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 5 3 8 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
+sign 3 2 0 SignpostScript_ErstoniaCity_MainTown
+sign 3 2 1 SignpostScript_ErstoniaCity_Gym
+sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
+sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
+sign 3 2 4 SignpostScript_ErstoniaCity_MayorHouse
+sign 6 8 0 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
+sign 6 8 1 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
+sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
+sign 3 3 2 SignpostScript_WestrayVillage_MainTown
+sign 3 19 0 SignpostScript_AerilonPass_MainRoute
+sign 3 20 0 SignpostScript_AerilonHills_MainRoute
+sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
 sign 3 21 0 SignpostScript_GoldtreeMeadows_MainRoute_01
 sign 3 21 1 SignpostScript_GoldtreeMeadows_FaeryWoods
 sign 3 21 2 SignpostScript_GoldtreeMeadows_FaeryWoods
 sign 3 21 3 SignpostScript_GoldtreeMeadows_MainRoute_02
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
 sign 3 22 1 SignpostScript_KingsPath_MainRoute
-sign 3 2 0 SignpostScript_ErstoniaCity_MainTown
-sign 3 2 1 SignpostScript_ErstoniaCity_Gym
-sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
-sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
-sign 3 2 4 SignpostScript_ErstoinaCity_MayorHouse
-sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
-sign 3 3 2 SignpostScript_WestrayVillage_MainTown
 sign 3 23 0 SignpostScript_ErstoniaGorge_MainRoute
 sign 3 23 1 SignpostScript_ErstoniaGorge_TrainerTips
 sign 3 23 2 SignpostScript_ErstoniaGorge_RuinwayPassage

@@ -496,7 +496,7 @@ An attack which\nchanges type,\ndepending on the\nPlate held.
 #ifdef FROSTBITE
 Attack which may\nleave foe with\nfrostbite. Ssuper effective\non Water-types.
 #else
-An attack which may\nleave the target\nfrozen. It is also\nsuper effective on\nWater types.
+Attack which may\nleave the target\nfrozen. Super effective\non Water types.
 #endif
 
 #org @DESC_PSYSHOCK
@@ -527,7 +527,7 @@ The user attacks\nfrom a hyperspace\nhole, hitting even\nprotected targets.
 A high-speed spin.\nThe slower the user\nis than the foe, the\ngreater the damage.
 
 #org @DESC_HYPERSPACEFURY
-The target is hit\nwith many arms.\nHits protected\nfoes, and lowers\nthe user's Defense.
+Target is hit with\nmany arms. Hits\nprotected foes, and\nlowers user's Defense.
 
 #org @DESC_ATTACKORDER
 The user calls out\nits underlings to\npummel the foe.\nIt has a high\ncritical-hit ratio.

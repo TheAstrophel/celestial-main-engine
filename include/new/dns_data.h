@@ -305,7 +305,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 		},
 	},
 	{
-		//Westray Village - Windows
+		//Westray Village - Door & Windows
 		.tilesetPointer = 0x82D4AF4, //Tileset 04
 		.paletteNumToFade = 9,
 		.paletteIndicesToFade =

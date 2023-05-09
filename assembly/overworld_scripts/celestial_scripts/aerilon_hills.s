@@ -362,7 +362,7 @@ m_MoveTowardsTorchic: .byte walk_left, walk_left, walk_up, walk_up, end_m
 m_LeaveOfficeWithTorchic: .byte walk_down, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m
 
 SecondStarter:
-	setvar VAR_STARTER_MON, 0x2
+	setvar VAR_STARTER_MON, 0x2f
 	spriteface PROF, LEFT
 	showpokepic 0x118 0xA 0x3
 	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt, MSG_YESNO, gText_ProfAlmondSmallName
@@ -372,7 +372,7 @@ SecondStarter:
 	hidesprite LASTTALKED
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
-	givepokemon 0x118 0x5 0x0 0x0 0x0 0x0 @Torchic
+	givepokemon 0x118 0x64 0x0 0x0 0x0 0x0 @Torchic @debug
 	bufferpokemon 0x0 0x118
 	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg
@@ -641,7 +641,6 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	applymovement RIVAL, m_StepRightAndLookLeftAtPlayer
 	waitmovement 0x0
 	pause 0x20
-	additem 0xD 0x63 @debug rn
 	setvar VAR_MAIN_STORY, MAIN_STORY_GOING_TO_GET_STARTER
 	releaseall
 	end

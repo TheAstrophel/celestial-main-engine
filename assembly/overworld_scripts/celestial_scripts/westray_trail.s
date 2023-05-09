@@ -17,6 +17,30 @@ NPCScript_WestrayTrail_GuardThatBlocksAccess:
 	release
 	end
 
+@;////////////////////////////////////////////////
+
+.global NPCScript_WestrayTrail_ItemObtainHealBall
+NPCScript_WestrayTrail_ItemObtainHealBall:
+	giveitem 0xF1 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainHealBall
+	end
+
+SetItemFlag_ItemObtainHealBall:
+	setflag 0x164 @Person ID of Heal Ball in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_WestrayTrail_ItemObtainTM28
+NPCScript_WestrayTrail_ItemObtainTM28:
+	giveitem 0x13C 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainTM28
+	end
+
+SetItemFlag_ItemObtainTM28:
+	setflag 0x165 @Person ID of TM28 (Dig) in A-Map
+	return
+
 #Tile scripts:
 .equ GUARD, 0x1
 .equ VAR_GUARD_BLOCKS_WESTRAY_TRAIL, 0x402D
