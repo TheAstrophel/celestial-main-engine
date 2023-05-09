@@ -1,8 +1,8 @@
-
+Fixed a broken tree top Tile in Erstonia Gorge.
 
 - Complete Erstonia City (all submaps); Complete Westray Village (all submaps); Hiiden Grottos and Secret Temples;
   Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to); Add trainer battle macros; Add Wild 
-  PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Final refine of the game.
+  PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine of the game.
   Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
                 game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 

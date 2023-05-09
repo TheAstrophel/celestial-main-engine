@@ -1,6 +1,7 @@
 ##
 #Aerilon Town:
 npc 3 0 3 NPCScript_AerilonTown_BossyGirl
+npc 3 0 5 NPCScript_AerilonTown_OldMan
 npc 4 4 0 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
 npc 4 0 0 NPCScript_AerilonTown_PlayerHouse_PlayerMom
 sign 4 1 1 SignScript_AerilonTown_PlayerRoom_PersonalComputer
@@ -100,7 +101,6 @@ tile 3 24 2 TileScript_WestrayTrail_GuardThatBlocksAccess
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
 npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
 npc 3 0 4 NPCTalkingScript_AerilonTown_FatGuy
-npc 3 0 5 NPCTalkingScript_AerilonTown_OldMan
 npc 4 2 0 NPCTalkingScript_AerilonTown_House_HouseLady
 npc 4 3 0 NPCTalkingScript_AerilonTown_House_HouseMan
 npc 4 3 1 NPCTalkingScript_AerilonTown_House_HouseGirl

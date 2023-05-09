@@ -45,9 +45,9 @@ TileScript_GoldtreeMeadows_BattleToStopPlayer:
 	lock
 	playsong 0x129 0x0
 	getplayerpos 0x51FE, 0x51FF
-	compare 0x51FF, 0x1C
+	compare 0x51FF, 0x20
 	if equal _goto OtherGirlAttacks
-	compare 0x51FF, 0x1D
+	compare 0x51FF, 0x21
 	if equal _goto OtherGirlAttacks
 	msgbox gText_GoldtreeMeadows_BattleToStopPlayer_GirlTowardsLeft_01, MSG_KEEPOPEN
 	closeonkeypress

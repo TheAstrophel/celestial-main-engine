@@ -18,6 +18,26 @@ OtherMessageFromBossyGirl:
 	msgboxname gText_AerilonTown_BossyGirl_02, MSG_FACE, gText_BossyGirlName
 	end
 
+@;////////////////////////////////////////////////
+
+.global NPCScript_AerilonTown_OldMan
+NPCScript_AerilonTown_OldMan:
+	lock
+	faceplayer
+	msgbox gText_AerilonTown_OldMan_01, MSG_YESNO
+	compare LASTRESULT 0x0
+	if equal _goto OldManTellsAboutTheEstablishment
+	msgbox gText_AerilonTown_OldMan_02, MSG_KEEPOPEN
+	closeonkeypress
+	release
+	end
+
+OldManTellsAboutTheEstablishment:
+	msgbox gText_AerilonTown_OldMan_03, MSG_KEEPOPEN
+	closeonkeypress
+	release
+	end
+
 #Tile scripts:
 .global TileScript_AerilonTown_PlayerTriesToLeave
 TileScript_AerilonTown_PlayerTriesToLeave:

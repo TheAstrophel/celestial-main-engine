@@ -8,6 +8,15 @@
 #org @gText_AerilonTown_BossyGirl_03
 [RED]The wild is dangerous without a\nPok\emon!\pDon't even think of going beyond this\npoint without one!
 
+#org @gText_AerilonTown_OldMan_01
+[BLUE]Hello! Do you know about [GREEN]The Triton\nEstablishment[BLUE]?
+
+#org @gText_AerilonTown_OldMan_02
+[BLUE]Oh, alright[.]
+
+#org @gText_AerilonTown_OldMan_03
+[GREEN]The Triton Establishment[BLUE], or [GREEN]The\nEstablishment[BLUE], is the overseer!\pThey overlook the entire [GREEN]Triton[BLUE]\nregion, and are it's founders.\pEven the [GREEN]Triton League[BLUE] is under [GREEN]The\nEstablishment[BLUE]!\pThey are also called the [GREEN]authorities[BLUE]\nin frankness.
+
 #org @gText_AerilonTown_Aide_01
 [BLUE][PLAYER]!
 

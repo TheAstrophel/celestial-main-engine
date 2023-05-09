@@ -30,7 +30,6 @@ SignpostScript_\scriptName:
 npctalking AerilonTown_RockyCliffsBoy
 npctalking AerilonTown_UselessResearchGirl 
 npctalking AerilonTown_FatGuy
-npctalking AerilonTown_OldMan
 npctalking AerilonTown_House_HouseLady
 npctalking AerilonTown_House_HouseMan
 npctalking AerilonTown_House_HouseGirl
