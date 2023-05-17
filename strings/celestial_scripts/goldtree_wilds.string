@@ -1,30 +1,33 @@
 //Master Map:
-#org @gText_GoldtreeMeadows_TreeCutter_CurrentlyCuttingWoods
-[BLUE]Sorry, kid. We're currently clearing\nthe trees here. It'll take a while.\pYou'll need to cut through [GREEN]Faery\nWoods[BLUE] to get to [GREEN]Erstonia City[BLUE].
+#org @gText_GoldtreeWilds_Nidoran_Cry
+[BLACK]Gaough gaoh!
 
-#org @gText_GoldtreeMeadows_BattleToStopPlayer_GirlTowardsLeft_01
+#org @gText_GoldtreeWilds_Pikachu_Cry
+[BLACK]Weaa wagh!
+
+#org @gText_GoldtreeWilds_BattleToStopPlayer_GirlTowardsLeft_01
 [RED]Pikachu, attack! Use Tackle!
 
-#org @gText_GoldtreeMeadows_BattleToStopPlayer_GirlTowardsRight_01
+#org @gText_GoldtreeWilds_BattleToStopPlayer_GirlTowardsRight_01
 [RED]Meowth, use Scratch!
 
-#org @gText_GoldtreeMeadows_BattleToStopPlayer_BothGirls
+#org @gText_GoldtreeWilds_BattleToStopPlayer_BothGirls
 [RED]Hey, we're trying to have a battle\nover here!
 
-#org @gText_GoldtreeMeadows_Rival_01
+#org @gText_GoldtreeWilds_Rival_01
 [BLUE]Oh, not on my watch, you're not!\nYou aren't getting away, you thug!
 
-#org @gText_GoldtreeMeadows_Grunt_01
+#org @gText_GoldtreeWilds_Grunt_01
 [BLUE]Let me go, you dolt! Ugh!\nBack off, I say, back off, fiend!\pYou all will be judged by the\n[GREEN]eternal order[BLUE]! Change your ways!
 
-#org @gText_GoldtreeMeadows_Rival_02
+#org @gText_GoldtreeWilds_Rival_02
 [BLUE][PLAYER]! Hurry! Help me keep this\ngoon under control!
 
-#org @gText_GoldtreeMeadows_Rival_03
+#org @gText_GoldtreeWilds_Rival_03
 [BLUE]Why don't we teach this theif his\nproper place?
 
-#org @gText_GoldtreeMeadows_Grunt_02
+#org @gText_GoldtreeWilds_Grunt_02
 [BLUE]Unhand me, kid! Don't provoke me!\nGo, [GREEN]Lampent[BLUE], use [GREEN]Flash[BLUE]!
 
-#org @gText_GoldtreeMeadows_Rival_04
+#org @gText_GoldtreeWilds_Rival_04
 [BLUE]Ugh, I can't see.\nNo way he got away with that.\pThere goes the Professor's parcel.\nHe seemed like a nutcase, right?\pWhat did he mean by the eternal\nrubbish, anyway?\pThanks for the help, though. I'll go\nand freshen up at the Pok\eCenter.\pI'll let the Professor know that he\nwas indeed right about his Aide.\pWe'll leave it to the authorities for\nnow.\pWhy not challenge the Gym, [PLAYER]?\nMight as well, since we are here.\pLet this Pok\emon journey start,\nyippe.\pAnyhow, catch you later.\nPeace.

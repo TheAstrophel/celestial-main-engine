@@ -33,7 +33,7 @@
 [RED][PLAYER]!
 
 #org @gText_AerilonTown_Mom_02
-[RED]You're leaving town? But what for?\nOh? An errand?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you! Take care, [PLAYER]!
+[RED]You're leaving town? Has the day come?\nOh? You also need to deliever a\nparcel?\pSo this is how your journey starts?\nMy baby is all grown up!\pAlways visit me from time to time!\nGo get 'em, love!
 
 //Sub-maps:
 #org @gText_AerilonTown_PlayerRoom_PersonalComputerBootUp
@@ -76,19 +76,19 @@
 [RED]Did you go and meet the Professor\nyet?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_04
-[RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pWell, you come right back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pSo this is how your journey starts?\nMy baby is all grown up!\pAlways visit me from time to time!\nGo get 'em, love!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_05
-[RED]You come right back when you have\ndelivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]I'll always be rooting for you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN
 [RED][PLAYER]! Why don't you take a\nquick rest?
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack
-[RED]Now, you come back when you\nhave delivered the parcel.\pI don't want anything bad to happen\nto you!
+[RED]I'll always be rooting for you!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_06
-[RED]Oh, [PLAYER][.]\nI can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!
+[RED]Oh, [PLAYER][.]\nStill can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!\pOh, and take this [GREEN]Region Map[RED] with\nyou! Bye, love!
 
 #org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01
 [RED][PLAYER]! If you're here, why\nnot take a quick rest?

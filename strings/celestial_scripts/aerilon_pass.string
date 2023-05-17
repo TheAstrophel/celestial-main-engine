@@ -1,9 +1,0 @@
-//Master Map:
-#org @gText_AerilonPass_Rival_01
-[BLUE]Oh, hey, [PLAYER]. Only a little way\nleft till [GREEN]Goldtree[BLUE].\pAnyhow, as promised, shall we indulge\nourselves in battle?[PLAY_BGM][1D][01]
-
-#org @RivalLoses
-That was an admirable job.
-
-#org @gText_AerilonPass_Rival_02
-[BLUE]Losing was either my fault or the\nthe fault of my Pok\emon.\pProbably the Pok\emon. I'll teach it\nto be[.] better.\pMeet you in [GREEN]Goldtree[BLUE]. Peace.

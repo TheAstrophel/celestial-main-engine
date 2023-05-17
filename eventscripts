@@ -35,10 +35,12 @@ sign 3 3 5 SignScript_WestrayVillage_AppleStand
 sign 3 3 1 SignScript_WestrayVillage_HiddenEntrance
 map 3 3 gMapScripts_WestrayVillage
 
-#Aerilon Pass:
-npc 3 19 1 NPCScript_AerilonPass_Rival
-npc 3 19 3 NPCScript_AerilonPass_ItemObtainPotion
-tile 3 19 0 TileScript_AerilonPass_Rival
+#Aerilon Hike:
+npc 3 19 1 NPCScript_AerilonHike_Rival
+npc 3 19 3 NPCScript_AerilonHike_ItemObtainPotion
+tile 3 19 0 TileScript_AerilonHike_Rival
+tile 3 19 1 TileScript_AerilonHike_Rival
+tile 3 19 2 TileScript_AerilonHike_Rival
 
 #Aerilon Hills:
 npc 3 20 0 NPCScript_AerilonHills_AideAtTheBaseOfObservatory
@@ -57,22 +59,22 @@ map 3 20 gMapScripts_AerilonHills
 map 15 0 gMapScripts_AerilonHills_AlmondObservatory
 map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
 
-#Goldtree Meadows:
-npc 3 21 7 NPCScript_GoldtreeMeadows_TreeCutter
-npc 3 21 8 NPCScript_GoldtreeMeadows_TreeCutter
-npc 3 21 19 NPCScript_GoldtreeMeadows_ItemObtainXAttack
-npc 3 21 20 NPCScript_GoldtreeMeadows_ItemObtainTM59
-npc 1 0 12 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney
-npc 1 0 10 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall
-npc 1 0 11 NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion
-tile 3 21 0 TileScript_GoldtreeMeadows_BattleToStopPlayer
-tile 3 21 1 TileScript_GoldtreeMeadows_BattleToStopPlayer
-tile 3 21 2 TileScript_GoldtreeMeadows_BattleToStopPlayer
-tile 3 21 3 TileScript_GoldtreeMeadows_BattleToStopPlayer
-tile 3 21 4 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
-tile 3 21 5 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
-tile 3 21 6 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
-tile 3 21 7 TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
+#Goldtree Wilds:
+npc 3 21 13 NPCScript_GoldtreeWilds_Nidoran
+npc 3 21 15 NPCScript_GoldtreeWilds_Pikachu
+npc 3 21 19 NPCScript_GoldtreeWilds_ItemObtainXAttack
+npc 3 21 20 NPCScript_GoldtreeWilds_ItemObtainTM59
+npc 1 0 12 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainHoney
+npc 1 0 10 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPBall
+npc 1 0 11 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion
+tile 3 21 0 TileScript_GoldtreeWilds_BattleToStopPlayer
+tile 3 21 1 TileScript_GoldtreeWilds_BattleToStopPlayer
+tile 3 21 2 TileScript_GoldtreeWilds_BattleToStopPlayer
+tile 3 21 3 TileScript_GoldtreeWilds_BattleToStopPlayer
+tile 3 21 4 TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
+tile 3 21 5 TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
+tile 3 21 6 TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
+tile 3 21 7 TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
 
 #Erstonia Gorge:
 npc 3 23 6 EventScript_Cut
@@ -153,20 +155,19 @@ npc 3 3 9 NPCTalkingScript_WestrayVillage_AppleStandMan
 npc 3 3 7 NPCTalkingScript_WestrayVillage_WeirdPeopleMan
 npc 3 3 8 NPCTalkingScript_WestrayVillage_AppleLadyOldWoman
 npc 3 3 10 NPCTalkingScript_WestrayVillage_WestrayHighlandsGirl
-npc 3 19 2 NPCTalkingScript_AerilonPass_TallGrassGirl
-npc 3 19 0 NPCTalkingScript_AerilonPass_OranBerryBoy
+npc 3 19 2 NPCTalkingScript_AerilonHike_TallGrassGirl
+npc 3 19 0 NPCTalkingScript_AerilonHike_InteractiveWorldBoy
 npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
 npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
 npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
 npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
 npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
-npc 3 21 0 NPCTalkingScript_GoldtreeMeadows_YellowBallsBoy
-npc 3 21 9 NPCTalkingScript_GoldtreeMeadows_EnjoyTheBreezeGirl
-npc 3 21 11 NPCTalkingScript_GoldtreeMeadows_FaeryWoodsAreStrangeMan
-npc 3 21 13 NPCTalkingScript_GoldtreeMeadows_GrownManIntoFlowers
-npc 3 21 18 NPCTalkingScript_GoldtreeMeadows_RosettaLineGirl
-npc 1 0 0 NPCTalkingScript_GoldtreeMeadows_FaeryWoods_RegionalPKMNBoy
-npc 1 0 4 NPCTalkingScript_GoldtreeMeadows_FaeryWoods_HiddenItemsBoy
+npc 3 21 0 NPCTalkingScript_GoldtreeWilds_YellowBallsBoy
+npc 3 21 9 NPCTalkingScript_GoldtreeWilds_TallGrassMakesMeSneezeGirl
+npc 3 21 11 NPCTalkingScript_GoldtreeWilds_FaeryWoodsAreStrangeMan
+npc 3 21 18 NPCTalkingScript_GoldtreeWilds_ScaredOfLedgesGirl
+npc 1 0 0 NPCTalkingScript_GoldtreeWilds_FaeryWoods_RegionalPKMNBoy
+npc 1 0 4 NPCTalkingScript_GoldtreeWilds_FaeryWoods_HiddenItemsBoy
 npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
 npc 3 23 3 NPCTalkingScript_ErstoniaGorge_SomethingHappensAtNightGirl
 npc 3 23 8 NPCTalkingScript_ErstoniaGorge_RuinwayPassageGirl
@@ -198,13 +199,14 @@ sign 6 8 0 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 6 8 1 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
 sign 3 3 2 SignpostScript_WestrayVillage_MainTown
-sign 3 19 0 SignpostScript_AerilonPass_MainRoute
+sign 3 19 0 SignpostScript_AerilonHike_MainRoute
 sign 3 20 0 SignpostScript_AerilonHills_MainRoute
 sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
-sign 3 21 0 SignpostScript_GoldtreeMeadows_MainRoute_01
-sign 3 21 1 SignpostScript_GoldtreeMeadows_FaeryWoods
-sign 3 21 2 SignpostScript_GoldtreeMeadows_FaeryWoods
-sign 3 21 3 SignpostScript_GoldtreeMeadows_MainRoute_02
+sign 3 21 0 SignpostScript_GoldtreeWilds_MainRoute_01
+sign 3 21 1 SignpostScript_GoldtreeWilds_FaeryWoods
+sign 3 21 2 SignpostScript_GoldtreeWilds_FaeryWoods
+sign 3 21 3 SignpostScript_GoldtreeWilds_MainRoute_02
+sign 3 21 4 SignpostScript_GoldtreeWilds_TrainerTips
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
 sign 3 22 1 SignpostScript_KingsPath_MainRoute
 sign 3 23 0 SignpostScript_ErstoniaGorge_MainRoute

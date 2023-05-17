@@ -37,7 +37,7 @@ Almond Residence
 [GREEN]Faery Woods[BLUE], north of here, has\nmany kinds of Bug-type Pok\emon!\pWhenever I go there, I take a huge\namount of Pok\e Ball's, too.
 
 #org @gText_GoldtreeVillage_NameMysteryBoyNPC
-[BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?\p[.]I'm just kidding, it's because these\ntree's are [GREEN]Cassia fistula[BLUE].
+[BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?
 
 #org @gText_GoldtreeVillage_PKMNCenterBoyNPC
 [BLUE]Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\eMart's!
@@ -215,15 +215,15 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 #org @gText_WestrayVillage_MainTownSign
 [BLACK]Westray Village\n"The Autumn Wind Is A Pirate".
 
-//Aerilon Pass:
-#org @gText_AerilonPass_OranBerryBoyNPC
-I think Oran Berries are fascinating.\nThey recover lost HP of Pok\emon.
+//Aerilon Hike:
+#org @gText_AerilonHike_InteractiveWorldBoyNPC
+You'll find very friendly Pok\emon in\nalmost every town, city, and route!\pYou can interact with them, and they\nmight give you something in return.\pAlso, not all people in route's are\nTrainers. Talk with everyone!\pIt's a whole, new, connected world.\nIsn't that fascinating?
 
-#org @gText_AerilonPass_TallGrassGirlNPC
+#org @gText_AerilonHike_TallGrassGirlNPC
 Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know whether this is true or\nnot, though.
 
-#org @gText_AerilonPass_MainRouteSign
-[BLACK]Aerilon Pass\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
+#org @gText_AerilonHike_MainRouteSign
+[BLACK]Aerilon Hike\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
 
 //Aerilon Hills:
 #org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
@@ -247,36 +247,36 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 #org @gText_AerilonHills_AlmondObservatorySign
 [BLACK]Almond Observatory\n"Discovering the beyond".
 
-//Goldtree Meadows:
-#org @gText_GoldtreeMeadows_YellowBallsBoyNPC
-[BLUE]See the [GREEN]yellow Pok\eball's[BLUE] lying here?\nThat's a [GREEN]Technical Machine[BLUE], or TM!\pBe sure to pick them up if you need\nTM's. You might just get lucky!
+//Goldtree Wilds:
+#org @gText_GoldtreeWilds_YellowBallsBoyNPC
+[BLUE]See the [GREEN]yellow ball's[BLUE] lying here?\nThat's a [GREEN]Technical Machine[BLUE], or TM,\lfor short!\pBe sure to pick them up if you want\nto teach awesome moves to Pok\emon!
 
-#org @gText_GoldtreeMeadows_FaeryWoodsAreStrangeManNPC
+#org @gText_GoldtreeWilds_FaeryWoodsAreStrangeManNPC
 [BLUE]This path leads to [GREEN]Faery Woods[BLUE]. It's\nriddled with Fairy-type Pok\emon!\pOh, and also Bug-type. You'll find\nmany Bug-type frantics in there.
 
-#org @gText_GoldtreeMeadows_RosettaLineGirlNPC
-[RED]This here is the [GREEN]Rosetta Line[RED].\nIt seems to be just flowers.\pBut my Dad said it might mark\nsomething. What could it be?
+#org @gText_GoldtreeWilds_ScaredOfLedgesGirlNPC
+[RED]I'm scared of these high ledges!\nOh, bother, what do I do?
 
-#org @gText_GoldtreeMeadows_GrownManIntoFlowersNPC
-[BLUE]Normalize liking flowers at this age!\nAll I want is to skip through grass[.]
+#org @gText_GoldtreeWilds_TallGrassMakesMeSneezeGirlNPC
+[RED]The tall grass here makes me sneeze[.]\nAchoo! This is very annoying!\pIf I use [GREEN]Cut[RED] here, I'll be able to\nclear this entire area!
 
-#org @gText_GoldtreeMeadows_EnjoyTheBreezeGirlNPC
-[RED]The breeze here sure is silent. A\nmountain side garden would be best!\pThe perfect amount of breeze, and\njust the right weather.
-
-#org @gText_GoldtreeMeadows_FaeryWoods_RegionalPKMNBoyNPC
+#org @gText_GoldtreeWilds_FaeryWoods_RegionalPKMNBoyNPC
 [BLUE]Triton has a ton of [GREEN]Regional Pok\emon[BLUE].\nYou can find some in here, too!
 
-#org @gText_GoldtreeMeadows_FaeryWoods_HiddenItemsBoyNPC
+#org @gText_GoldtreeWilds_FaeryWoods_HiddenItemsBoyNPC
 [BLUE]You can find hidden items on the\nground scattered here and there!\pI've got like five Potions already!
 
-#org @gText_GoldtreeMeadows_MainRoute_01Sign
-Goldtree Meadows\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
+#org @gText_GoldtreeWilds_MainRoute_01Sign
+Goldtree Wilds\n[ARROW_DOWN]Goldtree Village - [ARROW_UP]Erstonia City
 
-#org @gText_GoldtreeMeadows_FaeryWoodsSign
+#org @gText_GoldtreeWilds_FaeryWoodsSign
 Faery Woods\n"Let the fairy-light guide you".
 
-#org @gText_GoldtreeMeadows_MainRoute_02Sign
-Goldtree Meadows\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
+#org @gText_GoldtreeWilds_MainRoute_02Sign
+Goldtree Wilds\n[ARROW_UP]Erstonia City - [ARROW_DOWN]Goldtree Village
+
+#org @gText_GoldtreeWilds_TrainerTipsSign
+Trainer Tips!\pBe sure to explore the world!\nDon't miss out on anything!
 
 //King's Path:
 #org @gText_KingsPath_JustADitchManNPC

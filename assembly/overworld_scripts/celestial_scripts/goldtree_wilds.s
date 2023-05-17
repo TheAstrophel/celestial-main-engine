@@ -7,18 +7,36 @@
 
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
-.global NPCScript_GoldtreeMeadows_TreeCutter
-NPCScript_GoldtreeMeadows_TreeCutter:
-	msgbox gText_GoldtreeMeadows_TreeCutter_CurrentlyCuttingWoods, MSG_FACE
-	applymovement LASTTALKED, m_FaceDefault
+.global NPCScript_GoldtreeWilds_Nidoran
+NPCScript_GoldtreeWilds_Nidoran:
+	lock
+	faceplayer
+	checksound
+	cry 0x1D 0x0
+	msgbox gText_GoldtreeWilds_Nidoran_Cry, MSG_KEEPOPEN
+	waitcry
+	closeonkeypress
+	release
 	end
-
-m_FaceDefault: .byte face_default, end_m
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_GoldtreeMeadows_ItemObtainXAttack
-NPCScript_GoldtreeMeadows_ItemObtainXAttack:
+.global NPCScript_GoldtreeWilds_Pikachu
+NPCScript_GoldtreeWilds_Pikachu:
+	lock
+	faceplayer
+	checksound
+	cry 0x19 0x0
+	msgbox gText_GoldtreeWilds_Pikachu_Cry, MSG_KEEPOPEN
+	waitcry
+	closeonkeypress
+	release
+	end
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeWilds_ItemObtainXAttack
+NPCScript_GoldtreeWilds_ItemObtainXAttack:
 	giveitem 0x4B 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainXAttack
 	end
@@ -29,8 +47,8 @@ SetItemFlag_ItemObtainXAttack:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_GoldtreeMeadows_ItemObtainTM59
-NPCScript_GoldtreeMeadows_ItemObtainTM59:
+.global NPCScript_GoldtreeWilds_ItemObtainTM59
+NPCScript_GoldtreeWilds_ItemObtainTM59:
 	giveitem 0x180 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainTM59
 	end
@@ -40,16 +58,16 @@ SetItemFlag_ItemObtainTM59:
 	return
 
 #Tile scripts:
-.global TileScript_GoldtreeMeadows_BattleToStopPlayer
-TileScript_GoldtreeMeadows_BattleToStopPlayer:
+.global TileScript_GoldtreeWilds_BattleToStopPlayer
+TileScript_GoldtreeWilds_BattleToStopPlayer:
 	lock
 	playsong 0x129 0x0
 	getplayerpos 0x51FE, 0x51FF
-	compare 0x51FF, 0x20
+	compare 0x51FF, 0x32
 	if equal _goto OtherGirlAttacks
-	compare 0x51FF, 0x21
+	compare 0x51FF, 0x33
 	if equal _goto OtherGirlAttacks
-	msgbox gText_GoldtreeMeadows_BattleToStopPlayer_GirlTowardsLeft_01, MSG_KEEPOPEN
+	msgbox gText_GoldtreeWilds_BattleToStopPlayer_GirlTowardsLeft_01, MSG_KEEPOPEN
 	closeonkeypress
 	checksound
 	sound 0xA
@@ -62,12 +80,12 @@ TileScript_GoldtreeMeadows_BattleToStopPlayer:
 	applymovement 0x4, m_JumpAwayFromMeowth
 	waitmovement 0x0
 	pause 0xE
-	spriteface 0x3, LEFT
-	msgbox gText_GoldtreeMeadows_BattleToStopPlayer_BothGirls, MSG_KEEPOPEN
+	spriteface 0x3, RIGHT
+	msgbox gText_GoldtreeWilds_BattleToStopPlayer_BothGirls, MSG_KEEPOPEN
 	closeonkeypress
 	spriteface 0x3, DOWN
 	fadedefault
-	applymovement PLAYER, m_StepLeft
+	applymovement PLAYER, m_StepRight
 	waitmovement 0x0
 	setvar 0x51FE, 0x0
 	setvar 0x51FF, 0x0
@@ -75,7 +93,7 @@ TileScript_GoldtreeMeadows_BattleToStopPlayer:
 	end
 
 OtherGirlAttacks:
-	msgbox gText_GoldtreeMeadows_BattleToStopPlayer_GirlTowardsRight_01, MSG_KEEPOPEN
+	msgbox gText_GoldtreeWilds_BattleToStopPlayer_GirlTowardsRight_01, MSG_KEEPOPEN
 	closeonkeypress
 	checksound
 	sound 0xA
@@ -86,12 +104,12 @@ OtherGirlAttacks:
 	applymovement 0x5, m_WalkAwayFromPikachu
 	waitmovement 0x0
 	pause 0xE
-	spriteface 0x6, LEFT
-	msgbox gText_GoldtreeMeadows_BattleToStopPlayer_BothGirls, MSG_KEEPOPEN
+	spriteface 0x6, RIGHT
+	msgbox gText_GoldtreeWilds_BattleToStopPlayer_BothGirls, MSG_KEEPOPEN
 	closeonkeypress
 	spriteface 0x6, UP
 	fadedefault
-	applymovement PLAYER, m_StepLeft
+	applymovement PLAYER, m_StepRight
 	waitmovement 0x0
 	setvar 0x51FE, 0x0
 	setvar 0x51FF, 0x0
@@ -102,7 +120,7 @@ m_JumpTowardsMeowth: .byte jump_down, end_m
 m_JumpAwayFromMeowth: .byte jump_up, look_down, end_m
 m_JumpTowardsPikachu: .byte jump_up, end_m
 m_WalkAwayFromPikachu: .byte walk_down, look_up, end_m
-m_StepLeft: .byte walk_left_very_slow, end_m
+m_StepRight: .byte walk_right_very_slow, end_m
 
 @;////////////////////////////////////////////////
 
@@ -113,10 +131,10 @@ m_StepLeft: .byte walk_left_very_slow, end_m
 .equ VAR_MAIN_STORY, 0x4029
 .equ MAIN_STORY_TEAM_ETERNAL_GRUNT_FLED, 0x9
 
-.global TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt
-TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt:
+.global TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
+TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt:
 	lock
-	spriteface GRUNT, LEFT
+	spriteface GRUNT, UP
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_1, 0xA @X-Pos equals 0xA
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberFour
@@ -127,16 +145,16 @@ TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt:
 	compare VAR_TEMP_1, 0xD @X-Pos equals 0xD
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberSeven
 	pause 0xE
-	msgboxname gText_GoldtreeMeadows_Rival_01, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_GoldtreeWilds_Rival_01, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
-	msgboxname gText_GoldtreeMeadows_Grunt_01, MSG_KEEPOPEN, gText_GruntName
+	msgboxname gText_GoldtreeWilds_Grunt_01, MSG_KEEPOPEN, gText_GruntName
 	closeonkeypress
 	pause 0xE
 	checksound
 	sound 0x15
 	applymovement RIVAL, m_Exclaim
 	waitmovement 0x0
-	msgboxname gText_GoldtreeMeadows_Rival_02, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_GoldtreeWilds_Rival_02, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	compare VAR_TEMP_1, 0xA @X-Pos equals 0xA
 	if equal _call CameraResetsWhenScriptNumberFour
@@ -154,11 +172,11 @@ TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt:
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberSix
 	compare VAR_TEMP_1, 0xD @X-Pos equals 0xD
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberSeven
-	spriteface RIVAL, RIGHT
+	spriteface RIVAL, DOWN
 	playsong 0x11D 0x0
-	msgboxname gText_GoldtreeMeadows_Rival_03, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_GoldtreeWilds_Rival_03, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
-	msgboxname gText_GoldtreeMeadows_Grunt_02, MSG_KEEPOPEN, gText_GruntName
+	msgboxname gText_GoldtreeWilds_Grunt_02, MSG_KEEPOPEN, gText_GruntName
 	closeonkeypress
 	cry 0x295 0x0 @Lampent Cry
 	waitcry
@@ -177,7 +195,8 @@ TileScript_GoldtreeMeadows_PlayerAndRivalConfrontGrunt:
 	pause 0x1E
 	applymovement RIVAL, m_RivalLooksHereAndThere
 	waitmovement 0x0
-	msgboxname gText_GoldtreeMeadows_Rival_04, MSG_KEEPOPEN, gText_RivalName
+	spriteface RIVAL, LEFT
+	msgboxname gText_GoldtreeWilds_Rival_04, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_RivalLeaves
 	waitmovement 0x0
@@ -266,7 +285,7 @@ PlayerMovesTowardRivalWhenScriptNumberSeven:
 	waitmovement 0x0
 	return
 
-m_Exclaim: .byte look_down, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
+m_Exclaim: .byte look_left, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
 m_RivalLooksHereAndThere: .byte look_up, pause_long, pause_long, look_left, pause_long, pause_long, look_right, pause_long, pause_long, look_up, pause_long, pause_long, look_down, pause_long, pause_long, end_m
 m_RivalLeaves: .byte walk_up, walk_up, walk_up, walk_up, walk_up, end_m
 m_GruntRunsAway: .byte run_up, run_up, run_up, run_up, run_up, end_m
@@ -285,8 +304,8 @@ m_PlayerMovingTowardRivalWhenScriptNumberSeven: .byte run_left, run_left, run_up
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
-.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney
-NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainHoney:
+.global NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainHoney
+NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainHoney:
 	giveitem 0x74 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainHoney
 	end
@@ -297,8 +316,8 @@ SetItemFlag_ItemObtainHoney:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall
-NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPBall:
+.global NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPBall
+NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPBall:
 	giveitem 0x4 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainPBall
 	end
@@ -309,8 +328,8 @@ SetItemFlag_ItemObtainPBall:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion
-NPCScript_GoldtreeMeadows_FaeryWoods_ItemObtainPotion:
+.global NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion
+NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion:
 	giveitem 0xD 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainPotion
 	end
