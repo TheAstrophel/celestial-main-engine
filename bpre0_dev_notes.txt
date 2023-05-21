@@ -4,10 +4,11 @@ Remapping Goldtree Wilds, 2 (LEAVING HERE).
 Fixed a broken tree top Tile in Erstonia Gorge.
 Assigned Westray Catacombs Map Name (from Altering Cave) and changed name of S.S. Anne Dock.
 
-- Complete Erstonia City (all submaps); Complete Westray Village (all submaps); Hiiden Grottos and Secret Temples;
-  Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Add trainer battle 
-  macros; Add Wild PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final 
-  refine of the game.
+- Complete Goldtree Wilds (w/ all submaps); Complete Erstonia City (w/ all submaps); Complete Erstonia Gorge (change to Erstonia Chasm); 
+  Change Aerilon Hills to Cosmic Hills; Complete Westray Village (w/ all submaps); Hiiden Grottos and Secret Temples;
+  Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Add trainer battle
+  macros; Add Wild PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine
+  of the game.
   Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
                 game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 

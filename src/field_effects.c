@@ -78,6 +78,9 @@ static bool8 RockClimb_ContinueRideOrEnd(struct Task* task, struct EventObject* 
 static bool8 RockClimb_WaitStopRockClimb(struct Task* task, struct EventObject* eventObject);
 static bool8 RockClimb_StopRockClimbInit(struct Task* task, struct EventObject* eventObject);
 
+//extern const u16 gFieldEffectObjectPic_AutumnGrassPal[];
+//static const struct SpritePalette sAutumnGrassObjectPaletteInfo = {gFieldEffectObjectPic_AutumnGrassPal, FLDEFF_PAL_TAG_GENERAL_1};
+
 #ifdef UNBOUND //For Pokemon Unbound - Feel free to remove
 extern const u16 gFieldEffectObjectPic_AutumnGrassPal[];
 extern const u16 gFieldEffectObjectPic_WinterGrassPal[];
@@ -366,6 +369,10 @@ static void GetSpriteTemplateAndPaletteForGrassFieldEffect(const struct SpriteTe
 			*spriteTemplate = gFieldEffectObjectTemplatePointers[fieldEffectTemplateArg];
 			*spritePalette = gFieldEffectObjectPaletteInfo1;
 			break;
+//		case MAPSEC_VIRIDIAN_FOREST:
+//			*spriteTemplate = gFieldEffectObjectTemplatePointers[fieldEffectTemplateArg];
+//			*spritePalette = &sAutumnGrassObjectPaletteInfo;
+//			break;
 	}
 }
 
