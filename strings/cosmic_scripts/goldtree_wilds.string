@@ -2,6 +2,9 @@
 #org @gText_GoldtreeWilds_Nidoran_Cry
 [BLACK]Gaough gaoh!
 
+#org @gText_GoldtreeWilds_Nidoran_GivingGift
+[BLACK]Gaough gaoh! Gaough!\pThe Pok\emon is trying to give you\nsomething!
+
 #org @gText_GoldtreeWilds_Pikachu_Cry
 [BLACK]Weaa wagh!
 
@@ -30,4 +33,4 @@
 [BLUE]Unhand me, kid! Don't provoke me!\nGo, [GREEN]Lampent[BLUE], use [GREEN]Flash[BLUE]!
 
 #org @gText_GoldtreeWilds_Rival_04
-[BLUE]Ugh, I can't see.\nNo way he got away with that.\pThere goes the Professor's parcel.\nHe seemed like a nutcase, right?\pWhat did he mean by the eternal\nrubbish, anyway?\pThanks for the help, though. I'll go\nand freshen up at the Pok\eCenter.\pI'll let the Professor know that he\nwas indeed right about his Aide.\pWe'll leave it to the authorities for\nnow.\pWhy not challenge the Gym, [PLAYER]?\nMight as well, since we are here.\pLet this Pok\emon journey start,\nyippe.\pAnyhow, catch you later.\nPeace.
+[BLUE]Ugh, I can't see.\nNo way he got away with that.\pThere goes the Professor's parcel.\nHe seemed like a nutcase, right?\pWhat did he mean by the eternal\nrubbish, anyway?\pThanks for the help, though. I'll go\nand freshen up at the Pok\eCenter.\pThat's right, we chased him all the\nway to [GREEN]Erstonia City[BLUE].\pI'll let the Professor know that he\nwas indeed right about his Aide.\pWe'll leave it to the authorities for\nnow.\pWhy not challenge the Erstonia Gym?\nMight as well, since we are here.\pLet this Pok\emon journey start,\nyippe.\pAnyhow, catch you later.\nPeace.

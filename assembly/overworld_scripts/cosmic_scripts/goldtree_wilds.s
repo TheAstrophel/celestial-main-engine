@@ -11,11 +11,23 @@
 NPCScript_GoldtreeWilds_Nidoran:
 	lock
 	faceplayer
+	checkflag 0xAF @Set when Energy Powder has been received
+	if notequal _goto ReceiveGiftFromNidoran
 	checksound
-	cry 0x1D 0x0
+	cry 0x34 0x0
 	msgbox gText_GoldtreeWilds_Nidoran_Cry, MSG_KEEPOPEN
 	waitcry
 	closeonkeypress
+	release
+	end
+
+ReceiveGiftFromNidoran:
+	checksound
+	cry 0x34 0x0
+	msgbox gText_GoldtreeWilds_Nidoran_GivingGift, MSG_KEEPOPEN
+	waitcry
+	giveitem 0x1E 0x1, MSG_OBTAIN
+	setflag 0xAF @Flag to not obtain Energy Powder again
 	release
 	end
 
@@ -55,6 +67,18 @@ NPCScript_GoldtreeWilds_ItemObtainTM59:
 
 SetItemFlag_ItemObtainTM59:
 	setflag 0x168 @Person ID of TM59 (Dragon Pulse) in A-Map
+	return
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeWilds_ItemObtainFastBall
+NPCScript_GoldtreeWilds_ItemObtainFastBall:
+	giveitem 0xF3 0x1, MSG_FIND
+	call SetItemFlag_ItemObtainFastBall
+	end
+
+SetItemFlag_ItemObtainFastBall:
+	setflag 0x169 @Person ID of Fast Ball in A-Map
 	return
 
 #Tile scripts:
@@ -136,13 +160,13 @@ TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt:
 	lock
 	spriteface GRUNT, UP
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
-	compare VAR_TEMP_1, 0xA @X-Pos equals 0xA
+	compare VAR_TEMP_2, 0x6 @Y-Pos equals 0x6
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberFour
-	compare VAR_TEMP_1, 0xB @X-Pos equals 0xB
+	compare VAR_TEMP_2, 0x7 @Y-Pos equals 0x7
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberFive
-	compare VAR_TEMP_1, 0xC @X-Pos equals 0xC
+	compare VAR_TEMP_2, 0x8 @Y-Pos equals 0x8
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberSix
-	compare VAR_TEMP_1, 0xD @X-Pos equals 0xD
+	compare VAR_TEMP_2, 0x9 @Y-Pos equals 0x9
 	if equal _call CameraMovesTowardsRivalAndGruntWhenScriptNumberSeven
 	pause 0xE
 	msgboxname gText_GoldtreeWilds_Rival_01, MSG_KEEPOPEN, gText_RivalName
@@ -156,21 +180,21 @@ TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt:
 	waitmovement 0x0
 	msgboxname gText_GoldtreeWilds_Rival_02, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
-	compare VAR_TEMP_1, 0xA @X-Pos equals 0xA
+	compare VAR_TEMP_2, 0x6 @Y-Pos equals 0x6
 	if equal _call CameraResetsWhenScriptNumberFour
-	compare VAR_TEMP_1, 0xB @X-Pos equals 0xB
+	compare VAR_TEMP_2, 0x7 @Y-Pos equals 0x7
 	if equal _call CameraResetsWhenScriptNumberFive
-	compare VAR_TEMP_1, 0xC @X-Pos equals 0xC
+	compare VAR_TEMP_2, 0x8 @Y-Pos equals 0x8
 	if equal _call CameraResetsWhenScriptNumberSix
-	compare VAR_TEMP_1, 0xD @X-Pos equals 0xD
+	compare VAR_TEMP_2, 0x9 @Y-Pos equals 0x9
 	if equal _call CameraResetsWhenScriptNumberSeven
-	compare VAR_TEMP_1, 0xA @X-Pos equals 0xA
+	compare VAR_TEMP_2, 0x6 @Y-Pos equals 0x6
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberFour
-	compare VAR_TEMP_1, 0xB @X-Pos equals 0xB
+	compare VAR_TEMP_2, 0x7 @Y-Pos equals 0x7
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberFive
-	compare VAR_TEMP_1, 0xC @X-Pos equals 0xC
+	compare VAR_TEMP_2, 0x8 @Y-Pos equals 0x8
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberSix
-	compare VAR_TEMP_1, 0xD @X-Pos equals 0xD
+	compare VAR_TEMP_2, 0x9 @Y-Pos equals 0x9
 	if equal _call PlayerMovesTowardRivalWhenScriptNumberSeven
 	spriteface RIVAL, DOWN
 	playsong 0x11D 0x0
@@ -287,20 +311,20 @@ PlayerMovesTowardRivalWhenScriptNumberSeven:
 
 m_Exclaim: .byte look_left, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
 m_RivalLooksHereAndThere: .byte look_up, pause_long, pause_long, look_left, pause_long, pause_long, look_right, pause_long, pause_long, look_up, pause_long, pause_long, look_down, pause_long, pause_long, end_m
-m_RivalLeaves: .byte walk_up, walk_up, walk_up, walk_up, walk_up, end_m
-m_GruntRunsAway: .byte run_up, run_up, run_up, run_up, run_up, end_m
-m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFour: .byte walk_right, walk_up, walk_up, walk_up, end_m
-m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFive: .byte walk_up, walk_up, walk_up, end_m
-m_MoveCameraTowardsRivalAndGruntWhenScriptNumberSix: .byte walk_left, walk_up, walk_up, walk_up, end_m
-m_MoveCameraTowardsRivalAndGruntWhenScriptNumberSeven: .byte walk_left, walk_left, walk_up, walk_up, walk_up, end_m
-m_CameraResetsWhenScriptNumberFour: .byte walk_down, walk_down, walk_down, walk_left, end_m
-m_CameraResetsWhenScriptNumberFive: .byte walk_down, walk_down, walk_down, end_m
-m_CameraResetsWhenScriptNumberSix: .byte walk_down, walk_down, walk_down, walk_right, end_m
-m_CameraResetsWhenScriptNumberSeven: .byte walk_down, walk_down, walk_down, walk_right, walk_right, end_m
-m_PlayerMovingTowardRivalWhenScriptNumberFour: .byte run_right, run_up, run_up, end_m
-m_PlayerMovingTowardRivalWhenScriptNumberFive: .byte run_up, run_up, end_m
-m_PlayerMovingTowardRivalWhenScriptNumberSix: .byte run_left, run_up, run_up, end_m
-m_PlayerMovingTowardRivalWhenScriptNumberSeven: .byte run_left, run_left, run_up, run_up, end_m
+m_RivalLeaves: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_down, walk_down, walk_right, walk_right, walk_right, end_m
+m_GruntRunsAway: .byte run_right, run_up, run_right, run_right, run_right, run_right, run_down, run_down, run_right, run_right, end_m
+m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFour: .byte walk_right, walk_right, walk_right, walk_down, end_m
+m_MoveCameraTowardsRivalAndGruntWhenScriptNumberFive: .byte walk_right, walk_right, walk_right, end_m
+m_MoveCameraTowardsRivalAndGruntWhenScriptNumberSix: .byte walk_right, walk_right, walk_right, walk_up, end_m
+m_MoveCameraTowardsRivalAndGruntWhenScriptNumberSeven: .byte walk_right, walk_right, walk_right, walk_up, walk_up, end_m
+m_CameraResetsWhenScriptNumberFour: .byte walk_left, walk_left, walk_left, walk_up, end_m
+m_CameraResetsWhenScriptNumberFive: .byte walk_left, walk_left, walk_left, end_m
+m_CameraResetsWhenScriptNumberSix: .byte walk_left, walk_left, walk_left, walk_down, end_m
+m_CameraResetsWhenScriptNumberSeven: .byte walk_left, walk_left, walk_left, walk_down, walk_down, end_m
+m_PlayerMovingTowardRivalWhenScriptNumberFour: .byte run_down, run_right, run_right, end_m
+m_PlayerMovingTowardRivalWhenScriptNumberFive: .byte run_right, run_right, end_m
+m_PlayerMovingTowardRivalWhenScriptNumberSix: .byte run_up, run_right, run_right, end_m
+m_PlayerMovingTowardRivalWhenScriptNumberSeven: .byte run_up, run_up, run_right, run_right, end_m
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
@@ -337,3 +361,4 @@ NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion:
 SetItemFlag_ItemObtainPotion:
 	setflag 0x163 @Person ID of Paralyze Heal in A-Map
 	return
+

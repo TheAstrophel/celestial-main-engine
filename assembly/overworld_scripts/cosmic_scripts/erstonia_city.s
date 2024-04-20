@@ -19,6 +19,46 @@ NPCScript_ErstoniaCity_GymCaretaker:
 
 @;////////////////////////////////////////////////
 
+.global NPCScript_ErstoniaCity_Machop
+NPCScript_ErstoniaCity_Machop:
+	lock
+	faceplayer
+	checksound
+	cry 0x42 0x0
+	msgbox gText_ErstoniaCity_Machop_Cry, MSG_KEEPOPEN
+	waitcry
+	closeonkeypress
+	release
+	end
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_ErstoniaCity_Meowth
+NPCScript_ErstoniaCity_Meowth:
+	lock
+	faceplayer
+	checkflag 0xB0 @Set when Oran Berry has been received
+	if notequal _goto ReceiveGiftFromMeowth
+	checksound
+	cry 0x34 0x0
+	msgbox gText_ErstoniaCity_Meowth_Cry, MSG_KEEPOPEN
+	waitcry
+	closeonkeypress
+	release
+	end
+
+ReceiveGiftFromMeowth:
+	checksound
+	cry 0x34 0x0
+	msgbox gText_ErstoniaCity_Meowth_GivingGift, MSG_KEEPOPEN
+	waitcry
+	giveitem 0x8B 0x1, MSG_OBTAIN
+	setflag 0xB0 @Flag to not obtain Oran Berry again
+	release
+	end
+
+@;////////////////////////////////////////////////
+
 .global NPCScript_ErstoniaCity_ItemObtainRareCandy
 NPCScript_ErstoniaCity_ItemObtainRareCandy:
 	giveitem 0x44 0x1, MSG_FIND

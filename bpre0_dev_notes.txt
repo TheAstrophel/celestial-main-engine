@@ -1,18 +1,13 @@
-Remapping Goldtree Meadows, 1 (name changed to Goldtree Wilds).
-Remapping Goldtree Wilds, 2 (LEAVING HERE).
 
-Fixed a broken tree top Tile in Erstonia Gorge.
 Assigned Westray Catacombs Map Name (from Altering Cave) and changed name of S.S. Anne Dock.
 
-- Complete Goldtree Wilds (w/ all submaps); Complete Erstonia City (w/ all submaps); Complete Erstonia Gorge (change to Erstonia Chasm); 
-  Change Aerilon Hills to Cosmic Hills; Complete Westray Village (w/ all submaps); Hiiden Grottos and Secret Temples;
-  Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Add trainer battle
-  macros; Add Wild PKMN in Routes; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine
+- Change Aerilon Hills to Cosmic Hills; Complete Westray Village (w/ all submaps); Check game from start till Westray Village;
+  Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Hiiden Grottos and Secret Temples;
+  Add Wild PKMN in Routes; Add trainer battle macros; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine
   of the game.
   Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
                 game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 
---Beta 1.0 & Beyond: Make the red paths in Westray Trail ingraved red grass instead & add a border between green grass and orange grass
-                     in Westray Village as Player climbs stairs (switch Tileset of WT to WV); Add bench and other decorative tiles in 
-                     Goldtree Meadows; Switch palette of Fairy Houses in Faery Woods so they are more diverse; enable running shoes from
-                     the start;
+--Beta 1.0 & Beyond: Add cracked pillars/ruins in Erstonia Gorge (and Erstonia City using palette 11 & 12); Switch palette of 
+                     Fairy Houses in Faery Woods so they are more diverse; enable running shoes from the start; Make Palette 12
+                     of Westray Village for apple trees/corresponding;

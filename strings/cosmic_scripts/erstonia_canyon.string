@@ -1,8 +1,20 @@
-#org @gText_ErstoniaGorge_RuinwayPassage_Landre_01
+#org @gText_ErstoniaCanyon_CheckThisRockDude_CheckThisRock
+[BLUE]Psst! Take a closer look at this\nhere rock. Trust me!
+
+#org @gText_ErstoniaCanyon_CheckThisRockDude_CanFindStuffInRocks
+[BLUE]You can find many useful stuff in\nrandom places. Always check them!
+
+#org @gText_ErstoniaCanyon_Clefairy_Cry
+[BLACK]Cle Clfaly!
+
+#org @gText_ErstoniaCanyon_Jigglypuff_Cry
+[BLACK]Plf Plufaj!
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_Landre_01
 [BLUE]Hmm[.] That [GREEN]grunt [BLUE]got away[.] If only I\nhad [GREEN]Rock Climb[BLUE][.]
 
-#org @gText_ErstoniaGorge_RuinwayPassage_Landre_02
+#org @gText_ErstoniaCanyon_RuinwayPassage_Landre_02
 [BLUE]You there! Do you currently possess\n[GREEN]Rock Climb[BLUE]? No? [.]Ugh[.]\pHmm? Who am I?
 
-#org @gText_ErstoniaGorge_RuinwayPassage_Landre_03
+#org @gText_ErstoniaCanyon_RuinwayPassage_Landre_03
 [BLUE]My name is [GREEN]Landre[BLUE]. I am the Leader\nof [GREEN]Erstonia City's Pok\emon Gym[BLUE].\pI came here following some thugs\nthat were causing trouble.\pThey were going on and on about\n[GREEN]eternal bliss[BLUE][.] but they got away!\pIf only I had [GREEN]Rock Climb[BLUE], I could\nhave caught them[.]\pBut alas, they got away. Although, I\nam intrigued. Why are you here?\pAh! You wish to challenge me?\nThen I shall await you at my [GREEN]Gym[BLUE].\pFarewell.
