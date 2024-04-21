@@ -294,7 +294,7 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			TILESET_PAL_FADE_END
 		},
 	},
-	{ //Erstonia City - Lamps (also fades some other aspects of lamp; change in irfanview
+	{ //Erstonia City - Lamps
 		.tilesetPointer = 0x82D4ADC, //Tileset 03
 		.paletteNumToFade = 10,
 		.paletteIndicesToFade =

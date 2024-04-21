@@ -7,11 +7,11 @@
 
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
-.global NPCScript_WestrayTrail_GuardThatBlocksAccess
-NPCScript_WestrayTrail_GuardThatBlocksAccess:
+.global NPCScript_WestrayPass_GuardThatBlocksAccess
+NPCScript_WestrayPass_GuardThatBlocksAccess:
 	lock
 	faceplayer
-	msgboxname gText_WestrayTrail_Guard_01, MSG_KEEPOPEN, gText_OfficerName
+	msgboxname gText_WestrayPass_Guard_01, MSG_KEEPOPEN, gText_OfficerName
 	closeonkeypress
 	spriteface LASTTALKED, DOWN
 	release
@@ -19,8 +19,8 @@ NPCScript_WestrayTrail_GuardThatBlocksAccess:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_WestrayTrail_ItemObtainHealBall
-NPCScript_WestrayTrail_ItemObtainHealBall:
+.global NPCScript_WestrayPass_ItemObtainHealBall
+NPCScript_WestrayPass_ItemObtainHealBall:
 	giveitem 0xF1 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainHealBall
 	end
@@ -31,8 +31,8 @@ SetItemFlag_ItemObtainHealBall:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_WestrayTrail_ItemObtainTM28
-NPCScript_WestrayTrail_ItemObtainTM28:
+.global NPCScript_WestrayPass_ItemObtainTM28
+NPCScript_WestrayPass_ItemObtainTM28:
 	giveitem 0x13C 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainTM28
 	end
@@ -43,12 +43,12 @@ SetItemFlag_ItemObtainTM28:
 
 #Tile scripts:
 .equ GUARD, 0x1
-.equ VAR_GUARD_BLOCKS_WESTRAY_TRAIL, 0x402D
+.equ VAR_GUARD_BLOCKS_WESTRAY_Pass, 0x402D
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 
-.global TileScript_WestrayTrail_GuardThatBlocksAccess
-TileScript_WestrayTrail_GuardThatBlocksAccess:
+.global TileScript_WestrayPass_GuardThatBlocksAccess
+TileScript_WestrayPass_GuardThatBlocksAccess:
 	lock
 	checksound
 	sound 0x15
@@ -60,7 +60,7 @@ TileScript_WestrayTrail_GuardThatBlocksAccess:
 	compare VAR_TEMP_2, 0x4B @Y-Pos equals 0x4B
 	if equal _call ApproachPlayerWhenScriptNumberTwo
 	spriteface PLAYER, UP
-	msgboxname gText_WestrayTrail_GuardWarnsPlayer, MSG_KEEPOPEN, gText_OfficerName
+	msgboxname gText_WestrayPass_GuardWarnsPlayer, MSG_KEEPOPEN, gText_OfficerName
 	closeonkeypress
 	applymovement PLAYER, m_WalkLeftSlowly
 	waitmovement 0x0

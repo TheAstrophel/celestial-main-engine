@@ -115,14 +115,14 @@ tile 1 1 0 TileScript_ErstoniaCanyon_RuinwayPassage_PlayerFindsLandre
 tile 1 1 1 TileScript_ErstoniaCanyon_RuinwayPassage_PlayerFindsLandre
 map 1 1 gMapScripts_ErstoniaCanyon_RuinwayPassage
 
-#Westray Trail
-npc 3 24 0 NPCScript_WestrayTrail_GuardThatBlocksAccess
-npc 3 24 11 NPCScript_WestrayTrail_ItemObtainHealBall
-npc 3 24 12 NPCScript_WestrayTrail_ItemObtainTM28
-npc 3 24 14 NPCScript_WestrayTrail_GuardThatBlocksAccess
-tile 3 24 0 TileScript_WestrayTrail_GuardThatBlocksAccess
-tile 3 24 1 TileScript_WestrayTrail_GuardThatBlocksAccess
-tile 3 24 2 TileScript_WestrayTrail_GuardThatBlocksAccess
+#Westray Pass
+npc 3 24 0 NPCScript_WestrayPass_GuardThatBlocksAccess
+npc 3 24 11 NPCScript_WestrayPass_ItemObtainHealBall
+npc 3 24 12 NPCScript_WestrayPass_ItemObtainTM28
+npc 3 24 14 NPCScript_WestrayPass_GuardThatBlocksAccess
+tile 3 24 0 TileScript_WestrayPass_GuardThatBlocksAccess
+tile 3 24 1 TileScript_WestrayPass_GuardThatBlocksAccess
+tile 3 24 2 TileScript_WestrayPass_GuardThatBlocksAccess
 
 #Macro's:
 npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
@@ -197,7 +197,7 @@ npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
 npc 3 23 8 NPCTalkingScript_ErstoniaCanyon_SomethingHappensAtNightGirl
 npc 3 23 9 NPCTalkingScript_ErstoniaCanyon_SandstormGuy
 npc 3 23 15 NPCTalkingScript_ErstoniaCanyon_RuinwayPassageLady
-npc 3 24 17 NPCTalkingScript_WestrayTrail_WestrayCatacombsAreDangerousGirl
+npc 3 24 17 NPCTalkingScript_WestrayPass_WestrayCatacombsAreDangerousGirl
 sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
@@ -256,9 +256,9 @@ sign 1 1 15 SignpostScript_ErstoniaCanyon_RuinwayPassage_UnownCarvings
 sign 1 1 16 SignpostScript_ErstoniaCanyon_RuinwayPassage_UnownCarvings
 sign 1 2 1 SignpostScript_ErstoniaCanyon_RuinwayPassage_RelicanthCarving
 sign 1 2 2 SignpostScript_ErstoniaCanyon_RuinwayPassage_RelicanthCarving
-sign 3 24 0 SignpostScript_WestrayTrail_SecurityOutpost
-sign 3 24 1 SignpostScript_WestrayTrail_MainRoute
-sign 3 24 2 SignpostScript_WestrayTrail_TrainerTips
-sign 3 24 3 SignpostScript_WestrayTrail_TrainerTips_02
-sign 3 24 4 SignpostScript_WestrayTrail_SecurityOutpost
-sign 3 24 5 SignpostScript_WestrayTrail_MainRoute_02
+sign 3 24 0 SignpostScript_WestrayPass_SecurityOutpost
+sign 3 24 1 SignpostScript_WestrayPass_MainRoute
+sign 3 24 2 SignpostScript_WestrayPass_TrainerTips
+sign 3 24 3 SignpostScript_WestrayPass_TrainerTips_02
+sign 3 24 4 SignpostScript_WestrayPass_SecurityOutpost
+sign 3 24 5 SignpostScript_WestrayPass_MainRoute_02

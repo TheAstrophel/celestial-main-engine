@@ -316,21 +316,21 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 #org @gText_ErstoniaCanyon_RuinwayPassage_SeviperCarvingSign
 [BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Seviper[BLACK].
 
-//Westray Trail:
-#org @gText_WestrayTrail_WestrayCatacombsAreDangerousGirlNPC
+//Westray Pass:
+#org @gText_WestrayPass_WestrayCatacombsAreDangerousGirlNPC
 [RED]Beware, Trainer! Do not step foot in\n[GREEN]Westray Catacombs[RED]!\pYou have been warned!
 
-#org @gText_WestrayTrail_SecurityOutpostSign
-[GREEN]Security Outpost[BLACK] (Westray Trail)\n"Peace & Tranquility".
+#org @gText_WestrayPass_SecurityOutpostSign
+[GREEN]Security Outpost[BLACK] (Westray Pass)\n"Peace & Tranquility".
 
-#org @gText_WestrayTrail_MainRouteSign
-[BLACK]Westray Trail\n[ARROW_DOWN]Erstonia City - [ARROW_UP]Westray Village
+#org @gText_WestrayPass_MainRouteSign
+[BLACK]Westray Pass\n[ARROW_DOWN]Erstonia City - [ARROW_UP]Westray Village
 
-#org @gText_WestrayTrail_TrainerTipsSign
+#org @gText_WestrayPass_TrainerTipsSign
 [BLACK]Trainer Tips!\pIn battle, you can check the details\nof the moves of your Pok\emon.\pJust press [L_BUTTON] before selecting a\nmove!
 
-#org @gText_WestrayTrail_TrainerTips_02Sign
+#org @gText_WestrayPass_TrainerTips_02Sign
 [BLACK]Trainer Tips!\pKeep an eye out for shady areas\nbetween [GREEN]trees[BLACK].\pAlso keep an eye out for concealed\n[GREEN]cave openings.\pThese indicate [GREEN]Hidden Grotto's[BLACK] and\n[GREEN]Secret Temples[BLACK]!
 
-#org @gText_WestrayTrail_MainRoute_02Sign
-[BLACK]Westray Trail\n[ARROW_RIGHT]Westray Village - [ARROW_DOWN]Erstonia City
+#org @gText_WestrayPass_MainRoute_02Sign
+[BLACK]Westray Pass\n[ARROW_RIGHT]Westray Village - [ARROW_DOWN]Erstonia City
