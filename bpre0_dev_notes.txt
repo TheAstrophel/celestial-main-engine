@@ -1,7 +1,3 @@
-Changed Westray Trail to Westray Pass.
-Completed Westray Pass mapping.
-
-Assigned Westray Catacombs Map Name (from Altering Cave) and changed name of S.S. Anne Dock.
 
 - Change Aerilon Hills to Cosmic Hills; Complete Westray Village (w/ all submaps); Check game from start till Westray Village;
   Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Hiiden Grottos and Secret Temples;

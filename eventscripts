@@ -18,7 +18,7 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
 npc 5 3 2 GoldtreeVillage_PKMNCenter_FatherOfRival
 map 3 1 gMapScripts_GoldtreeVillage
-map 5 3 gMapScripts_GoldtreeVillage_PKMNCenter
+map 5 4 gMapScripts_GoldtreeVillage_PKMNCenter
 
 #Erstonia City:
 npc 3 2 5 EventScript_Cut
@@ -33,8 +33,13 @@ map 3 2 gMapScripts_ErstoniaCity
 #Westray Village:
 npc 3 3 6 NPCScript_WestrayVillage_BoyThatGivesHint
 npc 3 3 12 NPCScript_WestrayVillage_ItemObtainEther
-sign 3 3 5 SignScript_WestrayVillage_AppleStand
 sign 3 3 1 SignScript_WestrayVillage_HiddenEntrance
+sign 3 3 3 SignScript_WestrayVillage_HiddenGrotto
+sign 3 3 4 SignScript_WestrayVillage_HiddenGrotto
+sign 3 3 5 SignScript_WestrayVillage_AppleStand
+tile 7 0 0 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
+tile 7 0 1 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
+tile 7 0 2 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
 map 3 3 gMapScripts_WestrayVillage
 
 #Aerilon Hike:
@@ -180,6 +185,13 @@ npc 3 3 9 NPCTalkingScript_WestrayVillage_AppleStandMan
 npc 3 3 7 NPCTalkingScript_WestrayVillage_WeirdPeopleMan
 npc 3 3 8 NPCTalkingScript_WestrayVillage_AppleLadyOldWoman
 npc 3 3 10 NPCTalkingScript_WestrayVillage_WestrayHighlandsGirl
+npc 7 2 0 NPCTalkingScript_WestrayVillage_House_WestrayVillageIsNotNewOldMan
+npc 7 2 1 NPCTalkingScript_WestrayVillage_House_HiddenPlaceOldLady
+npc 7 5 0 NPCTalkingScript_WestrayVillage_House_OneTimeGirl
+npc 7 5 1 NPCTalkingScript_WestrayVillage_House_ArticunoClimbLegendMan
+npc 7 5 2 NPCTalkingScript_WestrayVillage_House_MomGoneLittleGirl
+npc 7 6 0 NPCTalkingScript_WestrayVillage_House_ILikeYouMan
+npc 7 6 1 NPCTalkingScript_WestrayVillage_House_SawShadyPeopleGirl
 npc 3 19 2 NPCTalkingScript_AerilonHike_TallGrassGirl
 npc 3 19 0 NPCTalkingScript_AerilonHike_InteractiveWorldBoy
 npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide

@@ -204,10 +204,31 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]Some weird people here don't tend to\noutsiders well. Don't mind them.\pYou're welcome in our humble town.
 
 #org @gText_WestrayVillage_AppleLadyOldWomanNPC
-[RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh, youngling?
+[RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh?\p[.]Excuse my yapping.
 
 #org @gText_WestrayVillage_WestrayHighlandsGirlNPC
 [RED]The higher you go on [GREEN]Westray\nHighlands[RED], the colder it gets!\pYou even need [GREEN]Winter Gear[RED] to enter\nthem, or they'll send you back!
+
+#org @gText_WestrayVillage_House_WestrayVillageIsNotNewOldManNPC
+[BLUE]I've lived in this town my whole\nlife! Now, it's not that bad, see?\pThis town is older than Triton itself!\nIsn't that something?
+
+#org @gText_WestrayVillage_House_HiddenPlaceOldLadyNPC
+[RED]I keep telling my husband that there\nis something behind our house!\pBut he says I'm crazy! How very\nrude[.] Am I crazy?
+
+#org @gText_WestrayVillage_House_OneTimeGirlNPC
+[RED]One time I was looking through the\napple farm [GREEN]when I suddenly sunk[RED]!\pLuckily only my leg was stuck, so I\ngot out pretty quick. It was scary!
+
+#org @gText_WestrayVillage_House_ArticunoClimbLegendManNPC
+[BLUE]You know about the [GREEN]Legendary Bird\nArticuno[BLUE]? The Ice-type bird thing?\pLegend says that it lives in [GREEN]Articuno\nClimb[BLUE]. But that's just a myth!\p[.]Or is it?
+
+#org @gText_WestrayVillage_House_MomGoneLittleGirlNPC
+[RED]Mommy said she was "busy with her\njob"! Like, why this busy?\pCan you find her? Actually, no, I\ndon't want to meet her! Hmph!
+
+#org @gText_WestrayVillage_House_ILikeYouManNPC
+[BLUE]Why, if it ain't a Trainer! Howdy!\nBut, why are you in my house?!\pHaha, just joking! I like you! Tell\nyou what. I'll give you a gift!\pCheck around my house and you'll\nbe grateful!
+
+#org @gText_WestrayVillage_House_SawShadyPeopleGirlNPC
+[RED]Saw some shady folks near the farm,\nI did. Oh, boy, I hope all is good[.]
 
 #org @gText_WestrayVillage_FarmOfJoeSign
 [BLACK]Joe's Apple Farm\n"Red and plump, like rosy cheeks".

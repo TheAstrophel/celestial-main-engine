@@ -39,40 +39,31 @@ SetItemFlag_ItemObtainEther:
 	return
 
 #Sign scripts:
-.global SignScript_WestrayVillage_AppleStand
-SignScript_WestrayVillage_AppleStand:
-	lock
-	applymovement 0xA m_AppleDudeLookingDownOnTheInsignificantPlayerAsIfThePlayerDoesNotMatter @Apple stand man ID in A-Map
-	waitmovement 0x0
-	msgbox gText_WestrayVillage_AppleStandMan_01, MSG_YESNO
+.global SignScript_WestrayVillage_HiddenGrotto
+SignScript_WestrayVillage_HiddenGrotto:
+	msgbox gText_WestrayVillage_HiddenGrotto, MSG_YESNO
 	compare LASTRESULT, 0x1
-	if equal _goto PlayerWantsApple
-	msgbox gText_WestrayVillage_AppleStandMan_02, MSG_KEEPOPEN
-	closeonkeypress
+	if equal _goto EnterHiddenGrotto
 	release
 	end
 
-PlayerWantsApple:
-	checkmoney 0x14 0x0
-	compare LASTRESULT, 0x1
-	if greaterorequal _goto PlayerGetsAppleYay
-	msgbox gText_WestrayVillage_AppleStandMan_03, MSG_KEEPOPEN
-	closeonkeypress
-	release
+EnterHiddenGrotto:
+	getplayerpos 0x51FE, 0x51FF
+	compare 0x51FE, 0xD @X-Pos equals 0xD
+	if equal _goto LeftWarp
+	compare 0x51FE, 0xE @X-Pos equals 0xE
+	if equal _goto RightWarp
 	end
 
-PlayerGetsAppleYay:
-	fanfare 0x10D
-	msgbox gText_WestrayVillage_PlayerGetsAppleYay, MSG_KEEPOPEN
-	waitfanfare
-	closeonkeypress
-	msgbox gText_WestrayVillage_AppleStandMan_04, MSG_KEEPOPEN
-	closeonkeypress
-	removemoney 0x14 0x0
-	release
+LeftWarp:
+	warp 0x7 0x9 0x0 0x0 0x0
+	waitstate
 	end
 
-m_AppleDudeLookingDownOnTheInsignificantPlayerAsIfThePlayerDoesNotMatter: .byte look_down, end_m
+RightWarp:
+	warp 0x7 0x9 0x1 0x0 0x0
+	waitstate
+	end
 
 @;////////////////////////////////////////////////
 
@@ -120,6 +111,43 @@ PlayerFindsWestrayCatacombs:
 	end
 
 m_Surprised: .byte exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, end_m
+
+@;////////////////////////////////////////////////
+
+.global SignScript_WestrayVillage_AppleStand
+SignScript_WestrayVillage_AppleStand:
+	lock
+	applymovement 0xA m_AppleDudeLookingDownOnTheInsignificantPlayerAsIfThePlayerDoesNotMatter @Apple stand man ID in A-Map
+	waitmovement 0x0
+	msgbox gText_WestrayVillage_AppleStandMan_01, MSG_YESNO
+	compare LASTRESULT, 0x1
+	if equal _goto PlayerWantsApple
+	msgbox gText_WestrayVillage_AppleStandMan_02, MSG_KEEPOPEN
+	closeonkeypress
+	release
+	end
+
+PlayerWantsApple:
+	checkmoney 0x14 0x0
+	compare LASTRESULT, 0x1
+	if greaterorequal _goto PlayerGetsAppleYay
+	msgbox gText_WestrayVillage_AppleStandMan_03, MSG_KEEPOPEN
+	closeonkeypress
+	release
+	end
+
+PlayerGetsAppleYay:
+	fanfare 0x10D
+	msgbox gText_WestrayVillage_PlayerGetsAppleYay, MSG_KEEPOPEN
+	waitfanfare
+	closeonkeypress
+	msgbox gText_WestrayVillage_AppleStandMan_04, MSG_KEEPOPEN
+	closeonkeypress
+	removemoney 0x14 0x0
+	release
+	end
+
+m_AppleDudeLookingDownOnTheInsignificantPlayerAsIfThePlayerDoesNotMatter: .byte look_down, end_m
 	
 #Level scripts:
 .equ VAR_MAIN_STORY, 0x4029
@@ -143,3 +171,20 @@ SetMapTileScript_WestrayVillage_WestrayCatacombsNotOpened:
 MapEntryScript_WestrayVillage:
 	setworldmapflag 0x893
 	end
+
+#@@@@@@@@;Sub-maps;@@@@@@@@
+#Tile scripts:
+.global TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
+TileScript_WestrayVillage_Gatehouse_WinterGearBarrier:
+	lock
+	applymovement 0x1, m_Exclaim
+	waitmovement 0x0
+	msgbox gText_WestrayVillage_Gatehouse_Guard_YouNeedWinterGear, MSG_KEEPOPEN
+	closeonkeypress
+	applymovement PLAYER, m_StepLeft
+	waitmovement 0x0
+	release
+	end
+
+m_Exclaim: .byte look_down, exclaim, pause_long, pause_long, pause_long, end_m
+m_StepLeft: .byte walk_left_slow, end_m
