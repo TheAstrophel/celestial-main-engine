@@ -9,7 +9,7 @@
 #NPC scripts:
 .global NPCScript_WestrayVillage_BoyThatGivesHint
 NPCScript_WestrayVillage_BoyThatGivesHint:
-	checkflag 0x230 @Checks whether [player] talked with Joe or not
+	checkflag 0x232 @Checks whether [player] talked with Joe or not
 	if notequal _goto PlayerHasNotMetJoe
 	lock
 	faceplayer
@@ -75,7 +75,7 @@ SignScript_WestrayVillage_HiddenEntrance:
 	lock
 	compare VAR_MAIN_STORY, MAIN_STORY_PLAYER_FOUND_WESTRAY_CATACOMBS
 	if equal _goto PlayerHasAlreadyFoundWestrayCatacombs
-	checkflag 0x230
+	checkflag 0x232
 	if equal _goto PlayerFindsWestrayCatacombs
 	msgbox gText_WestrayVillage_SuspiciousGrassPatch, MSG_KEEPOPEN
 	closeonkeypress

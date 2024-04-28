@@ -30,8 +30,7 @@ NPCScript_GoldtreeVillage_Rival:
 	if equal _call PlayerLookingLeft
 	setvar VAR_MAIN_STORY, MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE
 	hidesprite RIVAL
-	setflag 0x202 @Person ID of Rival in A-Map
-	warp 0x5 0x3 0x0 0x9 0x9
+	warp 0x5 0x4 0x0 0x9 0x9
 	waitstate
 	release
 	end
@@ -130,7 +129,7 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	closeonkeypress
 	showsprite PROF_ALMOND
 	spriteface PROF_ALMOND, UP
-	clearflag 0x200 @Person ID of Professor Almond in A-Map
+	clearflag 0x2D @Person ID of Professor Almond in A-Map
 	checksound
 	sound 0x9
 	pause 0x3E
@@ -193,8 +192,8 @@ LevelScript_GoldtreeVillage_PKMNCenter:
 	msgboxname gText_GoldtreeVillage_PKMNCenter_FatherOfRival_07, MSG_KEEPOPEN, gText_RivalFatherName
 	closeonkeypress
 	spriteface FATHER_OF_RIVAL, UP
-	setflag 0x1FF @Person ID of Rival in A-Map
-	setflag 0x200 @Person ID of Professor Almond in A-Map
+	setflag 0x2F @Person ID of Rival in A-Map
+	setflag 0x2D @Person ID of Professor Almond in A-Map
 	setvar VAR_MAIN_STORY, MAIN_STORY_MEETING_COMPLETED_IN_GOLDTREE_PKMNCENTER
 	release
 	end
@@ -210,11 +209,4 @@ m_ExitsPKMNCenter: .byte walk_left, walk_left, walk_left, walk_left, walk_left, 
 
 MapEntryScript_GoldtreeVillage_PKMNCenter:
 	sethealingplace 0x2
-	compare VAR_MAIN_STORY, MAIN_STORY_ENTERED_PKMNCENTER_IN_GOLDTREE
-	if equal _call MapEntryScript_GoldtreeVillage_PKMNCenter_FirstTimeEntering
 	end
-	
-MapEntryScript_GoldtreeVillage_PKMNCenter_FirstTimeEntering:
-	showsprite RIVAL
-	clearflag 0x1FF @Person ID Rival in A-Map
-	return

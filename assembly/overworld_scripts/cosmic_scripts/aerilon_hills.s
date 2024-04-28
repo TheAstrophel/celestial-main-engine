@@ -42,7 +42,7 @@ PlayerSaysYesByTalking:
 	hidesprite PROF_AIDE
 	setvar VAR_EXTRA, 0 @Will be used later in other scripts
 	setvar VAR_MAIN_STORY, MAIN_STORY_WARPED_TO_OBSERVATORY
-	setflag 0x200 @Person ID of Aide in A-Map
+	setflag 0x2C @Person ID of Aide in A-Map
 	setflag 0x4001 @Set so song does not stop
 	warp 0xF 0x0 0x1 0xE 0xD
 	waitstate
@@ -138,7 +138,7 @@ PlayerSaysYes:
 	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
 	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
 	setvar VAR_MAIN_STORY, MAIN_STORY_WARPED_TO_OBSERVATORY
-	setflag 0x200 @Person ID of Aide in A-Map
+	setflag 0x2C @Person ID of Aide in A-Map
 	setflag 0x4001 @Set so song does not stop
 	warp 0xF 0x0 0x1 0xE 0xD
 	waitstate
@@ -216,7 +216,7 @@ LevelScript_AerilonHills:
 	pause 0x1E
 	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_OUTSIDE_OBSERVATORY
 	hidesprite RIVAL
-	setflag 0x1FF @Person ID of Rival in A-Map
+	setflag 0x2B @Person ID of Rival in A-Map
 	release
 	end
 
@@ -230,7 +230,7 @@ MapEntryScript_AerilonHills:
 	
 MapEntryScript_AerilonHills_MeetingRivalOutsideObservatory:
 	showsprite RIVAL
-	clearflag 0x1FF @Person ID Rival in A-Map
+	clearflag 0x2B @Person ID Rival in A-Map
 	return
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
@@ -307,8 +307,8 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
 	special 0x8E
 	pause 0x1E
 	setvar VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
-	setflag 0x1FF @Person ID of Professor in A-Map
-	setflag 0x200 @Person ID of Rival in A-Map
+	setflag 0x2D @Person ID of Professor in A-Map
+	setflag 0x2C @Person ID of Rival in A-Map
 	end
 
 m_ProfLeavesOffice: .byte walk_left, walk_left, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m
@@ -566,7 +566,6 @@ MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
 	spriteface PROF_AIDE, UP
 	movesprite2 PROF_AIDE, 0xA 0xD
 	playsong2 0x12E
-	clearflag 0x1FF @Person ID Professor Almond in A-Map
 	return
 
 @;////////////////////////////////////////////////
@@ -613,7 +612,7 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	closeonkeypress
 	showsprite RIVAL
 	spriteface RIVAL, UP
-	clearflag 0x200 @Person ID of Rival in A-Map
+	clearflag 0x2C @Person ID of Rival in A-Map
 	checksound
 	sound 0x9
 	pause 0x20

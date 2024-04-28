@@ -43,7 +43,7 @@ SetItemFlag_ItemObtainTM28:
 
 #Tile scripts:
 .equ GUARD, 0x1
-.equ VAR_GUARD_BLOCKS_WESTRAY_Pass, 0x402D
+.equ VAR_GUARD_BLOCKS_WESTRAY_PASS, 0x4050
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 

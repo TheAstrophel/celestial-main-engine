@@ -153,11 +153,12 @@ m_StepRight: .byte walk_right_very_slow, end_m
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
 .equ VAR_MAIN_STORY, 0x4029
-.equ MAIN_STORY_TEAM_ETERNAL_GRUNT_FLED, 0x9
+.equ MAIN_STORY_TEAM_ROSé_GRUNT_FLED, 0x9
 
 .global TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt
 TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt:
 	lock
+	spriteface RIVAL, DOWN
 	spriteface GRUNT, UP
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_2, 0x6 @Y-Pos equals 0x6
@@ -226,10 +227,10 @@ TileScript_GoldtreeWilds_PlayerAndRivalConfrontGrunt:
 	waitmovement 0x0
 	hidesprite RIVAL
 	pause 0xE
-	setflag 0x2E @Hide Grunt
-	setflag 0x2F @Hide Rival
-	setvar VAR_MAIN_STORY, MAIN_STORY_TEAM_ETERNAL_GRUNT_FLED
-	setflag 0x22F @Flag of Mom when Player does not go and meet Mom :(
+	setflag 0x30 @Hide Grunt
+	setflag 0x30 @Hide Rival
+	setvar VAR_MAIN_STORY, MAIN_STORY_TEAM_ROSé_GRUNT_FLED
+	setflag 0x231 @Flag of Mom when Player does not go and meet Mom :(
 	release
 	end
 

@@ -189,13 +189,11 @@ TileScript_ErstoniaCanyon_RuinwayPassage_PlayerFindsLandre:
 	compare VAR_TEMP_2, 0x2D @Y-Pos equals 0x2D
 	if equal _call LeavePlayerWhenScriptNumberOne
 	pause 0xE
-	hidesprite 0x2B
 	hidesprite LANDRE
-	setflag 0x2B @Hide Caretaker that blocks Erstonia Gym
-	setflag 0x2C @Hide Landre
+	setflag 0x31 @Hide Caretaker that blocks Erstonia Gym & Landre
 	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
 	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
-	setvar 0x402D 0x1 @debug
+	setvar 0x4050 0x1 @debug
 	setvar VAR_MAIN_STORY, MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE
 	release
 	end
