@@ -33,13 +33,25 @@ map 3 2 gMapScripts_ErstoniaCity
 #Westray Village:
 npc 3 3 6 NPCScript_WestrayVillage_BoyThatGivesHint
 npc 3 3 12 NPCScript_WestrayVillage_ItemObtainEther
+npc 3 3 13 NPCScript_WestrayVillage_ItemObtainHyperPotion
+npc 1 4 16 NPCScript_WestrayVillage_WestrayCatacombs_ItemObtainSuperRepel
+npc 1 4 17 NPCScript_WestrayVillage_WestrayCatacombs_ItemObtainMoonStone
+npc 1 4 18 NPCScript_WestrayVillage_WestrayCatacombs_ItemObtainSmokeBall
+npc 7 1 4 NPCScript_WestrayVillage_HouseOfJoe_Joe
+npc 7 9 0 NPCScript_WestrayVillage_HiddenGrotto_ItemObtainTM39
 sign 3 3 1 SignScript_WestrayVillage_HiddenEntrance
 sign 3 3 3 SignScript_WestrayVillage_HiddenGrotto
 sign 3 3 4 SignScript_WestrayVillage_HiddenGrotto
 sign 3 3 5 SignScript_WestrayVillage_AppleStand
+tile 1 4 0 TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder
+tile 1 4 1 TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder
+tile 1 4 2 TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder
+tile 1 4 3 TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder
 tile 7 0 0 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
 tile 7 0 1 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
 tile 7 0 2 TileScript_WestrayVillage_Gatehouse_WinterGearBarrier
+tile 7 1 0 TileScript_WestrayVillage_HouseOfJoe_GruntsDiscussion
+tile 7 1 1 TileScript_WestrayVillage_HouseOfJoe_GruntsDiscussion
 map 3 3 gMapScripts_WestrayVillage
 
 #Aerilon Hike:
@@ -74,9 +86,9 @@ npc 3 21 19 NPCScript_GoldtreeWilds_ItemObtainXAttack
 npc 3 21 20 NPCScript_GoldtreeWilds_ItemObtainTM59
 npc 3 21 21 NPCScript_GoldtreeWilds_ItemObtainFastBall
 npc 1 0 14 EventScript_Cut
-npc 1 0 12 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainHoney
 npc 1 0 10 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPBall
 npc 1 0 11 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion
+npc 1 0 12 NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainHoney
 tile 3 21 0 TileScript_GoldtreeWilds_BattleToStopPlayer
 tile 3 21 1 TileScript_GoldtreeWilds_BattleToStopPlayer
 tile 3 21 2 TileScript_GoldtreeWilds_BattleToStopPlayer
@@ -174,7 +186,7 @@ npc 6 9 0 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_AtPeaceOldMan
 npc 6 9 1 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_NothingBeatsCityLifeBoy
 npc 6 10 0 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_AtMyAgeOldLady 
 npc 6 10 1 NPCTalkingScript_ErstoniaCity_ErstoniaApartments_TryingToEavesdropGirl 
-npc 3 3 0 NPCTalkingScript_WestrayVillage_NoSecretsGirl
+npc 3 3 0 NPCTalkingScript_WestrayVillage_JigglypuffGirl
 npc 3 3 1 NPCTalkingScript_WestrayVillage_AppleFarmOfJoeOldMan
 npc 3 3 3 NPCTalkingScript_WestrayVillage_JoeIsAwesomeMan
 npc 3 3 2 NPCTalkingScript_WestrayVillage_JustBecauseYouAreTrashBoy
@@ -184,9 +196,14 @@ npc 3 3 5 NPCTalkingScript_WestrayVillage_WhatASightGirl
 npc 3 3 9 NPCTalkingScript_WestrayVillage_AppleStandMan
 npc 3 3 7 NPCTalkingScript_WestrayVillage_WeirdPeopleMan
 npc 3 3 8 NPCTalkingScript_WestrayVillage_AppleLadyOldWoman
-npc 3 3 10 NPCTalkingScript_WestrayVillage_WestrayHighlandsGirl
+npc 3 3 10 NPCTalkingScript_WestrayVillage_ArticunoClimbGirl
+npc 7 1 0 NPCTalkingScript_WestrayVillage_HouseOfJoe_JoeIsOurMayorKindaMan
+npc 7 1 1 NPCTalkingScript_WestrayVillage_HouseOfJoe_WestrayVillageRenovationGirl
+npc 7 1 2 NPCTalkingScript_WestrayVillage_HouseOfJoe_WinterGearHereBoy
+npc 7 1 3 NPCTalkingScript_WestrayVillage_HouseOfJoe_WholeLifeHereMan
+npc 7 1 5 NPCTalkingScript_WestrayVillage_HouseOfJoe_HassleThisIsLady
 npc 7 2 0 NPCTalkingScript_WestrayVillage_House_WestrayVillageIsNotNewOldMan
-npc 7 2 1 NPCTalkingScript_WestrayVillage_House_HiddenPlaceOldLady
+npc 7 2 1 NPCTalkingScript_WestrayVillage_House_HistoryIsImportantOldLady
 npc 7 5 0 NPCTalkingScript_WestrayVillage_House_OneTimeGirl
 npc 7 5 1 NPCTalkingScript_WestrayVillage_House_ArticunoClimbLegendMan
 npc 7 5 2 NPCTalkingScript_WestrayVillage_House_MomGoneLittleGirl

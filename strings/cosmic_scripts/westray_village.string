@@ -35,6 +35,84 @@
 #org @gText_WestrayVillage_PlayerGetsAppleYay
 [BLACK][PLAYER] received and ate a delicious\nred apple!
 
-//Sub-maps:
+//Sub-maps
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_01
+[BLUE]Our operations here are almost\ncomplete, we will leave soon.\pMake sure to round everyone up for\nour next order. It is crucial.\pAnd make sure that the settlers here\ncarry on with ease, without hassle.
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Grunt_01
+[BLUE]Of course, sir! I'll pass the order\nof moving on to [GREEN]Igneous City[BLUE].\pWe shall be ready soon.
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_02
+[BLUE]Hm, what's this? Looks like a mouse\nhas crawled in the wrong hole[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Grunt_02
+[BLUE]Sir, I-I have heard of this kid!\nThere was some trouble back in [GREEN]Gol[BLUE]-
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_03
+[BLUE]Yes, I am well aware of who this is.\nAlmost stole [GREEN]the parcel[BLUE], right?\pI shall deal with this.
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_04
+[BLUE]You crave to be the hero, child?\nOr are you just stupid?\pEither way, you are in the wrong\nplace. Go back, at once.\pOh? Fiesty, you are. Very well.\nYou have asked for it.
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_05
+[BLUE]My name is [GREEN]Averwill[BLUE], Bronze Commander\nof The Ros\e Order.\pThat is all, because a gentleman\nintroduces himself before a battle!
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_06
+[BLUE]Ah ah, the irony. I look like a fool,\ndefeated by you, a teenager!\pNo matter, though. This can pardoned\nbecause of what is soon to come[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_07
+[BLUE]You, idiot, move already. Sound the\norder. We're leaving.
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Grunt_03
+[BLUE]Y-Yes, sir!
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_08
+[BLUE]You have been a hindrance, no doubt.\nAn entertaining hindrance.\pI will not take your name, as you\nare just an anamoly in our plans.\pI hope we of The Ros\e Order do not\ncross paths again, for your sake.\pThe other Commanders are not as kind.\nFarewell, [GREEN]Anamoly[BLUE].
+
 #org @gText_WestrayVillage_Gatehouse_Guard_YouNeedWinterGear
 [BLUE]Aye, what are you doing? You want\nto freeze your bahookie off?\pYou can't pass without a [GREEN]Winter Gear[BLUE],\nbecause it's TOO cold out there!
+
+#org @gText_WestrayVillage_HouseOfJoe_Joe_01
+[BLUE]Please, [PLAYER], help us.\nI believe in you and your Pok\emon.\pGo talk to the boy in south of town,\nnear the apple stands.\pHe'll lead you to the Catacombs.
+
+#org @gText_WestrayVillage_HouseOfJoe_Joe_02
+[BLUE]Once again I will thank you for what\nyou've done for this village.\pBut, [PLAYER], tread carefully[.]\nI feel this is far more sinister.
+
+#org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeHappy
+[BLUE][PLAYER]!\nYou are amazing, you are!\pI did not underestimate you and I\nwas right, ha ha! Good show!\pYou drove those goons right\nout of town, up the mountains.\pYou're very sharp, [PLAYER].\nI believe you'll do much more!\pAh, and yes, I cannot forget your\nreward! What is that you need[.]?\pOh, you'll be continuing your journey,\nyes? Then this'll help!
+
+#org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeFinal
+[BLUE]Please accept that as a token of\nappreciation from the town.\pThe townfolk have been saved by\nunknown plots, all thanks to you.
+
+#org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_ManYaps
+[BLUE]Thank you for this kindness, kid!\nWe'll never forget you!
+
+#org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_LadyYaps
+[RED]Thank you, [PLAYER]!
+
+#org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeDefFinal
+[BLUE]On a serious note, [PLAYER], watch\nyour back out there.\pThese people, and many others, are\nvery dangerous[.]\pI hope we meet again, [PLAYER].\nPlease do visit us. 
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Lady_01
+[RED]This is getting out of hand! These\npeople are very dangerous!\pAt this rate, they'll exploit us and\nour farms. They have to go!
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Man_01
+[BLUE]I agree! We have no idea what they\nare after. It is very risky.\pThey threatned us to [GREEN]use our town[BLUE],\nbut no further! Enough is enough!
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_01
+[BLUE]Hmm[.] It is dangerous, indeed. They\ncould leak from the [GREEN]Catacombs[BLUE] too[.]\pEven the authorities are unresponsive.\nWhat must we do[.]?
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_02
+[BLUE]You there! Who are you? Come here.
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_03
+[BLUE]What is your name, and why do you\neavesdrop?\pYou're [PLAYER]? Oh, and what's\nthat? You're[.] a licensed Trainer?\pYou even have the Steel Badge!\nMy, you're a talented one!
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_04
+[BLUE][PLAYER]! You must help us, please!\nMy village is at huge risk!\pCriminals calling themselves [GREEN]The Ros\e\nOrder[BLUE] have taken hold of town!\pThey hide and use our most secret\nrefuge, [GREEN]Westray Catacombs[BLUE].\pThey operate from there and have\nthreatned us greatly!\pAt this rate, the whole village will\nbe at stake, or worse!\pPlease, drive them out! I promise\nto reward you. For our sake!
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Lady_02
+[RED]Please, [PLAYER]. We are desperate!
+
+#org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_05
+[BLUE]Go talk to the boy in south of town,\nnear the apple stands.\pHe'll lead you to the Catacombs.\nI'm counting on you, [PLAYER]!

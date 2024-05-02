@@ -31,5 +31,11 @@
 #org @gText_OfficerName
 [BLACK]Officer
 
+#org @gText_JoeName
+[BLACK]Joe
+
+#org @gText_AverwillName
+[BLACK]Averwill
+
 #org @gText_UnknownName
 [BLACK]???

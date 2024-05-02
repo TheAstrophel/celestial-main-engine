@@ -1,4 +1,5 @@
 
+
 - Change Aerilon Hills to Cosmic Hills; Complete Westray Village (w/ all submaps); Check game from start till Westray Village;
   Fix Goldtree Village (PokeCenter/house; check which map no. it belongs to; remove extra tiles); Hiiden Grottos and Secret Temples;
   Add Wild PKMN in Routes; Add trainer battle macros; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine

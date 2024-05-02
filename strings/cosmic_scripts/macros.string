@@ -176,8 +176,8 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLACK]Reception
 
 //Westray Village:
-#org @gText_WestrayVillage_NoSecretsGirlNPC
-[GREEN]Westray Village[RED] is a town of wonder!\nVisitors welcome! No secrets here!
+#org @gText_WestrayVillage_JigglypuffGirlNPC
+[RED]I am literally obsessed with [GREEN]Jigglypuff[RED]!\nI hope someone shows it to me[.]
 
 #org @gText_WestrayVillage_AppleFarmOfJoeOldManNPC
 [BLUE]Joe is the one that we should be\ngrateful too.\pHis apples are best in the world!\n[.]Mhm[.] I love apples.
@@ -195,7 +195,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [RED]You aren't doing it wrong[.] if no one\nknows what you're doing.\pYeah, that does mean I have no idea\nwhat to do with these apples.
 
 #org @gText_WestrayVillage_WhatASightGirlNPC
-[RED]What a sight, huh? I sure hope our\nsecrets aren't exposed to strangers[.]\pUm! I mean, wow, apples! So plump\nand red! Yummy! Haha[.]
+[RED]What a sight, huh? I sure hope our\n[GREEN]sanctuary[RED] isn't exposed to strangers[.]\pOh! I mean, wow, apples! So plump\nand red! Yummy! Haha!
 
 #org @gText_WestrayVillage_AppleStandManNPC
 [BLUE]Spending some qualitree time on the\nfarm! Haha, get it? No?\pI think these puns are applepriate\nfor the occasion! Hm[.]?\p[.]I should stop making apple puns\nnow… orchard I? Yeah[.]? No?\pYou're boring, kid. If you wanna buy\napples, ask from the front.
@@ -204,16 +204,31 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]Some weird people here don't tend to\noutsiders well. Don't mind them.\pYou're welcome in our humble town.
 
 #org @gText_WestrayVillage_AppleLadyOldWomanNPC
-[RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh?\p[.]Excuse my yapping.
+[RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh?\p[.]Excuse me.
 
-#org @gText_WestrayVillage_WestrayHighlandsGirlNPC
-[RED]The higher you go on [GREEN]Westray\nHighlands[RED], the colder it gets!\pYou even need [GREEN]Winter Gear[RED] to enter\nthem, or they'll send you back!
+#org @gText_WestrayVillage_ArticunoClimbGirlNPC
+[RED]The higher you go on [GREEN]Articuno\nClimb[RED], the colder it gets!\pYou even need [GREEN]Winter Gear[RED] to enter\nthem, or they'll send you back!
+
+#org @gText_WestrayVillage_HouseOfJoe_JoeIsOurMayorKindaManNPC
+[BLUE]Joe is an ordinary old fellow like\nus, but we consider him the mayor.\pHe uplifted our town from ruins and\nmade it into a lush farm.
+
+#org @gText_WestrayVillage_HouseOfJoe_WestrayVillageRenovationGirlNPC
+[RED]I saw this girl Laxyp talking about\nrenovation of this village with Joe!\pHow exciting is that?
+
+#org @gText_WestrayVillage_HouseOfJoe_WinterGearHereBoyNPC
+[BLUE]We got plenty Winter Gear for a\njourney across [GREEN]Articuno Climb[BLUE].\pIt's just for the townfolk though,\nsorry.
+
+#org @gText_WestrayVillage_HouseOfJoe_WholeLifeHereManNPC
+[BLUE]I've been living in this village my\nentire, uneventful life[.]\pThese are my people, my soil.\nI can't see anything happening to it.
+
+#org @gText_WestrayVillage_HouseOfJoe_HassleThisIsLadyNPC
+[RED]Joe trusts us to handle the town\naffairs and events. He's very kind.
 
 #org @gText_WestrayVillage_House_WestrayVillageIsNotNewOldManNPC
 [BLUE]I've lived in this town my whole\nlife! Now, it's not that bad, see?\pThis town is older than Triton itself!\nIsn't that something?
 
-#org @gText_WestrayVillage_House_HiddenPlaceOldLadyNPC
-[RED]I keep telling my husband that there\nis something behind our house!\pBut he says I'm crazy! How very\nrude[.] Am I crazy?
+#org @gText_WestrayVillage_House_HistoryIsImportantOldLadyNPC
+[RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Triton Range.\pMany civilizations have passed on them,\nand even inside them.\pThrough time all that is left are\nruins and structures of their world.
 
 #org @gText_WestrayVillage_House_OneTimeGirlNPC
 [RED]One time I was looking through the\napple farm [GREEN]when I suddenly sunk[RED]!\pLuckily only my leg was stuck, so I\ngot out pretty quick. It was scary!
