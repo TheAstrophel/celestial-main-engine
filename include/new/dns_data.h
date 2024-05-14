@@ -251,6 +251,29 @@ const struct DNSPalFade gDNSNightFadingByTime[24][6] =
 
 const struct SpecificTilesetFade gSpecificTilesetFades[] =
 {
+	{
+		//Universal - PC/Mart/Gatehouse
+		.tilesetPointer = 0x82D4A94, //Tileset 00
+		.paletteNumToFade = 3,
+		.paletteIndicesToFade =
+		{
+			{10, RGB(30, 28, 8)},
+			{11, RGB(30, 28, 8)},
+			{12, RGB(24, 22, 5)},
+			{13, RGB(20, 18, 4)}, //darkest
+			TILESET_PAL_FADE_END
+		},
+	},
+	{
+		//Universal - PC (thinking it special)
+		.tilesetPointer = 0x82D4A94, //Tileset 00
+		.paletteNumToFade = 2,
+		.paletteIndicesToFade =
+		{
+			{15, RGB(20, 18, 4)},
+			TILESET_PAL_FADE_END
+		},
+	},
     { //Aerilon Town - House Doors
         .tilesetPointer = 0x82D4AAC, //Tileset 01
         .paletteNumToFade = 10,
@@ -280,7 +303,6 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
         {
 			{7,  RGB(30, 28, 8)},
 			{9,  RGB(24, 22, 5)},
-			{11, RGB(20, 18, 4)},
             TILESET_PAL_FADE_END
         },
     },
@@ -313,29 +335,6 @@ const struct SpecificTilesetFade gSpecificTilesetFades[] =
 			{7, RGB(30, 28, 8)},
 			{3, RGB(24, 22, 5)},
 			{5, RGB(20, 18, 4)},
-			TILESET_PAL_FADE_END
-		},
-	},
-	{
-		//Westray Village - Gatehouse/PC/Mart
-		.tilesetPointer = 0x82D4AF4, //Tileset 04
-		.paletteNumToFade = 3,
-		.paletteIndicesToFade =
-		{
-			{10, RGB(30, 28, 8)},
-			{11, RGB(30, 28, 8)},
-			{12, RGB(24, 22, 5)},
-			{13, RGB(20, 18, 4)},
-			TILESET_PAL_FADE_END
-		},
-	},
-	{
-		//Westray Village - PC (thinking it special)
-		.tilesetPointer = 0x82D4AF4, //Tileset 04
-		.paletteNumToFade = 2,
-		.paletteIndicesToFade =
-		{
-			{15, RGB(22, 16, 2)},
 			TILESET_PAL_FADE_END
 		},
 	},

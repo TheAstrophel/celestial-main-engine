@@ -19,12 +19,15 @@ NPCTalkingScript_\scriptName:
 	closeonkeypress
     end
 .endm
+
 .macro signpost scriptName:req
 .global SignpostScript_\scriptName
 SignpostScript_\scriptName:
     macromsgbox gText_\scriptName, Sign MSG_SIGN
     end
 .endm
+
+
 
 #Define's for NPC/Sign macro's
 npctalking AerilonTown_RockyCliffsBoy
@@ -36,12 +39,14 @@ npctalking AerilonTown_House_HouseGirl
 npctalking GoldtreeVillage_FaeryWoodsBugCatcher
 npctalking GoldtreeVillage_NameMysteryBoy
 npctalking GoldtreeVillage_PKMNCenterBoy
+npctalking GoldtreeVillage_QuestGirl
 npctalking GoldtreeVillage_House_PickUpAbilityLady
 npctalking GoldtreeVillage_House_LastThirtyYearsMan
 npctalking GoldtreeVillage_House_KingsPathMan
 npctalking GoldtreeVillage_House_SamuelsWife
 npctalking GoldtreeVillage_PKMNCeter_StrangerBoy
 npctalking GoldtreeVillage_PKMNCeter_GymGirl
+npctalking GoldtreeVillage_PKMNCenter_Encyclopedia
 npctalking ErstoniaCity_WelcomeToErstoniaCityGirl
 npctalking ErstoniaCity_GottaKnowYourStuffMan
 npctalking ErstoniaCity_Fatman
@@ -119,7 +124,6 @@ signpost AerilonTown_PlayerRoom_PrettyPicture
 signpost AerilonTown_PlayerRoom_GameConsole
 signpost GoldtreeVillage_MainTown
 signpost GoldtreeVillage_RivalHouse
-signpost GoldtreeVillage_PKMNCenter_Machine
 signpost ErstoniaCity_MainTown
 signpost ErstoniaCity_Gym
 signpost ErstoniaCity_TrainerTips

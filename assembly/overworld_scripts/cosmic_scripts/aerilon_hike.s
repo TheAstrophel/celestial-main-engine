@@ -32,7 +32,7 @@ NPCScript_AerilonHike_Rival:
 	waitmovement 0x0
 	hidesprite RIVAL
 	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE
-	setflag 0x201 @Person ID of Rival in A-Map
+	setflag 0x2E @Person ID of Rival in A-Map
 	pause 0x1E
 	release
 	end
@@ -97,7 +97,7 @@ TileScript_AerilonHike_Rival:
 	waitmovement 0x0
 	hidesprite RIVAL
 	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE
-	setflag 0x201 @Person ID of Rival in A-Map
+	setflag 0x2E @Person ID of Rival in A-Map
 	pause 0x1E
 	release
 	end

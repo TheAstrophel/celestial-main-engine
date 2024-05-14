@@ -81,6 +81,9 @@ SetItemFlag_ItemObtainFastBall:
 	setflag 0x169 @Person ID of Fast Ball in A-Map
 	return
 
+@;////////////////////////////////////////////////
+
+
 #Tile scripts:
 .global TileScript_GoldtreeWilds_BattleToStopPlayer
 TileScript_GoldtreeWilds_BattleToStopPlayer:

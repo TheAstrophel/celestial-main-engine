@@ -27,10 +27,10 @@ It is a pretty picture of a happy\nPok\emon.
 [PLAYER]'s house
 
 #org @gText_AerilonTown_MainTownSign
-Aerilon Town\n"The Mountainside Gold-Grey Haven".
+Aerilon Town\n"The Mountainside Starry Town".
 
 #org @gText_AerilonTown_AlmondResidenceSign
-Almond Residence
+Prof. Almond's house
 
 //Goldtree Village:
 #org @gText_GoldtreeVillage_FaeryWoodsBugCatcherNPC
@@ -42,6 +42,9 @@ Almond Residence
 #org @gText_GoldtreeVillage_PKMNCenterBoyNPC
 [BLUE]Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\eMart's!
 
+#org @gText_GoldtreeVillage_QuestGirlNPC
+[RED]This girl Laxyp told me that quests\nwill be coming to Triton soon[.]\pWhat does that even mean?
+
 #org @gText_GoldtreeVillage_House_PickUpAbilityLadyNPC
 [RED]Pok\emon with the Pickup ability might\nfind items on the ground.\pDon't give them any held items, or\nyou could miss out!
 
@@ -49,35 +52,35 @@ Almond Residence
 [BLUE]This village was built only in the\nlast thirty years.\pUntil then, this was just a woody\nplain.
 
 #org @gText_GoldtreeVillage_House_KingsPathManNPC
-[GREEN]King's Path [BLUE]is a mysterious place!\nI don't see anything special in it.\pYet I still feel like there is\nsomething there[.] waiting to be found[.]
+[GREEN]King's Path[BLUE] is a mysterious place!\nI don't see anything special in it.\pYet I still feel like there is\nsomething there[.] waiting to be found[.]
 
 #org @gText_GoldtreeVillage_House_SamuelsWifeNPC
 [RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme.
 
 #org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
-[BLUE]Oh, you're a stranger here!\nHi! Where did you come from?\p[.]Aerilon Town?\nThat's West of us, right? Neat!
+[BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Aerilon Town?\nOh, our neighbours! Hi, there!
 
 #org @gText_GoldtreeVillage_PKMNCeter_GymGirlNPC
-[RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a [GREEN]Steel-type Gym[RED]!
+[RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a [GREEN]Steel-type Gym[RED]!\pMaybe I can challenge it one day[.]
+
+#org @gText_GoldtreeVillage_PKMNCenter_EncyclopediaNPC
+[BLACK]It seems to be an encyclopedia of\nsorts[.] Better not mess with it!
 
 #org @gText_GoldtreeVillage_MainTownSign
-[BLACK]Goldtree Village\n"The Jewel Of Triton".
+[BLACK]Goldtree Village\n"The Golden Haven".
 
 #org @gText_GoldtreeVillage_RivalHouseSign
 [BLACK][RIVAL]'s House
 
-#org @gText_GoldtreeVillage_PKMNCenter_MachineSign
-Better not mess around with this\nmachine!
-
 //Erstonia City:
 #org @gText_ErstoniaCity_WelcomeToErstoniaCityGirlNPC
-[RED]Welcome to [GREEN]Erstonia City[RED]! Not at all\na dangerous, violent city!\pEveryone loves each other!\nNo street gangs here, nope, never!
+[RED]Welcome to [GREEN]Erstonia City[RED]! Not at all\na dangerous, violent city!\pEveryone loves each other!\nNo street gangs here, nope, never!\pNo, I am serious. We're pretty\nsimple here.
 
 #org @gText_ErstoniaCity_GottaKnowYourStuffManNPC
 [BLUE]You have to know your stuff to win\na Pok\emon battle!\p[.]Or a fist fight[.] Either way, don't\nshow the opponent any mercy!
 
 #org @gText_ErstoniaCity_FatmanNPC
-[BLUE]There are suspicious spots and\npassages all over Triton!\pI remember seeing something in the\n[GREEN]top left corner of Faery Woods[BLUE][.]
+[BLUE]There are suspicious spots and\npassages all over Triton!\pI remember seeing something in the\n[GREEN]top left corner of Westray Village[BLUE][.]
 
 #org @gText_ErstoniaCity_GymTipGirlNPC
 [RED]I've already lost to the Gym Leader\nlike four times already!\pNo biggie, right?\n[.]It is a biggie[.] I feel sad[.]\pBut I know how he works! He uses\n[GREEN]only Steel-type Pok\emon[RED]!\pThat means you should use [GREEN]Fairy-type[RED]\nif you battle him! Thank me later!
@@ -86,7 +89,7 @@ Better not mess around with this\nmachine!
 [RED]Oh my, Triton is so beautiful, is it\nnot? Our region, this is!\pIt's called [GREEN]Tri[RED]-ton because it is\nspread out over three main islands!\pI'd like to travel through them all\none day!
 
 #org @gText_ErstoniaCity_ErstoniaCanyonBoyNPC
-[BLUE]This path leads to [GREEN]Erstonia Canyon[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Ruinway Passage [BLUE]there!\p[GREEN]Ruinway Passage [BLUE]is the ruins of a\n1000 year old city built inside rock!
+[BLUE]This path leads to [GREEN]Erstonia Canyon[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Ruinway Passage [BLUE]there!\p[GREEN]Ruinway Passage[BLUE] is the ruins of a\n1000 year old city built inside rock!
 
 #org @gText_ErstoniaCity_GrandpaGirlNPC
 [RED]My Grandpa is the caretaker of the\n[GREEN]Erstonia City Pok\emon Gym[RED]!\pHe says it's an important job, and I\neven help sometimes!\pThe inside of the Gym is like a\npuzzle of sorts, you know?\pYou just have to pick the right\ndoor! Shh! Don't tell anyone, though!
@@ -110,7 +113,7 @@ Better not mess around with this\nmachine!
 [RED]I love to travel! Have you ever\nvisited [GREEN]Stonepeak City[RED]?\pThe view is to die for, but it's so\ncold there!
 
 #org @gText_ErstoniaCity_House_AsTheyGrowOldManNPC
-[BLUE]Pok\emon learn new techniques as they\ngrow.\pBut some moves must be taught to\nthem by people.
+[BLUE]Pok\emon learn new techniques as they\ngrow.\pBut some moves must be taught to\nthem by people.\pI taught my Pidgey [GREEN]Fly[BLUE][.] Why can't\na bird fly without it?
 
 #org @gText_ErstoniaCity_House_EasierToCatchBoyNPC
 A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, Poison, Burn, or Paralysis[BLUE][.]\nThose are all effective.\pBut catching Pok\emon is never a\nsure thing!
@@ -131,13 +134,13 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]Ah, yes, I am 'za Mayor. Oh ho,\nnot only 'zat, [GREEN]Landre[BLUE] is my son!\pWho would've 'zought he would 'zrow\nup to be such a fine young man?
 
 #org @gText_ErstoniaCity_HouseOfMayor_LandreBrotherNPC
-[BLUE]Yo, homeboy, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
+[BLUE]Yo, bud-bud, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
 
 #org @gText_ErstoniaCity_ErstoniaApartments_ReceptionOldManNPC
-[BLUE]Bah! What'd ya want?\pYeah, dis' the reception, but go\naway, the rooms are full!\pBah!
+[BLUE]Bah! What'd ya want?\pYeah, dis' the reception, but go\naway, the rooms are full.\pBah!\pOh[.] bah[.] I need my teeth, bah[.]
 
 #org @gText_ErstoniaCity_ErstoniaApartments_WaitingInLobbyManNPC
-[BLUE]Women take forever to get ready,\nit's just the worst!\pHaha, I'm just joking. I'm single.\nBut aren't we all in the end?
+[BLUE]I'm waiting in the lobby until any\nrooms free up.\pI have lots of free time.
 
 #org @gText_ErstoniaCity_ErstoniaApartments_InterestingBookshelfManNPC
 [BLUE]These books are very fascinating!\nYou should try them some time!\pI read a thrilling novel of a Trainer\nand his Lopunny recently[.] oh yes[.]
@@ -149,7 +152,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]I sometimes like to stare at blank\nwalls to contemplate life.\pYes, I am at peace[.]
 
 #org @gText_ErstoniaCity_ErstoniaApartments_NothingBeatsCityLifeBoyNPC
-[BLUE]City life is the best, am I right?\nOur city is peaceful too.\pNo organized crime here!
+[BLUE]City life is the best, am I right?\nOur city is peaceful, too.
 
 #org @gText_ErstoniaCity_ErstoniaApartments_AtMyAgeOldLadyNPC
 [BLUE]I need to go down to the reception,\nbut come on!\pAt my age, I shouldn't even be\nwalking!
@@ -177,7 +180,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 
 //Westray Village:
 #org @gText_WestrayVillage_JigglypuffGirlNPC
-[RED]I am literally obsessed with [GREEN]Jigglypuff[RED]!\nI hope someone shows it to me[.]
+[RED]I am literally obsessed with [GREEN]Clefairy[RED]!\nI hope someone shows it to me[.]
 
 #org @gText_WestrayVillage_AppleFarmOfJoeOldManNPC
 [BLUE]Joe is the one that we should be\ngrateful too.\pHis apples are best in the world!\n[.]Mhm[.] I love apples.
@@ -249,7 +252,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLACK]Joe's Apple Farm\n"Red and plump, like rosy cheeks".
 
 #org @gText_WestrayVillage_MainTownSign
-[BLACK]Westray Village\n"The Autumn Wind Is A Pirate".
+[BLACK]Westray Village\n"The Luscious Farms of Triton".
 
 //Aerilon Hike:
 #org @gText_AerilonHike_InteractiveWorldBoyNPC
@@ -285,13 +288,13 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 
 //Goldtree Wilds:
 #org @gText_GoldtreeWilds_YellowBallsBoyNPC
-[BLUE]See the [GREEN]yellow ball's[BLUE] lying here?\nThat's a [GREEN]Technical Machine[BLUE], or TM,\lfor short!\pBe sure to pick them up if you want\nto teach awesome moves to Pok\emon!
+[BLUE]See the yellow ball's lying here?\nThat's a [GREEN]Technical Machine[BLUE], or TM,\lfor short!\pBe sure to pick them up if you want\nto teach awesome moves to Pok\emon!
 
 #org @gText_GoldtreeWilds_FaeryWoodsAreStrangeManNPC
 [BLUE]This path leads to [GREEN]Faery Woods[BLUE]. It's\nriddled with Fairy-type Pok\emon!\pOh, and also Bug-type. You'll find\nmany Bug-type frantics in there.
 
 #org @gText_GoldtreeWilds_ScaredOfLedgesGirlNPC
-[RED]I'm scared of these high ledges!\nOh, bother, what do I do?
+[RED]I'm scared of these high ledges!\nOh, bother, what do I do?\pI could jump over them, but coming\nback up isn't quite possible[.] 
 
 #org @gText_GoldtreeWilds_TallGrassMakesMeSneezeGirlNPC
 [RED]The tall grass here makes me sneeze[.]\nAchoo! This is very annoying!\pIf I use [GREEN]Cut[RED] here, I'll be able to\nclear this entire area!
@@ -322,7 +325,7 @@ This ditch is not as interesting as I\nthought it would be.
 There is an inward grove over here!\nMaybe it leads to an opening[.]
 
 #org @gText_KingsPath_MainRouteSign
-King's Path\n[ARROW_LEFT]Goldtree Village
+King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 
 //Erstonia Canyon:
 #org @gText_ErstoniaCanyon_SomethingHappensAtNightGirlNPC
@@ -341,7 +344,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village
 [BLACK]Trainer Tips!\pPress the [START_BUTTON] Button to change how\nitems are sorted in the Bag.
 
 #org @gText_ErstoniaCanyon_RuinwayPassageSign
-[BLACK]Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Oakheart\nTown.
+[BLACK]Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Crystalrail\nTown.
 
 #org @gText_ErstoniaCanyon_RuinwayPassage_UnownCarvingsSign
 [BLACK]These carvings appear to be old[.]\nThey depict different [GREEN]Unown [BLACK]shapes[.]

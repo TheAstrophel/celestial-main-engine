@@ -10,7 +10,7 @@
 [BLUE]Hey, Dad. I'm back. Got my very\nown Pok\emon.
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_01
-[BLUE]Ah, [RIVAL]!\nIs my Eevee safe and sound?\pOh? Who's that behind you? Come\nout here!
+[BLUE]Ah, [RIVAL]!\nIs my Eevee safe and sound?\pOh? Who's that beside you? Come\nhere!
 
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival_02
 [BLUE]And who might you be?\p[.] [.] [.] [.] [.] [.] [.] [.] [.]\n[.] [.] [.] [.] [.] [.] [.] [.] [.]\pAh, I see now. So, Almond knew your\nfather. Hmm, what's that?\pYou've got a parcel for me?
@@ -43,7 +43,7 @@
 [BLUE]Ah, I doubt. Let him have his fun.\nHe's smart enough to know danger.\pIf things get serious, he'll leave\nthe matter to the authorities.\pEven the authorities encourage self\njustice for minor offenses.\pOf course, if and only if you are a\nlicensed Trainer.
 
 #org @gText_GoldtreeVillage_PKMNCenter_ProfAlmond_04
-[BLUE]That's alright, then. [PLAYER]! Why\ndon't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pI'll notify the authorities.\nThey'll handle it soon enough.\pBut you should try catching the\ntheif! For some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] too help.\pBut skedaddle out of there if things\nlook bad, okay?\pAnyhow, I should head back. Oh!\nI completely forgot! Take this.
+[BLUE]That's alright, then. [PLAYER]! Why\ndon't you join him?\pYour father had always wanted you to\nmake your mark in the world.\pI'll notify the authorities.\nThey'll handle it soon enough.\pBut you should try catching the\ntheif, for some experience!\pYou've got your own Pok\emon, and\nyou've also got [RIVAL] to help.\pBut skedaddle out of there if things\nlook bad, okay?\pAnyhow, I should head back. Oh!\nI completely forgot! Take this.
 
 #org @gText_GoldtreeVillage_PKMNCenter_PlayerReceivesDex
 [BLACK][PLAYER] received the Pok\eDex\nfrom Prof. Almond.

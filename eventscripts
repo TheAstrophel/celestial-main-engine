@@ -16,7 +16,8 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
-npc 5 3 2 GoldtreeVillage_PKMNCenter_FatherOfRival
+npc 3 1 4 NPCScript_GoldtreeVillage_ItemObtainPotion
+npc 5 4 2 GoldtreeVillage_PKMNCenter_FatherOfRival
 map 3 1 gMapScripts_GoldtreeVillage
 map 5 4 gMapScripts_GoldtreeVillage_PKMNCenter
 
@@ -151,12 +152,14 @@ npc 4 3 1 NPCTalkingScript_AerilonTown_House_HouseGirl
 npc 3 1 2 NPCTalkingScript_GoldtreeVillage_FaeryWoodsBugCatcher
 npc 3 1 3 NPCTalkingScript_GoldtreeVillage_NameMysteryBoy
 npc 3 1 1 NPCTalkingScript_GoldtreeVillage_PKMNCenterBoy
+npc 3 1 5 NPCTalkingScript_GoldtreeVillage_QuestGirl
 npc 5 0 0 NPCTalkingScript_GoldtreeVillage_House_PickUpAbilityLady
 npc 5 0 1 NPCTalkingScript_GoldtreeVillage_House_LastThirtyYearsMan
 npc 5 1 0 NPCTalkingScript_GoldtreeVillage_House_KingsPathMan
 npc 5 2 0 NPCTalkingScript_GoldtreeVillage_House_SamuelsWife
-npc 5 3 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
-npc 5 3 4 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
+npc 5 4 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
+npc 5 4 5 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
+npc 5 4 6 NPCTalkingScript_GoldtreeVillage_PKMNCenter_Encyclopedia
 npc 3 2 0 NPCTalkingScript_ErstoniaCity_WelcomeToErstoniaCityGirl
 npc 3 2 1 NPCTalkingScript_ErstoniaCity_GottaKnowYourStuffMan
 npc 3 2 2 NPCTalkingScript_ErstoniaCity_Fatman
@@ -235,15 +238,6 @@ sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
 sign 3 1 0 SignpostScript_GoldtreeVillage_MainTown
 sign 3 1 1 SignpostScript_GoldtreeVillage_RivalHouse
-sign 5 3 0 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 1 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 2 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 3 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 4 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 5 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 6 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 7 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
-sign 5 3 8 SignpostScript_GoldtreeVillage_PKMNCenter_Machine
 sign 3 2 0 SignpostScript_ErstoniaCity_MainTown
 sign 3 2 1 SignpostScript_ErstoniaCity_Gym
 sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips

@@ -246,6 +246,7 @@ NPCScript_AerilonHills_AlmondObservatory_SecondAide:
 .global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle:
 	lock
+	faceplayer
 	msgboxname gText_AerilonHills_AlmondObservatory_ProfAlmondIdle, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	spriteface 0x4, LEFT
@@ -256,6 +257,7 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle:
 .global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle:
 	lock
+	faceplayer
 	msgboxname gText_AerilonHills_AlmondObservatory_RivalIdle, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	spriteface 0x5, LEFT
@@ -362,7 +364,7 @@ m_MoveTowardsTorchic: .byte walk_left, walk_left, walk_up, walk_up, end_m
 m_LeaveOfficeWithTorchic: .byte walk_down, walk_down, walk_down, walk_down, pause_long, walk_down_onspot, end_m
 
 SecondStarter:
-	setvar VAR_STARTER_MON, 0x2f
+	setvar VAR_STARTER_MON, 0x2
 	spriteface PROF, LEFT
 	showpokepic 0x118 0xA 0x3
 	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt, MSG_YESNO, gText_ProfAlmondSmallName
