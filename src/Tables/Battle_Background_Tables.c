@@ -29,7 +29,7 @@ extern const u8 BG_Grass_EveningPal[];
 extern const u8 BG_Grass_NightPal[];
 
 
-const struct BattleBackground gBattleTerrainTableDay[] =
+const struct BattleBackground gBattleTerrainTable[] =
 {
 	[BATTLE_TERRAIN_GRASS] =
 	{
