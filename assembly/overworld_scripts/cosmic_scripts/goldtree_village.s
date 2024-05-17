@@ -78,8 +78,22 @@ MapEntryScript_GoldtreeVillage:
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
-.global GoldtreeVillage_PKMNCenter_FatherOfRival
-GoldtreeVillage_PKMNCenter_FatherOfRival:
+.global NPCScript_GoldtreeVillage_Mart_LoserBoy
+NPCScript_GoldtreeVillage_Mart_LoserBoy:
+	lock
+	msgbox gText_GoldtreeVillage_Mart_LoserBoy_ChoosingItem, MSG_KEEPOPEN
+	closeonkeypress
+	faceplayer
+	msgbox gText_GoldtreeVillage_Mart_LoserBoy_WaitYourTurn, MSG_KEEPOPEN
+	closeonkeypress
+	spriteface 0x2, LEFT @Loser boy faces left
+	release
+	end
+
+@;////////////////////////////////////////////////
+
+.global NPCScript_GoldtreeVillage_PKMNCenter_FatherOfRival
+NPCScript_GoldtreeVillage_PKMNCenter_FatherOfRival:
 	lock
 	faceplayer
 	msgboxname gText_GoldtreeVillage_PKMNCenter_FatherOfRival, MSG_KEEPOPEN, gText_RivalFatherName

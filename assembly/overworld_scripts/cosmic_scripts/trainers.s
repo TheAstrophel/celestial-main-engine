@@ -1,0 +1,231 @@
+.thumb
+.align 2
+
+.include "../xse_commands.s"
+.include "../xse_defines.s"
+.include "../asm_defines.s"
+
+//Goldtree Wilds:
+.global NPCScript_GoldtreeWilds_TrainerWill
+NPCScript_GoldtreeWilds_TrainerWill:
+	trainerbattle0 0x0 0x1 0x0 WillChallenges WillLoses
+	msgbox gText_GoldtreeWilds_TrainerWill, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_TrainerLisa
+NPCScript_GoldtreeWilds_TrainerLisa:
+	trainerbattle0 0x0 0x2 0x0 LisaChallenges LisaLoses
+	msgbox gText_GoldtreeWilds_TrainerLisa, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_TrainerJosh
+NPCScript_GoldtreeWilds_TrainerJosh:
+	trainerbattle0 0x0 0x3 0x0 JoshChallenges JoshLoses
+	msgbox gText_GoldtreeWilds_TrainerJosh, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_TrainerAnne
+NPCScript_GoldtreeWilds_TrainerAnne:
+	trainerbattle0 0x0 0x4 0x0 AnneChallenges AnneLoses
+	msgbox gText_GoldtreeWilds_TrainerAnne, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerDew
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerDew:
+	trainerbattle0 0x0 0x5 0x0 DewChallenges DewLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerDew, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerArlo
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerArlo:
+	trainerbattle0 0x0 0x6 0x0 ArloChallenges ArloLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerArlo, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerMilo
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerMilo:
+	trainerbattle0 0x0 0x7 0x0 MiloChallenges MiloLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerMilo, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerKeith
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerKeith:
+	trainerbattle0 0x0 0x8 0x0 KeithChallenges KeithLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerKeith, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerRoger
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerRoger:
+	trainerbattle0 0x0 0x9 0x0 RogerChallenges RogerLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerRoger, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerMike
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerMike:
+	trainerbattle0 0x0 0xA 0x0 MikeChallenges MikeLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerMike, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerFabian
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerFabian:
+	trainerbattle0 0x0 0xB 0x0 FabianChallenges FabianLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerFabian, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerJean
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerJean:
+	trainerbattle0 0x0 0xC 0x0 JeanChallenges JeanLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerJean, MSG_NORMAL
+	end
+
+.global NPCScript_GoldtreeWilds_FaeryWoods_TrainerNeil
+NPCScript_GoldtreeWilds_FaeryWoods_TrainerNeil:
+	trainerbattle0 0x0 0xD 0x0 NeilChallenges NeilLoses
+	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerNeil, MSG_NORMAL
+	end
+
+//Erstonia Canyon:
+.global NPCScript_ErstoniaCanyon_TrainerLucas
+NPCScript_ErstoniaCanyon_TrainerLucas:
+	trainerbattle0 0x0 0xE 0x0 LucasChallenges LucasLoses
+	msgbox gText_ErstoniaCanyon_TrainerLucas, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerDianne
+NPCScript_ErstoniaCanyon_TrainerDianne:
+	trainerbattle0 0x0 0xF 0x0 DianneChallenges DianneLoses
+	msgbox gText_ErstoniaCanyon_TrainerDianne, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerPeter
+NPCScript_ErstoniaCanyon_TrainerPeter:
+	trainerbattle0 0x0 0x10 0x0 PeterChallenges PeterLoses
+	msgbox gText_ErstoniaCanyon_TrainerPeter, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerAshley
+NPCScript_ErstoniaCanyon_TrainerAshley:
+	trainerbattle0 0x0 0x11 0x0 AshleyChallenges AshleyLoses
+	msgbox gText_ErstoniaCanyon_TrainerAshley, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerTurner
+NPCScript_ErstoniaCanyon_TrainerTurner:
+	trainerbattle0 0x0 0x12 0x0 TurnerChallenges TurnerLoses
+	msgbox gText_ErstoniaCanyon_TrainerTurner, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerBarbara
+NPCScript_ErstoniaCanyon_TrainerBarbara:
+	trainerbattle0 0x0 0x13 0x0 BarbaraChallenges BarbaraLoses
+	msgbox gText_ErstoniaCanyon_TrainerBarbara, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerGeorge
+NPCScript_ErstoniaCanyon_TrainerGeorge:
+	trainerbattle0 0x0 0x14 0x0 GeorgeChallenges GeorgeLoses
+	msgbox gText_ErstoniaCanyon_TrainerGeorge, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_TrainerPenelope
+NPCScript_ErstoniaCanyon_TrainerPenelope:
+	trainerbattle0 0x0 0x15 0x0 PenelopeChallenges PenelopeLoses
+	msgbox gText_ErstoniaCanyon_TrainerPenelope, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerPetra
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerPetra:
+	trainerbattle0 0x0 0x16 0x0 PetraChallenges PetraLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerPetra, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKyle
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKyle:
+	trainerbattle0 0x0 0x17 0x0 KyleChallenges KyleLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerKyle, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerMolo
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerMolo:
+	trainerbattle0 0x0 0x18 0x0 MoloChallenges MoloLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerMolo, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKent
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKent:
+	trainerbattle0 0x0 0x19 0x0 KentChallenges KentLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerKent, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerIsaac
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerIsaac:
+	trainerbattle0 0x0 0x1A 0x0 IsaacChallenges IsaacLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerIsaac, MSG_NORMAL
+	end
+
+.global NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerJenna
+NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerJenna:
+	trainerbattle0 0x0 0x1B 0x0 JennaChallenges JennaLoses
+	msgbox gText_ErstoniaCanyon_RuinwayPassage_TrainerJenna, MSG_NORMAL
+	end
+
+//Westray Pass:
+.global NPCScript_WestrayPass_TrainerMia
+NPCScript_WestrayPass_TrainerMia:
+	trainerbattle0 0x0 0x1C 0x0 MiaChallenges MiaLoses
+	msgbox gText_WestrayPass_TrainerMia, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerFifi
+NPCScript_WestrayPass_TrainerFifi:
+	trainerbattle0 0x0 0x1D 0x0 FifiChallenges FifiLoses
+	msgbox gText_WestrayPass_TrainerFifi, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerRocky
+NPCScript_WestrayPass_TrainerRocky:
+	trainerbattle0 0x0 0x1E 0x0 RockyChallenges RockyLoses
+	msgbox gText_WestrayPass_TrainerRocky, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerKylie
+NPCScript_WestrayPass_TrainerKylie:
+	trainerbattle0 0x0 0x1F 0x0 KylieChallenges KylieLoses
+	msgbox gText_WestrayPass_TrainerKylie, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerJack
+NPCScript_WestrayPass_TrainerJack:
+	trainerbattle0 0x0 0x20 0x0 JackChallenges JackLoses
+	msgbox gText_WestrayPass_TrainerJack, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerIsabella
+NPCScript_WestrayPass_TrainerIsabella:
+	trainerbattle0 0x0 0x21 0x0 IsabellaChallenges IsabellaLoses
+	msgbox gText_WestrayPass_TrainerIsabella, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerPoppy
+NPCScript_WestrayPass_TrainerPoppy:
+	trainerbattle0 0x0 0x22 0x0 PoppyChallenges PoppyLoses
+	msgbox gText_WestrayPass_TrainerPoppy, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerHiro
+NPCScript_WestrayPass_TrainerHiro:
+	trainerbattle0 0x0 0x23 0x0 HiroChallenges HiroLoses
+	msgbox gText_WestrayPass_TrainerHiro, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerDobby
+NPCScript_WestrayPass_TrainerDobby:
+	trainerbattle0 0x0 0x24 0x0 DobbyChallenges DobbyLoses
+	msgbox gText_WestrayPass_TrainerDobby, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayPass_TrainerHelix
+NPCScript_WestrayPass_TrainerHelix:
+	trainerbattle0 0x0 0x25 0x0 HelixChallenges HelixLoses
+	msgbox gText_WestrayPass_TrainerHelix, MSG_NORMAL
+	end

@@ -372,6 +372,8 @@ TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder:
 	fadescreen 0x1
 	checksound
 	sound 0x9
+	msgbox gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_AllGruntsFled, MSG_KEEPOPEN
+	closeonkeypress
 	pause 0x20
 	setflag 0x32 @Hide all Rosé grunts
 	fadescreen 0x0

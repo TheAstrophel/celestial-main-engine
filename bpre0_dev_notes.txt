@@ -1,29 +1,19 @@
-Changed one tree in Aerilon Hike.
-Added hidden items in Goldtree Wilds.
-Added hidden items in Ruinway Passage.
-Goldtree Village PKMN Center fixed (changed footer offset to new one and Map to [5.4]/events and scripts adjusted accordingly)!
-Did some general refines in the game.
-Fixed Goldtree PKMN Center warp issue.
-Fixed script value in Joe's House.
-Fixed girl's position in Goldtree Village.
-Fixed some movement issues in Faery Woods.
-Fixed Goldtree Village tiles (for DNS).
-Fixed Mart and Pond issue (for DNS/shifted it to Palette 6 for the time being).
-Fixed movement issue in Erstonia Canyon.
-Added item event in Goldtree Village.
-Added script to move Rival's father from PC (and adding NPC encyclopedia event).
-Removed blue ahh sign.
-Fixed PKMN Center 2F map issue (map footer ID).
-Did some small map changes in Aerilon Hike and Goldtree Village for better transition.
-Fixed tile palette in Aerilon Hills for Observatory.
-Developer copy done of Beta 0.0.
+Changed Mart to look... em... better (for now).
+Made Erstonia Canyon and Ruinway Passage Trainers.
+Added Mart in Goldtree Village.
+Refined Westray Pass a bit.
+Made Westray Pass Trainers.
+Final refines of Westray Pass.
+Removed Westray Village Hidden Grotto (for now).
+Reverted Textbox to original.
+--make non-trainer people in routes
+--change levels of wild pkmn
 
-
-- Add Wild PKMN in Routes; Add trainer battle macros; Update CFRU/DPE to accomadate Celestial data; Interactive world building/Final refine
-  of the game.
+- Update CFRU/DPE to accomadate Cosmic data; Interactive world building/Final refine of the game.
   Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
                 game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 
---Beta 1.0 & Beyond: Add cracked pillars/ruins in Erstonia Gorge (and Erstonia City using palette 11 & 12); Switch palette of 
-                     Fairy Houses in Faery Woods so they are more diverse; enable running shoes from the start; Make Palette 12
+--Beta 1.0 & Beyond: Change Erstonia City to a steelish city; Switch palette of 
+                     Fairy Houses in Faery Woods so they are more diverse; 
+                     enable running shoes from the start; Make Palette 12
                      of Westray Village for apple trees/corresponding;

@@ -6,6 +6,12 @@
 #org @gText_GoldtreeVillage_PKMNCenter_FatherOfRival
 [BLUE]Ah, [PLAYER].\nHow are you doing? Busy?\pWell, have a good one!
 
+#org @gText_GoldtreeVillage_Mart_LoserBoy_ChoosingItem
+[BLUE]Hm[.] I do need more Potions[.]
+
+#org @gText_GoldtreeVillage_Mart_LoserBoy_WaitYourTurn
+[BLUE]Hey, buddy! Wait your turn, will ya?\nI'm shopping here!
+
 #org @gText_GoldtreeVillage_PKMNCenter_Rival_01
 [BLUE]Hey, Dad. I'm back. Got my very\nown Pok\emon.
 

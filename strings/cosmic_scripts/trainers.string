@@ -1,0 +1,335 @@
+//Goldtree Wilds:
+#org @WillChallenges
+[BLUE]Oh, short stuff, you want to battle?
+
+#org @WillLoses
+Whatever happened, happened.
+
+#org @gText_GoldtreeWilds_TrainerWill
+[BLUE]Don't worry about losing. You'll\ndo better next time.
+
+#org @LisaChallenges
+[RED]Oh, dear. Where are you off to in\nsuch a hurry?
+
+#org @LisaLoses
+Oh, dear, I seemed to have lost.
+
+#org @gText_GoldtreeWilds_TrainerLisa
+[RED]Oh, dear. I do not know the way to\n[GREEN]Erstonia City[RED].
+
+#org @JoshChallenges
+[BLUE]Pew, pew! Go, Bug-type!
+
+#org @JoshLoses
+You are a person who does not\nunderstand the art of Bug-type.
+
+#org @gText_GoldtreeWilds_TrainerJosh
+[BLUE]When Bug-type are happy, I'm happy.\nWhen Bug-type are sad, I'm sad.\pIt's a whole connection, you know?
+
+#org @AnneChallenges
+[RED]Oh boy, oh boy! You're smoked!
+
+#org @AnneLoses
+Pok\emon battles need to be fought\nfrom the soul.
+
+#org @gText_GoldtreeWilds_TrainerAnne
+[RED]I was just minding my own business\nwhen you decided to come along!\pIt was so fun, thanks! [EMOJI_HEART]
+
+#org @DewChallenges
+[BLUE]Shh, I'm looking for a [GREEN]Latios[BLUE]!
+
+#org @DewLoses
+Hm[.]
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerDew
+[BLUE]Maybe [GREEN]Latios[BLUE] don't come here often[.]
+
+#org @ArloChallenges
+[BLUE]Jeepers! D-didn't s-see you t-there!
+
+#org @ArloLoses
+I'm f-feeling nauseated[.]
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerArlo
+[BLUE]Oh[.] Can I d-drink a Potion to\nf-feel better[.]?
+
+#org @MiloChallenges
+[BLUE]I'm going to catch you!\nHuh? You're not a [GREEN]Caterpie[BLUE]!
+
+#org @MiloLoses
+You didn't let me catch a Caterpie!
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerMilo
+[BLUE]Unless you are a [GREEN]Caterpie[BLUE], you can\nleave, silly!
+
+#org @KeithChallenges
+[GREEN]Faery Woods[BLUE] sure is magical, huh?
+
+#org @KeithLoses
+Oh, poo. You just had to end\nthe magic.
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerKeith
+[BLUE]I come here almost everyday! It's\njust so enchanting to me[.]
+
+#org @RogerChallenges
+[BLUE]Boo! Didn't see me, did ya?
+
+#org @RogerLoses
+Well, I sure didn't see that coming!
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerRoger
+[BLUE]I hide and scare everyone that\npasses by! Isn't that fun?
+
+#org @MikeChallenges
+[BLUE]Oh, you shall not pass!
+
+#org @MikeLoses
+You shall pass[.]
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerMike
+[BLUE]You have proven yourself worthy to\npass on, Trainer.
+
+#org @FabianChallenges
+[BLUE]There are too many Pok\emon here! I\nneed to cateh 'em all!
+
+#org @FabianLoses
+My-my Pok\emon!
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerFabian
+[BLUE]Well, time to catch some more\nPok\emon!
+
+#org @JeanChallenges
+[BLUE]Check this out! I'll set a world\nrecord of beating you!
+
+#org @JeanLoses
+World record set!
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerJean
+[BLUE]World records are so fun. I don't\nhave any!
+
+#org @NeilChallenges
+[BLUE]You must be the one he talked about!\nHa ha ha!
+
+#org @NeilLoses
+I lied[.]
+
+#org @gText_GoldtreeWilds_FaeryWoods_TrainerNeil
+[BLUE]No one talked about you. I was\njust trying to scare you.
+
+//Erstonia Canyon:
+#org @LucasChallenges
+[BLUE]Boy, camping isn't fun at all!\nThis is nonsense!
+
+#org @LucasLoses
+Woah, what's with the attitude.
+
+#org @gText_ErstoniaCanyon_TrainerLucas
+[BLUE]I renounce camping.
+
+#org @DianneChallenges
+[RED]Have you seen my pretty Pok\emon?
+
+#org @DianneLoses
+Oh, how the beauty has fallen[.]
+
+#org @gText_ErstoniaCanyon_TrainerDianne
+[RED]Just say you're jealous of me. No\nneed to battle my Pok\emon!
+
+#org @PeterChallenges
+[BLUE]Ouch! The sand! It's in my eyes!
+
+#org @PeterLoses
+Ow, ow[.]
+
+#org @gText_ErstoniaCanyon_TrainerPeter
+[BLUE]My eyes have adapeted to the sand!\nThey don't sting anymore!
+
+#org @AshleyChallenges
+[RED]Hm? A battle? Sure.
+
+#org @AshleyLoses
+Hm[.]
+
+#org @gText_ErstoniaCanyon_TrainerAshley
+[RED]Hm, what's that? No, I don't want\na rematch.
+
+#org @TurnerChallenges
+[BLUE]What's up with this Cubone? Why is\nhe just chilling like that?
+
+#org @TurnerLoses
+Sheesh, not so hard, I'm only 12!
+
+#org @gText_ErstoniaCanyon_TrainerTurner
+[BLUE]This Cubone is kind of cool. He\nis just minding his own business.
+
+#org @BarbaraChallenges
+[RED]I'm not supposed to be out here,\nshh!
+
+#org @BarbaraLoses
+Don't tell my mom!
+
+#org @gText_ErstoniaCanyon_TrainerBarbara
+[RED]Sneaking outside is very wrong! You\nbetter never ever do it!
+
+#org @GeorgeChallenges
+[BLUE]Camping alert! Beep beep! Let's\nmake you a loser sandwich!
+
+#org @GeorgeLoses
+Beep beep!
+
+#org @gText_ErstoniaCanyon_TrainerGeorge
+[BLUE]Did you know? A sandstorm isn't a\ngood place to camp.
+
+#org @PenelopeChallenges
+[RED]Ruinway Passage[RED] is mad sketchy!
+
+#org @PenelopeLoses
+Going down, asking for help, mayday!
+
+#org @gText_ErstoniaCanyon_TrainerPenelope
+[RED]Don't go into [GREEN]Ruinway Passage[RED] if you\nare a scaredy cat!\pM-me? No, I'm not scared!
+
+#org @PetraChallenges
+[RED]Woah[.] These carvings are so\ndetailed.
+
+#org @PetraLoses
+I was looking at the carvings! No\nfair!
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerPetra
+[RED]These carvings, and many others\nhere, are so beautiful.
+
+#org @KyleChallenges
+[BLUE]I heard there were Bug-type here!\nGo, Bug-type!
+
+#org @KyleLoses
+Maybe there aren't any Bug-type here[.]
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerKyle
+[BLUE]I'll go back to [GREEN]Faery Woods[BLUE]! I call\nit my natural habitat.
+
+#org @MoloChallenges
+[BLUE]Hm? You dare get in the way of my\nsearch?
+
+#org @MoloLoses
+You were just passing by? I see.
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerMolo
+[BLUE]My search continues[.] and I shall\ncertainly not tell you what it is!
+
+#org @KentChallenges
+[BLUE]Pok\emon Rangers, assemble, blah\nblah[.]
+
+#org @KentLoses
+Foiled by a mere child, blah blah[.]
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerKent
+[BLUE]We of the Pok\emon Rangers are \nconnected to the authorities.\pI think it makes us special or\nsomthing, I don't know.
+
+#org @IsaacChallenges
+[BLUE]Man, I like this weird psychic\ngirl, Jenna. What do I say?
+
+#org @IsaacLoses
+You're right! I should never talk to\nher!
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerIsaac
+[BLUE]I really thought I had a shot with\nher! You really opened my eyes!\lThank you!
+
+#org @JennaChallenges
+[RED]Oh, I like this weird geeky\nguy, Isaac. What do I say?
+
+#org @JennaLoses
+You're right! I should never talk to\nhim!
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_TrainerJenna
+[RED]I really thought I had a shot with\nhim! You really opened my eyes!\pThank you!
+
+//Westray Pass:
+#org @MiaChallenges
+[RED]Life isn't all sunshine and\nrainbows! You're going down, twerp!
+
+#org @MiaLoses
+I want my mommy[.]
+
+#org @gText_WestrayPass_TrainerMia
+[RED]How are you so strong? Did you cheat\nyour way up?
+
+#org @FifiChallenges
+[RED]Hey! This is my grass patch!
+
+#org @FifiLoses
+This can be our grass patch!
+
+#org @gText_WestrayPass_TrainerFifi
+[RED]Do you want to catch Pok\emon with\nme? I promise I won't bite you!
+
+#org @RockyChallenges
+[BLUE]This bridge is so rickety[.] We\nmight fall in the water!
+
+#org @RockyLoses
+Rock and rolled!
+
+#org @gText_WestrayPass_TrainerRocky
+[BLUE]You can fish here to catch some neat\nPok\emon. Just get a fishing rod!
+
+#org @KylieChallenges
+[RED]Hello.
+
+#org @KylieLoses
+[.]
+
+#org @gText_WestrayPass_TrainerKylie
+[RED]Bye.
+
+#org @JackChallenges
+[BLUE]You really came here to get that\nitem lying over there?
+
+#org @JackLoses
+It's all yours, bud.
+
+#org @gText_WestrayPass_TrainerJack
+[BLUE]These items lying here and there[.]\nWhy do they look like a Pok\eBall?\pIsn't that weird?
+
+#org @IsabellaChallenges
+[RED]Oh, how lovely of you to pass by!
+
+#org @IsabellaLoses
+You can keep passing!
+
+#org @gText_WestrayPass_TrainerIsabella
+[RED]My dad told me not to talk to\nstrangers. Good day!
+
+#org @PoppyChallenges
+[RED]Secret path up ahead! Keep your\neyes straight!
+
+#org @PoppyLoses
+Fiddle sticks[.]
+
+#org @gText_WestrayPass_TrainerPoppy
+[RED]There isn't any secret path, you\nsily. You've been duped.
+
+#org @HiroChallenges
+[BLUE]Hey, I saw you in [GREEN]Faery Woods[BLUE]!
+
+#org @HiroLoses
+Oh, it feels bad to lose[.]
+
+#org @gText_WestrayPass_TrainerHiro
+[BLUE]I've lost to you twice now!
+
+#org @DobbyChallenges
+[BLUE]Rocks, I love them! I had one\nfor breakfast!
+
+#org @DobbyLoses
+Rocks, rocks[.]
+
+#org @gText_WestrayPass_TrainerDobby
+[BLUE]I have a pet rock. I named him after\nmy other pet rock.
+
+#org @HelixChallenges
+[BLUE]Ring-a ding ding! Here comes Helix!
+
+#org @HelixLoses
+My name and image have shattered!
+
+#org @gText_WestrayPass_TrainerHelix
+[BLUE]My name is Helix! What's yours?\p[.] [.] [.] [.] [.] [.] [.] [.] [.]\n[.] [.] [.] [.] [.] [.] [.] [.] [.]\p[PLAYER]? Nah, my name is better.

@@ -57,6 +57,12 @@ Prof. Almond's house
 #org @gText_GoldtreeVillage_House_SamuelsWifeNPC
 [RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme.
 
+#org @gText_GoldtreeVillage_Mart_TakingForeverGirlNPC
+[RED]This kid infront of me is taking\nforever! I just wanted Antidotes[.]
+
+#org @gText_GoldtreeVillage_Mart_BigSelectionGuyNPC
+[BLUE]Boy, this Mart sure has some neat\nstock! You should buy something!
+
 #org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
 [BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Aerilon Town?\nOh, our neighbours! Hi, there!
 
@@ -198,7 +204,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [RED]You aren't doing it wrong[.] if no one\nknows what you're doing.\pYeah, that does mean I have no idea\nwhat to do with these apples.
 
 #org @gText_WestrayVillage_WhatASightGirlNPC
-[RED]What a sight, huh? I sure hope our\n[GREEN]sanctuary[RED] isn't exposed to strangers[.]\pOh! I mean, wow, apples! So plump\nand red! Yummy! Haha!
+[RED]What a sight, huh? I sure hope our\n[GREEN]sanctuary[RED] isn't exposed to people[.]\pOh! I mean, wow, apples! So plump\nand red! Yummy! Haha!
 
 #org @gText_WestrayVillage_AppleStandManNPC
 [BLUE]Spending some qualitree time on the\nfarm! Haha, get it? No?\pI think these puns are applepriate\nfor the occasion! Hm[.]?\p[.]I should stop making apple puns\nnow… orchard I? Yeah[.]? No?\pYou're boring, kid. If you wanna buy\napples, ask from the front.
@@ -231,7 +237,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]I've lived in this town my whole\nlife! Now, it's not that bad, see?\pThis town is older than Triton itself!\nIsn't that something?
 
 #org @gText_WestrayVillage_House_HistoryIsImportantOldLadyNPC
-[RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Triton Range.\pMany civilizations have passed on them,\nand even inside them.\pThrough time all that is left are\nruins and structures of their world.
+[RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Triton Range.\pMany civilizations have passed on them,\nand even in them.\pThrough time all that is left are\nruins and structures of their world.
 
 #org @gText_WestrayVillage_House_OneTimeGirlNPC
 [RED]One time I was looking through the\napple farm [GREEN]when I suddenly sunk[RED]!\pLuckily only my leg was stuck, so I\ngot out pretty quick. It was scary!

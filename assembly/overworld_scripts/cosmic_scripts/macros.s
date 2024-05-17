@@ -19,15 +19,12 @@ NPCTalkingScript_\scriptName:
 	closeonkeypress
     end
 .endm
-
 .macro signpost scriptName:req
 .global SignpostScript_\scriptName
 SignpostScript_\scriptName:
     macromsgbox gText_\scriptName, Sign MSG_SIGN
     end
 .endm
-
-
 
 #Define's for NPC/Sign macro's
 npctalking AerilonTown_RockyCliffsBoy
@@ -44,6 +41,8 @@ npctalking GoldtreeVillage_House_PickUpAbilityLady
 npctalking GoldtreeVillage_House_LastThirtyYearsMan
 npctalking GoldtreeVillage_House_KingsPathMan
 npctalking GoldtreeVillage_House_SamuelsWife
+npctalking GoldtreeVillage_Mart_TakingForeverGirl
+npctalking GoldtreeVillage_Mart_BigSelectionGuy
 npctalking GoldtreeVillage_PKMNCeter_StrangerBoy
 npctalking GoldtreeVillage_PKMNCeter_GymGirl
 npctalking GoldtreeVillage_PKMNCenter_Encyclopedia

@@ -17,7 +17,8 @@ map 4 0 gMapScripts_AerilonTown_PlayerHouse
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
 npc 3 1 4 NPCScript_GoldtreeVillage_ItemObtainPotion
-npc 5 4 2 GoldtreeVillage_PKMNCenter_FatherOfRival
+npc 5 3 1 NPCScript_GoldtreeVillage_Mart_LoserBoy
+npc 5 4 2 NPCScript_GoldtreeVillage_PKMNCenter_FatherOfRival
 map 3 1 gMapScripts_GoldtreeVillage
 map 5 4 gMapScripts_GoldtreeVillage_PKMNCenter
 
@@ -157,6 +158,8 @@ npc 5 0 0 NPCTalkingScript_GoldtreeVillage_House_PickUpAbilityLady
 npc 5 0 1 NPCTalkingScript_GoldtreeVillage_House_LastThirtyYearsMan
 npc 5 1 0 NPCTalkingScript_GoldtreeVillage_House_KingsPathMan
 npc 5 2 0 NPCTalkingScript_GoldtreeVillage_House_SamuelsWife
+npc 5 3 2 NPCTalkingScript_GoldtreeVillage_Mart_TakingForeverGirl
+npc 5 3 3 NPCTalkingScript_GoldtreeVillage_Mart_BigSelectionGuy
 npc 5 4 3 NPCTalkingScript_GoldtreeVillage_PKMNCeter_StrangerBoy
 npc 5 4 5 NPCTalkingScript_GoldtreeVillage_PKMNCeter_GymGirl
 npc 5 4 6 NPCTalkingScript_GoldtreeVillage_PKMNCenter_Encyclopedia
@@ -229,7 +232,7 @@ npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
 npc 3 23 8 NPCTalkingScript_ErstoniaCanyon_SomethingHappensAtNightGirl
 npc 3 23 9 NPCTalkingScript_ErstoniaCanyon_SandstormGuy
 npc 3 23 15 NPCTalkingScript_ErstoniaCanyon_RuinwayPassageLady
-npc 3 24 17 NPCTalkingScript_WestrayPass_WestrayCatacombsAreDangerousGirl
+npc 3 24 16 NPCTalkingScript_WestrayPass_WestrayCatacombsAreDangerousGirl
 sign 3 0 1 SignpostScript_AerilonTown_MainTown
 sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
 sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
@@ -285,3 +288,42 @@ sign 3 24 2 SignpostScript_WestrayPass_TrainerTips
 sign 3 24 3 SignpostScript_WestrayPass_TrainerTips_02
 sign 3 24 4 SignpostScript_WestrayPass_SecurityOutpost
 sign 3 24 5 SignpostScript_WestrayPass_MainRoute_02
+
+#Trainers:
+npc 3 21 14 NPCScript_GoldtreeWilds_TrainerWill
+npc 3 21 6 NPCScript_GoldtreeWilds_TrainerLisa
+npc 3 21 1 NPCScript_GoldtreeWilds_TrainerJosh
+npc 3 21 12 NPCScript_GoldtreeWilds_TrainerAnne
+npc 1 0 13 NPCScript_GoldtreeWilds_FaeryWoods_TrainerDew
+npc 1 0 5 NPCScript_GoldtreeWilds_FaeryWoods_TrainerArlo
+npc 1 0 3 NPCScript_GoldtreeWilds_FaeryWoods_TrainerMilo
+npc 1 0 1 NPCScript_GoldtreeWilds_FaeryWoods_TrainerKeith
+npc 1 0 2 NPCScript_GoldtreeWilds_FaeryWoods_TrainerRoger
+npc 1 0 9 NPCScript_GoldtreeWilds_FaeryWoods_TrainerMike
+npc 1 0 7 NPCScript_GoldtreeWilds_FaeryWoods_TrainerFabian
+npc 1 0 6 NPCScript_GoldtreeWilds_FaeryWoods_TrainerJean
+npc 1 0 8 NPCScript_GoldtreeWilds_FaeryWoods_TrainerNeil
+npc 3 23 0 NPCScript_ErstoniaCanyon_TrainerLucas
+npc 3 23 8 NPCScript_ErstoniaCanyon_TrainerDianne
+npc 3 23 1 NPCScript_ErstoniaCanyon_TrainerPeter
+npc 3 23 10 NPCScript_ErstoniaCanyon_TrainerAshley
+npc 3 23 13 NPCScript_ErstoniaCanyon_TrainerTurner
+npc 3 23 2 NPCScript_ErstoniaCanyon_TrainerBarbara
+npc 3 23 11 NPCScript_ErstoniaCanyon_TrainerGeorge
+npc 3 23 3 NPCScript_ErstoniaCanyon_TrainerPenelope
+npc 1 1 0 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerPetra
+npc 1 1 1 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKyle
+npc 1 1 2 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerMolo
+npc 1 1 5 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerKent
+npc 1 1 12 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerIsaac
+npc 1 1 13 NPCScript_ErstoniaCanyon_RuinwayPassage_TrainerJenna
+npc 3 24 2 NPCScript_WestrayPass_TrainerMia
+npc 3 24 4 NPCScript_WestrayPass_TrainerFifi
+npc 3 24 12 NPCScript_WestrayPass_TrainerRocky
+npc 3 24 8 NPCScript_WestrayPass_TrainerKylie
+npc 3 24 3 NPCScript_WestrayPass_TrainerJack
+npc 3 24 9 NPCScript_WestrayPass_TrainerIsabella
+npc 3 24 6 NPCScript_WestrayPass_TrainerPoppy
+npc 3 24 7 NPCScript_WestrayPass_TrainerHiro
+npc 3 24 14 NPCScript_WestrayPass_TrainerDobby
+npc 3 24 13 NPCScript_WestrayPass_TrainerHelix

@@ -69,6 +69,9 @@
 #org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_08
 [BLUE]You have been a hindrance, no doubt.\nAn entertaining hindrance.\pI will not take your name, as you\nare just an anamoly in our plans.\pI hope we of The Ros\e Order do not\ncross paths again, for your sake.\pThe other Commanders are not as kind.\nFarewell, [GREEN]Anamoly[BLUE].
 
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_AllGruntsFled
+[BLACK]All agents fled[.]
+
 #org @gText_WestrayVillage_Gatehouse_Guard_YouNeedWinterGear
 [BLUE]Aye, what are you doing? You want\nto freeze your bahookie off?\pYou can't pass without a [GREEN]Winter Gear[BLUE],\nbecause it's TOO cold out there!
 
@@ -106,7 +109,7 @@
 [BLUE]You there! Who are you? Come here.
 
 #org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_03
-[BLUE]What is your name, and why do you\neavesdrop?\pYou're [PLAYER]? Oh, and what's\nthat? You're[.] a licensed Trainer?\pYou even have the Steel Badge!\nMy, you're a talented one!
+[BLUE]What is your name, and why do you\neavesdrop?\p[.] [.] [.] [.] [.] [.] [.] [.] [.]\n[.] [.] [.] [.] [.] [.] [.] [.] [.]\pYou're [PLAYER]? Oh, and what's\nthat? You're[.] a licensed Trainer?\pYou even have the Steel Badge!\nMy, you're a talented one!
 
 #org @gText_WestrayVillage_HouseOfJoe_GruntsDiscussion_Joe_04
 [BLUE][PLAYER]! You must help us, please!\nMy village is at huge risk!\pCriminals calling themselves [GREEN]The Ros\e\nOrder[BLUE] have taken hold of town!\pThey hide and use our most secret\nrefuge, [GREEN]Westray Catacombs[BLUE].\pThey operate from there and have\nthreatned us greatly!\pAt this rate, the whole village will\nbe at stake, or worse!\pPlease, drive them out! I promise\nto reward you. For our sake!

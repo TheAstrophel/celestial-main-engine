@@ -81,9 +81,6 @@ SetItemFlag_ItemObtainFastBall:
 	setflag 0x169 @Person ID of Fast Ball in A-Map
 	return
 
-@;////////////////////////////////////////////////
-
-
 #Tile scripts:
 .global TileScript_GoldtreeWilds_BattleToStopPlayer
 TileScript_GoldtreeWilds_BattleToStopPlayer:
@@ -365,4 +362,3 @@ NPCScript_GoldtreeWilds_FaeryWoods_ItemObtainPotion:
 SetItemFlag_ItemObtainPotion:
 	setflag 0x163 @Person ID of Paralyze Heal in A-Map
 	return
-
