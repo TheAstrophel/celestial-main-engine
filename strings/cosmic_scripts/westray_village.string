@@ -55,7 +55,10 @@
 [BLUE]You crave to be the hero, child?\nOr are you just stupid?\pEither way, you are in the wrong\nplace. Go back, at once.\pOh? Fiesty, you are. Very well.\nYou have asked for it.
 
 #org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_05
-[BLUE]My name is [GREEN]Averwill[BLUE], Bronze Commander\nof The Ros\e Order.\pThat is all, because a gentleman\nintroduces himself before a battle!
+[BLUE]My name is [GREEN]Averwill[BLUE], Bronze Commander\nof The Ros\e Order.\pThat is all, because a gentleman\nintroduces himself before a battle![PLAY_BGM][1D][01]
+
+#org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_AverwillLoses
+
 
 #org @gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_06
 [BLUE]Ah ah, the irony. I look like a fool,\ndefeated by you, a teenager!\pNo matter, though. This can pardoned\nbecause of what is soon to come[.]

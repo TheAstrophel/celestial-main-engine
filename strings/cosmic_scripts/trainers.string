@@ -1,3 +1,130 @@
+//Westray Village:
+#org @GiroChallenges
+[BLUE]Woah, kid, what are you doing here?
+
+#org @GiroLoses
+Sheesh, what is up with today? I lost[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerGiro
+[BLUE]This is not a place for kids. You\nbetter leave[.] while you can.
+
+#org @FyraChallenges
+[RED]Ha ha, what is this? A child?
+
+#org @FyraLoses
+Hm, kid can fight[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerFyra
+[RED]We will bring about justice!\nThen we will see who has lost[.]
+
+#org @PahiyaChallenges
+[BLUE]I have a special Pok\emon! Care to\nsee it?
+
+#org @PahiyaLoses
+It sure isn't special anymore[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerPahiya
+[BLUE]I'm not telling you where I got it!\nIt's a secret!\pWait[.] You're not supposed to be\nhere!
+
+#org @MollyChallenges
+[RED]What is this? A mere child[.] walks\nfreely?
+
+#org @MollyLoses
+Child or not, you are strong.
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerMolly
+[RED]You're sure lucky I am not in a bad\nmood[.]
+
+#org @GeoChallenges
+[BLUE]Yes[.] that will work[.] Huh, what\nthe-? Who are you?
+
+#org @GeoLoses
+No, no, no!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerGeo
+[BLUE]I need to remain calm[.] relaxed[.]\nDeep breaths[.] deep breaths[.]
+
+#org @SerahChallenges
+[RED]Argh, these ruins[.] they are such\na maze! Are you lost, too?
+
+#org @SerahLoses
+I have[.] lost? What is this madness?
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerSerah
+[RED]I really hope we get assigned\nsomewhere else. I hate this place!
+
+#org @JillChallenges
+[RED]Hm, what do you want? This isn't a\nplace to play games!
+
+#org @JillLoses
+Well, okay, I see what you want!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerJill
+[RED]I'm not letting anyone pass through!\nOrders are orders.
+
+#org @AgasthaChallenges
+[RED]Oh, hello, kid. What[.] are you\ndoing here, of all places?
+
+#org @AgasthaLoses
+What am I doing here?
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerAgastha
+[RED]I couldn't even stop you! Am I\nreally capable of[.] [GREEN]that[RED]?
+
+#org @KiroChallenges
+[BLUE]Huh, a new recruit? Where is your\nuniform?
+
+#org @KiroLoses
+You're not one of us!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerKiro
+[BLUE]How did you get in this place, you\nsneaky little[.]
+
+#org @PeeleChallenges
+[BLUE]Little kids shouldn't be messing\naround with grown-ups!\pIt could be bad news!
+
+#org @PeeleLoses
+I'm steamed!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerPeele
+[BLUE]Pok\emon lived here long before\npeople came. Not anymore, haha!
+
+#org @ZachChallenges
+[BLUE]We're pulling a big job here!\nGet lost, kid!
+
+#org @ZachLoses
+So, you are good[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerZach
+[BLUE]If you find anything on [GREEN]Articuno\nClimb[BLUE], let me know!
+
+#org @FarlonChallenges
+[BLUE]We are the harbingers of justice!\nWe strike fear with our judgement!
+
+#org @FarlonLoses
+I blew it!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerFarlon
+[BLUE]Darn it all!\nMy associates won't stand for this!
+
+#org @BillChallenges
+[BLUE]Woah, kid, how did you come this far\nalong?
+
+#org @BillLoses
+Oh, that's how[.]
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerBill
+[BLUE]You're getting yourself into deep\ntrouble, chico! You better leave!
+
+#org @HelenaChallenges
+[RED]Huh? What-what are you doing\nhere?
+
+#org @HelenaLoses
+No, this is bad!
+
+#org @gText_WestrayVillage_WestrayCatacombs_TrainerHelena
+[RED]You can't go any further! There\nwill be bad trouble! Leave, child!
+
 //Goldtree Wilds:
 #org @WillChallenges
 [BLUE]Oh, short stuff, you want to battle?
@@ -172,16 +299,16 @@ Don't tell my mom!
 [RED]Sneaking outside is very wrong! You\nbetter never ever do it!
 
 #org @GeorgeChallenges
-[BLUE]Camping alert! Beep beep! Let's\nmake you a loser sandwich!
+[BLUE]Rock n' roll, baby! Let's make you\na loser symphony!
 
 #org @GeorgeLoses
-Beep beep!
+Ouch! Completely rocked out!
 
 #org @gText_ErstoniaCanyon_TrainerGeorge
-[BLUE]Did you know? A sandstorm isn't a\ngood place to camp.
+[BLUE]Did you know?\pA sandstorm isn't a good place for a\nconcert.
 
 #org @PenelopeChallenges
-[RED]Ruinway Passage[RED] is mad sketchy!
+[GREEN]Ruinway Passage[RED] is mad sketchy! It\nmakes a great painting area, though!
 
 #org @PenelopeLoses
 Going down, asking for help, mayday!
@@ -307,13 +434,13 @@ Fiddle sticks[.]
 #org @gText_WestrayPass_TrainerPoppy
 [RED]There isn't any secret path, you\nsily. You've been duped.
 
-#org @HiroChallenges
+#org @RogerTwoChallenges
 [BLUE]Hey, I saw you in [GREEN]Faery Woods[BLUE]!
 
-#org @HiroLoses
+#org @RogerTwoLoses
 Oh, it feels bad to lose[.]
 
-#org @gText_WestrayPass_TrainerHiro
+#org @gText_WestrayPass_TrainerRogerTwo
 [BLUE]I've lost to you twice now!
 
 #org @DobbyChallenges

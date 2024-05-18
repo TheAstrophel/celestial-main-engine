@@ -290,6 +290,20 @@ sign 3 24 4 SignpostScript_WestrayPass_SecurityOutpost
 sign 3 24 5 SignpostScript_WestrayPass_MainRoute_02
 
 #Trainers:
+npc 1 4 1 NPCScript_WestrayVillage_WestrayCatacombs_TrainerGiro
+npc 1 4 0 NPCScript_WestrayVillage_WestrayCatacombs_TrainerFyra
+npc 1 4 3 NPCScript_WestrayVillage_WestrayCatacombs_TrainerPahiya
+npc 1 4 2 NPCScript_WestrayVillage_WestrayCatacombs_TrainerMolly
+npc 1 4 4 NPCScript_WestrayVillage_WestrayCatacombs_TrainerGeo
+npc 1 4 10 NPCScript_WestrayVillage_WestrayCatacombs_TrainerSerah
+npc 1 4 11 NPCScript_WestrayVillage_WestrayCatacombs_TrainerJill
+npc 1 4 6 NPCScript_WestrayVillage_WestrayCatacombs_TrainerAgastha
+npc 1 4 5 NPCScript_WestrayVillage_WestrayCatacombs_TrainerKiro
+npc 1 4 9 NPCScript_WestrayVillage_WestrayCatacombs_TrainerPeele
+npc 1 4 8 NPCScript_WestrayVillage_WestrayCatacombs_TrainerZach
+npc 1 4 7 NPCScript_WestrayVillage_WestrayCatacombs_TrainerFarlon
+npc 1 4 15 NPCScript_WestrayVillage_WestrayCatacombs_TrainerBill
+npc 1 4 12 NPCScript_WestrayVillage_WestrayCatacombs_TrainerHelena
 npc 3 21 14 NPCScript_GoldtreeWilds_TrainerWill
 npc 3 21 6 NPCScript_GoldtreeWilds_TrainerLisa
 npc 3 21 1 NPCScript_GoldtreeWilds_TrainerJosh
@@ -324,6 +338,6 @@ npc 3 24 8 NPCScript_WestrayPass_TrainerKylie
 npc 3 24 3 NPCScript_WestrayPass_TrainerJack
 npc 3 24 9 NPCScript_WestrayPass_TrainerIsabella
 npc 3 24 6 NPCScript_WestrayPass_TrainerPoppy
-npc 3 24 7 NPCScript_WestrayPass_TrainerHiro
+npc 3 24 7 NPCScript_WestrayPass_TrainerRogerTwo
 npc 3 24 14 NPCScript_WestrayPass_TrainerDobby
 npc 3 24 13 NPCScript_WestrayPass_TrainerHelix

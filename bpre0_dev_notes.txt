@@ -6,14 +6,19 @@ Made Westray Pass Trainers.
 Final refines of Westray Pass.
 Removed Westray Village Hidden Grotto (for now).
 Reverted Textbox to original.
+Made Westray Catacombs trainrs/fixed right wali stairs.
+Westray Pass trainers made.
+Added complete Trainer data in Goldtree	 Wilds, Faery Woods (look at sprite issue).
+Some refines in Faery Woods (events).
+Added complete Trainer data in Erstonia Canyon.
+Added complete Trainer data in Ruinway Passage, Westray Pass, Westray Catacombs.
+Added behaviour in Westray Catacombs floor so encounters happen.
+Did some changes in trainer data (made rogertwo, fixed triathlete class, changed team rocket to rose order).
+Fixed movement issue and sideways stairs issue in Aerilon Hike.
 --make non-trainer people in routes
---change levels of wild pkmn
 
 - Update CFRU/DPE to accomadate Cosmic data; Interactive world building/Final refine of the game.
-  Three Phases: [1]Make the entire progression of Beta 0.0, including all scripts, mapping, trainers etc.; [2]Add the refines of the
-                game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
+  Three Phases: [2]Add the refines of the game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 
---Beta 1.0 & Beyond: Change Erstonia City to a steelish city; Switch palette of 
-                     Fairy Houses in Faery Woods so they are more diverse; 
-                     enable running shoes from the start; Make Palette 12
-                     of Westray Village for apple trees/corresponding;
+--Beta 1.0 & Beyond: Change Erstonia City to a steelish city; Switch palette of Fairy Houses in Faery Woods so they are more diverse; 
+                     enable running shoes from the start; Make Palette 12 of Westray Village for apple trees/corresponding;

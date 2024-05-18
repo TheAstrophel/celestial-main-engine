@@ -333,7 +333,7 @@ TileScript_WestrayVillage_WestrayCatacombs_FoundRoseOrder:
 	closeonkeypress
 	msgboxname gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_05, MSG_KEEPOPEN, gText_AverwillName
 	closeonkeypress
-#	trainerbattle3
+	trainerbattle3 0x3 0x34 0x0 gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_AverwillLoses
 	msgboxname gText_WestrayVillage_WestrayCatacombs_FoundRoseOrder_Averwill_06, MSG_KEEPOPEN, gText_AverwillName
 	closeonkeypress
 	spriteface AVERWILL, UP

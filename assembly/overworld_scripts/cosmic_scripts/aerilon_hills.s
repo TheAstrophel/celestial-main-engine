@@ -326,7 +326,7 @@ FirstStarter:
 	hidesprite LASTTALKED
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
-	givepokemon 0x115 0x5 0x0 0x0 0x0 0x0 @Treecko
+	givepokemon 0x115 0x7 0x0 0x0 0x0 0x0 @Treecko
 	bufferpokemon 0x0 0x115
 	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg
@@ -421,7 +421,7 @@ ThirdStarter:
 	hidesprite LASTTALKED
 	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
-	givepokemon 0x11B 0x5 0x0 0x0 0x0 0x0 @Mudkip
+	givepokemon 0x11B 0x7 0x0 0x0 0x0 0x0 @Mudkip
 	bufferpokemon 0x0 0x11B
 	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg

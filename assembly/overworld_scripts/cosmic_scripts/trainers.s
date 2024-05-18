@@ -5,7 +5,92 @@
 .include "../xse_defines.s"
 .include "../asm_defines.s"
 
-//Goldtree Wilds:
+//Westray Village:
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerGiro
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerGiro:
+	trainerbattle0 0x0 0x26 0x0 GiroChallenges GiroLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerGiro, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerFyra
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerFyra:
+	trainerbattle0 0x0 0x27 0x0 FyraChallenges FyraLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerFyra, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerPahiya
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerPahiya:
+	trainerbattle0 0x0 0x28 0x0 PahiyaChallenges PahiyaLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerPahiya, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerMolly
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerMolly:
+	trainerbattle0 0x0 0x29 0x0 MollyChallenges MollyLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerMolly, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerGeo
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerGeo:
+	trainerbattle0 0x0 0x2A 0x0 GeoChallenges GeoLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerGeo, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerSerah
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerSerah:
+	trainerbattle0 0x0 0x2B 0x0 SerahChallenges SerahLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerSerah, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerJill
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerJill:
+	trainerbattle0 0x0 0x2C 0x0 JillChallenges JillLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerJill, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerAgastha
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerAgastha:
+	trainerbattle0 0x0 0x2D 0x0 AgasthaChallenges AgasthaLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerAgastha, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerKiro
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerKiro:
+	trainerbattle0 0x0 0x2E 0x0 KiroChallenges KiroLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerKiro, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerPeele
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerPeele:
+	trainerbattle0 0x0 0x2F 0x0 PeeleChallenges PeeleLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerPeele, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerZach
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerZach:
+	trainerbattle0 0x0 0x30 0x0 ZachChallenges ZachLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerZach, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerFarlon
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerFarlon:
+	trainerbattle0 0x0 0x31 0x0 FarlonChallenges FarlonLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerFarlon, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerBill
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerBill:
+	trainerbattle0 0x0 0x32 0x0 BillChallenges BillLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerBill, MSG_NORMAL
+	end
+
+.global NPCScript_WestrayVillage_WestrayCatacombs_TrainerHelena
+NPCScript_WestrayVillage_WestrayCatacombs_TrainerHelena:
+	trainerbattle0 0x0 0x33 0x0 HelenaChallenges HelenaLoses
+	msgbox gText_WestrayVillage_WestrayCatacombs_TrainerHelena, MSG_NORMAL
+	end
+
+//Goldtree Wilds
 .global NPCScript_GoldtreeWilds_TrainerWill
 NPCScript_GoldtreeWilds_TrainerWill:
 	trainerbattle0 0x0 0x1 0x0 WillChallenges WillLoses
@@ -84,7 +169,7 @@ NPCScript_GoldtreeWilds_FaeryWoods_TrainerNeil:
 	msgbox gText_GoldtreeWilds_FaeryWoods_TrainerNeil, MSG_NORMAL
 	end
 
-//Erstonia Canyon:
+//Erstonia Canyon
 .global NPCScript_ErstoniaCanyon_TrainerLucas
 NPCScript_ErstoniaCanyon_TrainerLucas:
 	trainerbattle0 0x0 0xE 0x0 LucasChallenges LucasLoses
@@ -212,10 +297,10 @@ NPCScript_WestrayPass_TrainerPoppy:
 	msgbox gText_WestrayPass_TrainerPoppy, MSG_NORMAL
 	end
 
-.global NPCScript_WestrayPass_TrainerHiro
-NPCScript_WestrayPass_TrainerHiro:
-	trainerbattle0 0x0 0x23 0x0 HiroChallenges HiroLoses
-	msgbox gText_WestrayPass_TrainerHiro, MSG_NORMAL
+.global NPCScript_WestrayPass_TrainerRogerTwo
+NPCScript_WestrayPass_TrainerRogerTwo:
+	trainerbattle0 0x0 0x23 0x0 RogerTwoChallenges RogerTwoLoses
+	msgbox gText_WestrayPass_TrainerRogerTwo, MSG_NORMAL
 	end
 
 .global NPCScript_WestrayPass_TrainerDobby

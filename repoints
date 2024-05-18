@@ -22,7 +22,7 @@ gBattleScriptingCommandsTable 08015A28
 gBattleScriptingCommandsTable 08015C6C
 gBattleScriptingCommandsTable 08015C98
 gBattleScriptingCommandsTable 0801D054
-gBattleTerrainTable 0800F320
+##gBattleTerrainTable 0800F320
 
 gSpriteTemplateTable_TrainerBackSprites 0803F8A0
 gTrainerBackAnimsPtrTable 0803F8A4
@@ -315,3 +315,13 @@ gText_TextSpeedMid 083cc330
 gText_TextSpeedFast 083cc334
 gText_TextSpeedInstant 083cc338
 #endif
+
+##Trainer Sprites
+Bug_Catcher_GreenTiles 823957C
+Bug_Catcher_GreenPal 8239A1C
+Lass_BlueTiles 8239584
+Lass_BluePal 8239A24
+Ace_Trainer_FTiles 82398F4
+Ace_Trainer_FPal 8239D94
+Crush_GirlTiles 82399D4
+Crush_GirlPal 8239E74
