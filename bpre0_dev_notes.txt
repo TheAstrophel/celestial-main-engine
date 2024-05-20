@@ -15,7 +15,11 @@ Added complete Trainer data in Ruinway Passage, Westray Pass, Westray Catacombs.
 Added behaviour in Westray Catacombs floor so encounters happen.
 Did some changes in trainer data (made rogertwo, fixed triathlete class, changed team rocket to rose order).
 Fixed movement issue and sideways stairs issue in Aerilon Hike.
---make non-trainer people in routes
+Refined Erstonia City and Westray Pass a little.
+Did some Person Event adjusting in Erstonia Canyon.
+Changed Westray Pass map ahh showing thing, did some event changing.
+Renamed all Aerilon things to Starbirth things.
+--encounter music by class check in cfru
 
 - Update CFRU/DPE to accomadate Cosmic data; Interactive world building/Final refine of the game.
   Three Phases: [2]Add the refines of the game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE

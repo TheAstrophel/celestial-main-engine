@@ -6,7 +6,7 @@
  */
 
 /*===== Pokémon Celestial Version =====*/
-//#define BATTLE_BACKGROUNDS
+//#define BATTLE_BACKGROUNDS //For Beta 2.0?
 //#define NICKNAME_FROM_PARTY_SCREEN // For Beta 1.0
 //#define LAST_USED_BALL_TRIGGER // For Beta 1.0
 
@@ -332,7 +332,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define FASTER_HEALTHBOX_CHANGE //The healthbar increases/decreases at a somewhat constant rate for all Pokemon
 //#define ENCOUNTER_MUSIC_BY_CLASS //Plays music when a trainer spots the player based on the trainer class rather than the value set in the trainer data.
 #define OKAY_WITH_AI_SUICIDE //The AI is allowed to use self-destructing moves
-//#define HEALTHBAR_TYPE_ICONS //Pokemon types will always be shown next to the healthbar
+#define HEALTHBAR_TYPE_ICONS //Pokemon types will always be shown next to the healthbar
 //#define PICK_UP_KNOCKED_OFF_ITEMS //Items knocked off wild Pokemon will be picked up at the end of battle
 //#define PICKUP_ITEMS_STRAIGHT_TO_BAG //Items obtained with Pickup or Honey Gather are placed right in the bag
 //#define TAKE_WILD_MON_ITEM_ON_CAPTURE //Items held by Wild Pokemon when caught can be placed in the bag at the player's request

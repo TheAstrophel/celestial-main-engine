@@ -1,97 +1,97 @@
 //Master Map:
-#org @gText_AerilonTown_BossyGirl_01
+#org @gText_StarbirthTown_BossyGirl_01
 [RED]The wild is dangerous without a\nPok\emon!
 
-#org @gText_AerilonTown_BossyGirl_02
+#org @gText_StarbirthTown_BossyGirl_02
 [RED]I just realized that the other town\nentrance is completely open!\pThere isn't much use in stopping\nanyone now, haha[.]
 
-#org @gText_AerilonTown_BossyGirl_03
+#org @gText_StarbirthTown_BossyGirl_03
 [RED]The wild is dangerous without a\nPok\emon!\pDon't even think of going beyond this\npoint without one!
 
-#org @gText_AerilonTown_OldMan_01
+#org @gText_StarbirthTown_OldMan_01
 [BLUE]Hello! Do you know about [GREEN]The Triton\nEstablishment[BLUE]?
 
-#org @gText_AerilonTown_OldMan_02
+#org @gText_StarbirthTown_OldMan_02
 [BLUE]Oh, alright[.]
 
-#org @gText_AerilonTown_OldMan_03
+#org @gText_StarbirthTown_OldMan_03
 [GREEN]The Triton Establishment[BLUE], or [GREEN]The\nEstablishment[BLUE], is the overseer!\pThey overlook the entire [GREEN]Triton[BLUE]\nregion, and are it's founders.\pEven the [GREEN]Triton League[BLUE] is under [GREEN]The\nEstablishment[BLUE]!\pThey are also called the [GREEN]authorities[BLUE]\nin frankness.
 
-#org @gText_AerilonTown_Aide_01
+#org @gText_StarbirthTown_Aide_01
 [BLUE][PLAYER]!
 
-#org @gText_AerilonTown_Aide_02
-[BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the [GREEN]entrance of\nAerilon Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
+#org @gText_StarbirthTown_Aide_02
+[BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the [GREEN]entrance of\nStarbirth Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
 
-#org @gText_AerilonTown_ProfAlmond_01
+#org @gText_StarbirthTown_ProfAlmond_01
 [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
 
-#org @gText_AerilonTown_ProfAlmond_02
+#org @gText_StarbirthTown_ProfAlmond_02
 [BLUE]Make sure the parcel reaches\n[RIVAL]'s father.\pDon't lose it, [PLAYER], it's quite\nimportant.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
-#org @gText_AerilonTown_Mom_01
+#org @gText_StarbirthTown_Mom_01
 [RED][PLAYER]!
 
-#org @gText_AerilonTown_Mom_02
+#org @gText_StarbirthTown_Mom_02
 [RED]You're leaving town? Is it time? Oh?\nYou also need to deliever a parcel?\pSo this is how your journey starts?\nMy baby is all grown up!\pAlways visit me from time to time!\nGo get 'em, love!
 
 //Sub-maps:
-#org @gText_AerilonTown_PlayerRoom_PersonalComputerBootUp
+#org @gText_StarbirthTown_PlayerRoom_PersonalComputerBootUp
 [PLAYER] booted up the PC.
 
-#org @gText_AerilonTown_PlayerHouse_Mom_01
+#org @gText_StarbirthTown_PlayerHouse_Mom_01
 [RED][PLAYER]!
 
-#org @gText_AerilonTown_PlayerHouse_Mom_02a
-[RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's Aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Aerilon Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Aerilon Hills[RED].\pHe knows me and your father quite\nwell! You were too little, hehe.\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake these as well!
+#org @gText_StarbirthTown_PlayerHouse_Mom_02a
+[RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's Aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Starbirth Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Starbirth Hills[RED].\pHe knows me and your father quite\nwell! You were too little, hehe.\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake these as well!
 
-#org @gText_AerilonTown_PlayerHouse_Mom_02b
+#org @gText_StarbirthTown_PlayerHouse_Mom_02b
 [BLACK][PLAYER] received the Running Shoes\nfrom Mom!
 
-#org @gText_AerilonTown_PlayerHouse_Mom_02c
+#org @gText_StarbirthTown_PlayerHouse_Mom_02c
 [RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-Run on and off!\pTake care, sweetie!
 
-#org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_01
+#org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_01
 [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
 
-#org @gText_AerilonTown_HouseOfProfessor_PlayerRecievesParcel
+#org @gText_StarbirthTown_HouseOfProfessor_PlayerRecievesParcel
 [PLAYER] received the Parcel\nfrom Professor Almond!
 
-#org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_02
+#org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_02
 [BLUE][RIVAL]'s father lives in [GREEN]Goldtree\nVillage[BLUE].\pUsually he's at the Pok\emon Center,\nresearching Pok\emon data.\pOh, and yes, you ought to tell your\nmother you're leaving town.\pGet going now, [PLAYER]!
 
-#org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_03
+#org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_03
 [BLUE]You should tell your mother\nyou're leaving town.\pI really don't want to get in trouble,\neheh[.]
 
-#org @gText_AerilonTown_HouseOfProfessor_ProfAlmond_04
+#org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_04
 [BLUE]I've contacted the authorities. You\nneedn't worry!\pBut why not try catching that theif\non your own? For some experience?
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_01
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_01
 [RED]You should go and meet the\nProfessor's Aide.
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_02
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_02
 [RED]What? The Professor wants you to\nmeet him in person?\pI wonder what he wants?
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_03
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_03
 [RED]Did you go and meet the Professor\nyet?
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_04
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_04
 [RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pSo this is how your journey starts?\nMy baby is all grown up!\pAlways visit me from time to time!\nGo get 'em, love!
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_05
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_05
 [RED]I'll always be rooting for you!
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_HealPKMN
 [RED][PLAYER]! Why don't you take a\nquick rest?
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_InformPlayerToComeBack
 [RED]I'll always be rooting for you!
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_06
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_06
 [RED]Oh, [PLAYER][.]\nStill can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!\pOh, and take this [GREEN]Region Map[RED] with\nyou! Bye, love!
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_Universal_01
 [RED][PLAYER]! If you're here, why\nnot take a quick rest?
 
-#org @gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02
+#org @gText_StarbirthTown_PlayerHouse_PlayerMom_Universal_02
 [RED]There, that's better!\nStay safe out there! Make me proud!

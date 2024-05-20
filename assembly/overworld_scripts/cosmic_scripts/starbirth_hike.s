@@ -12,13 +12,13 @@
 .equ VAR_STARTER_MON, 0x51F0
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
-.equ MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE, 0x7
+.equ MAIN_STORY_MET_RIVAL_IN_Starbirth_HIKE, 0x7
 
-.global NPCScript_AerilonHike_Rival
-NPCScript_AerilonHike_Rival:
+.global NPCScript_StarbirthHike_Rival
+NPCScript_StarbirthHike_Rival:
 	lock
 	faceplayer
-	msgboxname gText_AerilonHike_Rival_01, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHike_Rival_01, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	compare VAR_STARTER_MON, 0x1
 	if equal _call RivalBattleWhenPlayerHasTreecko
@@ -26,12 +26,12 @@ NPCScript_AerilonHike_Rival:
 	if equal _call RivalBattleWhenPlayerHasTorchic
 	compare VAR_STARTER_MON, 0x3
 	if equal _call RivalBattleWhenPlayerHasMudkip
-	msgboxname gText_AerilonHike_Rival_02, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHike_Rival_02, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_RivalLeaves
 	waitmovement 0x0
 	hidesprite RIVAL
-	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE
+	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_Starbirth_HIKE
 	setflag 0x2E @Person ID of Rival in A-Map
 	pause 0x1E
 	release
@@ -51,8 +51,8 @@ RivalBattleWhenPlayerHasMudkip:
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_AerilonHike_ItemObtainPotion
-NPCScript_AerilonHike_ItemObtainPotion:
+.global NPCScript_StarbirthHike_ItemObtainPotion
+NPCScript_StarbirthHike_ItemObtainPotion:
 	giveitem 0xD 0x1, MSG_FIND
 	call SetItemFlag_ItemObtainPotion
 	end
@@ -65,17 +65,17 @@ SetItemFlag_ItemObtainPotion:
 .equ RIVAL, 2
 .equ VAR_MAIN_STORY, 0x4029
 .equ VAR_STARTER_MON, 0x51F0
-.equ MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE, 0x7
+.equ MAIN_STORY_MET_RIVAL_IN_Starbirth_HIKE, 0x7
 
-.global TileScript_AerilonHike_Rival
-TileScript_AerilonHike_Rival:
+.global TileScript_StarbirthHike_Rival
+TileScript_StarbirthHike_Rival:
 	lock
 	checksound
 	sound 0x15
 	applymovement RIVAL, m_LookDownExclaim
 	waitmovement 0x0
 	pause 0x2E
-	msgboxname gText_AerilonHike_Rival_01a, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHike_Rival_01a, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	spriteface PLAYER, UP
 	getplayerpos VAR_TEMP_1, VAR_TEMP_2
@@ -83,7 +83,7 @@ TileScript_AerilonHike_Rival:
 	if equal _call RivalMovesTowardsPlayerWhenScriptNumberOne
 	compare VAR_TEMP_2, 0x10 @Y-Pos equals 0x10
 	if equal _call RivalMovesTowardsPlayerWhenScriptNumberTwo
-	msgboxname gText_AerilonHike_Rival_01b, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHike_Rival_01b, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	compare VAR_STARTER_MON, 0x1
 	if equal _call TileScriptRivalBattleWhenPlayerHasTreecko
@@ -91,12 +91,12 @@ TileScript_AerilonHike_Rival:
 	if equal _call TileScriptRivalBattleWhenPlayerHasTorchic
 	compare VAR_STARTER_MON, 0x3
 	if equal _call TileScriptRivalBattleWhenPlayerHasMudkip
-	msgboxname gText_AerilonHike_Rival_02, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHike_Rival_02, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_RivalLeaves
 	waitmovement 0x0
 	hidesprite RIVAL
-	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_AERILON_HIKE
+	setvar VAR_MAIN_STORY, MAIN_STORY_MET_RIVAL_IN_Starbirth_HIKE
 	setflag 0x2E @Person ID of Rival in A-Map
 	pause 0x1E
 	release

@@ -1,18 +1,18 @@
 ##
-#Aerilon Town:
-npc 3 0 3 NPCScript_AerilonTown_BossyGirl
-npc 3 0 5 NPCScript_AerilonTown_OldMan
-npc 4 4 0 NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
-npc 4 0 0 NPCScript_AerilonTown_PlayerHouse_PlayerMom
-sign 4 1 1 SignScript_AerilonTown_PlayerRoom_PersonalComputer
-tile 3 0 0 TileScript_AerilonTown_PlayerTriesToLeave
-tile 3 0 1 TileScript_AerilonTown_PlayerTriesToLeave
-tile 3 0 2 TileScript_AerilonTown_PlayerTriesToLeave
-tile 3 0 3 TileScript_AerilonTown_PlayerLeavingTown
-tile 3 0 4 TileScript_AerilonTown_PlayerLeavingTown
-tile 3 0 5 TileScript_AerilonTown_PlayerLeavingTown
-map 3 0 gMapScripts_AerilonTown
-map 4 0 gMapScripts_AerilonTown_PlayerHouse
+#Starbirth Town:
+npc 3 0 3 NPCScript_StarbirthTown_BossyGirl
+npc 3 0 5 NPCScript_StarbirthTown_OldMan
+npc 4 4 0 NPCScript_StarbirthTown_HouseOfProfessor_ProfessorAlmond
+npc 4 0 0 NPCScript_StarbirthTown_PlayerHouse_PlayerMom
+sign 4 1 1 SignScript_StarbirthTown_PlayerRoom_PersonalComputer
+tile 3 0 0 TileScript_StarbirthTown_PlayerTriesToLeave
+tile 3 0 1 TileScript_StarbirthTown_PlayerTriesToLeave
+tile 3 0 2 TileScript_StarbirthTown_PlayerTriesToLeave
+tile 3 0 3 TileScript_StarbirthTown_PlayerLeavingTown
+tile 3 0 4 TileScript_StarbirthTown_PlayerLeavingTown
+tile 3 0 5 TileScript_StarbirthTown_PlayerLeavingTown
+map 3 0 gMapScripts_StarbirthTown
+map 4 0 gMapScripts_StarbirthTown_PlayerHouse
 
 #Goldtree Village:
 npc 3 1 0 NPCScript_GoldtreeVillage_Rival
@@ -56,29 +56,29 @@ tile 7 1 0 TileScript_WestrayVillage_HouseOfJoe_GruntsDiscussion
 tile 7 1 1 TileScript_WestrayVillage_HouseOfJoe_GruntsDiscussion
 map 3 3 gMapScripts_WestrayVillage
 
-#Aerilon Hike:
-npc 3 19 1 NPCScript_AerilonHike_Rival
-npc 3 19 3 NPCScript_AerilonHike_ItemObtainPotion
-tile 3 19 0 TileScript_AerilonHike_Rival
-tile 3 19 1 TileScript_AerilonHike_Rival
-tile 3 19 2 TileScript_AerilonHike_Rival
+#Starbirth Hike:
+npc 3 19 1 NPCScript_StarbirthHike_Rival
+npc 3 19 3 NPCScript_StarbirthHike_ItemObtainPotion
+tile 3 19 0 TileScript_StarbirthHike_Rival
+tile 3 19 1 TileScript_StarbirthHike_Rival
+tile 3 19 2 TileScript_StarbirthHike_Rival
 
-#Aerilon Hills:
-npc 3 20 0 NPCScript_AerilonHills_AideAtTheBaseOfObservatory
+#Starbirth Hills:
+npc 3 20 0 NPCScript_StarbirthHills_AideAtTheBaseOfObservatory
 npc 3 20 2 EventScript_RockSmash
 npc 3 20 3 EventScript_RockSmash
-npc 15 0 2 NPCScript_AerilonHills_AlmondObservatory_SecondAide
-npc 15 1 0 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
-npc 15 1 1 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
-npc 15 1 2 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
-npc 15 1 3 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
-npc 15 1 4 NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
-tile 3 20 0 TileScript_AerilonHills_AideAtTheBaseOfObservatory
-tile 3 20 1 TileScript_AerilonHills_AideAtTheBaseOfObservatory
-tile 15 1 0 TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave
-map 3 20 gMapScripts_AerilonHills
-map 15 0 gMapScripts_AerilonHills_AlmondObservatory
-map 15 1 gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
+npc 15 0 2 NPCScript_StarbirthHills_AlmondObservatory_SecondAide
+npc 15 1 0 NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 1 NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 2 NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+npc 15 1 3 NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
+npc 15 1 4 NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
+tile 3 20 0 TileScript_StarbirthHills_AideAtTheBaseOfObservatory
+tile 3 20 1 TileScript_StarbirthHills_AideAtTheBaseOfObservatory
+tile 15 1 0 TileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave
+map 3 20 gMapScripts_StarbirthHills
+map 15 0 gMapScripts_StarbirthHills_AlmondObservatory
+map 15 1 gMapScripts_StarbirthHills_AlmondObservatory_OfficeOfProfessor
 
 #Goldtree Wilds:
 npc 3 21 10 EventScript_Cut
@@ -136,20 +136,20 @@ map 1 1 gMapScripts_ErstoniaCanyon_RuinwayPassage
 
 #Westray Pass
 npc 3 24 0 NPCScript_WestrayPass_GuardThatBlocksAccess
-npc 3 24 11 NPCScript_WestrayPass_ItemObtainHealBall
-npc 3 24 12 NPCScript_WestrayPass_ItemObtainTM28
-npc 3 24 14 NPCScript_WestrayPass_GuardThatBlocksAccess
+npc 3 24 10 NPCScript_WestrayPass_ItemObtainHealBall
+npc 3 24 11 NPCScript_WestrayPass_ItemObtainTM28
+npc 3 24 0 NPCScript_WestrayPass_GuardThatBlocksAccess
 tile 3 24 0 TileScript_WestrayPass_GuardThatBlocksAccess
 tile 3 24 1 TileScript_WestrayPass_GuardThatBlocksAccess
 tile 3 24 2 TileScript_WestrayPass_GuardThatBlocksAccess
 
 #Macro's:
-npc 3 0 0 NPCTalkingScript_AerilonTown_RockyCliffsBoy
-npc 3 0 2 NPCTalkingScript_AerilonTown_UselessResearchGirl
-npc 3 0 4 NPCTalkingScript_AerilonTown_FatGuy
-npc 4 2 0 NPCTalkingScript_AerilonTown_House_HouseLady
-npc 4 3 0 NPCTalkingScript_AerilonTown_House_HouseMan
-npc 4 3 1 NPCTalkingScript_AerilonTown_House_HouseGirl
+npc 3 0 0 NPCTalkingScript_StarbirthTown_RockyCliffsBoy
+npc 3 0 2 NPCTalkingScript_StarbirthTown_UselessResearchGirl
+npc 3 0 4 NPCTalkingScript_StarbirthTown_FatGuy
+npc 4 2 0 NPCTalkingScript_StarbirthTown_House_HouseLady
+npc 4 3 0 NPCTalkingScript_StarbirthTown_House_HouseMan
+npc 4 3 1 NPCTalkingScript_StarbirthTown_House_HouseGirl
 npc 3 1 2 NPCTalkingScript_GoldtreeVillage_FaeryWoodsBugCatcher
 npc 3 1 3 NPCTalkingScript_GoldtreeVillage_NameMysteryBoy
 npc 3 1 1 NPCTalkingScript_GoldtreeVillage_PKMNCenterBoy
@@ -215,13 +215,13 @@ npc 7 5 1 NPCTalkingScript_WestrayVillage_House_ArticunoClimbLegendMan
 npc 7 5 2 NPCTalkingScript_WestrayVillage_House_MomGoneLittleGirl
 npc 7 6 0 NPCTalkingScript_WestrayVillage_House_ILikeYouMan
 npc 7 6 1 NPCTalkingScript_WestrayVillage_House_SawShadyPeopleGirl
-npc 3 19 2 NPCTalkingScript_AerilonHike_TallGrassGirl
-npc 3 19 0 NPCTalkingScript_AerilonHike_InteractiveWorldBoy
-npc 15 0 1 NPCTalkingScript_AerilonHills_AlmondObservatory_FirstAide
-npc 15 0 3 NPCTalkingScript_AerilonHills_AlmondObservatory_ThirdAide
-npc 15 0 4 NPCTalkingScript_AerilonHills_AlmondObservatory_FourthAide
-npc 15 0 5 NPCTalkingScript_AerilonHills_AlmondObservatory_FifthAide
-npc 15 0 6 NPCTalkingScript_AerilonHills_AlmondObservatory_SixthAide
+npc 3 19 2 NPCTalkingScript_StarbirthHike_TallGrassGirl
+npc 3 19 0 NPCTalkingScript_StarbirthHike_InteractiveWorldBoy
+npc 15 0 1 NPCTalkingScript_StarbirthHills_AlmondObservatory_FirstAide
+npc 15 0 3 NPCTalkingScript_StarbirthHills_AlmondObservatory_ThirdAide
+npc 15 0 4 NPCTalkingScript_StarbirthHills_AlmondObservatory_FourthAide
+npc 15 0 5 NPCTalkingScript_StarbirthHills_AlmondObservatory_FifthAide
+npc 15 0 6 NPCTalkingScript_StarbirthHills_AlmondObservatory_SixthAide
 npc 3 21 0 NPCTalkingScript_GoldtreeWilds_YellowBallsBoy
 npc 3 21 9 NPCTalkingScript_GoldtreeWilds_TallGrassMakesMeSneezeGirl
 npc 3 21 11 NPCTalkingScript_GoldtreeWilds_FaeryWoodsAreStrangeMan
@@ -229,16 +229,21 @@ npc 3 21 18 NPCTalkingScript_GoldtreeWilds_ScaredOfLedgesGirl
 npc 1 0 0 NPCTalkingScript_GoldtreeWilds_FaeryWoods_RegionalPKMNBoy
 npc 1 0 4 NPCTalkingScript_GoldtreeWilds_FaeryWoods_HiddenItemsBoy
 npc 3 22 0 NPCTalkingScript_KingsPath_JustADitchMan
-npc 3 23 8 NPCTalkingScript_ErstoniaCanyon_SomethingHappensAtNightGirl
+npc 3 23 5 NPCTalkingScript_ErstoniaCanyon_SomethingHappensAtNightBoy
 npc 3 23 9 NPCTalkingScript_ErstoniaCanyon_SandstormGuy
+npc 3 23 12 NPCTalkingScript_ErstoniaCanyon_MoltresMountainGuy
 npc 3 23 15 NPCTalkingScript_ErstoniaCanyon_RuinwayPassageLady
+npc 3 23 16 NPCTalkingScript_ErstoniaCanyon_LuxuryBallGuy
+npc 3 24 1 NPCTalkingScript_WestrayPass_ShockerGuy
+npc 3 24 5 NPCTalkingScript_WestrayPass_NurseHealsGirl
+npc 3 24 15 NPCTalkingScript_WestrayPass_WorldBuildingGirl
 npc 3 24 16 NPCTalkingScript_WestrayPass_WestrayCatacombsAreDangerousGirl
-sign 3 0 1 SignpostScript_AerilonTown_MainTown
-sign 3 0 2 SignpostScript_AerilonTown_AlmondResidence
-sign 3 0 0 SignpostScript_AerilonTown_PlayerHouse
-sign 4 1 0 SignpostScript_AerilonTown_PlayerRoom_GameConsole
-sign 4 1 2 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
-sign 4 1 3 SignpostScript_AerilonTown_PlayerRoom_PrettyPicture
+sign 3 0 1 SignpostScript_StarbirthTown_MainTown
+sign 3 0 2 SignpostScript_StarbirthTown_AlmondResidence
+sign 3 0 0 SignpostScript_StarbirthTown_PlayerHouse
+sign 4 1 0 SignpostScript_StarbirthTown_PlayerRoom_GameConsole
+sign 4 1 2 SignpostScript_StarbirthTown_PlayerRoom_PrettyPicture
+sign 4 1 3 SignpostScript_StarbirthTown_PlayerRoom_PrettyPicture
 sign 3 1 0 SignpostScript_GoldtreeVillage_MainTown
 sign 3 1 1 SignpostScript_GoldtreeVillage_RivalHouse
 sign 3 2 0 SignpostScript_ErstoniaCity_MainTown
@@ -250,9 +255,9 @@ sign 6 8 0 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 6 8 1 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
 sign 3 3 2 SignpostScript_WestrayVillage_MainTown
-sign 3 19 0 SignpostScript_AerilonHike_MainRoute
-sign 3 20 0 SignpostScript_AerilonHills_MainRoute
-sign 3 20 1 SignpostScript_AerilonHills_AlmondObservatory
+sign 3 19 0 SignpostScript_StarbirthHike_MainRoute
+sign 3 20 0 SignpostScript_StarbirthHills_MainRoute
+sign 3 20 1 SignpostScript_StarbirthHills_AlmondObservatory
 sign 3 21 0 SignpostScript_GoldtreeWilds_MainRoute_01
 sign 3 21 1 SignpostScript_GoldtreeWilds_FaeryWoods
 sign 3 21 2 SignpostScript_GoldtreeWilds_FaeryWoods

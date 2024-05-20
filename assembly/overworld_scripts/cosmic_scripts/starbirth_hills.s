@@ -12,13 +12,13 @@
 .equ VAR_EXTRA, 0x51FD
 .equ MAIN_STORY_WARPED_TO_OBSERVATORY, 0x2
 
-.global NPCScript_AerilonHills_AideAtTheBaseOfObservatory
-NPCScript_AerilonHills_AideAtTheBaseOfObservatory:
+.global NPCScript_StarbirthHills_AideAtTheBaseOfObservatory
+NPCScript_StarbirthHills_AideAtTheBaseOfObservatory:
 	lock
 	faceplayer
 	compare VAR_EXTRA 0x1 @Set to 0x1 if [player] says no to avoid a loop
 	if equal _goto MetAideBeforeByTalking
-	msgboxname gText_AerilonHills_ProfAide_01, MSG_YESNO, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_01, MSG_YESNO, gText_AideName
 	compare LASTRESULT, 0x1
 	if equal _goto PlayerSaysYesByTalking
 	compare LASTRESULT, 0x0
@@ -29,7 +29,7 @@ NPCScript_AerilonHills_AideAtTheBaseOfObservatory:
 PlayerSaysYesByTalking:
 	lock
 	playsong 0x12E 0x0
-	msgboxname gText_AerilonHills_ProfAide_02, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_02, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	call MoveTowardsObservatoryIfPlayerTalksToAide
 	opendoor 0x2B 0x2B
@@ -57,7 +57,7 @@ MoveTowardsObservatoryIfPlayerTalksToAide:
 
 PlayerSaysNoByTalking:
 	lock
-	msgboxname gText_AerilonHills_ProfAide_03, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_03, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	spriteface PLAYER, DOWN
 	spriteface PROF_AIDE, DOWN
@@ -67,7 +67,7 @@ PlayerSaysNoByTalking:
 	end
 
 MetAideBeforeByTalking:
-	msgboxname gText_AerilonHills_ProfAide_04, MSG_YESNO, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_04, MSG_YESNO, gText_AideName
 	compare LASTRESULT, 0x1
 	if equal _goto PlayerSaysYesByTalking
 	compare LASTRESULT, 0x0
@@ -88,8 +88,8 @@ m_FollowingAide: .byte walk_up, walk_up, walk_up, walk_up, walk_up, walk_right, 
 .equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_WARPED_TO_OBSERVATORY, 0x2
 
-.global TileScript_AerilonHills_AideAtTheBaseOfObservatory
-TileScript_AerilonHills_AideAtTheBaseOfObservatory:
+.global TileScript_StarbirthHills_AideAtTheBaseOfObservatory
+TileScript_StarbirthHills_AideAtTheBaseOfObservatory:
 	lock
 	sound 0x15
 	applymovement PROF_AIDE, m_LookAtPlayerExclaim
@@ -101,7 +101,7 @@ TileScript_AerilonHills_AideAtTheBaseOfObservatory:
 	if equal _call PlayerFaceLeft
 	compare VAR_EXTRA 0x1 @Set to 0x1 if [player] says no to avoid a loop
 	if equal _goto MetAideBefore
-	msgboxname gText_AerilonHills_ProfAide_01, MSG_YESNO, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_01, MSG_YESNO, gText_AideName
 	compare LASTRESULT, 0x1
 	if equal _goto PlayerSaysYes
 	compare LASTRESULT, 0x0
@@ -120,7 +120,7 @@ PlayerFaceLeft:
 PlayerSaysYes:
 	lock
 	playsong 0x12E 0x0
-	msgboxname gText_AerilonHills_ProfAide_02, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_02, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	compare VAR_TEMP_1, 0x1D @X-Pos equals 0x1D
 	if equal _call MoveTowardsObservatoryIfScriptNumberZero
@@ -159,7 +159,7 @@ MoveTowardsObservatoryIfScriptNumberOne:
 
 PlayerSaysNo:
 	lock
-	msgboxname gText_AerilonHills_ProfAide_03, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_03, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	applymovement PLAYER, m_Leaving
 	waitmovement 0x0
@@ -170,7 +170,7 @@ PlayerSaysNo:
 	end
 
 MetAideBefore:
-	msgboxname gText_AerilonHills_ProfAide_04, MSG_YESNO, gText_AideName
+	msgboxname gText_StarbirthHills_ProfAide_04, MSG_YESNO, gText_AideName
 	compare LASTRESULT, 0x1
 	if equal _goto PlayerSaysYes
 	compare LASTRESULT, 0x0
@@ -193,23 +193,23 @@ m_Leaving: .byte walk_down_very_slow, end_m
 .equ MAIN_STORY_MEETING_RIVAL_OUTSIDE_OBSERVATORY, 0x4
 .equ MAIN_STORY_MET_RIVAL_OUTSIDE_OBSERVATORY, 0x5
 
-.global gMapScripts_AerilonHills
-gMapScripts_AerilonHills:
-	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonHills
-	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_AerilonHills
+.global gMapScripts_StarbirthHills
+gMapScripts_StarbirthHills:
+	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_StarbirthHills
+	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_StarbirthHills
 	.byte MAP_SCRIPT_TERMIN
 
-LevelScripts_AerilonHills:
-	levelscript VAR_MAIN_STORY, MAIN_STORY_MEETING_RIVAL_OUTSIDE_OBSERVATORY, LevelScript_AerilonHills
+LevelScripts_StarbirthHills:
+	levelscript VAR_MAIN_STORY, MAIN_STORY_MEETING_RIVAL_OUTSIDE_OBSERVATORY, LevelScript_StarbirthHills
 	.hword LEVEL_SCRIPT_TERMIN
 
-LevelScript_AerilonHills:
+LevelScript_StarbirthHills:
 	lock
 	pause 0x5
 	sound 0x15
 	applymovement RIVAL, m_RivalNoticesPlayer
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_Rival_01, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_Rival_01, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_RivalLeaves
 	waitmovement 0x0
@@ -223,42 +223,42 @@ LevelScript_AerilonHills:
 m_RivalNoticesPlayer: .byte look_up, exclaim, pause_long, pause_long, pause_long, pause_short, pause_short, walk_up, walk_up, end_m
 m_RivalLeaves: .byte walk_down, walk_down, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
 
-MapEntryScript_AerilonHills:
+MapEntryScript_StarbirthHills:
 	compare VAR_MAIN_STORY, MAIN_STORY_MEETING_RIVAL_OUTSIDE_OBSERVATORY
-	if equal _call MapEntryScript_AerilonHills_MeetingRivalOutsideObservatory
+	if equal _call MapEntryScript_StarbirthHills_MeetingRivalOutsideObservatory
 	end
 	
-MapEntryScript_AerilonHills_MeetingRivalOutsideObservatory:
+MapEntryScript_StarbirthHills_MeetingRivalOutsideObservatory:
 	showsprite RIVAL
 	clearflag 0x2B @Person ID Rival in A-Map
 	return
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
-.global NPCScript_AerilonHills_AlmondObservatory_SecondAide @Could not include in macros
-NPCScript_AerilonHills_AlmondObservatory_SecondAide:
+.global NPCScript_StarbirthHills_AlmondObservatory_SecondAide @Could not include in macros
+NPCScript_StarbirthHills_AlmondObservatory_SecondAide:
 	lock
-	msgbox gText_AerilonHills_AlmondObservatory_SecondAide, MSG_SIGN
+	msgbox gText_StarbirthHills_AlmondObservatory_SecondAide, MSG_SIGN
 	end
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
-NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle:
+.global NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle
+NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ProfAlmondIdle:
 	lock
 	faceplayer
-	msgboxname gText_AerilonHills_AlmondObservatory_ProfAlmondIdle, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_ProfAlmondIdle, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	spriteface 0x4, LEFT
 	end
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
-NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle:
+.global NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalIdle
+NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalIdle:
 	lock
 	faceplayer
-	msgboxname gText_AerilonHills_AlmondObservatory_RivalIdle, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_RivalIdle, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	spriteface 0x5, LEFT
 	end
@@ -279,8 +279,8 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalIdle:
 .equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_RECEIVED_STARTER, 0x4
 
-.global NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
-NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
+.global NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_StarterOptions
+NPCScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
 	lock
 	faceplayer
 	compare VAR_MAIN_STORY, MAIN_STORY_RECEIVED_STARTER
@@ -298,7 +298,7 @@ NPCScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_StarterOptions:
 	if equal _call ThirdStarter
 	compare VAR_TEMP_1, 0x7 @X-Pos equals 0x7
 	if equal _call ThirdStarter
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	applymovement PROF, m_ProfLeavesOffice
 	waitmovement 0x0
@@ -319,36 +319,36 @@ FirstStarter:
 	setvar VAR_STARTER_MON, 0x1
 	spriteface PROF, LEFT
 	showpokepic 0x115 0xA 0x3
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TreeckoPrompt, MSG_YESNO, gText_ProfAlmondSmallName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TreeckoPrompt, MSG_YESNO, gText_ProfAlmondSmallName
 	compare LASTRESULT 0x0
 	if equal _goto ReleaseEnd
 	hidepokepic
 	hidesprite LASTTALKED
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
 	givepokemon 0x115 0x7 0x0 0x0 0x0 0x0 @Treecko
 	bufferpokemon 0x0 0x115
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
 	compare LASTRESULT 0x1
 	if equal _call NicknameStarter
 	closeonkeypress
 	applymovement RIVAL, m_MoveTowardsTorchic
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	hidesprite TORCHIC
 	bufferpokemon 0x0 0x118
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
 	spriteface RIVAL, LEFT
 	spriteface PLAYER, RIGHT
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_LeaveOfficeWithTorchic
 	waitmovement 0x0
@@ -367,36 +367,36 @@ SecondStarter:
 	setvar VAR_STARTER_MON, 0x2
 	spriteface PROF, LEFT
 	showpokepic 0x118 0xA 0x3
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt, MSG_YESNO, gText_ProfAlmondSmallName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TorchicPrompt, MSG_YESNO, gText_ProfAlmondSmallName
 	compare LASTRESULT 0x0
 	if equal _goto ReleaseEnd
 	hidepokepic
 	hidesprite LASTTALKED
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
 	givepokemon 0x118 0x64 0x0 0x0 0x0 0x0 @Torchic @debug
 	bufferpokemon 0x0 0x118
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
 	compare LASTRESULT 0x1
 	if equal _call NicknameStarter
 	closeonkeypress
 	applymovement RIVAL, m_MoveTowardsMudkip
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	hidesprite MUDKIP
 	bufferpokemon 0x0 0x11B
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
 	spriteface RIVAL, LEFT
 	spriteface PLAYER, RIGHT
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_LeaveOfficeWithMudkip
 	waitmovement 0x0
@@ -414,36 +414,36 @@ m_LeaveOfficeWithMudkip: .byte walk_down, walk_down, walk_down, walk_left, walk_
 ThirdStarter:
 	setvar VAR_STARTER_MON, 0x3
 	showpokepic 0x11B 0xA 0x3
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_MudkipPrompt, MSG_YESNO, gText_ProfAlmondSmallName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_MudkipPrompt, MSG_YESNO, gText_ProfAlmondSmallName
 	compare LASTRESULT 0x0
 	if equal _goto ReleaseEnd
 	hidepokepic
 	hidesprite LASTTALKED
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
 	givepokemon 0x11B 0x7 0x0 0x0 0x0 0x0 @Mudkip
 	bufferpokemon 0x0 0x11B
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_NicknamePokemonPrompt, MSG_YESNO
 	compare LASTRESULT 0x1
 	if equal _call NicknameStarter
 	closeonkeypress
 	applymovement RIVAL, m_MoveTowardsTreecko
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_PreRivalSelectsPokemon, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	hidesprite TREECKO
 	bufferpokemon 0x0 0x115
-	preparemsg gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
+	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSelectsPokemon
 	waitmsg
 	fanfare 0x13E
 	waitfanfare
 	spriteface RIVAL, RIGHT
 	spriteface PLAYER, LEFT
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_RivalSpeaksBeforeLeaving, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_LeaveOfficeWithTreecko
 	waitmovement 0x0
@@ -472,18 +472,18 @@ NicknameStarter:
 	return
 
 LastStarter:
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_LastStarter, MSG_FACE
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_LastStarter, MSG_FACE
 	release
 	end
 
 #Tile scripts:
 .equ PROF, 4
 
-.global TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave @Before receiving starter
-TileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave:
+.global TileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave @Before receiving starter
+TileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TryingToLeave:
 	lock
 	spriteface PROF, DOWN
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_TryingToLeavePrompt, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_TryingToLeavePrompt, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	applymovement PLAYER, m_WalkUp
 	waitmovement 0x0
@@ -500,17 +500,17 @@ m_WalkUp: .byte walk_up_very_slow, pause_short, end_m
 .equ MAIN_STORY_GOING_TO_PROFESSOR, 0x2
 .equ MAIN_STORY_TALKED_TO_PROFESSOR, 0x2
 
-.global gMapScripts_AerilonHills_AlmondObservatory
-gMapScripts_AerilonHills_AlmondObservatory:
-	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonHills_AlmondObservatory
-	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_AerilonHills_AlmondObservatory
+.global gMapScripts_StarbirthHills_AlmondObservatory
+gMapScripts_StarbirthHills_AlmondObservatory:
+	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_StarbirthHills_AlmondObservatory
+	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_StarbirthHills_AlmondObservatory
 	.byte MAP_SCRIPT_TERMIN
 
-LevelScripts_AerilonHills_AlmondObservatory:
-	levelscript VAR_MAIN_STORY, MAIN_STORY_GOING_TO_PROFESSOR, LevelScript_AerilonHills_AlmondObservatory
+LevelScripts_StarbirthHills_AlmondObservatory:
+	levelscript VAR_MAIN_STORY, MAIN_STORY_GOING_TO_PROFESSOR, LevelScript_StarbirthHills_AlmondObservatory
 	.hword LEVEL_SCRIPT_TERMIN
 
-LevelScript_AerilonHills_AlmondObservatory:
+LevelScript_StarbirthHills_AlmondObservatory:
 	lockall
 	applymovement PROF_AIDE, m_MoveTowardsProfessor
 	applymovement PLAYER, m_MoveTowardsProfessor
@@ -518,23 +518,23 @@ LevelScript_AerilonHills_AlmondObservatory:
 	clearflag 0x4001 @Had been set so song does not stop
 	playsong2 0x0
 	fadedefault
-	msgboxname gText_AerilonHills_AlmondObservatory_Aide_01, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_AlmondObservatory_Aide_01, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	applymovement PROF, m_ProfStepOnSpot
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_Prof_01, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_Prof_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
-	msgboxname gText_AerilonHills_AlmondObservatory_Aide_02, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_AlmondObservatory_Aide_02, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	spriteface PROF_AIDE, DOWN
 	pause 0x20
-	msgboxname gText_AerilonHills_AlmondObservatory_Aide_03, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthHills_AlmondObservatory_Aide_03, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	applymovement PROF_AIDE, m_ProfAideLeave
 	waitmovement 0x0
 	applymovement PLAYER, m_PlayerStepUp
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_Prof_02, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_Prof_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	applymovement PROF, m_ProfStepUpAndLeave
 	waitmovement 0x0
@@ -559,12 +559,12 @@ m_ProfStepUpAndLeave: .byte walk_up, walk_up, walk_up, walk_up, end_m
 m_PlayerStepUpAndLeave: .byte walk_up, walk_up, walk_up, walk_up, walk_up, end_m
 m_SetInvisible: .byte pause_short, set_invisible, end_m
 
-MapEntryScript_AerilonHills_AlmondObservatory:
+MapEntryScript_StarbirthHills_AlmondObservatory:
 	compare VAR_MAIN_STORY, MAIN_STORY_GOING_TO_PROFESSOR
-	if equal _call MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering
+	if equal _call MapEntryScript_StarbirthHills_AlmondObservatory_FirstTimeEntering
 	end
 	
-MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
+MapEntryScript_StarbirthHills_AlmondObservatory_FirstTimeEntering:
 	spriteface PROF_AIDE, UP
 	movesprite2 PROF_AIDE, 0xA 0xD
 	playsong2 0x12E
@@ -578,39 +578,39 @@ MapEntryScript_AerilonHills_AlmondObservatory_FirstTimeEntering:
 .equ MAIN_STORY_RECEIVING_STARTER, 0x2
 .equ MAIN_STORY_GOING_TO_GET_STARTER, 0x3
 
-.global gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
-gMapScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor:
-	mapscript MAP_SCRIPT_ON_LOAD SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
-	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor
+.global gMapScripts_StarbirthHills_AlmondObservatory_OfficeOfProfessor
+gMapScripts_StarbirthHills_AlmondObservatory_OfficeOfProfessor:
+	mapscript MAP_SCRIPT_ON_LOAD SetmaptileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor
+	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_StarbirthHills_AlmondObservatory_OfficeOfProfessor
 	mapscript MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE SecondaryLevelScripts_AlmondObservatory_OfficeOfProfessor
 	.byte MAP_SCRIPT_TERMIN
 
-.global SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
-SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
+.global SetmaptileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor
+SetmaptileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor:
 	compare VAR_MAIN_STORY, MAIN_STORY_GOING_TO_GET_STARTER
-	if greaterorequal _call SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_DoorMat
+	if greaterorequal _call SetmaptileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_DoorMat
 	end
 
-SetmaptileScript_AerilonHills_AlmondObservatory_OfficeOfProfessor_DoorMat:
+SetmaptileScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor_DoorMat:
 	setmaptile 0x5 0x7 0x89 0x0
 	end
 
-LevelScripts_AerilonHills_AlmondObservatory_OfficeOfProfessor:
-	levelscript VAR_MAIN_STORY, MAIN_STORY_RECEIVING_STARTER, LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor
+LevelScripts_StarbirthHills_AlmondObservatory_OfficeOfProfessor:
+	levelscript VAR_MAIN_STORY, MAIN_STORY_RECEIVING_STARTER, LevelScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor
 	.hword LEVEL_SCRIPT_TERMIN
 
-LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
+LevelScript_StarbirthHills_AlmondObservatory_OfficeOfProfessor:
 	lockall
 	applymovement PLAYER, m_MoveUpTowardsProfessor
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_01, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	checksound
 	sound 0x15
 	applymovement PLAYER, m_Exclaim
 	waitmovement 0x0
 	pause 0x50
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_02, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	showsprite RIVAL
 	spriteface RIVAL, UP
@@ -621,23 +621,23 @@ LevelScript_AerilonHills_AlmondObservatory_OfficeOfProfessor:
 	applymovement RIVAL, m_WalkTowardsPlayerAndProfessor
 	waitmovement 0x0
 	spriteface PROF, LEFT
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_01, MSG_KEEPOPEN, gText_UnknownName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Rival_01, MSG_KEEPOPEN, gText_UnknownName
 	closeonkeypress
 	pause 0x20
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_03, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_03, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	spriteface PROF, DOWN
 	pause 0x20
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_04, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_04, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	call NamingRival
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Prof_05, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_05, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	applymovement PROF, m_StepRightAndLookLeft
 	waitmovement 0x0
 	applymovement RIVAL, m_StepInfrontOfPlayer
 	waitmovement 0x0
-	msgboxname gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_Rival_02, MSG_KEEPOPEN, gText_RivalName
+	msgboxname gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Rival_02, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	applymovement RIVAL, m_StepRightAndLookLeftAtPlayer
 	waitmovement 0x0
@@ -650,7 +650,7 @@ NamingRival:
 	fadescreen 0x1
 	callasm 0x871BC01 @Rival naming routine
 	fadescreen 0x0
-	msgbox gText_AerilonHills_AlmondObservatory_OfficeOfProfessor_ConfirmRivalName, MSG_YESNO
+	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ConfirmRivalName, MSG_YESNO
 	compare LASTRESULT, 0x0
 	if equal _goto NamingRival
 	closeonkeypress

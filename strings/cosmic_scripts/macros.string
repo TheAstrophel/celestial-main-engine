@@ -1,35 +1,35 @@
-//Aerilon Town:
-#org @gText_AerilonTown_RockyCliffsBoyNPC
-[BLUE]The cool air here is beyond\nrefreshing. I love living here!
+//Starbirth Town:
+#org @gText_StarbirthTown_RockyCliffsBoyNPC
+[BLUE]The cool air here is beyond\nrefreshing. I love living here!\pI wonder if we will get a [GREEN]renovation\nof the town soon[BLUE][.]
 
-#org @gText_AerilonTown_UselessResearchGirlNPC
-[RED]I've heard that Professor Almond\nonce spent thirty-seven hours in his\lObservatory!\pHave you ever met a man this into\nsome useless research?
+#org @gText_StarbirthTown_UselessResearchGirlNPC
+[RED]I've heard that Professor Almond\nonce spent thirty-seven hours in his\lobservatory!\pHe said he was looking into a very\nrare space Pok\emon, ha ha!\pHave you ever met a man this into\nsome useless research?
 
-#org @gText_AerilonTown_FatGuyNPC
-[BLUE]Technology is incredible! Now I can\nplay games like TechThug 2088!
+#org @gText_StarbirthTown_FatGuyNPC
+[BLUE]Technology is incredible! Now I can\nplay games like TechThug 2088!\pI ordered it all the way from [GREEN]Oceana\nCity[BLUE]. I hope I enjoy it!
 
-#org @gText_AerilonTown_House_HouseLadyNPC
+#org @gText_StarbirthTown_House_HouseLadyNPC
 [RED]My son spends hours watching the\nrocky cliffs!\pIs he really alright? Is something\nwrong with him? I hope not[.]
 
-#org @gText_AerilonTown_House_HouseManNPC
+#org @gText_StarbirthTown_House_HouseManNPC
 [BLUE]It's good to have a kind and caring\nheart open for all Pok\emon.\pYou really bond with your partners\nif you love them.
 
-#org @gText_AerilonTown_House_HouseGirlNPC
+#org @gText_StarbirthTown_House_HouseGirlNPC
 [RED]My daddy says you should treat\nevery Pok\emon with love.
 
-#org @gText_AerilonTown_PlayerRoom_PrettyPictureSign
+#org @gText_StarbirthTown_PlayerRoom_PrettyPictureSign
 It is a pretty picture of a happy\nPok\emon.
 
-#org @gText_AerilonTown_PlayerRoom_GameConsoleSign
+#org @gText_StarbirthTown_PlayerRoom_GameConsoleSign
 [PLAYER] played with the NES.\p[.]Okay!\nIt's time to go!
 
-#org @gText_AerilonTown_PlayerHouseSign
+#org @gText_StarbirthTown_PlayerHouseSign
 [PLAYER]'s house
 
-#org @gText_AerilonTown_MainTownSign
-Aerilon Town\n"The Mountainside Starry Town".
+#org @gText_StarbirthTown_MainTownSign
+Starbirth Town\n"The Mountainside Starry Town".
 
-#org @gText_AerilonTown_AlmondResidenceSign
+#org @gText_StarbirthTown_AlmondResidenceSign
 Prof. Almond's house
 
 //Goldtree Village:
@@ -64,7 +64,7 @@ Prof. Almond's house
 [BLUE]Boy, this Mart sure has some neat\nstock! You should buy something!
 
 #org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
-[BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Aerilon Town?\nOh, our neighbours! Hi, there!
+[BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Starbirth Town?\nOh, our neighbours! Hi, there!
 
 #org @gText_GoldtreeVillage_PKMNCeter_GymGirlNPC
 [RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a [GREEN]Steel-type Gym[RED]!\pMaybe I can challenge it one day[.]
@@ -260,36 +260,36 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 #org @gText_WestrayVillage_MainTownSign
 [BLACK]Westray Village\n"The Luscious Farms of Triton".
 
-//Aerilon Hike:
-#org @gText_AerilonHike_InteractiveWorldBoyNPC
+//Starbirth Hike:
+#org @gText_StarbirthHike_InteractiveWorldBoyNPC
 You'll find very friendly Pok\emon in\nalmost every town, city, and route!\pYou can interact with them, and they\nmight give you something in return.\pAlso, not all people in route's are\nTrainers. Talk with everyone!\pIt's a whole, new, connected world.\nIsn't that fascinating?
 
-#org @gText_AerilonHike_TallGrassGirlNPC
+#org @gText_StarbirthHike_TallGrassGirlNPC
 Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know whether this is true or\nnot, though.
 
-#org @gText_AerilonHike_MainRouteSign
-[BLACK]Aerilon Hike\n[ARROW_LEFT]Aerilon Town - [ARROW_RIGHT]Goldtree Village
+#org @gText_StarbirthHike_MainRouteSign
+[BLACK]Starbirth Hike\n[ARROW_LEFT]Starbirth Town - [ARROW_RIGHT]Goldtree Village
 
-//Aerilon Hills:
-#org @gText_AerilonHills_AlmondObservatory_FirstAideNPC
+//Starbirth Hills:
+#org @gText_StarbirthHills_AlmondObservatory_FirstAideNPC
 [BLUE]Working in an Observatory is amazing!\nYou'll see things you didn't even\lknow existed!
 
-#org @gText_AerilonHills_AlmondObservatory_ThirdAideNPC
+#org @gText_StarbirthHills_AlmondObservatory_ThirdAideNPC
 [BLUE]Space is really fascinating. It's so\nbig that even a million Sun's can't\lfill up the whole solar system, let\lalone the entire cosmos!
 
-#org @gText_AerilonHills_AlmondObservatory_FourthAideNPC
+#org @gText_StarbirthHills_AlmondObservatory_FourthAideNPC
 [BLUE]I love Pok\emon that are uncommon and\nmake other Trainers jealous.\pI can say we have quite a few of\nthem in the zoological garden.
 
-#org @gText_AerilonHills_AlmondObservatory_FifthAideNPC
-[BLUE]Wild Pikachu inhabit Aerilon Hills.\nI hear they're hard to capture.
+#org @gText_StarbirthHills_AlmondObservatory_FifthAideNPC
+[BLUE]Wild Pikachu inhabit Starbirth Hills.\nI hear they're hard to capture.
 
-#org @gText_AerilonHills_AlmondObservatory_SixthAideNPC
+#org @gText_StarbirthHills_AlmondObservatory_SixthAideNPC
 [BLUE]Terribly sorry, but only staff are\nallowed up here.
 
-#org @gText_AerilonHills_MainRouteSign
-[BLACK]Aerilon Hills\n[ARROW_DOWN]Aerilon Town
+#org @gText_StarbirthHills_MainRouteSign
+[BLACK]Starbirth Hills\n[ARROW_DOWN]Starbirth Town
 
-#org @gText_AerilonHills_AlmondObservatorySign
+#org @gText_StarbirthHills_AlmondObservatorySign
 [BLACK]Almond Observatory\n"Discovering the beyond".
 
 //Goldtree Wilds:
@@ -334,14 +334,20 @@ There is an inward grove over here!\nMaybe it leads to an opening[.]
 King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 
 //Erstonia Canyon:
-#org @gText_ErstoniaCanyon_SomethingHappensAtNightGirlNPC
-[RED]Depending on what time you come,\ndifferent Pok\emon will appear!\pAt daytime, you can find IO.\nAt nighttime, you can find IO.\pPretty cool, huh?
+#org @gText_ErstoniaCanyon_SomethingHappensAtNightBoyNPC
+[BLUE]You know what happened? A girl named\nLaxyp said something strange to me!\pShe said [GREEN]time of day based wild\nPok\emon encounters are coming soon[BLUE].\pWhat does that even mean?
 
 #org @gText_ErstoniaCanyon_SandstormGuyNPC
 [BLUE]There is always a sandstorm brewing\nin Erstonia Canyon!\pIt can affect how you battle and\nhow you explore. Be careful!
 
+#org @gText_ErstoniaCanyon_MoltresMountainGuyNPC
+[BLUE]Atop [GREEN]Moltres Mountain[BLUE], my brother\nsits in his workshop, alone!\pHe indulges in only the most special\nof items and is a help to everyone.\pBut for some time he has not been\nseen[.] I wonder where he is.
+
 #org @gText_ErstoniaCanyon_RuinwayPassageLadyNPC
 [RED]I can cross over to other towns and\ncities through [GREEN]Ruinway Passage[RED]!\pThis passage is built inside this\nentire mountain range, by jolly!\pI've heard ancient Pok\emon were used\nto create them. Impressive, right?
+
+#org @gText_ErstoniaCanyon_LuxuryBallGuyNPC
+[BLUE]Luxury Balls increase the happiness\nof a Pok\emon if caught in it!\pThey're pretty hard to come by, but\neverything has a price, right?\pYou might come across a special\nPok\eBall seller, though! Good luck!
 
 #org @gText_ErstoniaCanyon_MainRouteSign
 [BLACK]Erstonia Canyon\n[ARROW_LEFT]Erstonia City
@@ -362,6 +368,15 @@ King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 [BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Seviper[BLACK].
 
 //Westray Pass:
+#org @gText_WestrayPass_ShockerGuyNPC
+[BLUE]Shocker, buzz, krk! I am not a\nTrainer, ha. You thought so, right?\pNah, I just like being here and there.\nDo nothing each an' every day, kr!\pBut I do want to do something! You\nknow what that is? You do, righto?\pI wanna go to [GREEN]Zapdos Valley[BLUE], dudes'!\nCrazy shocker, right? Anway, see ya.
+
+#org @gText_WestrayPass_NurseHealsGirlNPC
+[RED]As you go further and further and\nyour journey, you'll meet nurses!\pThey heal your Pok\emon if you battle\nthem and win! So artistic[.]
+
+#org @gText_WestrayPass_WorldBuildingGirlNPC
+[RED]This random girl Laxyp told me that\neven more world-building is coming[.]\pWhat's up with that? What do you\nthink she meant?
+
 #org @gText_WestrayPass_WestrayCatacombsAreDangerousGirlNPC
 [RED]Beware, Trainer! Do not step foot in\n[GREEN]Westray Catacombs[RED]!\pYou have been warned!
 

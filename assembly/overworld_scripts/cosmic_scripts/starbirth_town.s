@@ -7,46 +7,46 @@
 
 #@@@@@@@@;Master Map;@@@@@@@@
 #NPC scripts:
-.global NPCScript_AerilonTown_BossyGirl
-NPCScript_AerilonTown_BossyGirl:
+.global NPCScript_StarbirthTown_BossyGirl
+NPCScript_StarbirthTown_BossyGirl:
 	compare 0x4029, 0x5 @0x4029 is set to 0x5 when [player] meets Rival outside Observatory
 	if greaterorequal _goto OtherMessageFromBossyGirl
-	msgboxname gText_AerilonTown_BossyGirl_01, MSG_FACE, gText_BossyGirlName
+	msgboxname gText_StarbirthTown_BossyGirl_01, MSG_FACE, gText_BossyGirlName
 	end
 	
 OtherMessageFromBossyGirl:
-	msgboxname gText_AerilonTown_BossyGirl_02, MSG_FACE, gText_BossyGirlName
+	msgboxname gText_StarbirthTown_BossyGirl_02, MSG_FACE, gText_BossyGirlName
 	end
 
 @;////////////////////////////////////////////////
 
-.global NPCScript_AerilonTown_OldMan
-NPCScript_AerilonTown_OldMan:
+.global NPCScript_StarbirthTown_OldMan
+NPCScript_StarbirthTown_OldMan:
 	lock
 	faceplayer
-	msgbox gText_AerilonTown_OldMan_01, MSG_YESNO
+	msgbox gText_StarbirthTown_OldMan_01, MSG_YESNO
 	compare LASTRESULT 0x0
 	if equal _goto OldManTellsAboutTheEstablishment
-	msgbox gText_AerilonTown_OldMan_02, MSG_KEEPOPEN
+	msgbox gText_StarbirthTown_OldMan_02, MSG_KEEPOPEN
 	closeonkeypress
 	release
 	end
 
 OldManTellsAboutTheEstablishment:
-	msgbox gText_AerilonTown_OldMan_03, MSG_KEEPOPEN
+	msgbox gText_StarbirthTown_OldMan_03, MSG_KEEPOPEN
 	closeonkeypress
 	release
 	end
 
 #Tile scripts:
-.global TileScript_AerilonTown_PlayerTriesToLeave
-TileScript_AerilonTown_PlayerTriesToLeave:
+.global TileScript_StarbirthTown_PlayerTriesToLeave
+TileScript_StarbirthTown_PlayerTriesToLeave:
 	lock
 	checksound
 	sound 0x15
 	applymovement 0x4, m_LookDownExclaim @0x4 is the girl standing at right edge of town
 	waitmovement 0x0
-	msgboxname gText_AerilonTown_BossyGirl_03, MSG_KEEPOPEN, gText_BossyGirlName
+	msgboxname gText_StarbirthTown_BossyGirl_03, MSG_KEEPOPEN, gText_BossyGirlName
 	waitmsg
 	closeonkeypress
 	applymovement PLAYER, m_StepLeft
@@ -66,11 +66,11 @@ m_StepLeft: .byte walk_left_slow, end_m
 .equ VAR_TEMP_2, 0x51FF
 .equ MAIN_STORY_LEAVING_TOWN, 0x6
 
-.global TileScript_AerilonTown_PlayerLeavingTown
-TileScript_AerilonTown_PlayerLeavingTown:
+.global TileScript_StarbirthTown_PlayerLeavingTown
+TileScript_StarbirthTown_PlayerLeavingTown:
 	lock
 	checkflag 0x230 @Flag is set if [player] has already taken parcel from Prof. Almond in his house to avoid loop
-	if equal _goto AlreadyMetProfessorWhenLeavingAerilonTown
+	if equal _goto AlreadyMetProfessorWhenLeavingStarbirthTown
 	pause 0xE
 	sound 0x8
 	opendoor 0x1C 0xD
@@ -94,12 +94,12 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	compare VAR_TEMP_2, 0x10 @Y-Pos equals 0x10
 	if equal _call ApproachPlayerWhenScriptNumberFive
 	spriteface PLAYER, LEFT
-	msgboxname gText_AerilonTown_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	fanfare 0x13E
 	obtainitem 0x15D 0x1
 	waitfanfare
-	msgboxname gText_AerilonTown_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	compare VAR_TEMP_2, 0xE @Y-Pos equals 0xE
 	if equal _call LeavePlayerWhenScriptNumberThree
@@ -117,7 +117,7 @@ TileScript_AerilonTown_PlayerLeavingTown:
 	closedoor 0x1C 0xD
 	waitdooranim
 	pause 0x20
-	goto AlreadyMetProfessorWhenLeavingAerilonTown
+	goto AlreadyMetProfessorWhenLeavingStarbirthTown
 
 ApproachPlayerWhenScriptNumberThree:
 	applymovement PROF, m_MoveTowardsPlayerWhenScriptNumberThree
@@ -149,8 +149,8 @@ LeavePlayerWhenScriptNumberFive:
 	waitmovement 0x0
 	return
 
-AlreadyMetProfessorWhenLeavingAerilonTown:
-	msgboxname gText_AerilonTown_Mom_01, MSG_KEEPOPEN, gText_MomName
+AlreadyMetProfessorWhenLeavingStarbirthTown:
+	msgboxname gText_StarbirthTown_Mom_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	spriteface PLAYER, LEFT
 	showsprite MOM
@@ -162,7 +162,7 @@ AlreadyMetProfessorWhenLeavingAerilonTown:
 	if equal _call SetMomPosition02
 	applymovement MOM, m_MomMovesToPlayer
 	waitmovement 0x0
-	msgboxname gText_AerilonTown_Mom_02, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_Mom_02, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomLeaves
 	waitmovement 0x0
@@ -202,29 +202,29 @@ m_MomLeaves: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_l
 .equ MAIN_STORY_LEAVE_HOUSE, 0x1
 .equ MAIN_STORY_TALKED_TO_PROF_AIDE, 0x2
 
-.global gMapScripts_AerilonTown
-gMapScripts_AerilonTown:
-	mapscript MAP_SCRIPT_ON_LOAD SetMapTileScript_AerilonTown
-	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonTown
-	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_AerilonTown
+.global gMapScripts_StarbirthTown
+gMapScripts_StarbirthTown:
+	mapscript MAP_SCRIPT_ON_LOAD SetMapTileScript_StarbirthTown
+	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_StarbirthTown
+	mapscript MAP_SCRIPT_ON_TRANSITION MapEntryScript_StarbirthTown
 	.byte MAP_SCRIPT_TERMIN
 
-SetMapTileScript_AerilonTown:
+SetMapTileScript_StarbirthTown:
 	compare 0x4029, 0x5 @0x4029 (var main story) is set to 0x5 when [player] meets Rival outside Observatory
-	if lessthan _call SetMapTileScript_AerilonTown_SetClosedDoor
+	if lessthan _call SetMapTileScript_StarbirthTown_SetClosedDoor
 	end
 
-SetMapTileScript_AerilonTown_SetClosedDoor:
+SetMapTileScript_StarbirthTown_SetClosedDoor:
 	setmaptile 0x1C 0xD 0x313 0x1
 	return
 	
-LevelScripts_AerilonTown: 
-	levelscript VAR_MAIN_STORY, MAIN_STORY_LEAVE_HOUSE, LevelScript_AerilonTown
+LevelScripts_StarbirthTown: 
+	levelscript VAR_MAIN_STORY, MAIN_STORY_LEAVE_HOUSE, LevelScript_StarbirthTown
 	.hword LEVEL_SCRIPT_TERMIN
 
-LevelScript_AerilonTown:
+LevelScript_StarbirthTown:
 	lockall
-	msgboxname gText_AerilonTown_Aide_01, MSG_KEEPOPEN, gText_UnknownName
+	msgboxname gText_StarbirthTown_Aide_01, MSG_KEEPOPEN, gText_UnknownName
 	closeonkeypress
 	checksound
 	sound 0x15
@@ -232,7 +232,7 @@ LevelScript_AerilonTown:
 	waitmovement 0x0
 	applymovement PROF_AIDE, m_WalkLeftTowardsPlayer
 	waitmovement 0x0
-	msgboxname gText_AerilonTown_Aide_02, MSG_KEEPOPEN, gText_AideName
+	msgboxname gText_StarbirthTown_Aide_02, MSG_KEEPOPEN, gText_AideName
 	closeonkeypress
 	applymovement PROF_AIDE, m_WalkRightAwayFromPlayer
 	waitmovement 0x0
@@ -247,14 +247,14 @@ m_LookRightQuestion: .byte look_right, say_question, pause_long, end_m
 m_WalkLeftTowardsPlayer: .byte walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, walk_left, end_m
 m_WalkRightAwayFromPlayer: .byte walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, walk_right, end_m
 
-MapEntryScript_AerilonTown:
+MapEntryScript_StarbirthTown:
 	setworldmapflag 0x890
 	end
 
 #@@@@@@@@;Sub-maps;@@@@@@@@
 #NPC scripts:
-.global NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond
-NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
+.global NPCScript_StarbirthTown_HouseOfProfessor_ProfessorAlmond
+NPCScript_StarbirthTown_HouseOfProfessor_ProfessorAlmond:
 	compare 0x4029, 0x8
 	if greaterorequal _goto PlayerHasDelieverdParcelToFatherOfRival
 	compare 0x4029, 0x6 @0x4029 is set to 0x6 when Mom sees off [player]; since flag is cleared in that script, added compare var as to avoid loop
@@ -263,12 +263,12 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 	if equal _goto AlreadyMetProfessor
 	lock
 	faceplayer
-	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_HouseOfProfessor_ProfAlmond_01, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	fanfare 0x13E
 	obtainitem 0x15D 0x1
 	waitfanfare
-	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_HouseOfProfessor_ProfAlmond_02, MSG_KEEPOPEN, gText_ProfAlmondName
 	closeonkeypress
 	setflag 0x230 @To avoid loop (story flag)
 	setflag 0x231 @For if [player] goes and meets Mom instead of leaving town
@@ -278,13 +278,13 @@ NPCScript_AerilonTown_HouseOfProfessor_ProfessorAlmond:
 
 AlreadyMetProfessor:
 	lock
-	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_03, MSG_FACE, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_HouseOfProfessor_ProfAlmond_03, MSG_FACE, gText_ProfAlmondName
 	spriteface 0x1, RIGHT
 	release
 	end
 
 PlayerHasDelieverdParcelToFatherOfRival:
-	msgboxname gText_AerilonTown_HouseOfProfessor_ProfAlmond_04, MSG_FACE, gText_ProfAlmondName
+	msgboxname gText_StarbirthTown_HouseOfProfessor_ProfAlmond_04, MSG_FACE, gText_ProfAlmondName
 	spriteface 0x1, RIGHT
 	release
 	end
@@ -294,8 +294,8 @@ PlayerHasDelieverdParcelToFatherOfRival:
 .equ MOM, 1
 .equ VAR_MAIN_STORY, 0x4029
 
-.global NPCScript_AerilonTown_PlayerHouse_PlayerMom
-NPCScript_AerilonTown_PlayerHouse_PlayerMom:
+.global NPCScript_StarbirthTown_PlayerHouse_PlayerMom
+NPCScript_StarbirthTown_PlayerHouse_PlayerMom:
 	lock
 	compare VAR_MAIN_STORY, 0x1
 	if equal _goto PlayerAlreadyTalkedWithMom
@@ -316,62 +316,62 @@ NPCScript_AerilonTown_PlayerHouse_PlayerMom:
 
 MomUniversal: @Alternate name: AlreadyVisitedGoldtreeVillageAndTalkedToMomBeforeOrDidNotTalkWithMom
 	faceplayer
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_Universal_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	call HealPlayerParty
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_Universal_02, MSG_FACE, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_Universal_02, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyTalkedWithMom:
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_01, MSG_FACE, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_01, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyMetAide:
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_02, MSG_FACE, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_02, MSG_FACE, gText_MomName
 	release
 	end
 
 PlayerMetRival:
 	checkflag 0x231 @This flag checks whether [player] talked to Mom after receiving starter
-	if equal _goto PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_03, MSG_FACE, gText_MomName
+	if equal _goto PlayerHasAlreadyTakenParcelFromProfessorAlmondInStarbirthTown
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_03, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
-PlayerHasAlreadyTakenParcelFromProfessorAlmondInAerilonTown:
+PlayerHasAlreadyTakenParcelFromProfessorAlmondInStarbirthTown:
 	faceplayer
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_04, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_04, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	clearflag 0x231 @Since var is set below, no use for this flag to be set
-	setvar VAR_MAIN_STORY, 0x6 @This var is also set to 0x6 in a script when [player] is leaving Aerilon Town without meeting Mom
+	setvar VAR_MAIN_STORY, 0x6 @This var is also set to 0x6 in a script when [player] is leaving Starbirth Town without meeting Mom
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyMetProfessor:
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_05, MSG_FACE, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_05, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyDefeatedRival:
 	faceplayer
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_HealPKMN, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_HealPKMN, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	call HealPlayerParty
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
 
 PlayerAlreadyVisitedGoldtree: 
 	faceplayer
-	msgboxname gText_AerilonTown_PlayerHouse_PlayerMom_06, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_06, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	setflag 0x231 @Set again so mom says something different and heals party
 	spriteface MOM, LEFT
@@ -387,8 +387,8 @@ HealPlayerParty:
 	return
 
 #Sign scripts:
-.global SignScript_AerilonTown_PlayerRoom_PersonalComputer
-SignScript_AerilonTown_PlayerRoom_PersonalComputer:
+.global SignScript_StarbirthTown_PlayerRoom_PersonalComputer
+SignScript_StarbirthTown_PlayerRoom_PersonalComputer:
 	special 0x187
 	compare LASTRESULT, 0x2
 	if equal _goto EndScript
@@ -398,7 +398,7 @@ SignScript_AerilonTown_PlayerRoom_PersonalComputer:
 	setvar 0x8004, 0x1
 	special 0xD6
 	sound 0x4
-	msgbox gText_AerilonTown_PlayerRoom_PersonalComputerBootUp, MSG_KEEPOPEN
+	msgbox gText_StarbirthTown_PlayerRoom_PersonalComputerBootUp, MSG_KEEPOPEN
 	special 0xF9
 	waitstate
 	special 0x190
@@ -415,32 +415,32 @@ EndScript:
 .equ MAIN_STORY_WOKE_UP_IN_HOUSE, 0x0
 .equ MAIN_STORY_TALKED_TO_MOM, 0x1
 
-.global gMapScripts_AerilonTown_PlayerHouse
-gMapScripts_AerilonTown_PlayerHouse:
-	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_AerilonTown_PlayerHouse
+.global gMapScripts_StarbirthTown_PlayerHouse
+gMapScripts_StarbirthTown_PlayerHouse:
+	mapscript MAP_SCRIPT_ON_FRAME_TABLE LevelScripts_StarbirthTown_PlayerHouse
 	.byte MAP_SCRIPT_TERMIN
 
-LevelScripts_AerilonTown_PlayerHouse:
-	levelscript VAR_MAIN_STORY, MAIN_STORY_WOKE_UP_IN_HOUSE, LevelScript_AerilonTown_PlayerHouse
+LevelScripts_StarbirthTown_PlayerHouse:
+	levelscript VAR_MAIN_STORY, MAIN_STORY_WOKE_UP_IN_HOUSE, LevelScript_StarbirthTown_PlayerHouse
 	.hword LEVEL_SCRIPT_TERMIN
 
-LevelScript_AerilonTown_PlayerHouse:
+LevelScript_StarbirthTown_PlayerHouse:
 	lockall
 	checksound
 	sound 0x15
 	applymovement MOM, m_LookUpExclaim
 	waitmovement 0x0
 	pause 0x1E
-	msgboxname gText_AerilonTown_PlayerHouse_Mom_01, MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_Mom_01, MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomMoveToPlayer
 	waitmovement 0x0
 	spriteface PLAYER, DOWN
-	msgboxname gText_AerilonTown_PlayerHouse_Mom_02a MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_Mom_02a MSG_KEEPOPEN, gText_MomName
 	fanfare 0x10D
-	msgbox gText_AerilonTown_PlayerHouse_Mom_02b MSG_KEEPOPEN
+	msgbox gText_StarbirthTown_PlayerHouse_Mom_02b MSG_KEEPOPEN
 	waitfanfare
-	msgboxname gText_AerilonTown_PlayerHouse_Mom_02c MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_Mom_02c MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomMoveBackToSpot
 	waitmovement 0x0
