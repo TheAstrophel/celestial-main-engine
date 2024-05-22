@@ -40,7 +40,7 @@ Prof. Almond's house
 [BLUE]No one really knows why the trees\nhere are yellow in color!\pMaybe because of the static of wild\nPikachu's? Or due to gold?
 
 #org @gText_GoldtreeVillage_PKMNCenterBoyNPC
-[BLUE]Almost every town or city has a\nPok\emon Center and Pok\eMart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\eMart's!
+[BLUE]Almost every town or city has a\nPok\emon Center and a Pok\emon Mart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\e Mart's!
 
 #org @gText_GoldtreeVillage_QuestGirlNPC
 [RED]This girl Laxyp told me that quests\nwill be coming to Triton soon[.]\pWhat does that even mean?
@@ -61,7 +61,7 @@ Prof. Almond's house
 [RED]This kid infront of me is taking\nforever! I just wanted Antidotes[.]
 
 #org @gText_GoldtreeVillage_Mart_BigSelectionGuyNPC
-[BLUE]Boy, this Mart sure has some neat\nstock! You should buy something!
+[BLUE]Boy, this Pok\e Mart sure has some\nneat stock. You should buy something!
 
 #org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
 [BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Starbirth Town?\nOh, our neighbours! Hi, there!
@@ -106,17 +106,35 @@ Prof. Almond's house
 #org @gText_ErstoniaCity_TrainerTipsInformantManNPC
 [BLUE]Read any sign you come across!\pThey contain highly useful tips for\nTrainers like you!\pI was a Trainer who didn't like them!\nBasically, I was stupid! Ha ha!
 
+#org @gText_ErstoniaCity_HouseOfMayor_MayorWifeNPC
+[RED]It's so tough to have a such a\npowerful Trainer as your son[.]\pOh ho, was I bragging? My bad. It's\njust, [GREEN]Landre[RED] is my pride and joy!
+
+#org @gText_ErstoniaCity_HouseOfMayor_MayorNPC
+[BLUE]Ah, yes, I am 'za Mayor. Oh ho,\nnot only 'zat, [GREEN]Landre[BLUE] is my son!\pWho would've 'zought he would 'zrow\nup to be such a fine young man?
+
+#org @gText_ErstoniaCity_HouseOfMayor_LandreBrotherNPC
+[BLUE]Yo, bud-bud, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
+
+#org @gText_ErstoniaCity_Mart_YouWillBeSurprisedGuyNPC
+[BLUE]You'll be surprised by the amount of\nTrainers who don't buy Potions.\pEvery Trainer I've ever encountered\nnever heal their Pok\emon in battle!\pWhat's up with that?
+
+#org @gText_ErstoniaCity_Mart_BadgeBasedMartsGuyNPC
+[BLUE]Pok\emon Marts are badge-based these\ndays. What's that mean, you ask?\pWell, the more Gym Badges you have,\nbetter are the items in stock!
+
 #org @gText_ErstoniaCity_House_LittleGirlNPC
 [RED]Do you know what an outsider Pok\emon\nis?\pIt's a Pok\emon that you get in a\ntrade!\pIt grows fast, but it may ignore an\nunskilled Trainer in battle.
 
 #org @gText_ErstoniaCity_House_AbilityAndEggsManNPC
-[BLUE]Did you know?\pIf a Pok\emon in your party has the\n[GREEN]Flame Body[BLUE] or [GREEN]Magma Armor[BLUE] ability,\lit causes Eggs to hatch more quickly.
+[BLUE]Why, hello, there! Let me share some\nPok\emon ability wisdom with you!\pIf a Pok\emon in your party has the\n[GREEN]Flame Body[BLUE] or [GREEN]Magma Armor[BLUE] ability,\lEggs will hatch more quickly!\pI had a day-care business, so I'm\npretty wise in these matters, yup!\pIf you want your Pok\emon raised,\ngo to [GREEN]Crystalrail Town's[BLUE] day-care!
 
 #org @gText_ErstoniaCity_House_DragoniteFavoritePKMNBoyNPC
 [BLUE]My favourite Pok\emon is [GREEN]Dragonite[BLUE]!\nI'd love to have my own someday.
 
 #org @gText_ErstoniaCity_House_LoveToTravelGirlNPC
-[RED]I love to travel! Have you ever\nvisited [GREEN]Stonepeak City[RED]?\pThe view is to die for, but it's so\ncold there!
+[RED]I love to travel! Have you ever\nvisited [GREEN]Frostpeak City[RED]?\pThe view is to die for, but it's so\ncold there!
+
+#org @gText_ErstoniaCity_PKMNCenter_TravelingOldManNPC
+[BLUE]Hm, yes, you look like a traveling\nPok\emon Tranier! First time out, huh?\pTake care, because things can get pretty\nrough far from home!
 
 #org @gText_ErstoniaCity_House_AsTheyGrowOldManNPC
 [BLUE]Pok\emon learn new techniques as they\ngrow.\pBut some moves must be taught to\nthem by people.\pI taught my Pidgey [GREEN]Fly[BLUE][.] Why can't\na bird fly without it?
@@ -132,15 +150,6 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 
 #org @gText_ErstoniaCity_House_CheckOutLandreManNPC
 [BLUE]You're a Trainer, right? [GREEN]Landre's[BLUE]\nlooking for new challengers.\pYou should try taking him on!
-
-#org @gText_ErstoniaCity_HouseOfMayor_MayorWifeNPC
-[RED]It's so tough to have a such a\npowerful Trainer as your son[.]\pOh ho, was I bragging? My bad. It's\njust, [GREEN]Landre[RED] is my pride and joy!
-
-#org @gText_ErstoniaCity_HouseOfMayor_MayorNPC
-[BLUE]Ah, yes, I am 'za Mayor. Oh ho,\nnot only 'zat, [GREEN]Landre[BLUE] is my son!\pWho would've 'zought he would 'zrow\nup to be such a fine young man?
-
-#org @gText_ErstoniaCity_HouseOfMayor_LandreBrotherNPC
-[BLUE]Yo, bud-bud, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
 
 #org @gText_ErstoniaCity_ErstoniaApartments_ReceptionOldManNPC
 [BLUE]Bah! What'd ya want?\pYeah, dis' the reception, but go\naway, the rooms are full.\pBah!\pOh[.] bah[.] I need my teeth, bah[.]
@@ -239,6 +248,16 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 #org @gText_WestrayVillage_House_HistoryIsImportantOldLadyNPC
 [RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Triton Range.\pMany civilizations have passed on them,\nand even in them.\pThrough time all that is left are\nruins and structures of their world.
 
+//debug
+#org @gText_WestrayVillage_PKMNCenter_RegionMapsMissingGuyNPC
+[BLUE]You might have witnessed that no\nPok\emon Center has the region map.\pThat is because a huge shipment on\nthe Betaone Ship was halted.
+
+#org @gText_WestrayVillage_PKMNCenter_ArticunoClimbHardBoyNPC
+[BLUE]You might be passing through [GREEN]Articuno\nClimb[BLUE] sooner or later, so be ready!\pIt's a pretty big hike all the way\nup to [GREEN]Frostpeak City[BLUE].
+
+#org @gText_WestrayVillage_PKMNCenter_FlowerPKMNGirlGirlNPC
+[RED]Aren't these flowers just beautiful?\nThey remind me of my cute Pok\emon,\lFlabébé!
+
 #org @gText_WestrayVillage_House_OneTimeGirlNPC
 [RED]One time I was looking through the\napple farm [GREEN]when I suddenly sunk[RED]!\pLuckily only my leg was stuck, so I\ngot out pretty quick. It was scary!
 
@@ -253,6 +272,12 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 
 #org @gText_WestrayVillage_House_SawShadyPeopleGirlNPC
 [RED]Saw some shady folks near the farm,\nI did. Oh, boy, I hope all is good[.]
+
+#org @gText_WestrayVillage_Mart_RareCandyDealerGirlNPC
+[RED]You know about Rare Candy, right?\nIt is not sold at Pok\emon Marts.\p[.]But I've heard that there is a very\nsecret dealer who might sell it!
+
+#org @gText_WestrayVillage_Mart_RepelBoyNPC
+Repel not only keeps bugs away,\nit also works on weak Pokémon.\pPut your strongest Pokémon at the\nleft of the Pokémon List.\pIf your first Pokémon is strong,\nRepel's effect is boosted.
 
 #org @gText_WestrayVillage_FarmOfJoeSign
 [BLACK]Joe's Apple Farm\n"Red and plump, like rosy cheeks".
@@ -359,7 +384,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 [BLACK]Ruinway Passage\n"The city of the past".\pLeads to Igneous City & Crystalrail\nTown.
 
 #org @gText_ErstoniaCanyon_RuinwayPassage_UnownCarvingsSign
-[BLACK]These carvings appear to be old[.]\nThey depict different [GREEN]Unown [BLACK]shapes[.]
+[BLACK]These carvings appear to be old[.]\nThey depict different [GREEN]Unown [BLACK]shapes.
 
 #org @gText_ErstoniaCanyon_RuinwayPassage_RelicanthCarvingSign
 [BLACK]This carving appears to be very old[.]\nIt depicts the Pokémon [GREEN]Relicanth[BLACK].
@@ -372,7 +397,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 [BLUE]Shocker, buzz, krk! I am not a\nTrainer, ha. You thought so, right?\pNah, I just like being here and there.\nDo nothing each an' every day, kr!\pBut I do want to do something! You\nknow what that is? You do, righto?\pI wanna go to [GREEN]Zapdos Valley[BLUE], dudes'!\nCrazy shocker, right? Anway, see ya.
 
 #org @gText_WestrayPass_NurseHealsGirlNPC
-[RED]As you go further and further and\nyour journey, you'll meet nurses!\pThey heal your Pok\emon if you battle\nthem and win! So artistic[.]
+[RED]As you go further and further on\nyour journey, you'll meet nurses!\pThey heal your Pok\emon if you battle\nthem and win! So artistic[.]
 
 #org @gText_WestrayPass_WorldBuildingGirlNPC
 [RED]This random girl Laxyp told me that\neven more world-building is coming[.]\pWhat's up with that? What do you\nthink she meant?
@@ -390,7 +415,7 @@ King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 [BLACK]Trainer Tips!\pIn battle, you can check the details\nof the moves of your Pok\emon.\pJust press [L_BUTTON] before selecting a\nmove!
 
 #org @gText_WestrayPass_TrainerTips_02Sign
-[BLACK]Trainer Tips!\pKeep an eye out for shady areas\nbetween [GREEN]trees[BLACK].\pAlso keep an eye out for concealed\n[GREEN]cave openings.\pThese indicate [GREEN]Hidden Grotto's[BLACK] and\n[GREEN]Secret Temples[BLACK]!
+[BLACK]Trainer Tips!\pKeep an eye out for shady areas\nbetween trees.\pAlso keep an eye out for concealed\ncave openings.\pThese indicate Hidden Grotto's and\nHidden Chambers!
 
 #org @gText_WestrayPass_MainRoute_02Sign
 [BLACK]Westray Pass\n[ARROW_RIGHT]Westray Village - [ARROW_DOWN]Erstonia City

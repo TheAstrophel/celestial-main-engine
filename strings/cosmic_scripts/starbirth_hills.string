@@ -12,7 +12,7 @@
 [BLUE]Hello again, [PLAYER]! Back so\nsoon, eh? Ready to go?
 
 #org @gText_StarbirthHills_Rival_01
-[BLUE]We better get going. I'd rather be\nexploring, but this works too.\pHonestly, I have no idea why I even\nneed to show you the way.\pSeems like some forced friendship\nnonsense, I don't know.\pBut now since we know each other a\nlittle, let's have a battle.\pNothing like two underage kids having\na Pok\emon battle, am I right?\pNot here, though. Meet me in [GREEN]Starbirth\nHike[BLUE]. I'll wait for you there.\pOh, yeah, don't forget to nab the\nparcel from old Almond.\pCatch you later.
+[BLUE]We better get going. I'd rather be\nexploring, but this works too.\pHonestly, I have no idea why I even\nneed to show you the way.\pSeems like some forced friendship\nnonsense, I don't know.\pBut now since we know each other a\nlittle, let's have a battle.\pNothing like two underage kids having\na Pok\emon battle, am I right?\pNot here, though. Meet me in\n[GREEN]Starbirth Hike[BLUE]. I'll wait for you there.\pOh, yeah, don't forget to nab the\nparcel from old Almond.\pCatch you later.
 
 //Sub-maps:
 #org @gText_StarbirthHills_AlmondObservatory_SecondAide

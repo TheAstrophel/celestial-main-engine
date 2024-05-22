@@ -84,11 +84,17 @@ NPCScript_GoldtreeVillage_Mart_LoserBoy:
 	msgbox gText_GoldtreeVillage_Mart_LoserBoy_ChoosingItem, MSG_KEEPOPEN
 	closeonkeypress
 	faceplayer
+	checksound
+	sound 0x15
+	applymovement 0x1, m_MartBoyCrying
+	waitmovement 0x0
 	msgbox gText_GoldtreeVillage_Mart_LoserBoy_WaitYourTurn, MSG_KEEPOPEN
 	closeonkeypress
 	spriteface 0x2, LEFT @Loser boy faces left
 	release
 	end
+
+m_MartBoyCrying: .byte look_down, exclaim, pause_long, pause_long, pause_long, end_m
 
 @;////////////////////////////////////////////////
 
