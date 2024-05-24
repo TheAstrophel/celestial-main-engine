@@ -11,6 +11,45 @@ Titlescreen Cry Fix THUMB hook removed, changed cry to deoxys by GBA intro manag
 Changed 2021 to 2024 in TS.
 Inserted new DPE (WITHOUT ANY EDITS TO FILES).
 Inserted new DPE w/ EDITS TO FILES.
+Removed old DPE and added new DPE.
+Removed old DPE and added new DPE WITH UPDATED MUDKIP LEARNSET.
+Did some grass changes in Starbirth Hike and GT Wilds.
+Edited Battle Boxes.
+Summary screen palette changed.
+Edited TM case palette.
+Edited pokedex palette.
+Edited Textbox palette.
+Edited first badge (er...)
+Edited Trainer Card palette.
+Edited Battle Textbox palette.
+^01
+
+Edited Oak Intro BG/platform palette.
+Oak Intro sprite changed.
+Added male and female intro front sprites.
+Added male and female front sprites.
+Inserted Male back sprite.
+Inserted Female back sprite.
+^02
+
+Inserted Rival Trainer sprite.
+Changed all basic female names to Lumine.
+Changed all basic male names to Aether.
+Changed all basic rival names to Isaac (didn't work?).
+Edited Oak Intro speech.
+Added Landre Trainer sprite.
+Changed Starbirth Town house palettes VIA HMA (roof and walls).
+^03
+
+Player OW inserted.
+Rival OW inserted.
+Prof. Almond OW inserted.
+Inserted Landre's OW.
+Trainer data of Landre made BY G3T.
+Added GBC text patch.
+Inserted male/female bag sprites.
+Some changes in Faery Woods.
+Placeholder Gym 1 made.
 --ruinway non trainers
 --encounter music by class check in cfru
 

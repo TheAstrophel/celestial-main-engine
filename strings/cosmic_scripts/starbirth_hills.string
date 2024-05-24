@@ -12,7 +12,7 @@
 [BLUE]Hello again, [PLAYER]! Back so\nsoon, eh? Ready to go?
 
 #org @gText_StarbirthHills_Rival_01
-[BLUE]We better get going. I'd rather be\nexploring, but this works too.\pHonestly, I have no idea why I even\nneed to show you the way.\pSeems like some forced friendship\nnonsense, I don't know.\pBut now since we know each other a\nlittle, let's have a battle.\pNothing like two underage kids having\na Pok\emon battle, am I right?\pNot here, though. Meet me in\n[GREEN]Starbirth Hike[BLUE]. I'll wait for you there.\pOh, yeah, don't forget to nab the\nparcel from old Almond.\pCatch you later.
+[BLUE]We better get going. I'd rather be\nexploring, but this works too.\pHonestly, I have no idea why I even\nneed to show you the way.\pSeems like some forced friendship\nnonsense, I don't know.\pBut now since we know each other a\nlittle, let's have a battle.\pNothing like two underage kids having\na Pok\emon battle, am I right?\pNot here, though. Meet me in\n[GREEN]Starbirth Hike[BLUE]. I'll wait for you!\pOh, yeah, don't forget to nab the\nparcel from old Almond.\pCatch you later.
 
 //Sub-maps:
 #org @gText_StarbirthHills_AlmondObservatory_SecondAide
@@ -31,7 +31,7 @@
 [BLUE]If you'll excuse me, [PLAYER][.]
 
 #org @gText_StarbirthHills_AlmondObservatory_Prof_02
-[BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in Starbirth Town!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random Trainer, right?\pYou, my dear boy, are an exceptional\ncase!\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
+[BLUE]Hello, [PLAYER]!\nHow are you doing on this fine day?\pI'm sure you're confused as to why\nyou're here with no explaination!\pOh, but where ever are my manners?\nI should formally introduce myself!\pMy name is [GREEN]Professor Almond[BLUE], as I'm\nsure you know by now.\pI am a Pok\emon Professor! But I am\nalso a well known astronomer.\pStudying space is my passion! I\nrecently moved in [GREEN]Starbirth Town[BLUE]!\pHaha, but you're not here to listen\nabout me, are you?\pNo, the real reason I called you\nhere is because I believe it's time!\pYour mother quite agrees.\pWhat time is it? It's time to have\nyour [GREEN]own personal Pok\emon[BLUE]!\pOf course, I wouldn't just hand out a\nPok\emon to a random Trainer, right?\pYou, my dear boy, are an exceptional\ncase!\pYour father was a great Pok\emon\nTrainer, and you will be too[.]\pSo, without further ado, let's get\nyou your first Pok\emon!\pIf you'll follow me, please[.]
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_01
 [BLUE]This is better, a little more private.\nWelcome to my quaint office.\pI didn't want my aide's listening,\nas to not cause you any uncomfort.\pSo [PLAYER], why am I giving you a\nPok\emon? A rare one, at that?\p[.]It was your father's dying wish.
@@ -43,7 +43,7 @@
 [BLUE]Hey, Professor. Long time no see.\nFather sent me here.\pSaid something about showing someone\nthe way to [GREEN]Goldtree Village[BLUE].
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_03
-[BLUE]Ah, hello. Yes, I had sent your\nfather an e-mail. 
+[BLUE]Ah, hello. Yes, I had sent your\nfather an e-mail, yes.\pYour hair looks as wild as usual[.]
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_04
 [BLUE][PLAYER]! I'm sure you've not met\neach other, correct?\pThis is the son of a good friend of\nmine. His name is[.]
@@ -52,7 +52,7 @@
 [BLACK]Name him [GREEN][RIVAL][BLACK]?
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Prof_05
-[BLUE][RIVAL] will actually be choosing a\nPok\emon with you too.\pHe came here by borrowing his\nfather's little Eevee.\pAfter you've choosen your Pok\emon,\nI want you to take a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father.\p[RIVAL] lives in Goldtree Village,\neast of Starbirth Town.\pYou'll need to deliver the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
+[BLUE][RIVAL] will actually be choosing a\nPok\emon with you too.\pHe came here by borrowing his\nfather's little Eevee.\pAfter you've choosen your Pok\emon,\nI want you to take a parcel.\pYou'll need to take the parcel to\n[RIVAL]'s father.\p[RIVAL] lives in [GREEN]Goldtree Village[BLUE],\neast of [GREEN]Starbirth Town[BLUE].\pYou'll need to deliver the parcel\nthere.\pNow, choose a Pok\emon, [PLAYER]. Off\nyou go!
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_Rival_02
 [BLUE]Hey, [PLAYER], right?\nYeah, it's pleasure to meet you.\pI don't know why the Professor isn't\njust giving me the parcel.\pYou didn't have to go. Ah, well.\nI'll wait for you to choose.
@@ -88,7 +88,7 @@ Would you like to give [BUFFER1] a\nnickname?
 [BLUE]Very own Pok\emon, huh? A little less\nexciting than I thought.\pI'm gonna wait outside. We'll head for\nGoldtree Village when you're ready.
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ProfCongratulates
-[BLUE][PLAYER]. Come to my house in\nStarbirth Town.\pI had one of aide's deliver\nthe parcel there.\pDon't take long, now!
+[BLUE][PLAYER]. Come to my house in\n[GREEN]Starbirth Town[BLUE].\pI had one of aide's deliver\nthe parcel there.\pDon't take long, now!
 
 #org @gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_LastStarter
 Better not take this Pok\emon without\nthe Professor's permission!

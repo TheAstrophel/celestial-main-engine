@@ -29,6 +29,7 @@ npc 3 2 16 NPCScript_ErstoniaCity_Machop
 npc 3 2 17 NPCScript_ErstoniaCity_Meowth
 npc 3 2 11 NPCScript_ErstoniaCity_ItemObtainRareCandy
 npc 3 2 10 NPCScript_ErstoniaCity_ItemObtainTM27
+npc 6 2 0 NPCScript_ErstoniaCity_Gym_Landre
 tile 6 0 0 TileScript_ErstoniaCity_HouseOfMayor_PlayerTriesToEnterRoomOfLandre
 map 3 2 gMapScripts_ErstoniaCity
 
@@ -242,6 +243,10 @@ npc 3 23 9 NPCTalkingScript_ErstoniaCanyon_SandstormGuy
 npc 3 23 12 NPCTalkingScript_ErstoniaCanyon_MoltresMountainGuy
 npc 3 23 15 NPCTalkingScript_ErstoniaCanyon_RuinwayPassageLady
 npc 3 23 16 NPCTalkingScript_ErstoniaCanyon_LuxuryBallGuy
+npc 1 1 3 NPCTalkingScript_ErstoniaCanyon_RuinwayPassage_WeGetHikersGirl
+npc 1 1 4 NPCTalkingScript_ErstoniaCanyon_RuinwayPassage_IsNotCavingInMan
+npc 1 1 6 NPCTalkingScript_ErstoniaCanyon_RuinwayPassage_PopularSpotGuy
+npc 1 1 14 NPCTalkingScript_ErstoniaCanyon_RuinwayPassage_RarePKMNOldMan
 npc 3 24 1 NPCTalkingScript_WestrayPass_ShockerGuy
 npc 3 24 5 NPCTalkingScript_WestrayPass_NurseHealsGirl
 npc 3 24 15 NPCTalkingScript_WestrayPass_WorldBuildingGirl
@@ -259,11 +264,14 @@ sign 3 2 1 SignpostScript_ErstoniaCity_Gym
 sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
 sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
 sign 3 2 4 SignpostScript_ErstoniaCity_MayorHouse
+sign 6 2 0 SignpostScript_ErstoniaCity_Gym_Pillars
+sign 6 2 1 SignpostScript_ErstoniaCity_Gym_Pillars
 sign 6 8 0 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 6 8 1 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
 sign 3 3 2 SignpostScript_WestrayVillage_MainTown
 sign 3 19 0 SignpostScript_StarbirthHike_MainRoute
+sign 3 19 1 SignpostScript_StarbirthHike_MainRoute
 sign 3 20 0 SignpostScript_StarbirthHills_MainRoute
 sign 3 20 1 SignpostScript_StarbirthHills_AlmondObservatory
 sign 3 21 0 SignpostScript_GoldtreeWilds_MainRoute_01

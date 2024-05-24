@@ -9,19 +9,19 @@
 [RED]The wild is dangerous without a\nPok\emon!\pDon't even think of going beyond this\npoint without one!
 
 #org @gText_StarbirthTown_OldMan_01
-[BLUE]Hello! Do you know about [GREEN]The Triton\nEstablishment[BLUE]?
+[BLUE]Hello! Do you know about [GREEN]The Astronia\nEstablishment[BLUE]?
 
 #org @gText_StarbirthTown_OldMan_02
-[BLUE]Oh, alright[.]
+[BLUE]Oh, alright[.] I could've told you\nmore, you know[.]
 
 #org @gText_StarbirthTown_OldMan_03
-[GREEN]The Triton Establishment[BLUE], or [GREEN]The\nEstablishment[BLUE], is the overseer!\pThey overlook the entire [GREEN]Triton[BLUE]\nregion, and are it's founders.\pEven the [GREEN]Triton League[BLUE] is under [GREEN]The\nEstablishment[BLUE]!\pThey are also called the [GREEN]authorities[BLUE]\nin frankness.
+[GREEN]The Astronia Establishment[BLUE], or [GREEN]The\nEstablishment[BLUE], is the overseer!\pThey overlook the entire [GREEN]Astronia[BLUE]\nregion, and are it's founders.\pEven the [GREEN]Astronia League[BLUE] is under [GREEN]The\nEstablishment[BLUE]!\pThey are also called the [GREEN]authorities[BLUE]\nin frankness.
 
 #org @gText_StarbirthTown_Aide_01
 [BLUE][PLAYER]!
 
 #org @gText_StarbirthTown_Aide_02
-[BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the [GREEN]entrance of\nStarbirth Hills [BLUE]north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
+[BLUE]Your name is [PLAYER], right?\nI've been looking for you, indeed.\pI'm here on the behalf of [GREEN]Professor\nAlmond[BLUE].\pThe Professor would like to meet you,\nface to face.\pI'll be waiting at the base of\n[GREEN]Starbirth Hills[BLUE] north of here.\pI'll elaborate if there is any need\nto when we meet.\pI'll see you there, [PLAYER]!
 
 #org @gText_StarbirthTown_ProfAlmond_01
 [BLUE]Hey, [PLAYER]!\nYou completely forgot the parcel!\pHere, take it.
@@ -88,7 +88,7 @@
 [RED]I'll always be rooting for you!
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_06
-[RED]Oh, [PLAYER][.]\nStill can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!\pOh, and take this [GREEN]Region Map[RED] with\nyou! Bye, love!
+[RED]Oh, [PLAYER][.]\nStill can't believe you're leaving!\pYour father would've been so proud!\nHe wanted you to be a fine Trainer.\pGo and make both of us proud,\nhoney!\pOh, and take this [GREEN]Region Map[RED] with\nyou[.] Hm, what's this?\pOh, maybe it'll be shipped later on,\nin the Betaone Ship[.]\pAnyway, [PLAYER], take care!\nBye, love!
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_Universal_01
 [RED][PLAYER]! If you're here, why\nnot take a quick rest?

@@ -18,7 +18,7 @@ NPCScript_GoldtreeVillage_Rival:
 	msgboxname gText_GoldtreeVillage_Rival_01, MSG_KEEPOPEN, gText_RivalName
 	closeonkeypress
 	spriteface RIVAL, UP
-	opendoor 0xC 0x5
+	opendoor 0xA 0x5
 	waitdooranim
 	applymovement RIVAL, m_RivalEntersPKMNCenter
 	waitmovement 0x0
@@ -86,7 +86,7 @@ NPCScript_GoldtreeVillage_Mart_LoserBoy:
 	faceplayer
 	checksound
 	sound 0x15
-	applymovement 0x1, m_MartBoyCrying
+	applymovement 0x2, m_MartBoyCrying
 	waitmovement 0x0
 	msgbox gText_GoldtreeVillage_Mart_LoserBoy_WaitYourTurn, MSG_KEEPOPEN
 	closeonkeypress

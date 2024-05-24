@@ -14,3 +14,21 @@
 //Sub-maps:
 #org @gText_ErstoniaCity_HouseOfMayor_Mayor_01
 [BLUE]I'm terribly 'zorry, but [GREEN]Landre[BLUE]\n'zoesn't like people in his room.
+
+#org @LandreChallenges
+[BLUE]Ah, so you have come, as I thought.\nI'm [GREEN]Erstonia's[BLUE] Gym Leader, ha ha!\pMy rock-hard willpower is evident\neven in my Pokémon.\pMy Pokémon are all rock, and\nhave true-grit determination.\pThat's right - my Pokémon are all\nthe Rock-type!\pFu ha ha! You're going to challenge\nme knowing that you'll lose?\pThat's the Trainer's honor that\ncompels you to challenge me.\pFine, then!\nShow me your best![PLAY_BGM][56][01]
+
+#org @LandreLoses
+I took you for granted, and so\nI lost.\pAs proof of your victory, I confer\non you this[.] the official Astronia\lLeague Foundation Badge.\p[PLAY_BGM][0C][01][PLAYER] received the Foundation Badge\nfrom Landre!
+
+#org @gText_ErstoniaCity_Gym_Landre_EndingWalaEnd
+[BLUE]Ah, yes, about your Badge.\pThe Foundation Badge is a mark of\nproof of your strength.\pIt is the foundation of all the\nother Gym's you will face.\pThere are all kinds of Trainers in\nthis huge world of ours.\pYou appear to be very gifted as a\nPokémon Trainer.\pSo let me make a suggestion.\pGo onwards, [PLAYER], and be\none of the coming best!
+
+#org @gText_ErstoniaCity_Gym_Landre_CallsForTM
+[BLUE]Wait!\nTake this with you.
+
+#org @gText_ErstoniaCity_Gym_Landre_ExplainsTM
+[BLUE]TM39 contains Rock Tomb.\pIt hurls boulders at the foe and\nlowers its Speed.\pI hope you use it well.\nGo forward, [PLAYER]! Good luck!
+
+#org @gText_NoRoomFool
+[BLUE]You don't have room for this.

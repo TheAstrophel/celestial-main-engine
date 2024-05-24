@@ -4,6 +4,10 @@
 #include "include/constants/tutors.h"
 #include "include/new/catching.h"
 
+##Oak's PokéBall Position for Beta 0.0##
+0812FA50 66 22 44
+0812FC34 66 22 44
+
 ##Enable National Dex From Start##
 0806E25C 01 20 70 47
 

@@ -43,7 +43,7 @@ Prof. Almond's house
 [BLUE]Almost every town or city has a\nPok\emon Center and a Pok\emon Mart.\pYou can heal your Pok\emon for free\nat a Pok\emon Center.\pAnd you can buy some really useful\nstuff at Pok\e Mart's!
 
 #org @gText_GoldtreeVillage_QuestGirlNPC
-[RED]This girl Laxyp told me that quests\nwill be coming to Triton soon[.]\pWhat does that even mean?
+[RED]This girl Laxyp told me that quests\nwill be coming to Astronia soon[.]\pWhat does that even mean?
 
 #org @gText_GoldtreeVillage_House_PickUpAbilityLadyNPC
 [RED]Pok\emon with the Pickup ability might\nfind items on the ground.\pDon't give them any held items, or\nyou could miss out!
@@ -55,7 +55,7 @@ Prof. Almond's house
 [GREEN]King's Path[BLUE] is a mysterious place!\nI don't see anything special in it.\pYet I still feel like there is\nsomething there[.] waiting to be found[.]
 
 #org @gText_GoldtreeVillage_House_SamuelsWifeNPC
-[RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme.
+[RED]I used to be a Pok\emon Trainer in\nmy prime, too!\pI've travlled this whole region, from\nnook to cranny.\pMy husband, on the other hand,\nspends days in the Pok\emon Center!\pAt least our son, [GREEN][RIVAL][RED], went after\nme[.] even if he is adopted.\pBut no matter! I love him like my\nown!
 
 #org @gText_GoldtreeVillage_Mart_TakingForeverGirlNPC
 [RED]This kid infront of me is taking\nforever! I just wanted Antidotes[.]
@@ -64,10 +64,10 @@ Prof. Almond's house
 [BLUE]Boy, this Pok\e Mart sure has some\nneat stock. You should buy something!
 
 #org @gText_GoldtreeVillage_PKMNCeter_StrangerBoyNPC
-[BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.]Starbirth Town?\nOh, our neighbours! Hi, there!
+[BLUE]Oh, you're a stranger here!\nWhere did you come from?\p[.][GREEN]Starbirth Town[BLUE]?\nOh, our neighbours! Hi, there!
 
 #org @gText_GoldtreeVillage_PKMNCeter_GymGirlNPC
-[RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a [GREEN]Steel-type Gym[RED]!\pMaybe I can challenge it one day[.]
+[RED]There's a Gym in [GREEN]Erstonia City[RED].\nI heard it's a Rock-type Gym!\pMaybe I can challenge it one day[.]
 
 #org @gText_GoldtreeVillage_PKMNCenter_EncyclopediaNPC
 [BLACK]It seems to be an encyclopedia of\nsorts[.] Better not mess with it!
@@ -86,19 +86,19 @@ Prof. Almond's house
 [BLUE]You have to know your stuff to win\na Pok\emon battle!\p[.]Or a fist fight[.] Either way, don't\nshow the opponent any mercy!
 
 #org @gText_ErstoniaCity_FatmanNPC
-[BLUE]There are suspicious spots and\npassages all over Triton!\pI remember seeing something in the\n[GREEN]top left corner of Westray Village[BLUE][.]
+[BLUE]There are suspicious spots and\npassages all over Astronia!\pI remember seeing something in the\n[GREEN]top left corner of Westray Village[BLUE][.]
 
 #org @gText_ErstoniaCity_GymTipGirlNPC
-[RED]I've already lost to the Gym Leader\nlike four times already!\pNo biggie, right?\n[.]It is a biggie[.] I feel sad[.]\pBut I know how he works! He uses\n[GREEN]only Steel-type Pok\emon[RED]!\pThat means you should use [GREEN]Fairy-type[RED]\nif you battle him! Thank me later!
+[RED]I've already lost to the Gym Leader\nlike four times already!\pNo biggie, right?\n[.]It is a biggie[.] I feel sad[.]\pBut I know how he works! He uses\n[GREEN]only Rock-type Pok\emon[RED]!\pThat means you should use [GREEN]Fighting-type[RED]\nif you battle him! Thank me later!
 
 #org @gText_ErstoniaCity_TritonGirlNPC
-[RED]Oh my, Triton is so beautiful, is it\nnot? Our region, this is!\pIt's called [GREEN]Tri[RED]-ton because it is\nspread out over three main islands!\pI'd like to travel through them all\none day!
+[RED]Oh my, Astronia is so beautiful, is it\nnot? Our region, this is!\pIt's a very diverse, multi-climate\nregion! I'd love to travel it!
 
 #org @gText_ErstoniaCity_ErstoniaCanyonBoyNPC
-[BLUE]This path leads to [GREEN]Erstonia Canyon[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Ruinway Passage [BLUE]there!\p[GREEN]Ruinway Passage[BLUE] is the ruins of a\n1000 year old city built inside rock!
+[BLUE]This path leads to [GREEN]Erstonia Canyon[BLUE]!\p[GREEN]Gym Leader Landre[BLUE] often trains in\n[GREEN]Ruinway Passage[BLUE] there!\p[GREEN]Ruinway Passage[BLUE] is the ruins of a\n1000 year old city built inside rock!
 
 #org @gText_ErstoniaCity_GrandpaGirlNPC
-[RED]My Grandpa is the caretaker of the\n[GREEN]Erstonia City Pok\emon Gym[RED]!\pHe says it's an important job, and I\neven help sometimes!\pThe inside of the Gym is like a\npuzzle of sorts, you know?\pYou just have to pick the right\ndoor! Shh! Don't tell anyone, though!
+[RED]My Grandpa is the caretaker of the\n[GREEN]Erstonia City Pok\emon Gym[RED]!\pHe says it's an important job, and I\neven help sometimes!\pThe inside of the Gym is like a\npuzzle of sorts, you know?\pYou just have to navigate carefully!\nShh, don't tell anyone, though!
 
 #org @gText_ErstoniaCity_HiddenMachineManNPC
 [BLUE]HM's, HM's, HM's!\nStupid concept, really!\pHM, or [GREEN]Hidden Machine[BLUE], albeit\nimportant, are hard to come across.\pThey are highly useful tools that\ncan be taught to a Pok\emon.\pYou'll need many different HM's if\nyou are a traveling Trainer.
@@ -113,7 +113,7 @@ Prof. Almond's house
 [BLUE]Ah, yes, I am 'za Mayor. Oh ho,\nnot only 'zat, [GREEN]Landre[BLUE] is my son!\pWho would've 'zought he would 'zrow\nup to be such a fine young man?
 
 #org @gText_ErstoniaCity_HouseOfMayor_LandreBrotherNPC
-[BLUE]Yo, bud-bud, what poppin'? Yeah, me?\nI'm Landre's brother.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
+[BLUE]Yo, bud-bud, what poppin'? Yeah, me?\nI'm Landre's brother, the outcast.\pIt's a pain in the bum bum.\nBut Landre's always got my back.
 
 #org @gText_ErstoniaCity_Mart_YouWillBeSurprisedGuyNPC
 [BLUE]You'll be surprised by the amount of\nTrainers who don't buy Potions.\pEvery Trainer I've ever encountered\nnever heal their Pok\emon in battle!\pWhat's up with that?
@@ -134,7 +134,7 @@ Prof. Almond's house
 [RED]I love to travel! Have you ever\nvisited [GREEN]Frostpeak City[RED]?\pThe view is to die for, but it's so\ncold there!
 
 #org @gText_ErstoniaCity_PKMNCenter_TravelingOldManNPC
-[BLUE]Hm, yes, you look like a traveling\nPok\emon Tranier! First time out, huh?\pTake care, because things can get pretty\nrough far from home!
+[BLUE]Hm, yes, you look like a traveling\nPok\emon Tranier! First time out?\pTake care, because things can get\npretty rough far from home!
 
 #org @gText_ErstoniaCity_House_AsTheyGrowOldManNPC
 [BLUE]Pok\emon learn new techniques as they\ngrow.\pBut some moves must be taught to\nthem by people.\pI taught my Pidgey [GREEN]Fly[BLUE][.] Why can't\na bird fly without it?
@@ -161,7 +161,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLUE]These books are very fascinating!\nYou should try them some time!\pI read a thrilling novel of a Trainer\nand his Lopunny recently[.] oh yes[.]
 
 #org @gText_ErstoniaCity_ErstoniaApartments_ErstoniaGetsMuchAttractionoBoyNPC
-[BLUE]Erstonia City gets much activity. It's\nsaid it's because of the Gym.\pBut I know better! It's because\n[GREEN]Faery Woods[BLUE] are nearby!\pYeah! Everyone comes to catch\nBug-type Pok\emon! Go Bug-type!
+[GREEN]Erstonia City[BLUE] gets much activity. It's\nsaid it's because of the Gym.\pBut I know better! It's because\n[GREEN]Faery Woods[BLUE] are nearby!\pYeah! Everyone comes to catch\nBug-type Pok\emon! Go Bug-type!
 
 #org @gText_ErstoniaCity_ErstoniaApartments_AtPeaceOldManNPC
 [BLUE]I sometimes like to stare at blank\nwalls to contemplate life.\pYes, I am at peace[.]
@@ -179,10 +179,10 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [BLACK]Erstonia City\n"The City Of Rock And Steel".
 
 #org @gText_ErstoniaCity_GymSign
-[BLACK]Erstonia City Pok\emon Gym\nLeader: [GREEN]Landre[BLACK] - "Heart Of Steel"
+[BLACK]Erstonia City Pok\emon Gym\nLeader: [GREEN]Landre[BLACK] - "Heart Of Rock"
 
 #org @gText_ErstoniaCity_TrainerTipsSign
-[BLACK]Trainer Tips!\pWhile battling, certain moves may be\ncolored different or highlighted.\pGreen indicates "super\neffectiveness".\pYellow/Orange indicate "less\neffectiveness".\pRed indicates no effect at all.\pBoldness indicates Same Type Attack\nBonus (STAB)!
+[BLACK]Trainer Tips!\pWhile battling, certain moves may\nhave colored arrow, "+" or "x".\pA green arrow indicates "super\neffectiveness".\pA yellow/orange arrow shows "less\neffectiveness".\pA red "x" indicates no effect at\nall.\pThe "+" indicates Same Type Attack\nBonus (STAB)!
 
 #org @gText_ErstoniaCity_ErstoniaApartmentsSign
 [BLACK]Erstonia Apartments
@@ -190,12 +190,15 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 #org @gText_ErstoniaCity_MayorHouseSign
 [BLACK]Mayor's house
 
+#org @gText_ErstoniaCity_Gym_PillarsSign
+[BLACK]Erstonia City Pok\emon Gym\nLeader: [GREEN]Landre[BLACK] - "Heart Of Rock"
+
 #org @gText_ErstoniaCity_ErstoniaApartments_ReceptionSign
 [BLACK]Reception
 
 //Westray Village:
 #org @gText_WestrayVillage_JigglypuffGirlNPC
-[RED]I am literally obsessed with [GREEN]Clefairy[RED]!\nI hope someone shows it to me[.]
+[RED]I am literally obsessed with [GREEN]Numel[RED]!\nI hope someone shows it to me[.]
 
 #org @gText_WestrayVillage_AppleFarmOfJoeOldManNPC
 [BLUE]Joe is the one that we should be\ngrateful too.\pHis apples are best in the world!\n[.]Mhm[.] I love apples.
@@ -225,7 +228,7 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [RED]Just because you find one bad apple\ndoes not mean that the tree is bad.\pI suppose this applies to people as\nwell, huh?\p[.]Excuse me.
 
 #org @gText_WestrayVillage_ArticunoClimbGirlNPC
-[RED]The higher you go on [GREEN]Articuno\nClimb[RED], the colder it gets!\pYou even need [GREEN]Winter Gear[RED] to enter\nthem, or they'll send you back!
+[RED]The higher you go on [GREEN]Articuno\nClimb[RED], the colder it gets!\pYou even need Winter Gear to enter\nit, or they'll send you back!
 
 #org @gText_WestrayVillage_HouseOfJoe_JoeIsOurMayorKindaManNPC
 [BLUE]Joe is an ordinary old fellow like\nus, but we consider him the mayor.\pHe uplifted our town from ruins and\nmade it into a lush farm.
@@ -243,10 +246,10 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [RED]Joe trusts us to handle the town\naffairs and events. He's very kind.
 
 #org @gText_WestrayVillage_House_WestrayVillageIsNotNewOldManNPC
-[BLUE]I've lived in this town my whole\nlife! Now, it's not that bad, see?\pThis town is older than Triton itself!\nIsn't that something?
+[BLUE]I've lived in this town my whole\nlife! Now, it's not that bad, see?\pThis town is older than Astronia itself!\nIsn't that something?
 
 #org @gText_WestrayVillage_House_HistoryIsImportantOldLadyNPC
-[RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Triton Range.\pMany civilizations have passed on them,\nand even in them.\pThrough time all that is left are\nruins and structures of their world.
+[RED]History is important, kiddo. So allow\nme to give you a free lesson!\pThe mountains that cut this region\nare called the Astronia Range.\pMany civilizations have passed on them,\nand even in them.\pThrough time all that is left are\nruins and structures of their world.
 
 //debug
 #org @gText_WestrayVillage_PKMNCenter_RegionMapsMissingGuyNPC
@@ -277,13 +280,13 @@ A Pok\emon becomes easier to catch\nif it has a status problem.\p[GREEN]Sleep, P
 [RED]You know about Rare Candy, right?\nIt is not sold at Pok\emon Marts.\p[.]But I've heard that there is a very\nsecret dealer who might sell it!
 
 #org @gText_WestrayVillage_Mart_RepelBoyNPC
-Repel not only keeps bugs away,\nit also works on weak Pokémon.\pPut your strongest Pokémon at the\nleft of the Pokémon List.\pIf your first Pokémon is strong,\nRepel's effect is boosted.
+[BLUE]Repel not only keeps bugs away,\nit also works on weak Pokémon.\pPut your strongest Pokémon at the\nleft of the Pokémon List.\pIf your first Pokémon is strong,\nRepel's effect is boosted.
 
 #org @gText_WestrayVillage_FarmOfJoeSign
 [BLACK]Joe's Apple Farm\n"Red and plump, like rosy cheeks".
 
 #org @gText_WestrayVillage_MainTownSign
-[BLACK]Westray Village\n"The Luscious Farms of Triton".
+[BLACK]Westray Village\n"The Luscious Farms of Astronia".
 
 //Starbirth Hike:
 #org @gText_StarbirthHike_InteractiveWorldBoyNPC
@@ -294,6 +297,9 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 
 #org @gText_StarbirthHike_MainRouteSign
 [BLACK]Starbirth Hike\n[ARROW_LEFT]Starbirth Town - [ARROW_RIGHT]Goldtree Village
+
+#org @gText_StarbirthHike_MainRouteTwoSign
+[BLACK]Starbirth Hike\n[ARROW_RIGHT]Goldtree Village - [ARROW_LEFT]Starbirth Town
 
 //Starbirth Hills:
 #org @gText_StarbirthHills_AlmondObservatory_FirstAideNPC
@@ -306,7 +312,7 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 [BLUE]I love Pok\emon that are uncommon and\nmake other Trainers jealous.\pI can say we have quite a few of\nthem in the zoological garden.
 
 #org @gText_StarbirthHills_AlmondObservatory_FifthAideNPC
-[BLUE]Wild Pikachu inhabit Starbirth Hills.\nI hear they're hard to capture.
+[BLUE]Wild Pikachu inhabit [GREEN]Starbirth Hills[BLUE].\nI hear they're hard to capture.
 
 #org @gText_StarbirthHills_AlmondObservatory_SixthAideNPC
 [BLUE]Terribly sorry, but only staff are\nallowed up here.
@@ -331,7 +337,7 @@ Walking in tall grass makes Pok\emon\nless likely to appear.\pI don't know wheth
 [RED]The tall grass here makes me sneeze[.]\nAchoo! This is very annoying!\pIf I use [GREEN]Cut[RED] here, I'll be able to\nclear this entire area!
 
 #org @gText_GoldtreeWilds_FaeryWoods_RegionalPKMNBoyNPC
-[BLUE]Triton has a ton of [GREEN]Regional Pok\emon[BLUE].\nYou can find some in here, too!\pOr [GREEN]maybe not[BLUE] this time of the year[.]\nI don't know[.]
+[BLUE]Astronia has a ton of [GREEN]Regional Pok\emon[BLUE].\nYou can find some in here, too!\pOr [GREEN]maybe not[BLUE] this time of the year[.]\nI don't know[.]
 
 #org @gText_GoldtreeWilds_FaeryWoods_HiddenItemsBoyNPC
 [BLUE]You can find hidden items on the\nground scattered here and there!\pI've got like five Potions already!
@@ -363,16 +369,28 @@ King's Path\n[ARROW_LEFT]Goldtree Village - [ARROW_RIGHT]Crystalrail\lTown
 [BLUE]You know what happened? A girl named\nLaxyp said something strange to me!\pShe said [GREEN]time of day based wild\nPok\emon encounters are coming soon[BLUE].\pWhat does that even mean?
 
 #org @gText_ErstoniaCanyon_SandstormGuyNPC
-[BLUE]There is always a sandstorm brewing\nin Erstonia Canyon!\pIt can affect how you battle and\nhow you explore. Be careful!
+[BLUE]There is always a sandstorm brewing\nin [GREEN]Erstonia Canyon[BLUE]!\pIt can affect how you battle and\nhow you explore. Be careful!
 
 #org @gText_ErstoniaCanyon_MoltresMountainGuyNPC
-[BLUE]Atop [GREEN]Moltres Mountain[BLUE], my brother\nsits in his workshop, alone!\pHe indulges in only the most special\nof items and is a help to everyone.\pBut for some time he has not been\nseen[.] I wonder where he is.
+[BLUE]Atop [GREEN]Moltres Mountain[BLUE], my brother\nsits in his workshop alone!\pHe indulges in only the most special\nof items and is a help to everyone.\pBut for some time he has not been\nseen[.] I wonder where he is.
 
 #org @gText_ErstoniaCanyon_RuinwayPassageLadyNPC
 [RED]I can cross over to other towns and\ncities through [GREEN]Ruinway Passage[RED]!\pThis passage is built inside this\nentire mountain range, by jolly!\pI've heard ancient Pok\emon were used\nto create them. Impressive, right?
 
 #org @gText_ErstoniaCanyon_LuxuryBallGuyNPC
 [BLUE]Luxury Balls increase the happiness\nof a Pok\emon if caught in it!\pThey're pretty hard to come by, but\neverything has a price, right?\pYou might come across a special\nPok\eBall seller, though! Good luck!
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_WeGetHikersGirlNPC
+[RED]We get many, many hikers passing\nthrough here. It's quite pleasing.\pIt's a rough terrain, but it'll get\nyou city to city real fast.
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_IsNotCavingInManNPC
+[BLUE]The [GREEN]Founders of Astronia[BLUE] are so\nfascinating[.] Look at this place!\pIt has been so marvelously constructed!\nNothing falls out of place!\pThis entire passage isn't caving in\ndue to it's fabulous design[.]
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_PopularSpotGuyNPC
+[BLUE]You'll be crazy to live in Astronia\nand not come here, trust me.\pIt has so many secrets to unveil.\nSo many Pokémon to be caught.
+
+#org @gText_ErstoniaCanyon_RuinwayPassage_RarePKMNOldManNPC
+[BLUE]I've seen many, very fantastically\nrare Pokémon right in this cave.\pIf you do some digging around, you\nmight even find a fossil!
 
 #org @gText_ErstoniaCanyon_MainRouteSign
 [BLACK]Erstonia Canyon\n[ARROW_LEFT]Erstonia City

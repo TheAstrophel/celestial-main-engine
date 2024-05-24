@@ -181,13 +181,13 @@ I'm f-feeling nauseated[.]
 [BLUE]Oh[.] Can I d-drink a Potion to\nf-feel better[.]?
 
 #org @MiloChallenges
-[BLUE]I'm going to catch you!\nHuh? You're not a [GREEN]Caterpie[BLUE]!
+[BLUE]I'm going to catch you!\nHuh? You're not a Caterpie!
 
 #org @MiloLoses
 You didn't let me catch a Caterpie!
 
 #org @gText_GoldtreeWilds_FaeryWoods_TrainerMilo
-[BLUE]Unless you are a [GREEN]Caterpie[BLUE], you can\nleave, silly!
+[BLUE]Unless you are a Caterpie, you can\nleave, silly!
 
 #org @KeithChallenges
 [GREEN]Faery Woods[BLUE] sure is magical, huh?
