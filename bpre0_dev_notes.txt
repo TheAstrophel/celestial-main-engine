@@ -2,11 +2,21 @@ Added people in all centers/marts up till now.
 Moved Ruinway Passage guy in Erstonia City to better location.
 Did some refines in first three areas.
 Game logo changed to Cosmic Version.
+Change the Text Pointer when using unusable item ("Oak: You can't use that here!...") @0A1128
+Titlescreen completely changed (if issue refer to for IMPORTANT SHIT.gba).
+TS music changed using GBA intro manager.
+Copyright screen changed.
+Titlescreen palette changed a litte.
+Titlescreen Cry Fix THUMB hook removed, changed cry to deoxys by GBA intro manager.
+Changed 2021 to 2024 in TS.
+Inserted new DPE (WITHOUT ANY EDITS TO FILES).
+Inserted new DPE w/ EDITS TO FILES.
+--ruinway non trainers
 --encounter music by class check in cfru
 
 - Update CFRU/DPE to accomadate Cosmic data; Interactive world building/Final refine of the game.
   Three Phases: [2]Add the refines of the game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
 
---Beta 1.0 & Beyond: Add some XSE events into CFRU (Erstonia Center Boy/PKMN, Westray House Old Man [turn into quest maybe?]);
+--Beta 1.0 & Beyond: Change some XSE events into CFRU events (Erstonia Center Boy/PKMN, Westray House Old Man [turn into quest maybe?]);
                      Change Erstonia City to a steelish city; Switch palette of Fairy Houses in Faery Woods so they are more diverse; 
                      enable running shoes from the start; Make Palette 12 of Westray Village for apple trees/corresponding;
