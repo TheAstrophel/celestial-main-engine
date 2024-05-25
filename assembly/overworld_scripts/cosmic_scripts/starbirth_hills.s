@@ -374,7 +374,7 @@ SecondStarter:
 	hidesprite LASTTALKED
 	msgbox gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_EnergecticPokemon, MSG_KEEPOPEN
 	setflag 0x828
-	givepokemon 0x118 0x64 0x0 0x0 0x0 0x0 @Torchic @debug
+	givepokemon 0x118 0x7 0x0 0x0 0x0 0x0 @Torchic
 	bufferpokemon 0x0 0x118
 	preparemsg gText_StarbirthHills_AlmondObservatory_OfficeOfProfessor_ReceivedStarter
 	waitmsg

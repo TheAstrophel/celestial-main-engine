@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6'''
-FreeSpaceSearch = '''2DF380'''
+FreeSpaceSearch = '''2FC780'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = False
@@ -6958,8 +6958,8 @@ Destination = '''data.items.stats'''
 
 [[GotoShortcut]]
 Name = '''Maps'''
-Image = '''data.maps.banks/3/maps/0/map/0/layout/0/blockmap/'''
-Destination = '''maps.bank3.Starbirth Town.3-0'''
+Image = '''data.maps.banks/3/maps/2/map/0/layout/0/blockmap/'''
+Destination = '''maps.bank3.Erstonia City.3-2'''
 
 #################################
 [[TableGroup]]

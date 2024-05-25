@@ -50,11 +50,11 @@ Added GBC text patch.
 Inserted male/female bag sprites.
 Some changes in Faery Woods.
 Placeholder Gym 1 made.
---ruinway non trainers
---encounter music by class check in cfru
+Changed GT doors.
+Fixed Erstonia City building palette thingy.
+MADE.
 
-- Update CFRU/DPE to accomadate Cosmic data; Interactive world building/Final refine of the game.
-  Three Phases: [2]Add the refines of the game from "Version Breakdown"; [3]Fix CFRU after merging with dev branch and add new DPE/fix DPE
+- 
 
 --Beta 1.0 & Beyond: Change some XSE events into CFRU events (Erstonia Center Boy/PKMN, Westray House Old Man [turn into quest maybe?]);
                      Change Erstonia City to a steelish city; Switch palette of Fairy Houses in Faery Woods so they are more diverse; 

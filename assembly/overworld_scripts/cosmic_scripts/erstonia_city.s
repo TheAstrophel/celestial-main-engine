@@ -117,12 +117,17 @@ m_StepAwayFromRoom: .byte walk_left_slow, end_m
 
 @;////////////////////////////////////////////////
 
+.equ VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x503A
+.equ VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x503B
+
 .global NPCScript_ErstoniaCity_Gym_Landre
 NPCScript_ErstoniaCity_Gym_Landre:
 setvar 0x8004 0x2
 setvar 0x8005 0x2
 special 0x174
-trainerbattle1 0x1 0x19E 0x0 LandreChallenges LandreLoses LandreTechnicalScript
+setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0
+setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 1
+trainerbattle1 0x1 0x19E 0x700 LandreChallenges LandreLoses LandreTechnicalScript
 checkflag 0x254
 if 0x0 _goto LandreGivesTM
 msgboxname gText_ErstoniaCity_Gym_Landre_EndingWalaEnd, MSG_KEEPOPEN, gText_LandreName
@@ -139,6 +144,7 @@ setvar 0x406C 0x1
 setflag 0x2E
 clearflag 0x92
 setvar 0x8008 0x1
+setvar 0x4050 0x1
 call TechnicalShit
 goto LandreGivesTM
 

@@ -9,6 +9,8 @@
 #NPC scripts:
 .equ RIVAL, 2
 .equ VAR_MAIN_STORY, 0x4029
+.equ VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x503A
+.equ VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x503B
 .equ VAR_STARTER_MON, 0x51F0
 .equ VAR_TEMP_1, 0x51FE
 .equ VAR_TEMP_2, 0x51FF
@@ -38,15 +40,21 @@ NPCScript_StarbirthHike_Rival:
 	end
 
 RivalBattleWhenPlayerHasTreecko:
-	trainerbattle3 0x3 0x149 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x149 0x100 RivalLoses
 	return
 
 RivalBattleWhenPlayerHasTorchic:
-	trainerbattle3 0x3 0x14A 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x14A 0x100 RivalLoses
 	return
 
 RivalBattleWhenPlayerHasMudkip:
-	trainerbattle3 0x3 0x14B 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x14B 0x100 RivalLoses
 	return
 
 @;////////////////////////////////////////////////
@@ -64,6 +72,8 @@ SetItemFlag_ItemObtainPotion:
 #Tile scripts:
 .equ RIVAL, 2
 .equ VAR_MAIN_STORY, 0x4029
+.equ VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x503A
+.equ VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x503B
 .equ VAR_STARTER_MON, 0x51F0
 .equ MAIN_STORY_MET_RIVAL_IN_Starbirth_HIKE, 0x7
 
@@ -113,15 +123,21 @@ RivalMovesTowardsPlayerWhenScriptNumberTwo:
 	return
 
 TileScriptRivalBattleWhenPlayerHasTreecko:
-	trainerbattle3 0x3 0x149 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x149 0x100 RivalLoses
 	return
 
 TileScriptRivalBattleWhenPlayerHasTorchic:
-	trainerbattle3 0x3 0x14A 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x14A 0x100 RivalLoses
 	return
 
 TileScriptRivalBattleWhenPlayerHasMudkip:
-	trainerbattle3 0x3 0x14B 0x0 RivalLoses
+	setvar VAR_PRE_BATTLE_MUGSHOT_STYLE, 0x2
+	setvar VAR_PRE_BATTLE_MUGSHOT_SPRITE, 0x0
+	trainerbattle3 0x3 0x14B 0x100 RivalLoses
 	return
 
 m_LookDownExclaim: .byte look_down, exclaim, end_m

@@ -193,7 +193,6 @@ TileScript_ErstoniaCanyon_RuinwayPassage_PlayerFindsLandre:
 	setflag 0x31 @Hide Caretaker that blocks Erstonia Gym & Landre
 	setvar VAR_TEMP_1, 0 @Will be used later in other scripts
 	setvar VAR_TEMP_2, 0 @Will be used later in other scripts
-	setvar 0x4050 0x1 @debug
 	setvar VAR_MAIN_STORY, MAIN_STORY_PLAYER_MET_LANDRE_IN_RUINWAY_PASSAGE
 	release
 	end

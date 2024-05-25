@@ -212,9 +212,9 @@ PlayerGetsWinterGear:
 	spriteface LADY, LEFT
 	msgboxname gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeHappy, MSG_KEEPOPEN, gText_JoeName
 	closeonkeypress
-	fanfare 0x13E
-	obtainitem 0x15D 0x1
-	waitfanfare
+#	fanfare 0x13E
+#	obtainitem 0x0 0x1
+#	waitfanfare
 	msgboxname gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeFinal, MSG_KEEPOPEN, gText_JoeName
 	closeonkeypress
 	spriteface MAN, UP
@@ -226,7 +226,7 @@ PlayerGetsWinterGear:
 	msgboxname gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeDefFinal, MSG_KEEPOPEN, gText_JoeName
 	closeonkeypress
 	setvar VAR_MAIN_STORY, MAIN_STORY_PLAYER_RECEIVED_WINTER_GEAR_FROM_JOE_IN_WESTRAY_VILLAGE
-	setvar 0x4051 0x1 @Guard var blocking access to Articuno Climb
+	setvar 0x4051 0x0 @Guard var blocking access to Articuno Climb
 	release
 	end
 

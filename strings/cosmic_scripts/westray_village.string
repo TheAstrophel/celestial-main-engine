@@ -88,7 +88,7 @@
 [BLUE][PLAYER]!\nYou are amazing, you are!\pI did not underestimate you and I\nwas right, ha ha! Good show!\pYou drove those goons right\nout of town, up the mountains.\pYou're very sharp, [PLAYER].\nI believe you'll do much more!\pAh, and yes, I cannot forget your\nreward! What is that you need[.]?\pOh, you'll be continuing your journey,\nyes? Then this'll help!
 
 #org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_JoeFinal
-[BLUE]Please accept that as a token of\nappreciation from the town.\pThe townfolk have been saved by\nunknown plots, all thanks to you.
+[BLUE]Oh, wait, I don't have it yet[.]\n[GREEN]Wait for Beta 0.0[BLUE]!\pAnyhow, the townfolk have been saved\nby unknown plots, all thanks to you.
 
 #org @gText_WestrayVillage_HouseOfJoe_PlayerGetsWinterGear_ManYaps
 [BLUE]Thank you for this kindness, kid!\nWe'll never forget you!
