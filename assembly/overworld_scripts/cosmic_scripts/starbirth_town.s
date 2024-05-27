@@ -355,6 +355,8 @@ PlayerHasAlreadyTakenParcelFromProfessorAlmondInStarbirthTown:
 
 PlayerAlreadyMetProfessor:
 	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_05, MSG_FACE, gText_MomName
+	call HealPlayerParty
+	msgboxname gText_StarbirthTown_PlayerHouse_PlayerMom_InformPlayerToComeBack, MSG_FACE, gText_MomName
 	spriteface MOM, LEFT
 	release
 	end
@@ -436,15 +438,10 @@ LevelScript_StarbirthTown_PlayerHouse:
 	applymovement MOM, m_MomMoveToPlayer
 	waitmovement 0x0
 	spriteface PLAYER, DOWN
-	msgboxname gText_StarbirthTown_PlayerHouse_Mom_02a MSG_KEEPOPEN, gText_MomName
-	fanfare 0x10D
-	msgbox gText_StarbirthTown_PlayerHouse_Mom_02b MSG_KEEPOPEN
-	waitfanfare
-	msgboxname gText_StarbirthTown_PlayerHouse_Mom_02c MSG_KEEPOPEN, gText_MomName
+	msgboxname gText_StarbirthTown_PlayerHouse_Mom_02 MSG_KEEPOPEN, gText_MomName
 	closeonkeypress
 	applymovement MOM, m_MomMoveBackToSpot
 	waitmovement 0x0
-	setflag 0x82F @Enable running shoes
 	setvar VAR_MAIN_STORY, MAIN_STORY_TALKED_TO_MOM
 	releaseall
 	end

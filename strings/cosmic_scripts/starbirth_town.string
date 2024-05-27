@@ -42,14 +42,8 @@
 #org @gText_StarbirthTown_PlayerHouse_Mom_01
 [RED][PLAYER]!
 
-#org @gText_StarbirthTown_PlayerHouse_Mom_02a
-[RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's Aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Starbirth Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Starbirth Hills[RED].\pHe knows me and your father quite\nwell! You were too little, hehe.\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake these as well!
-
-#org @gText_StarbirthTown_PlayerHouse_Mom_02b
-[BLACK][PLAYER] received the Running Shoes\nfrom Mom!
-
-#org @gText_StarbirthTown_PlayerHouse_Mom_02c
-[RED]These Running Shoes will help you\nzip around faster!\pJust hold down the [B_BUTTON] button to use\nthem.\pYou can also press the [L_BUTTON] button to\ntoggle Auto-Run on and off!\pTake care, sweetie!
+#org @gText_StarbirthTown_PlayerHouse_Mom_02
+[RED]Honey, you're up! Did you sleep\nwell?\pJust so you know, a [GREEN]Professor's aide\n[RED]was looking for you!\pYou know, the Professor who just\nmoved in [GREEN]Starbirth Town[RED]!\pHis Observatory is set somewhere in\n[GREEN]Starbirth Hills[RED].\pHe knows me and knew your father\nquite well! You were too little!\pOh! His Aide may still be outside\nwaiting for you.\pWhy don't you go and meet him?\nTake care!
 
 #org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_01
 [BLUE][PLAYER]!\pI see you've come for the parcel.\nWell, here you go, then.
@@ -64,10 +58,10 @@
 [BLUE]You should tell your mother\nyou're leaving town.\pI really don't want to get in trouble,\neheh[.]
 
 #org @gText_StarbirthTown_HouseOfProfessor_ProfAlmond_04
-[BLUE]I've contacted the authorities. You\nneedn't worry!\pBut why not try catching that theif\non your own? For some experience?
+[BLUE]I've contacted the authorities. You\nneedn't worry!\pBut why not try catching that theif\non your own, for some experience?
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_01
-[RED]You should go and meet the\nProfessor's Aide.
+[RED]You should go and meet the\nProfessor's aide.
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_02
 [RED]What? The Professor wants you to\nmeet him in person?\pI wonder what he wants?
@@ -79,7 +73,7 @@
 [RED]What did the Professor want?\nHmm? You got a Pok\emon? How cute!\pOh? You also need to deliever a\nparcel?\pSo this is how your journey starts?\nMy baby is all grown up!\pAlways visit me from time to time!\nGo get 'em, love!
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_05
-[RED]I'll always be rooting for you!
+[RED]I'll always be rooting for you!\nOh, would you like to rest?
 
 #org @gText_StarbirthTown_PlayerHouse_PlayerMom_HealPKMN
 [RED][PLAYER]! Why don't you take a\nquick rest?

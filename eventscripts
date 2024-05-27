@@ -29,7 +29,7 @@ npc 3 2 16 NPCScript_ErstoniaCity_Machop
 npc 3 2 17 NPCScript_ErstoniaCity_Meowth
 npc 3 2 11 NPCScript_ErstoniaCity_ItemObtainRareCandy
 npc 3 2 10 NPCScript_ErstoniaCity_ItemObtainTM27
-#npc 6 2 0 NPCScript_ErstoniaCity_Gym_Landre
+npc 6 2 0 NPCScript_ErstoniaCity_Gym_Landre
 tile 6 0 0 TileScript_ErstoniaCity_HouseOfMayor_PlayerTriesToEnterRoomOfLandre
 map 3 2 gMapScripts_ErstoniaCity
 
@@ -264,8 +264,8 @@ sign 3 2 1 SignpostScript_ErstoniaCity_Gym
 sign 3 2 2 SignpostScript_ErstoniaCity_TrainerTips
 sign 3 2 3 SignpostScript_ErstoniaCity_ErstoniaApartments
 sign 3 2 4 SignpostScript_ErstoniaCity_MayorHouse
-#sign 6 2 0 SignpostScript_ErstoniaCity_Gym_Pillars
-#sign 6 2 1 SignpostScript_ErstoniaCity_Gym_Pillars
+sign 6 2 0 SignpostScript_ErstoniaCity_Gym_Pillars
+sign 6 2 1 SignpostScript_ErstoniaCity_Gym_Pillars
 sign 6 8 0 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 6 8 1 SignpostScript_ErstoniaCity_ErstoniaApartments_Reception
 sign 3 3 0 SignpostScript_WestrayVillage_FarmOfJoe
@@ -282,8 +282,7 @@ sign 3 21 4 SignpostScript_GoldtreeWilds_TrainerTips
 sign 3 22 0 SignpostScript_KingsPath_SmallOpening
 sign 3 22 1 SignpostScript_KingsPath_MainRoute
 sign 3 23 0 SignpostScript_ErstoniaCanyon_MainRoute
-sign 3 23 1 SignpostScript_ErstoniaCanyon_TrainerTips
-sign 3 23 2 SignpostScript_ErstoniaCanyon_RuinwayPassage
+sign 3 23 1 SignpostScript_ErstoniaCanyon_RuinwayPassage
 sign 1 1 0 SignpostScript_ErstoniaCanyon_RuinwayPassage_UnownCarvings
 sign 1 1 1 SignpostScript_ErstoniaCanyon_RuinwayPassage_UnownCarvings
 sign 1 1 2 SignpostScript_ErstoniaCanyon_RuinwayPassage_UnownCarvings

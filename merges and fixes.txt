@@ -17,3 +17,5 @@ CONFLICT (modify/delete): graphics/Battle_UI/PSS_Icons/PSSIcons.bmp deleted in f
 CONFLICT (content): Merge conflict in assembly/battle_scripts/general_attack_battle_scripts.s
 Automatic merge failed; fix conflicts and then commit the result.
 
+offset 1: 14D0FCC CC 0F 4D 09
+offset 2: 14D36BF (14D36BE)

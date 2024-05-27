@@ -57,7 +57,7 @@
 #define FLAG_REMOVE_EVO_ITEM 0x912  //Flag to toggle item removal after leveling up (set by the engine)
 #define FLAG_SHINY_CREATION 0x913 //Flag to cause next battle to be against a shiny Pokemon
 #define FLAG_AUTO_RUN 0x914 //Flag to enable auto-run (toggled by L-button). If this feature is used, L=A will not work. Comment out this line for it to work again.
-#define FLAG_RUNNING_ENABLED 0x82F //The player can only run if this flag is set. If commented, the player will start the game with running shoes.
+//#define FLAG_RUNNING_ENABLED 0x82F //The player can only run if this flag is set. If commented, the player will start the game with running shoes.
 #define FLAG_BIKE_TURBO_BOOST 0x91F //The bike moves extra fast if this flag is set or if the player holds B.
 #define FLAG_SURF_TURBO_BOOST 0x929 //The Surf blob moves extra fast if set
 #define FLAG_DISABLE_BAG 0x915 //The bag can't be used in-battle if this flag is set
@@ -247,7 +247,7 @@ enum //These vars need to be one after the other (hence the enum)
 #define NON_TRAINER_SPOTTING //Comment out if you don't want regular NPCs to be able to spot the player in the oveworld (vanilla only trainers can or the game will crash)
 //#define BIKE_ON_ANY_NON_INSIDE_MAP //Uncomment if you still want to be able to bike on any non-inside map
 //#define GEN_4_PLAYER_RUNNING_FIX //Uncomment to increase the lag between frames as the player OW runs, to simulate a more accurate Gen 4 running effect
-//#define SHRINK_PLAYER_THROUGH_DOOR //The player sprite will shrink slightly when going through a doorway
+#define SHRINK_PLAYER_THROUGH_DOOR //The player sprite will shrink slightly when going through a doorway
 #define EXPAND_MOVE_REMINDER_DESCRIPTION //Keep this defined to have 5 lines for the move description as opposed to 4 in the move reminder menu
 #define ITEM_PICTURE_ACQUIRE //If uncommented, item images will be shown when the player finds or obtains an item. Breaks FR Game Corner prize room
 #define ITEM_DESCRIPTION_ACQUIRE //If uncommented, item descriptions will be shown the first time an item is added to the Bag. ITEM_PICTURE_ACQUIRE must be defined to work
